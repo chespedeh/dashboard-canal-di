@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Directivo - Dashboard de Ventas y Presupuestos</title>
+    
+    <!-- Google Fonts: Outfit for premium look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for beautiful icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css?v=20260526-3">
+    
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header logo-only">
+                <img src="Caro-Ruiz.jpg?v=20260526-3" alt="Logo Caro Ruiz" class="brand-logo">
+            </div>
+            
+            <nav class="sidebar-menu">
+                <button class="menu-item active" data-tab="general">
+                    <i class="fa-solid fa-grid-2-dash"></i>
+                    <i class="fa-solid fa-chart-pie menu-icon"></i>
+                    <span>Vista General</span>
+                </button>
+                <button class="menu-item" data-tab="ranking">
+                    <i class="fa-solid fa-ranking-star menu-icon"></i>
+                    <span>Ranking Agentes</span>
+                </button>
+                <button class="menu-item" data-tab="agente-detalle">
+                    <i class="fa-solid fa-user-tie menu-icon"></i>
+                    <span>Ficha de Agente</span>
+                </button>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <div class="user-info">
+                    <div class="avatar">
+                        <i class="fa-solid fa-user-gear"></i>
+                    </div>
+                    <div class="info">
+                        <span class="name">Director Comercial</span>
+                        <span class="role">Acceso Premium</span>
+                    </div>
+                </div>
+                <div class="last-sync">
+                    <i class="fa-solid fa-rotate"></i>
+                    <span>Datos: <span id="sync-date">25/05/2026</span></span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="content-header">
+                <div class="header-title">
+                    <h2 id="page-title">Dashboard Directivo de Ventas</h2>
+                    <p id="page-subtitle" class="text-muted">Análisis comparativo de Ventas Reales vs. Presupuestos y Año Anterior</p>
+                </div>
+                <div class="header-actions">
+                    <div class="period-badge">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <span>Periodo Real: <strong id="period-label">Sin datos reales</strong> (YTD) | Datos hasta: <strong id="as-of-date">Sin fecha</strong></span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- TAB 1: GENERAL VIEW -->
+            <section id="tab-general" class="tab-content active">
+                <!-- Top KPI Cards -->
+                <div class="kpi-grid">
+                    <div class="kpi-card gradient-blue">
+                        <div class="kpi-header">
+                            <span class="kpi-label">Ventas Reales 2026 (YTD)</span>
+                            <div class="kpi-icon"><i class="fa-solid fa-wallet"></i></div>
+                        </div>
+                        <div class="kpi-value" id="kpi-sales-real">0.00 €</div>
+                        <div class="kpi-footer">
+                            <span class="kpi-trend trend-neutral">
+                                <i class="fa-solid fa-circle-info"></i> Acumulado <span id="kpi-sales-period">YTD</span>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="kpi-card gradient-purple">
+                        <div class="kpi-header">
+                            <span class="kpi-label">Presupuesto 2026 (YTD)</span>
+                            <div class="kpi-icon"><i class="fa-solid fa-bullseye"></i></div>
+                        </div>
+                        <div class="kpi-value" id="kpi-budget-ytd">0.00 €</div>
+                        <div class="kpi-footer">
+                            <span class="kpi-trend" id="kpi-deviation-trend">
+                                <span id="kpi-deviation-pct">0.0%</span>
+                                <span class="trend-lbl"> vs Presupuesto</span>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="kpi-card gradient-green" id="kpi-growth-card">
+                        <div class="kpi-header">
+                            <span class="kpi-label">Ventas Año Anterior (YTD 2025)</span>
+                            <div class="kpi-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                        </div>
+                        <div class="kpi-value" id="kpi-sales-prev">0.00 €</div>
+                        <div class="kpi-footer">
+                            <span class="kpi-trend" id="kpi-growth-trend">
+                                <span id="kpi-growth-pct">0.0%</span>
+                                <span class="trend-lbl"> Crecimiento YoY</span>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="kpi-card gradient-gold">
+                        <div class="kpi-header">
+                            <span class="kpi-label">Beneficio Real 2026 (YTD)</span>
+                            <div class="kpi-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                        </div>
+                        <div class="kpi-value" id="kpi-profit-ytd">0.00 €</div>
+                        <div class="kpi-footer">
+                            <span class="kpi-trend trend-neutral">
+                                Margen: <strong id="kpi-margin-pct">0.0%</strong>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Main Charts Grid -->
+                <div class="charts-grid">
+                    <!-- Chart 1: Monthly sales trend -->
+                    <div class="chart-container large-chart">
+                        <div class="chart-header">
+                            <div>
+                                <h3>Evolución Temporal: Comparativa Mensual</h3>
+                                <span class="subtitle" id="monthly-chart-subtitle">Progresión de ventas reales contra presupuesto por mes</span>
+                            </div>
+                            <div class="chart-header-actions">
+                                <select id="monthly-comparison-mode" class="chart-select" aria-label="Modo de comparación mensual">
+                                    <option value="net" selected>Ventas vs Presupuesto</option>
+                                    <option value="margin">Margen y Cumplimiento</option>
+                                </select>
+                            </div>
+                            <div class="chart-legend-custom" id="monthly-chart-legend">
+                                <span class="leg-item"><span class="dot prev"></span>Ventas 2025</span>
+                                <span class="leg-item"><span class="dot budget"></span>Ppto 2026</span>
+                                <span class="leg-item"><span class="dot real"></span>Ventas 2026</span>
+                            </div>
+                        </div>
+                        <div class="chart-wrapper">
+                            <canvas id="monthlyTrendChart"></canvas>
+                        </div>
+                    </div>
+                    
+                    <!-- Performance distribution / deviation -->
+                    <div class="chart-container small-chart">
+                        <div class="chart-header">
+                            <h3>Distribución de Ventas por Agente</h3>
+                        </div>
+                        <div class="chart-wrapper">
+                            <canvas id="agentShareChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Top Performing and Alerts Grid -->
+                <div class="bottom-grid">
+                    <!-- Top Agents Card -->
+                    <div class="list-card">
+                        <div class="list-card-header">
+                            <h3><i class="fa-solid fa-trophy text-gold"></i> Top 5 Agentes de Ventas</h3>
+                            <span class="subtitle">Por importe de venta real (YTD)</span>
+                        </div>
+                        <div class="list-body" id="top-agents-list">
+                            <!-- JS populated -->
+                        </div>
+                    </div>
+                    
+                    <!-- Underperforming Agents Card -->
+                    <div class="list-card">
+                        <div class="list-card-header">
+                            <h3><i class="fa-solid fa-triangle-exclamation text-coral"></i> Mayores Desviaciones de Presupuesto</h3>
+                            <span class="subtitle">Agentes que no alcanzan el presupuesto (YTD)</span>
+                        </div>
+                        <div class="list-body" id="underperforming-agents-list">
+                            <!-- JS populated -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Global Monthly Breakdown Table -->
+                <div class="full-width-section" style="margin-top: 24px;">
+                    <div class="kpi-grid" style="margin-bottom: 24px;">
+                        <div class="kpi-card gradient-green">
+                            <div class="kpi-header">
+                                <span class="kpi-label">Venta Acumulada Mes</span>
+                                <div class="kpi-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                            </div>
+                            <div class="kpi-value" id="kpi-current-month-sales">0.00 €</div>
+                            <div class="kpi-footer">
+                                <span class="kpi-trend trend-neutral">
+                                    Mes actual: <strong id="kpi-current-month-key">-</strong> | Avance: <strong id="kpi-current-month-progress">0.0%</strong>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="kpi-card gradient-purple">
+                            <div class="kpi-header">
+                                <span class="kpi-label">Presupuesto Mensual</span>
+                                <div class="kpi-icon"><i class="fa-solid fa-calendar-plus"></i></div>
+                            </div>
+                            <div class="kpi-value" id="kpi-current-month-budget">0.00 €</div>
+                            <div class="kpi-footer">
+                                <span class="kpi-trend trend-neutral" id="kpi-budget-gap-wrap">
+                                    Objetivo mes: <strong id="kpi-current-month-budget-key">-</strong> | Falta: <strong id="kpi-budget-gap-pct">0.0%</strong>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="kpi-card gradient-coral">
+                            <div class="kpi-header">
+                                <span class="kpi-label">Previsión Cierre Mes</span>
+                                <div class="kpi-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                            </div>
+                            <div class="kpi-value" id="kpi-prevision-eom">0.00 €</div>
+                            <div class="kpi-footer">
+                                <span class="kpi-trend trend-neutral">
+                                    Margen previsto: <strong id="kpi-prevision-margin">0.0%</strong>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="kpi-card gradient-blue">
+                            <div class="kpi-header">
+                                <span class="kpi-label">Ritmo Diario Requerido</span>
+                                <div class="kpi-icon"><i class="fa-solid fa-gauge-high"></i></div>
+                            </div>
+                            <div class="kpi-value" id="kpi-required-daily">0.00 €</div>
+                            <div class="kpi-footer">
+                                <span class="kpi-trend trend-neutral" id="kpi-prevision-compliance-wrap">
+                                    Cumplimiento esperado: <strong id="kpi-prevision-compliance">0.0%</strong>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list-card" style="margin-bottom: 24px;">
+                        <div class="list-card-header">
+                            <h3><i class="fa-solid fa-bullseye text-gold"></i> Previsión de Cierre Mensual por Agente</h3>
+                            <p class="subtitle text-muted">Previsión de cierre a fin de mes según ventas diarias, margen esperado y ritmo necesario para objetivo</p>
+                        </div>
+                        <div class="table-wrapper">
+                            <table class="premium-table" id="prevision-agents-table">
+                                <thead>
+                                    <tr>
+                                        <th>Agente</th>
+                                        <th>Venta Mes Actual</th>
+                                        <th>Presupuesto Mes</th>
+                                        <th>Previsión Fin Mes</th>
+                                        <th>Cumplimiento Esperado</th>
+                                        <th>Ritmo Diario Requerido</th>
+                                        <th>Margen Previsión</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="prevision-agents-table-body">
+                                    <!-- JS populated -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="list-card">
+                        <div class="list-card-header">
+                            <h3><i class="fa-solid fa-calendar-days text-gold"></i> Desglose Mensual Global de la Compañía</h3>
+                            <p class="subtitle text-muted">Detalle acumulado de ventas históricas, presupuestos y ventas reales para el ejercicio corriente</p>
+                        </div>
+                        <div class="table-wrapper">
+                            <table class="premium-table" id="global-monthly-table">
+                                <thead>
+                                    <tr>
+                                        <th>Mes</th>
+                                        <th>Ventas 2025 (Histórico)</th>
+                                        <th>Presupuesto 2026</th>
+                                        <th>Ventas Reales 2026</th>
+                                        <th>Desviación Ppto</th>
+                                        <th>Crecimiento YoY</th>
+                                        <th>Beneficio Neto 2026</th>
+                                        <th>Margen Real</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="global-monthly-table-body">
+                                    <!-- JS populated -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 2: AGENT RANKING -->
+            <section id="tab-ranking" class="tab-content">
+                <div class="table-container-card">
+                    <div class="table-actions">
+                        <div class="search-box">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" id="agent-search" placeholder="Buscar por agente...">
+                        </div>
+                        <div class="filter-group">
+                            <label for="status-filter">Rendimiento:</label>
+                            <select id="status-filter">
+                                <option value="all">Todos los agentes</option>
+                                <option value="over">Supera Presupuesto (≥ 100%)</option>
+                                <option value="near">Cerca del objetivo (90% - 99%)</option>
+                                <option value="under">Bajo presupuesto (< 90%)</option>
+                                <option value="loss">Con Margen Negativo</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="table-wrapper">
+                        <table class="premium-table" id="ranking-table">
+                            <thead>
+                                <tr>
+                                    <th data-sort="id">ID <i class="fa-solid fa-sort"></i></th>
+                                    <th data-sort="name" class="text-left">Agente de Venta <i class="fa-solid fa-sort"></i></th>
+                                    <th data-sort="sales_2026_ytd">Ventas 2026 YTD <i class="fa-solid fa-sort"></i></th>
+                                    <th data-sort="budget_2026_ytd">Ppto 2026 YTD <i class="fa-solid fa-sort"></i></th>
+                                    <th data-sort="deviation_pct">Desviación % <i class="fa-solid fa-sort"></i></th>
+                                    <th data-sort="sales_2025_ytd">Ventas 2025 YTD <i class="fa-solid fa-sort"></i></th>
+                                    <th data-sort="growth_pct">Crec. YoY % <i class="fa-solid fa-sort"></i></th>
+                                    <th data-sort="profit_2026_ytd">Beneficio YTD <i class="fa-solid fa-sort"></i></th>
+                                    <th data-sort="margin_pct">Margen % <i class="fa-solid fa-sort"></i></th>
+                                    <th class="actions-col">Acción</th>
+                                </tr>
+                            </thead>
+                            <tbody id="ranking-table-body">
+                                <!-- JS populated -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 3: AGENT DETAIL VIEW -->
+            <section id="tab-agente-detalle" class="tab-content">
+                <div class="selector-card">
+                    <label for="agent-selector"><i class="fa-solid fa-user-tie"></i> Seleccionar Agente Comercial:</label>
+                    <select id="agent-selector" class="premium-select">
+                        <!-- JS populated -->
+                    </select>
+                </div>
+                
+                <div class="agent-profile-grid" id="agent-profile-details" style="display: none;">
+                    <!-- Left column: Profile card & Monthly Chart -->
+                    <div class="profile-left-col">
+                        <div class="agent-summary-card">
+                            <div class="card-bg-decoration"></div>
+                            <div class="agent-avatar">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                            <h2 id="det-agent-name">Nombre Agente</h2>
+                            <span class="badge" id="det-agent-status">Cumpliendo Objetivo</span>
+                            
+                            <div class="mini-kpi-row">
+                                <div class="mini-kpi">
+                                    <span class="lbl">Venta YTD</span>
+                                    <span class="val" id="det-sales-ytd">0 €</span>
+                                </div>
+                                <div class="mini-kpi">
+                                    <span class="lbl">Eficiencia</span>
+                                    <span class="val" id="det-efficiency-pct">0%</span>
+                                </div>
+                                <div class="mini-kpi">
+                                    <span class="lbl">Margen YTD</span>
+                                    <span class="val" id="det-margin-pct">0%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="chart-container card-height-adjust">
+                            <div class="chart-header">
+                                <h3>Evolución Mensual del Agente</h3>
+                            </div>
+                            <div class="chart-wrapper min-height-chart">
+                                <canvas id="agentMonthlyChart"></canvas>
+                            </div>
+                        </div>
+
+                        <div class="detail-kpis-grid">
+                            <div class="detail-kpi-item">
+                                <span class="det-lbl">Presupuesto Anual 2026</span>
+                                <span class="det-val" id="det-annual-budget">0.00 €</span>
+                                <span class="det-desc">Meta total del año fiscal</span>
+                            </div>
+                            <div class="detail-kpi-item">
+                                <span class="det-lbl">Presupuesto YTD Acumulado</span>
+                                <span class="det-val" id="det-ytd-budget">0.00 €</span>
+                                <span class="det-desc" id="det-ytd-budget-desc">Meta del periodo real</span>
+                            </div>
+                            <div class="detail-kpi-item">
+                                <span class="det-lbl">Venta Acumulada 2026 (YTD)</span>
+                                <span class="det-val" id="det-sales-2026-ytd">0.00 €</span>
+                                <span class="det-desc" id="det-sales-2026-ytd-desc">Venta real del periodo</span>
+                            </div>
+                            <div class="detail-kpi-item">
+                                <span class="det-lbl">Ventas Año Anterior YTD</span>
+                                <span class="det-val" id="det-prev-ytd-sales">0.00 €</span>
+                                <span class="det-desc" id="det-prev-ytd-growth">Crecimiento YoY: 0.0%</span>
+                            </div>
+                            <div class="detail-kpi-item">
+                                <span class="det-lbl">Beneficio Neto YTD</span>
+                                <span class="det-val" id="det-ytd-profit">0.00 €</span>
+                                <span class="det-desc" id="det-ytd-profit-desc">Rentabilidad</span>
+                            </div>
+                        </div>
+
+                        <div class="list-card" style="margin-top: 24px;">
+                            <div class="list-card-header">
+                                <h3><i class="fa-solid fa-calendar-days text-gold"></i> Desglose Mensual Detallado de Ventas</h3>
+                                <p class="subtitle text-muted">Evolución mes a mes del agente frente a presupuestos y año anterior</p>
+                            </div>
+                            <div class="table-wrapper">
+                                <table class="premium-table" id="det-monthly-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Mes</th>
+                                            <th>Venta Histórica 2025</th>
+                                            <th>Presupuesto 2026</th>
+                                            <th>Venta Real 2026</th>
+                                            <th>Desviación Ppto</th>
+                                            <th>Crecimiento YoY</th>
+                                            <th>Beneficio Neto 2026</th>
+                                            <th>Margen Real</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="det-monthly-table-body">
+                                        <!-- JS populated -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right column: Metrics & Top Clients -->
+                    <div class="profile-right-col">
+                        <!-- Client list from budget + ventas reales -->
+                        <div class="list-card flex-grow-list">
+                            <div class="list-card-header">
+                                <h3><i class="fa-solid fa-address-book"></i> Cartera de Clientes Integrada</h3>
+                                <span class="subtitle">Presupuesto 2026, histórico 2025 y ventas reales 2026 por cliente</span>
+                            </div>
+                            
+                            <div class="table-actions" style="margin-bottom: 4px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+                                <div class="search-box" style="width: 250px;">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <input type="text" id="det-client-search" placeholder="Buscar cliente...">
+                                </div>
+                                <div style="font-size: 0.8rem; color: var(--text-muted);">
+                                    Total: <span id="det-client-count" class="bold text-gold" style="font-size: 0.9rem;">0</span> clientes
+                                </div>
+                            </div>
+
+                            <div class="table-wrapper-small" style="max-height: 240px;">
+                                <table class="premium-table compact-table">
+                                    <thead>
+                                        <tr>
+                                            <th>CLI</th>
+                                            <th class="text-left">Razón Social</th>
+                                            <th>Venta 2025 (Histórico)</th>
+                                            <th>Presupuesto 2026</th>
+                                            <th>Venta Real 2026</th>
+                                            <th>Beneficio 2026</th>
+                                            <th>Margen %</th>
+                                            <th>Desv. Ppto</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="det-clients-table-body">
+                                        <!-- JS populated -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="list-card">
+                            <div class="list-card-header">
+                                <h3><i class="fa-solid fa-chart-column"></i> Desglose Mensual por Cliente</h3>
+                                <span class="subtitle">Venta 2026, diferencia absoluta y variacion porcentual vs 2025, presupuesto, beneficio y margen por mes del cliente seleccionado</span>
+                            </div>
+
+                            <div class="table-actions" style="margin-bottom: 4px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+                                <div class="filter-group" style="gap: 8px;">
+                                    <label for="det-client-monthly-selector">Cliente:</label>
+                                    <select id="det-client-monthly-selector" class="premium-select" style="min-width: 280px;"></select>
+                                </div>
+                                <div class="search-box" style="width: 250px;">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <input type="text" id="det-client-monthly-search" placeholder="Buscar cliente mensual...">
+                                </div>
+                            </div>
+
+                            <div class="table-wrapper-small" style="max-height: 230px;">
+                                <table class="premium-table compact-table" id="det-client-monthly-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Mes</th>
+                                            <th>Venta 2025</th>
+                                            <th>Ppto 2026</th>
+                                            <th>VENTA 2026</th>
+                                            <th>Dif. vs 2025</th>
+                                            <th>% YoY vs 2025</th>
+                                            <th>Beneficio 2026</th>
+                                            <th>Margen %</th>
+                                            <th>Desv. Ppto</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="det-client-monthly-table-body">
+                                        <!-- JS populated -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Inject compiled data.js -->
+    <script src="data.js?v=20260528-7"></script>
+    <!-- Inject dashboard application controller app.js -->
+    <script src="app.js?v=20260528-7"></script>
+</body>
+</html>
