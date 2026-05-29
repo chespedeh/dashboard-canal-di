@@ -34,19 +34,30 @@ function Resolve-DataDir {
 }
 
 function Get-SourceState($dataDir) {
-    $targets = @("PRESUPUESTOS.xlsx", "VENTAS_2025.xlsx", "VENTAS_2026.xlsx")
     $state = @{}
+    $budgetFile = Get-ChildItem -Path $dataDir -File | Where-Object {
+        $_.Name.ToLower() -in @('presupuestos.xlsx', 'presupuestos ventas.xlsx')
+    } | Select-Object -First 1
+
+    if (-not $budgetFile) {
+        throw "No se encontro archivo de presupuestos en $dataDir"
+    }
+
+    $salesFiles = Get-ChildItem -Path $dataDir -File | Where-Object {
+        $_.Name -match '^VENTAS_\d{4}\.xlsx$'
+    } | Sort-Object Name
+
+    if ($salesFiles.Count -lt 2) {
+        throw "Se necesitan al menos dos archivos VENTAS_YYYY.xlsx en $dataDir"
+    }
+
+    $targets = @($budgetFile) + $salesFiles
 
     foreach ($target in $targets) {
-        $file = Get-ChildItem -Path $dataDir -File | Where-Object { $_.Name.ToLower() -eq $target.ToLower() } | Select-Object -First 1
-        if (-not $file) {
-            throw "No se encontro $target en $dataDir"
-        }
-
-        $state[$target] = [ordered]@{
-            path = $file.FullName
-            lastWriteUtc = $file.LastWriteTimeUtc.ToString("o")
-            length = $file.Length
+        $state[$target.Name] = [ordered]@{
+            path = $target.FullName
+            lastWriteUtc = $target.LastWriteTimeUtc.ToString("o")
+            length = $target.Length
         }
     }
 

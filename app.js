@@ -30,6 +30,41 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const toNumber = (val) => parseFloat(val || 0);
     const monthsKeys = state.data.months || ['FEB', 'MAR', 'ABR', 'MAY', 'JUN', 'JUL', 'AGO', 'SEP', 'OCT', 'NOV', 'DIC', 'ENE'];
+    const yearLabels = {
+        previous: String(state.data.year_labels?.previous || (new Date().getFullYear() - 1)),
+        current: String(state.data.year_labels?.current || new Date().getFullYear()),
+        budget: String(state.data.year_labels?.budget || state.data.year_labels?.current || new Date().getFullYear()),
+        next: String(state.data.year_labels?.next || (new Date().getFullYear() + 1))
+    };
+
+    const applyYearTemplate = (template = '') => String(template)
+        .replace(/\{previous\}/g, yearLabels.previous)
+        .replace(/\{current\}/g, yearLabels.current)
+        .replace(/\{budget\}/g, yearLabels.budget)
+        .replace(/\{next\}/g, yearLabels.next);
+
+    const setTemplateText = (el, text) => {
+        const directTextNode = [...el.childNodes].find(node => node.nodeType === Node.TEXT_NODE && node.textContent.trim().length > 0);
+
+        if (directTextNode) {
+            directTextNode.textContent = `${text} `;
+            return;
+        }
+
+        if (el.children.length === 0) {
+            el.textContent = text;
+            return;
+        }
+
+        el.insertBefore(document.createTextNode(`${text} `), el.firstChild);
+    };
+
+    const applyDynamicYearLabels = () => {
+        document.querySelectorAll('[data-year-template]').forEach(el => {
+            const template = el.getAttribute('data-year-template');
+            if (template) setTemplateText(el, applyYearTemplate(template));
+        });
+    };
 
     const buildMonthlyMap = (sourceMap = {}) => {
         const result = {};
@@ -484,9 +519,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (legendEl) {
             legendEl.innerHTML = `
-                <span class="leg-item"><span class="dot prev"></span>Ventas 2025</span>
-                <span class="leg-item"><span class="dot budget"></span>Ppto 2026</span>
-                <span class="leg-item"><span class="dot real"></span>Ventas 2026</span>
+                <span class="leg-item"><span class="dot prev"></span>Ventas ${yearLabels.previous}</span>
+                <span class="leg-item"><span class="dot budget"></span>Ppto ${yearLabels.budget}</span>
+                <span class="leg-item"><span class="dot real"></span>Ventas ${yearLabels.current}</span>
             `;
         }
         if (subtitleEl) {
@@ -499,14 +534,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 labels: monthsLabel,
                 datasets: [
                     {
-                        label: 'Ventas 2026',
+                        label: `Ventas ${yearLabels.current}`,
                         data: dataReal2026,
                         backgroundColor: 'hsl(142, 70%, 45%)',
                         borderRadius: 6,
                         order: 1
                     },
                     {
-                        label: 'Presupuesto 2026',
+                        label: `Presupuesto ${yearLabels.budget}`,
                         data: dataBudget,
                         type: 'line',
                         borderColor: 'hsl(217, 90%, 60%)',
@@ -518,7 +553,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         order: 0
                     },
                     {
-                        label: 'Ventas Históricas 2025',
+                        label: `Ventas Históricas ${yearLabels.previous}`,
                         data: data2025,
                         type: 'line',
                         borderColor: 'hsla(220, 16%, 66%, 0.4)',
@@ -913,7 +948,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('det-ytd-budget').innerText = formatCurrency(agent.budget_2026_ytd);
         const ytdBudgetDesc = document.getElementById('det-ytd-budget-desc');
         if (ytdBudgetDesc) {
-            ytdBudgetDesc.innerText = `Meta para ${getYtdPeriodLabel()} ${new Date().getFullYear()}`;
+            ytdBudgetDesc.innerText = `Meta para ${getYtdPeriodLabel()} ${yearLabels.current}`;
         }
 
         const sales2026YtdEl = document.getElementById('det-sales-2026-ytd');
@@ -922,7 +957,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         const sales2026YtdDesc = document.getElementById('det-sales-2026-ytd-desc');
         if (sales2026YtdDesc) {
-            sales2026YtdDesc.innerText = `Real ${getYtdPeriodLabel()} ${new Date().getFullYear()}`;
+            sales2026YtdDesc.innerText = `Real ${getYtdPeriodLabel()} ${yearLabels.current}`;
         }
 
         document.getElementById('det-prev-ytd-sales').innerText = formatCurrency(agent.sales_2025_ytd);
@@ -1161,14 +1196,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 labels: monthsLabel,
                 datasets: [
                     {
-                        label: 'Ventas 2026',
+                        label: `Ventas ${yearLabels.current}`,
                         data: dataReal2026,
                         backgroundColor: agent.deviation_pct >= 0 ? 'hsl(142, 70%, 45%)' : 'hsl(352, 80%, 55%)',
                         borderRadius: 4,
                         order: 1
                     },
                     {
-                        label: 'Ppto 2026',
+                        label: `Ppto ${yearLabels.budget}`,
                         data: dataBudget,
                         type: 'line',
                         borderColor: 'hsl(217, 90%, 60%)',
@@ -1179,7 +1214,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         order: 0
                     },
                     {
-                        label: 'Histórico 2025',
+                        label: `Histórico ${yearLabels.previous}`,
                         data: data2025,
                         type: 'line',
                         borderColor: 'hsla(220, 16%, 66%, 0.3)',
@@ -1216,6 +1251,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const init = () => {
         // Set last sync date
         document.getElementById('sync-date').innerText = state.data.last_updated;
+        applyDynamicYearLabels();
 
         const periodLabel = state.data.period_label || getYtdPeriodLabel();
         const periodLabelEl = document.getElementById('period-label');

@@ -10,6 +10,9 @@ Coloca los archivos en la carpeta `datos` (o `Datos`):
 Notas:
 
 - `VENTAS_2025.xlsx` y `VENTAS_2026.xlsx` se tratan como ventas diarias.
+- Cada archivo de ventas se interpreta por ejercicio fiscal Feb-Ene: incluye Feb-Dic del año del archivo y Ene del año siguiente.
+- El generador detecta automaticamente los dos archivos `VENTAS_YYYY.xlsx` mas recientes y consecutivos para montar el ejercicio anterior y el actual.
+- El archivo de presupuesto mantiene nombre fijo (`PRESUPUESTOS.xlsx`): cada cambio de ejercicio se sustituye por la version del nuevo ano, respetando la misma estructura de columnas.
 - La venta real de 2026 se calcula con la columna `IMPORTE NETO`.
 - La ultima columna sobrante de los Excel de ventas se ignora automaticamente.
 

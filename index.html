@@ -82,7 +82,7 @@
                 <div class="kpi-grid">
                     <div class="kpi-card gradient-blue">
                         <div class="kpi-header">
-                            <span class="kpi-label">Ventas Reales 2026 (YTD)</span>
+                            <span class="kpi-label" data-year-template="Ventas Reales {current} (YTD)">Ventas Reales 2026 (YTD)</span>
                             <div class="kpi-icon"><i class="fa-solid fa-wallet"></i></div>
                         </div>
                         <div class="kpi-value" id="kpi-sales-real">0.00 €</div>
@@ -95,7 +95,7 @@
                     
                     <div class="kpi-card gradient-purple">
                         <div class="kpi-header">
-                            <span class="kpi-label">Presupuesto 2026 (YTD)</span>
+                            <span class="kpi-label" data-year-template="Presupuesto {budget} (YTD)">Presupuesto 2026 (YTD)</span>
                             <div class="kpi-icon"><i class="fa-solid fa-bullseye"></i></div>
                         </div>
                         <div class="kpi-value" id="kpi-budget-ytd">0.00 €</div>
@@ -109,7 +109,7 @@
                     
                     <div class="kpi-card gradient-green" id="kpi-growth-card">
                         <div class="kpi-header">
-                            <span class="kpi-label">Ventas Año Anterior (YTD 2025)</span>
+                            <span class="kpi-label" data-year-template="Ventas Año Anterior (YTD {previous})">Ventas Año Anterior (YTD 2025)</span>
                             <div class="kpi-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
                         </div>
                         <div class="kpi-value" id="kpi-sales-prev">0.00 €</div>
@@ -123,7 +123,7 @@
                     
                     <div class="kpi-card gradient-gold">
                         <div class="kpi-header">
-                            <span class="kpi-label">Beneficio Real 2026 (YTD)</span>
+                            <span class="kpi-label" data-year-template="Beneficio Real {current} (YTD)">Beneficio Real 2026 (YTD)</span>
                             <div class="kpi-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
                         </div>
                         <div class="kpi-value" id="kpi-profit-ytd">0.00 €</div>
@@ -152,9 +152,9 @@
                                 </select>
                             </div>
                             <div class="chart-legend-custom" id="monthly-chart-legend">
-                                <span class="leg-item"><span class="dot prev"></span>Ventas 2025</span>
-                                <span class="leg-item"><span class="dot budget"></span>Ppto 2026</span>
-                                <span class="leg-item"><span class="dot real"></span>Ventas 2026</span>
+                                <span class="leg-item" data-year-template="Ventas {previous}"><span class="dot prev"></span>Ventas 2025</span>
+                                <span class="leg-item" data-year-template="Ppto {budget}"><span class="dot budget"></span>Ppto 2026</span>
+                                <span class="leg-item" data-year-template="Ventas {current}"><span class="dot real"></span>Ventas 2026</span>
                             </div>
                         </div>
                         <div class="chart-wrapper">
@@ -264,12 +264,12 @@
                                 <thead>
                                     <tr>
                                         <th>Mes</th>
-                                        <th>Ventas 2025 (Histórico)</th>
-                                        <th>Presupuesto 2026</th>
-                                        <th>Ventas Reales 2026</th>
+                                        <th data-year-template="Ventas {previous} (Histórico)">Ventas 2025 (Histórico)</th>
+                                        <th data-year-template="Presupuesto {budget}">Presupuesto 2026</th>
+                                        <th data-year-template="Ventas Reales {current}">Ventas Reales 2026</th>
                                         <th>Desviación Ppto</th>
                                         <th>Crecimiento YoY</th>
-                                        <th>Beneficio Neto 2026</th>
+                                        <th data-year-template="Beneficio Neto {current}">Beneficio Neto 2026</th>
                                         <th>Margen Real</th>
                                     </tr>
                                 </thead>
@@ -308,10 +308,10 @@
                                 <tr>
                                     <th data-sort="id">ID <i class="fa-solid fa-sort"></i></th>
                                     <th data-sort="name" class="text-left">Agente de Venta <i class="fa-solid fa-sort"></i></th>
-                                    <th data-sort="sales_2026_ytd">Ventas 2026 YTD <i class="fa-solid fa-sort"></i></th>
-                                    <th data-sort="budget_2026_ytd">Ppto 2026 YTD <i class="fa-solid fa-sort"></i></th>
+                                    <th data-sort="sales_2026_ytd" data-year-template="Ventas {current} YTD">Ventas 2026 YTD <i class="fa-solid fa-sort"></i></th>
+                                    <th data-sort="budget_2026_ytd" data-year-template="Ppto {budget} YTD">Ppto 2026 YTD <i class="fa-solid fa-sort"></i></th>
                                     <th data-sort="deviation_pct">Desviación % <i class="fa-solid fa-sort"></i></th>
-                                    <th data-sort="sales_2025_ytd">Ventas 2025 YTD <i class="fa-solid fa-sort"></i></th>
+                                    <th data-sort="sales_2025_ytd" data-year-template="Ventas {previous} YTD">Ventas 2025 YTD <i class="fa-solid fa-sort"></i></th>
                                     <th data-sort="growth_pct">Crec. YoY % <i class="fa-solid fa-sort"></i></th>
                                     <th data-sort="profit_2026_ytd">Beneficio YTD <i class="fa-solid fa-sort"></i></th>
                                     <th data-sort="margin_pct">Margen % <i class="fa-solid fa-sort"></i></th>
@@ -373,7 +373,7 @@
 
                         <div class="detail-kpis-grid">
                             <div class="detail-kpi-item">
-                                <span class="det-lbl">Presupuesto Anual 2026</span>
+                                <span class="det-lbl" data-year-template="Presupuesto Anual {budget}">Presupuesto Anual 2026</span>
                                 <span class="det-val" id="det-annual-budget">0.00 €</span>
                                 <span class="det-desc">Meta total del año fiscal</span>
                             </div>
@@ -383,7 +383,7 @@
                                 <span class="det-desc" id="det-ytd-budget-desc">Meta del periodo real</span>
                             </div>
                             <div class="detail-kpi-item">
-                                <span class="det-lbl">Venta Acumulada 2026 (YTD)</span>
+                                <span class="det-lbl" data-year-template="Venta Acumulada {current} (YTD)">Venta Acumulada 2026 (YTD)</span>
                                 <span class="det-val" id="det-sales-2026-ytd">0.00 €</span>
                                 <span class="det-desc" id="det-sales-2026-ytd-desc">Venta real del periodo</span>
                             </div>
@@ -409,12 +409,12 @@
                                     <thead>
                                         <tr>
                                             <th>Mes</th>
-                                            <th>Venta Histórica 2025</th>
-                                            <th>Presupuesto 2026</th>
-                                            <th>Venta Real 2026</th>
+                                            <th data-year-template="Venta Histórica {previous}">Venta Histórica 2025</th>
+                                            <th data-year-template="Presupuesto {budget}">Presupuesto 2026</th>
+                                            <th data-year-template="Venta Real {current}">Venta Real 2026</th>
                                             <th>Desviación Ppto</th>
                                             <th>Crecimiento YoY</th>
-                                            <th>Beneficio Neto 2026</th>
+                                            <th data-year-template="Beneficio Neto {current}">Beneficio Neto 2026</th>
                                             <th>Margen Real</th>
                                         </tr>
                                     </thead>
@@ -432,7 +432,7 @@
                         <div class="list-card flex-grow-list">
                             <div class="list-card-header">
                                 <h3><i class="fa-solid fa-address-book"></i> Cartera de Clientes Integrada</h3>
-                                <span class="subtitle">Presupuesto 2026, histórico 2025 y ventas reales 2026 por cliente</span>
+                                <span class="subtitle" data-year-template="Presupuesto {budget}, histórico {previous} y ventas reales {current} por cliente">Presupuesto 2026, histórico 2025 y ventas reales 2026 por cliente</span>
                             </div>
                             
                             <div class="table-actions" style="margin-bottom: 4px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
@@ -451,10 +451,10 @@
                                         <tr>
                                             <th>CLI</th>
                                             <th class="text-left">Razón Social</th>
-                                            <th>Venta 2025 (Histórico)</th>
-                                            <th>Presupuesto 2026</th>
-                                            <th>Venta Real 2026</th>
-                                            <th>Beneficio 2026</th>
+                                            <th data-year-template="Venta {previous} (Histórico)">Venta 2025 (Histórico)</th>
+                                            <th data-year-template="Presupuesto {budget}">Presupuesto 2026</th>
+                                            <th data-year-template="Venta Real {current}">Venta Real 2026</th>
+                                            <th data-year-template="Beneficio {current}">Beneficio 2026</th>
                                             <th>Margen %</th>
                                             <th>Desv. Ppto</th>
                                         </tr>
@@ -469,7 +469,7 @@
                         <div class="list-card">
                             <div class="list-card-header">
                                 <h3><i class="fa-solid fa-chart-column"></i> Desglose Mensual por Cliente</h3>
-                                <span class="subtitle">Venta 2026, diferencia absoluta y variacion porcentual vs 2025, presupuesto, beneficio y margen por mes del cliente seleccionado</span>
+                                <span class="subtitle" data-year-template="Venta {current}, diferencia absoluta y variacion porcentual vs {previous}, presupuesto, beneficio y margen por mes del cliente seleccionado">Venta 2026, diferencia absoluta y variacion porcentual vs 2025, presupuesto, beneficio y margen por mes del cliente seleccionado</span>
                             </div>
 
                             <div class="table-actions" style="margin-bottom: 4px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
@@ -488,12 +488,12 @@
                                     <thead>
                                         <tr>
                                             <th>Mes</th>
-                                            <th>Venta 2025</th>
-                                            <th>Ppto 2026</th>
-                                            <th>VENTA 2026</th>
-                                            <th>Dif. vs 2025</th>
-                                            <th>% YoY vs 2025</th>
-                                            <th>Beneficio 2026</th>
+                                            <th data-year-template="Venta {previous}">Venta 2025</th>
+                                            <th data-year-template="Ppto {budget}">Ppto 2026</th>
+                                            <th data-year-template="VENTA {current}">VENTA 2026</th>
+                                            <th data-year-template="Dif. vs {previous}">Dif. vs 2025</th>
+                                            <th data-year-template="% YoY vs {previous}">% YoY vs 2025</th>
+                                            <th data-year-template="Beneficio {current}">Beneficio 2026</th>
                                             <th>Margen %</th>
                                             <th>Desv. Ppto</th>
                                         </tr>

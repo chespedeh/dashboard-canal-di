@@ -24,6 +24,12 @@ const DASHBOARD_DATA = {
     "ENE"
   ],
   "fiscal_period": "01/02/2026 - 31/01/2027",
+  "year_labels": {
+    "previous": 2025,
+    "current": 2026,
+    "budget": 2026,
+    "next": 2027
+  },
   "global_totals": {
     "sales_2025_monthly": {
       "FEB": 2065692.93,
@@ -37,7 +43,7 @@ const DASHBOARD_DATA = {
       "OCT": 2540202.790000001,
       "NOV": 2255761.1800000006,
       "DIC": 2639515.880000001,
-      "ENE": 0.0
+      "ENE": 2562471.109999999
     },
     "budget_2026_monthly": {
       "FEB": 2127945.0,
@@ -81,7 +87,7 @@ const DASHBOARD_DATA = {
       "DIC": 0.0,
       "ENE": 0.0
     },
-    "total_sales_2025": 26113643.259999998,
+    "total_sales_2025": 28676114.37,
     "total_budget_2026": 28524475.0,
     "sales_2025_ytd": 8814462.459999999,
     "budget_2026_ytd": 9081055.0,
@@ -117,7 +123,7 @@ const DASHBOARD_DATA = {
         "OCT": 457186.67000000016,
         "NOV": 378722.65999999986,
         "DIC": 480166.8600000003,
-        "ENE": 0.0
+        "ENE": 543915.25
       },
       "budget_2026_monthly": {
         "FEB": 375150.0,
@@ -161,7 +167,7 @@ const DASHBOARD_DATA = {
         "DIC": 0.0,
         "ENE": 0.0
       },
-      "total_sales_2025": 4345757.36,
+      "total_sales_2025": 4889672.61,
       "total_budget_2026": 4763865.0,
       "sales_2025_ytd": 1530989.5200000005,
       "budget_2026_ytd": 1560560.0,
@@ -179,7 +185,7 @@ const DASHBOARD_DATA = {
         {
           "id": 511,
           "name": "EMBUTID.Y JAMONES OGIJARES,SLL",
-          "sales_2025": 7355.59,
+          "sales_2025": 8178.1900000000005,
           "budget_2026": 8075.0,
           "sales_2026": 1311.29,
           "profit_2026": -6.91,
@@ -195,7 +201,7 @@ const DASHBOARD_DATA = {
             "OCT": 887.3000000000002,
             "NOV": 671.6700000000001,
             "DIC": 639.99,
-            "ENE": 0.0
+            "ENE": 822.5999999999999
           },
           "budget_2026_monthly": {
             "FEB": 550.0,
@@ -244,13 +250,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1311.29,
           "profit_2026_ytd": -6.91,
           "deviation_pct": -83.7611145510836,
-          "growth_pct": -82.172878042414,
+          "growth_pct": -83.96601203933878,
           "margin_pct": -0.5269619992526443
         },
         {
           "id": 725,
           "name": "SUMINISTROS VACAS, S.L.",
-          "sales_2025": 103110.73999999999,
+          "sales_2025": 110391.93999999999,
           "budget_2026": 144000.0,
           "sales_2026": 44611.02,
           "profit_2026": -901.5800000000003,
@@ -266,7 +272,7 @@ const DASHBOARD_DATA = {
             "OCT": 18389.16,
             "NOV": 6016.15,
             "DIC": 8827.919999999998,
-            "ENE": 0.0
+            "ENE": 7281.199999999999
           },
           "budget_2026_monthly": {
             "FEB": 19000.0,
@@ -315,13 +321,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 44611.02,
           "profit_2026_ytd": -901.5800000000003,
           "deviation_pct": -69.02012500000001,
-          "growth_pct": -56.73484643791713,
+          "growth_pct": -59.5885170602129,
           "margin_pct": -2.020980466261476
         },
         {
           "id": 2333,
           "name": "SUAREZ GOMEZ DOLORES CARMEN",
-          "sales_2025": 13064.13,
+          "sales_2025": 14435.77,
           "budget_2026": 18000.0,
           "sales_2026": 5504.01,
           "profit_2026": -134.1,
@@ -337,7 +343,7 @@ const DASHBOARD_DATA = {
             "OCT": 1334.4299999999998,
             "NOV": 1762.89,
             "DIC": 1531.6999999999998,
-            "ENE": 0.0
+            "ENE": 1371.6399999999999
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -386,13 +392,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 5504.01,
           "profit_2026_ytd": -134.1,
           "deviation_pct": -69.42216666666667,
-          "growth_pct": -57.869295544364604,
+          "growth_pct": -61.87241830536231,
           "margin_pct": -2.436405457112178
         },
         {
           "id": 2360,
           "name": "PEREZ VARGAS, ROSA MARIA",
-          "sales_2025": 30556.74,
+          "sales_2025": 33449.85,
           "budget_2026": 32760.0,
           "sales_2026": 13490.42,
           "profit_2026": -279.12,
@@ -408,7 +414,7 @@ const DASHBOARD_DATA = {
             "OCT": 3760.0700000000006,
             "NOV": 3148.1499999999996,
             "DIC": 2152.9900000000007,
-            "ENE": 0.0
+            "ENE": 2893.11
           },
           "budget_2026_monthly": {
             "FEB": 2700.0,
@@ -457,13 +463,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 13490.42,
           "profit_2026_ytd": -279.12,
           "deviation_pct": -58.820451770451776,
-          "growth_pct": -55.85124591170393,
+          "growth_pct": -59.669714512920095,
           "margin_pct": -2.0690237961457094
         },
         {
           "id": 4427,
           "name": "DISTRIBUC. PLATA GRANADA S.L.",
-          "sales_2025": 137960.72,
+          "sales_2025": 145484.14,
           "budget_2026": 156000.0,
           "sales_2026": 58450.1,
           "profit_2026": -8808.49,
@@ -479,7 +485,7 @@ const DASHBOARD_DATA = {
             "OCT": 9414.7,
             "NOV": 29505.46,
             "DIC": 14633.44,
-            "ENE": 0.0
+            "ENE": 7523.42
           },
           "budget_2026_monthly": {
             "FEB": 6000.0,
@@ -528,13 +534,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 58450.1,
           "profit_2026_ytd": -8808.49,
           "deviation_pct": -62.53198717948718,
-          "growth_pct": -57.63279576969445,
+          "growth_pct": -59.8237306142099,
           "margin_pct": -15.07010253190328
         },
         {
           "id": 4526,
           "name": "MONTORO LOPEZ, BARBARA",
-          "sales_2025": 32124.28,
+          "sales_2025": 35914.9,
           "budget_2026": 37430.0,
           "sales_2026": 9457.93,
           "profit_2026": 51.13999999999999,
@@ -550,7 +556,7 @@ const DASHBOARD_DATA = {
             "OCT": 2618.4300000000003,
             "NOV": 2772.48,
             "DIC": 2787.18,
-            "ENE": 0.0
+            "ENE": 3790.62
           },
           "budget_2026_monthly": {
             "FEB": 2300.0,
@@ -599,13 +605,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 9457.93,
           "profit_2026_ytd": 51.13999999999999,
           "deviation_pct": -74.73168581351857,
-          "growth_pct": -70.55831290226581,
+          "growth_pct": -73.66572091249036,
           "margin_pct": 0.5407102822710677
         },
         {
           "id": 6371,
           "name": "CASH DABEMAR S.L.",
-          "sales_2025": 24612.6,
+          "sales_2025": 33055.92,
           "budget_2026": 18000.0,
           "sales_2026": 60990.03,
           "profit_2026": -14361.78,
@@ -621,7 +627,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 2865.6,
             "DIC": 12456.84,
-            "ENE": 0.0
+            "ENE": 8443.32
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -670,7 +676,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 60990.03,
           "profit_2026_ytd": -14361.78,
           "deviation_pct": 238.83350000000002,
-          "growth_pct": 147.80002925330928,
+          "growth_pct": 84.50561956829519,
           "margin_pct": -23.54775034542531
         },
         {
@@ -747,7 +753,7 @@ const DASHBOARD_DATA = {
         {
           "id": 7400,
           "name": "TANDY ILLORA CARROS, S.L.U.",
-          "sales_2025": 13343.4,
+          "sales_2025": 13443.11,
           "budget_2026": 14000.0,
           "sales_2026": 0.0,
           "profit_2026": 0.0,
@@ -763,7 +769,7 @@ const DASHBOARD_DATA = {
             "OCT": 1233.92,
             "NOV": 981.6999999999999,
             "DIC": 1246.24,
-            "ENE": 0.0
+            "ENE": 99.71000000000001
           },
           "budget_2026_monthly": {
             "FEB": 1300.0,
@@ -818,7 +824,7 @@ const DASHBOARD_DATA = {
         {
           "id": 7466,
           "name": "DORNAJO, C.B. (PALET)",
-          "sales_2025": 35150.12,
+          "sales_2025": 42787.840000000004,
           "budget_2026": 38000.0,
           "sales_2026": 18168.920000000002,
           "profit_2026": -1894.43,
@@ -834,7 +840,7 @@ const DASHBOARD_DATA = {
             "OCT": 674.82,
             "NOV": 4841.85,
             "DIC": 9231.08,
-            "ENE": 0.0
+            "ENE": 7637.72
           },
           "budget_2026_monthly": {
             "FEB": 12000.0,
@@ -883,13 +889,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 18168.920000000002,
           "profit_2026_ytd": -1894.43,
           "deviation_pct": -52.18705263157894,
-          "growth_pct": -48.310503634126995,
+          "growth_pct": -57.53718813569463,
           "margin_pct": -10.426761744781746
         },
         {
           "id": 18373,
           "name": "EL LAGUERO LUPES, S.L.",
-          "sales_2025": 94774.11,
+          "sales_2025": 99506.12,
           "budget_2026": 104000.0,
           "sales_2026": 27848.64,
           "profit_2026": -1940.95,
@@ -905,7 +911,7 @@ const DASHBOARD_DATA = {
             "OCT": 11240.73,
             "NOV": 8191.889999999999,
             "DIC": 6376.659999999999,
-            "ENE": 0.0
+            "ENE": 4732.01
           },
           "budget_2026_monthly": {
             "FEB": 8000.0,
@@ -954,13 +960,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 27848.64,
           "profit_2026_ytd": -1940.95,
           "deviation_pct": -73.22246153846153,
-          "growth_pct": -70.6157725986559,
+          "growth_pct": -72.01313848836635,
           "margin_pct": -6.9696401691429095
         },
         {
           "id": 18392,
           "name": "DELGADO RAMOS ANTONIA",
-          "sales_2025": 26734.41,
+          "sales_2025": 29137.510000000002,
           "budget_2026": 27600.0,
           "sales_2026": 9827.029999999999,
           "profit_2026": -291.88,
@@ -976,7 +982,7 @@ const DASHBOARD_DATA = {
             "OCT": 2904.31,
             "NOV": 2785.11,
             "DIC": 2904.7700000000004,
-            "ENE": 0.0
+            "ENE": 2403.1000000000004
           },
           "budget_2026_monthly": {
             "FEB": 2300.0,
@@ -1025,13 +1031,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 9827.029999999999,
           "profit_2026_ytd": -291.88,
           "deviation_pct": -64.39481884057972,
-          "growth_pct": -63.24201656217586,
+          "growth_pct": -66.27361088850763,
           "margin_pct": -2.97017511903393
         },
         {
           "id": 18424,
           "name": "HERMOSO PEREZ JOSE CARLOS",
-          "sales_2025": 15217.46,
+          "sales_2025": 16583.48,
           "budget_2026": 18000.0,
           "sales_2026": 5383.17,
           "profit_2026": -229.27000000000004,
@@ -1047,7 +1053,7 @@ const DASHBOARD_DATA = {
             "OCT": 1451.75,
             "NOV": 1337.74,
             "DIC": 1618.73,
-            "ENE": 0.0
+            "ENE": 1366.02
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -1096,13 +1102,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 5383.17,
           "profit_2026_ytd": -229.27000000000004,
           "deviation_pct": -70.09349999999999,
-          "growth_pct": -64.62504254980792,
+          "growth_pct": -67.53896045944518,
           "margin_pct": -4.259014669794936
         },
         {
           "id": 18461,
           "name": "HNOS. MINGORANCE MARTIN S.L.",
-          "sales_2025": 6648.91,
+          "sales_2025": 7181.38,
           "budget_2026": 7000.0,
           "sales_2026": 2319.46,
           "profit_2026": 21.43,
@@ -1118,7 +1124,7 @@ const DASHBOARD_DATA = {
             "OCT": 549.92,
             "NOV": 458.66999999999996,
             "DIC": 449.64,
-            "ENE": 0.0
+            "ENE": 532.47
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -1167,13 +1173,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2319.46,
           "profit_2026_ytd": 21.43,
           "deviation_pct": -66.86485714285713,
-          "growth_pct": -65.11518429336537,
+          "growth_pct": -67.70175091695468,
           "margin_pct": 0.9239219473498141
         },
         {
           "id": 18468,
           "name": "HNOS. MINGORANCE MARTIN S.L.",
-          "sales_2025": 34355.03,
+          "sales_2025": 37184.49,
           "budget_2026": 39000.0,
           "sales_2026": 12366.21,
           "profit_2026": -332.89,
@@ -1189,7 +1195,7 @@ const DASHBOARD_DATA = {
             "OCT": 1501.1200000000001,
             "NOV": 4291.4,
             "DIC": 1518.02,
-            "ENE": 0.0
+            "ENE": 2829.46
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -1238,13 +1244,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 12366.21,
           "profit_2026_ytd": -332.89,
           "deviation_pct": -68.29176923076923,
-          "growth_pct": -64.00465957968892,
+          "growth_pct": -66.7436342410505,
           "margin_pct": -2.6919322896829345
         },
         {
           "id": 18626,
           "name": "EMBUTID.Y JAMONES OGIJARES SLL",
-          "sales_2025": 36890.86,
+          "sales_2025": 39722.2,
           "budget_2026": 40000.0,
           "sales_2026": 6918.68,
           "profit_2026": -220.31,
@@ -1260,7 +1266,7 @@ const DASHBOARD_DATA = {
             "OCT": 3337.59,
             "NOV": 3058.03,
             "DIC": 3957.5800000000004,
-            "ENE": 0.0
+            "ENE": 2831.34
           },
           "budget_2026_monthly": {
             "FEB": 3000.0,
@@ -1309,7 +1315,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 6918.68,
           "profit_2026_ytd": -220.31,
           "deviation_pct": -82.7033,
-          "growth_pct": -81.24554428929008,
+          "growth_pct": -82.5823343117954,
           "margin_pct": -3.1842779258471268
         },
         {
@@ -1386,7 +1392,7 @@ const DASHBOARD_DATA = {
         {
           "id": 19192,
           "name": "DIAZ HERNANDEZ, FRANCISCO JAVI",
-          "sales_2025": 15133.4,
+          "sales_2025": 17029.45,
           "budget_2026": 18000.0,
           "sales_2026": 4910.450000000001,
           "profit_2026": -538.53,
@@ -1402,7 +1408,7 @@ const DASHBOARD_DATA = {
             "OCT": 551.89,
             "NOV": 1067.77,
             "DIC": 908.25,
-            "ENE": 0.0
+            "ENE": 1896.05
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -1451,13 +1457,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 4910.450000000001,
           "profit_2026_ytd": -538.53,
           "deviation_pct": -72.71972222222222,
-          "growth_pct": -67.55223545270725,
+          "growth_pct": -71.1649524793813,
           "margin_pct": -10.967019315948638
         },
         {
           "id": 19199,
           "name": "DORNAJO, C.B. (CARROS)",
-          "sales_2025": 52294.25,
+          "sales_2025": 69840.53,
           "budget_2026": 54200.0,
           "sales_2026": 34024.7,
           "profit_2026": 1534.2400000000002,
@@ -1473,7 +1479,7 @@ const DASHBOARD_DATA = {
             "OCT": 2251.15,
             "NOV": 6075.349999999999,
             "DIC": 16467.24,
-            "ENE": 0.0
+            "ENE": 17546.28
           },
           "budget_2026_monthly": {
             "FEB": 14000.0,
@@ -1522,7 +1528,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 34024.7,
           "profit_2026_ytd": 1534.2400000000002,
           "deviation_pct": -37.223800738007384,
-          "growth_pct": -34.93605893573386,
+          "growth_pct": -51.28229983363529,
           "margin_pct": 4.509194790843124
         },
         {
@@ -1599,7 +1605,7 @@ const DASHBOARD_DATA = {
         {
           "id": 20025,
           "name": "MULTISERVICIOS CARIATIZ, S.L.",
-          "sales_2025": 14385.82,
+          "sales_2025": 15122.79,
           "budget_2026": 18000.0,
           "sales_2026": 4905.58,
           "profit_2026": 41.519999999999996,
@@ -1615,7 +1621,7 @@ const DASHBOARD_DATA = {
             "OCT": 2090.27,
             "NOV": 1308.09,
             "DIC": 897.39,
-            "ENE": 0.0
+            "ENE": 736.97
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -1664,13 +1670,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 4905.58,
           "profit_2026_ytd": 41.519999999999996,
           "deviation_pct": -72.74677777777778,
-          "growth_pct": -65.89989308916697,
+          "growth_pct": -67.56167347427294,
           "margin_pct": 0.8463830984307665
         },
         {
           "id": 20111,
           "name": "ALVAREZ LUCHA, S.L.",
-          "sales_2025": 105286.38,
+          "sales_2025": 113207.53,
           "budget_2026": 109000.0,
           "sales_2026": 23895.9,
           "profit_2026": -2309.8199999999997,
@@ -1686,7 +1692,7 @@ const DASHBOARD_DATA = {
             "OCT": 16566.25,
             "NOV": 4945.590000000001,
             "DIC": 8338.17,
-            "ENE": 0.0
+            "ENE": 7921.15
           },
           "budget_2026_monthly": {
             "FEB": 7000.0,
@@ -1735,13 +1741,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 23895.9,
           "profit_2026_ytd": -2309.8199999999997,
           "deviation_pct": -78.07715596330276,
-          "growth_pct": -77.30390198618284,
+          "growth_pct": -78.8919517986127,
           "margin_pct": -9.66617704292368
         },
         {
           "id": 20138,
           "name": "NEGRETE FERNANDEZ, ANA ISABEL",
-          "sales_2025": 6002.78,
+          "sales_2025": 6481.39,
           "budget_2026": 6800.0,
           "sales_2026": 2292.79,
           "profit_2026": -14.85,
@@ -1757,7 +1763,7 @@ const DASHBOARD_DATA = {
             "OCT": 479.9,
             "NOV": 569.4200000000001,
             "DIC": 585.04,
-            "ENE": 0.0
+            "ENE": 478.61
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -1806,13 +1812,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2292.79,
           "profit_2026_ytd": -14.85,
           "deviation_pct": -66.2825,
-          "growth_pct": -61.804530567503726,
+          "growth_pct": -64.62502642180151,
           "margin_pct": -0.6476825178058173
         },
         {
           "id": 22097,
           "name": "NEGRETE FERNANDEZ, ANA ISABEL",
-          "sales_2025": 47366.939999999995,
+          "sales_2025": 51374.82,
           "budget_2026": 54000.0,
           "sales_2026": 14733.439999999999,
           "profit_2026": -137.18,
@@ -1828,7 +1834,7 @@ const DASHBOARD_DATA = {
             "OCT": 3312.36,
             "NOV": 5188.9400000000005,
             "DIC": 4277.889999999999,
-            "ENE": 0.0
+            "ENE": 4007.88
           },
           "budget_2026_monthly": {
             "FEB": 4000.0,
@@ -1877,13 +1883,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 14733.439999999999,
           "profit_2026_ytd": -137.18,
           "deviation_pct": -72.71585185185184,
-          "growth_pct": -68.89509856452622,
+          "growth_pct": -71.32167081072012,
           "margin_pct": -0.9310792320055602
         },
         {
           "id": 22264,
           "name": "SUPERM. PAREJO AGUILERA, S.L.",
-          "sales_2025": 21017.100000000002,
+          "sales_2025": 22193.34,
           "budget_2026": 24000.0,
           "sales_2026": 4085.54,
           "profit_2026": -1004.14,
@@ -1899,7 +1905,7 @@ const DASHBOARD_DATA = {
             "OCT": 1383.22,
             "NOV": 2686.88,
             "DIC": 3628.5,
-            "ENE": 0.0
+            "ENE": 1176.24
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -1948,13 +1954,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 4085.54,
           "profit_2026_ytd": -1004.14,
           "deviation_pct": -82.97691666666667,
-          "growth_pct": -80.56087661951459,
+          "growth_pct": -81.59114400986962,
           "margin_pct": -24.577901574822423
         },
         {
           "id": 22333,
           "name": "SUPER CASH RODRIGUEZ, S.C.A",
-          "sales_2025": 84239.75,
+          "sales_2025": 88196.97,
           "budget_2026": 95000.0,
           "sales_2026": 23331.12,
           "profit_2026": -1416.5900000000001,
@@ -1970,7 +1976,7 @@ const DASHBOARD_DATA = {
             "OCT": 12510.720000000001,
             "NOV": 9972.13,
             "DIC": 1588.1999999999998,
-            "ENE": 0.0
+            "ENE": 3957.22
           },
           "budget_2026_monthly": {
             "FEB": 6000.0,
@@ -2019,13 +2025,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 23331.12,
           "profit_2026_ytd": -1416.5900000000001,
           "deviation_pct": -75.44092631578948,
-          "growth_pct": -72.30390640997867,
+          "growth_pct": -73.5465742190463,
           "margin_pct": -6.071675941832198
         },
         {
           "id": 22434,
           "name": "MAQSOOD, S.L.",
-          "sales_2025": 579632.53,
+          "sales_2025": 741364.45,
           "budget_2026": 601000.0,
           "sales_2026": 217736.51,
           "profit_2026": -46894.020000000004,
@@ -2041,7 +2047,7 @@ const DASHBOARD_DATA = {
             "OCT": 67141.32,
             "NOV": 42589.439999999995,
             "DIC": 73470.57999999999,
-            "ENE": 0.0
+            "ENE": 161731.91999999998
           },
           "budget_2026_monthly": {
             "FEB": 45000.0,
@@ -2090,7 +2096,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 217736.51,
           "profit_2026_ytd": -46894.020000000004,
           "deviation_pct": -63.77096339434276,
-          "growth_pct": -62.43542266338985,
+          "growth_pct": -70.63030065711945,
           "margin_pct": -21.537049528349655
         },
         {
@@ -2380,7 +2386,7 @@ const DASHBOARD_DATA = {
         {
           "id": 23214,
           "name": "SUPER FICOS, S.L.",
-          "sales_2025": 9601.15,
+          "sales_2025": 10127.49,
           "budget_2026": 18000.0,
           "sales_2026": 9244.2,
           "profit_2026": -672.11,
@@ -2396,7 +2402,7 @@ const DASHBOARD_DATA = {
             "OCT": 2158.77,
             "NOV": 0.0,
             "DIC": 397.95,
-            "ENE": 0.0
+            "ENE": 526.34
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -2445,7 +2451,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 9244.2,
           "profit_2026_ytd": -672.11,
           "deviation_pct": -48.64333333333333,
-          "growth_pct": -3.717783807148091,
+          "growth_pct": -8.721706957992543,
           "margin_pct": -7.270612924860993
         },
         {
@@ -2522,7 +2528,7 @@ const DASHBOARD_DATA = {
         {
           "id": 23304,
           "name": "ANTONIO VALDIVIESO, S.L.U.",
-          "sales_2025": 57561.98,
+          "sales_2025": 58705.200000000004,
           "budget_2026": 74000.0,
           "sales_2026": 14722.5,
           "profit_2026": -3574.6800000000003,
@@ -2538,7 +2544,7 @@ const DASHBOARD_DATA = {
             "OCT": 11828.849999999999,
             "NOV": -1.39,
             "DIC": 1843.6,
-            "ENE": 0.0
+            "ENE": 1143.22
           },
           "budget_2026_monthly": {
             "FEB": 5000.0,
@@ -2587,13 +2593,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 14722.5,
           "profit_2026_ytd": -3574.6800000000003,
           "deviation_pct": -80.10472972972973,
-          "growth_pct": -74.42322171683462,
+          "growth_pct": -74.92130169048056,
           "margin_pct": -24.28038716250637
         },
         {
           "id": 23324,
           "name": "ALIMENTACION PEREZ NUÑEZ, S.L.",
-          "sales_2025": 14572.61,
+          "sales_2025": 15769.95,
           "budget_2026": 18000.0,
           "sales_2026": 7150.8099999999995,
           "profit_2026": 156.39999999999998,
@@ -2609,7 +2615,7 @@ const DASHBOARD_DATA = {
             "OCT": 1766.53,
             "NOV": 715.1600000000001,
             "DIC": 2235.99,
-            "ENE": 0.0
+            "ENE": 1197.34
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -2658,13 +2664,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 7150.8099999999995,
           "profit_2026_ytd": 156.39999999999998,
           "deviation_pct": -60.27327777777778,
-          "growth_pct": -50.9297922609608,
+          "growth_pct": -54.6554681530379,
           "margin_pct": 2.187164810699767
         },
         {
           "id": 23396,
           "name": "MINORISTA SUP. DEL MEDITERRANE",
-          "sales_2025": 196167.86000000002,
+          "sales_2025": 223444.5,
           "budget_2026": 189000.0,
           "sales_2026": 34856.42,
           "profit_2026": -3486.9199999999996,
@@ -2680,7 +2686,7 @@ const DASHBOARD_DATA = {
             "OCT": 22277.09,
             "NOV": 28311.61,
             "DIC": 39334.590000000004,
-            "ENE": 0.0
+            "ENE": 27276.640000000003
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -2729,13 +2735,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 34856.42,
           "profit_2026_ytd": -3486.9199999999996,
           "deviation_pct": -81.55744973544974,
-          "growth_pct": -82.23132984169781,
+          "growth_pct": -84.40041263042949,
           "margin_pct": -10.003666469476784
         },
         {
           "id": 23454,
           "name": "ALMACEN DE BEBIDAS LA AGUILEÑA",
-          "sales_2025": 64329.38,
+          "sales_2025": 71857.02,
           "budget_2026": 83000.0,
           "sales_2026": 27618.39,
           "profit_2026": -3757.3199999999997,
@@ -2751,7 +2757,7 @@ const DASHBOARD_DATA = {
             "OCT": 4666.47,
             "NOV": 4891.700000000001,
             "DIC": 5213.21,
-            "ENE": 0.0
+            "ENE": 7527.64
           },
           "budget_2026_monthly": {
             "FEB": 9000.0,
@@ -2800,13 +2806,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 27618.39,
           "profit_2026_ytd": -3757.3199999999997,
           "deviation_pct": -66.72483132530121,
-          "growth_pct": -57.06722185104225,
+          "growth_pct": -61.564799096873216,
           "margin_pct": -13.604413580950952
         },
         {
           "id": 23493,
           "name": "SUPERMERCADO JAMONES Y CABEZAS",
-          "sales_2025": 3640.21,
+          "sales_2025": 4666.25,
           "budget_2026": 6000.0,
           "sales_2026": 1673.75,
           "profit_2026": -79.73,
@@ -2822,7 +2828,7 @@ const DASHBOARD_DATA = {
             "OCT": 440.51,
             "NOV": 1065.7,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 1026.04
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -2871,13 +2877,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1673.75,
           "profit_2026_ytd": -79.73,
           "deviation_pct": -72.10416666666667,
-          "growth_pct": -54.02050980575297,
+          "growth_pct": -64.1307259576748,
           "margin_pct": -4.763554891710232
         },
         {
           "id": 23663,
           "name": "TOSTASOL FRUTOS SECOS, S.L.",
-          "sales_2025": 28857.06,
+          "sales_2025": 29946.03,
           "budget_2026": 32000.0,
           "sales_2026": 10432.03,
           "profit_2026": 121.82,
@@ -2893,7 +2899,7 @@ const DASHBOARD_DATA = {
             "OCT": 1677.1999999999998,
             "NOV": 1877.7800000000002,
             "DIC": 3338.6800000000003,
-            "ENE": 0.0
+            "ENE": 1088.97
           },
           "budget_2026_monthly": {
             "FEB": 3000.0,
@@ -2942,13 +2948,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 10432.03,
           "profit_2026_ytd": 121.82,
           "deviation_pct": -67.39990625000002,
-          "growth_pct": -63.849297191051335,
+          "growth_pct": -65.16389651649985,
           "margin_pct": 1.1677497093087346
         },
         {
           "id": 23809,
           "name": "TANDY ILLORA PALETS, S.L.U.",
-          "sales_2025": 209274.26,
+          "sales_2025": 184899.95,
           "budget_2026": 233000.0,
           "sales_2026": -12979.24,
           "profit_2026": -0.13,
@@ -2964,7 +2970,7 @@ const DASHBOARD_DATA = {
             "OCT": 24486.729999999996,
             "NOV": 18054.54,
             "DIC": 16566.36,
-            "ENE": 0.0
+            "ENE": -24374.31
           },
           "budget_2026_monthly": {
             "FEB": 15000.0,
@@ -3013,13 +3019,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": -12979.24,
           "profit_2026_ytd": -0.13,
           "deviation_pct": -105.57048927038626,
-          "growth_pct": -106.20202408074458,
+          "growth_pct": -107.01960168188253,
           "margin_pct": 0.0
         },
         {
           "id": 23810,
           "name": "HIPER EL GRAJO, S.L.",
-          "sales_2025": 26855.68,
+          "sales_2025": 32324.01,
           "budget_2026": 30000.0,
           "sales_2026": 0.0,
           "profit_2026": 0.0,
@@ -3035,7 +3041,7 @@ const DASHBOARD_DATA = {
             "OCT": 3272.91,
             "NOV": 1996.42,
             "DIC": 4237.07,
-            "ENE": 0.0
+            "ENE": 5468.33
           },
           "budget_2026_monthly": {
             "FEB": 3000.0,
@@ -3090,7 +3096,7 @@ const DASHBOARD_DATA = {
         {
           "id": 24135,
           "name": "EL CHISMA, S.L.",
-          "sales_2025": 70110.15,
+          "sales_2025": 76771.58,
           "budget_2026": 71000.0,
           "sales_2026": 26018.57,
           "profit_2026": -4771.88,
@@ -3106,7 +3112,7 @@ const DASHBOARD_DATA = {
             "OCT": 5743.5599999999995,
             "NOV": 7418.72,
             "DIC": 9868.13,
-            "ENE": 0.0
+            "ENE": 6661.43
           },
           "budget_2026_monthly": {
             "FEB": 4000.0,
@@ -3155,7 +3161,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 26018.57,
           "profit_2026_ytd": -4771.88,
           "deviation_pct": -63.354126760563375,
-          "growth_pct": -62.889011077568654,
+          "growth_pct": -66.10911225221625,
           "margin_pct": -18.340285419221733
         },
         {
@@ -3303,7 +3309,7 @@ const DASHBOARD_DATA = {
         {
           "id": 24242,
           "name": "SNOW PEOPLE, S.L.",
-          "sales_2025": 10561.17,
+          "sales_2025": 10864.37,
           "budget_2026": 12000.0,
           "sales_2026": 303.2,
           "profit_2026": 2.56,
@@ -3319,7 +3325,7 @@ const DASHBOARD_DATA = {
             "OCT": 913.49,
             "NOV": 303.2,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 303.2
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -3368,7 +3374,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 303.2,
           "profit_2026_ytd": 2.56,
           "deviation_pct": -97.47333333333333,
-          "growth_pct": -97.1291059607979,
+          "growth_pct": -97.20922612171712,
           "margin_pct": 0.8443271767810026
         },
         {
@@ -3445,7 +3451,7 @@ const DASHBOARD_DATA = {
         {
           "id": 24303,
           "name": "EL CHISMA, S.L.",
-          "sales_2025": 59924.8,
+          "sales_2025": 65356.32,
           "budget_2026": 70000.0,
           "sales_2026": 18318.36,
           "profit_2026": -2032.7299999999998,
@@ -3461,7 +3467,7 @@ const DASHBOARD_DATA = {
             "OCT": 3513.93,
             "NOV": 7641.32,
             "DIC": 4227.39,
-            "ENE": 0.0
+            "ENE": 5431.5199999999995
           },
           "budget_2026_monthly": {
             "FEB": 5000.0,
@@ -3510,13 +3516,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 18318.36,
           "profit_2026_ytd": -2032.7299999999998,
           "deviation_pct": -73.83091428571429,
-          "growth_pct": -69.43108696232612,
+          "growth_pct": -71.97155531400789,
           "margin_pct": -11.096681143945199
         },
         {
           "id": 24315,
           "name": "ASOCIACION ENGLOBA",
-          "sales_2025": 11999.689999999999,
+          "sales_2025": 12696.109999999999,
           "budget_2026": 12000.0,
           "sales_2026": 3456.71,
           "profit_2026": 215.76999999999998,
@@ -3532,7 +3538,7 @@ const DASHBOARD_DATA = {
             "OCT": 1614.3200000000002,
             "NOV": 820.5,
             "DIC": 782.8299999999999,
-            "ENE": 0.0
+            "ENE": 696.42
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -3581,13 +3587,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 3456.71,
           "profit_2026_ytd": 215.76999999999998,
           "deviation_pct": -71.19408333333334,
-          "growth_pct": -71.19333916126168,
+          "growth_pct": -72.7734715593989,
           "margin_pct": 6.242062539235284
         },
         {
           "id": 24327,
           "name": "ARTESANIA ORTEGA, S.L.U.",
-          "sales_2025": 11727.730000000001,
+          "sales_2025": 13887.730000000001,
           "budget_2026": 12000.0,
           "sales_2026": 1440.0,
           "profit_2026": -13.44,
@@ -3603,7 +3609,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 0.0,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 2160.0
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -3652,7 +3658,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1440.0,
           "profit_2026_ytd": -13.44,
           "deviation_pct": -88.0,
-          "growth_pct": -87.72140900242417,
+          "growth_pct": -89.63113482188953,
           "margin_pct": -0.9333333333333332
         },
         {
@@ -3729,7 +3735,7 @@ const DASHBOARD_DATA = {
         {
           "id": 24472,
           "name": "PICO NEVADO, S.L.(PALET)",
-          "sales_2025": 32462.63,
+          "sales_2025": 50268.65,
           "budget_2026": 19000.0,
           "sales_2026": 28668.36,
           "profit_2026": 137.66,
@@ -3745,7 +3751,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 5494.61,
             "DIC": 16915.96,
-            "ENE": 0.0
+            "ENE": 17806.02
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -3794,7 +3800,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 28668.36,
           "profit_2026_ytd": 137.66,
           "deviation_pct": 50.8861052631579,
-          "growth_pct": -11.688116458832818,
+          "growth_pct": -42.969703781581565,
           "margin_pct": 0.4801809381492349
         },
         {
@@ -3942,7 +3948,7 @@ const DASHBOARD_DATA = {
         {
           "id": 24521,
           "name": "EL CHISMA, S.L.",
-          "sales_2025": 85257.79,
+          "sales_2025": 92537.75,
           "budget_2026": 87000.0,
           "sales_2026": 31446.54,
           "profit_2026": -5660.43,
@@ -3958,7 +3964,7 @@ const DASHBOARD_DATA = {
             "OCT": 8665.33,
             "NOV": 11059.26,
             "DIC": 10586.88,
-            "ENE": 0.0
+            "ENE": 7279.959999999999
           },
           "budget_2026_monthly": {
             "FEB": 5000.0,
@@ -4007,7 +4013,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 31446.54,
           "profit_2026_ytd": -5660.43,
           "deviation_pct": -63.854551724137934,
-          "growth_pct": -63.115933453119055,
+          "growth_pct": -66.01760902982836,
           "margin_pct": -18.0001679040047
         },
         {
@@ -4084,7 +4090,7 @@ const DASHBOARD_DATA = {
         {
           "id": 24596,
           "name": "THE CLOCK OPORTUNITIES FOODS,",
-          "sales_2025": 48677.090000000004,
+          "sales_2025": 55523.75,
           "budget_2026": 54000.0,
           "sales_2026": 9199.7,
           "profit_2026": -1098.29,
@@ -4100,7 +4106,7 @@ const DASHBOARD_DATA = {
             "OCT": 5591.87,
             "NOV": 4354.02,
             "DIC": 3991.6099999999997,
-            "ENE": 0.0
+            "ENE": 6846.660000000001
           },
           "budget_2026_monthly": {
             "FEB": 4000.0,
@@ -4149,13 +4155,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 9199.7,
           "profit_2026_ytd": -1098.29,
           "deviation_pct": -82.96351851851853,
-          "growth_pct": -81.10055469626471,
+          "growth_pct": -83.43105427857449,
           "margin_pct": -11.93832407578508
         },
         {
           "id": 24611,
           "name": "ALIMENTACION ALGARROBO, S.L.",
-          "sales_2025": 63756.799999999996,
+          "sales_2025": 69358.14,
           "budget_2026": 72000.0,
           "sales_2026": 23345.84,
           "profit_2026": -967.2199999999999,
@@ -4171,7 +4177,7 @@ const DASHBOARD_DATA = {
             "OCT": 10571.869999999999,
             "NOV": 7688.3099999999995,
             "DIC": 6662.14,
-            "ENE": 0.0
+            "ENE": 5601.34
           },
           "budget_2026_monthly": {
             "FEB": 4000.0,
@@ -4220,7 +4226,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 23345.84,
           "profit_2026_ytd": -967.2199999999999,
           "deviation_pct": -67.57522222222224,
-          "growth_pct": -63.382980325235884,
+          "growth_pct": -66.34015848752577,
           "margin_pct": -4.143007919183889
         },
         {
@@ -4297,7 +4303,7 @@ const DASHBOARD_DATA = {
         {
           "id": 24758,
           "name": "CLANDESTINO 1939, S.L.",
-          "sales_2025": 92698.86,
+          "sales_2025": 109654.55,
           "budget_2026": 113000.0,
           "sales_2026": 14634.28,
           "profit_2026": -2944.25,
@@ -4313,7 +4319,7 @@ const DASHBOARD_DATA = {
             "OCT": 4425.56,
             "NOV": 6579.78,
             "DIC": 6995.49,
-            "ENE": 0.0
+            "ENE": 16955.69
           },
           "budget_2026_monthly": {
             "FEB": 14000.0,
@@ -4362,13 +4368,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 14634.28,
           "profit_2026_ytd": -2944.25,
           "deviation_pct": -87.04930973451329,
-          "growth_pct": -84.21309604023179,
+          "growth_pct": -86.6541972038552,
           "margin_pct": -20.11885791443105
         },
         {
           "id": 24795,
           "name": "DISPAC DISTRIBUCION EN FRIO, S",
-          "sales_2025": 24311.03,
+          "sales_2025": 25829.93,
           "budget_2026": 31000.0,
           "sales_2026": 11705.6,
           "profit_2026": -1728.55,
@@ -4384,7 +4390,7 @@ const DASHBOARD_DATA = {
             "OCT": 2252.88,
             "NOV": 2325.8999999999996,
             "DIC": 1923.24,
-            "ENE": 0.0
+            "ENE": 1518.9
           },
           "budget_2026_monthly": {
             "FEB": 3000.0,
@@ -4433,7 +4439,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 11705.6,
           "profit_2026_ytd": -1728.55,
           "deviation_pct": -62.24000000000001,
-          "growth_pct": -51.85066202460364,
+          "growth_pct": -54.6820297228835,
           "margin_pct": -14.766863723346091
         },
         {
@@ -4510,7 +4516,7 @@ const DASHBOARD_DATA = {
         {
           "id": 24837,
           "name": "CASH BOROSA, S.L.",
-          "sales_2025": 59346.89,
+          "sales_2025": 63589.329999999994,
           "budget_2026": 63000.0,
           "sales_2026": 14729.11,
           "profit_2026": -1285.8200000000002,
@@ -4526,7 +4532,7 @@ const DASHBOARD_DATA = {
             "OCT": 10852.23,
             "NOV": 1494.41,
             "DIC": 4254.84,
-            "ENE": 0.0
+            "ENE": 4242.44
           },
           "budget_2026_monthly": {
             "FEB": 4000.0,
@@ -4575,13 +4581,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 14729.11,
           "profit_2026_ytd": -1285.8200000000002,
           "deviation_pct": -76.62046031746031,
-          "growth_pct": -75.1813279516416,
+          "growth_pct": -76.83713604153401,
           "margin_pct": -8.729787475278549
         },
         {
           "id": 24845,
           "name": "SUBETE AL CARRO, S.L.",
-          "sales_2025": 31338.98,
+          "sales_2025": 34014.77,
           "budget_2026": 37000.0,
           "sales_2026": 10081.890000000001,
           "profit_2026": -493.74,
@@ -4597,7 +4603,7 @@ const DASHBOARD_DATA = {
             "OCT": 1793.73,
             "NOV": 2709.8500000000004,
             "DIC": 2258.52,
-            "ENE": 0.0
+            "ENE": 2675.79
           },
           "budget_2026_monthly": {
             "FEB": 4000.0,
@@ -4646,7 +4652,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 10081.890000000001,
           "profit_2026_ytd": -493.74,
           "deviation_pct": -72.75164864864865,
-          "growth_pct": -67.82955284441292,
+          "growth_pct": -70.36025820547957,
           "margin_pct": -4.8972960427062775
         },
         {
@@ -4723,7 +4729,7 @@ const DASHBOARD_DATA = {
         {
           "id": 24857,
           "name": "MAQSOOD, S.L.",
-          "sales_2025": 264844.92,
+          "sales_2025": 324096.45,
           "budget_2026": 277000.0,
           "sales_2026": 147166.85,
           "profit_2026": -27803.83,
@@ -4739,7 +4745,7 @@ const DASHBOARD_DATA = {
             "OCT": 28203.100000000002,
             "NOV": 23220.35,
             "DIC": 40471.84999999999,
-            "ENE": 0.0
+            "ENE": 59251.53
           },
           "budget_2026_monthly": {
             "FEB": 18000.0,
@@ -4788,7 +4794,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 147166.85,
           "profit_2026_ytd": -27803.83,
           "deviation_pct": -46.87117328519855,
-          "growth_pct": -44.432821290285645,
+          "growth_pct": -54.59165010909561,
           "margin_pct": -18.892726181201812
         },
         {
@@ -4865,7 +4871,7 @@ const DASHBOARD_DATA = {
         {
           "id": 24874,
           "name": "ALMACENES PEREIRA E HIJOS, S.L",
-          "sales_2025": 52623.18,
+          "sales_2025": 53750.32,
           "budget_2026": 54000.0,
           "sales_2026": 6850.37,
           "profit_2026": -1167.15,
@@ -4881,7 +4887,7 @@ const DASHBOARD_DATA = {
             "OCT": 4901.210000000001,
             "NOV": 3169.83,
             "DIC": 7842.379999999999,
-            "ENE": 0.0
+            "ENE": 1127.1399999999999
           },
           "budget_2026_monthly": {
             "FEB": 4000.0,
@@ -4930,7 +4936,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 6850.37,
           "profit_2026_ytd": -1167.15,
           "deviation_pct": -87.31412962962962,
-          "growth_pct": -86.98221962260737,
+          "growth_pct": -87.25520145740528,
           "margin_pct": -17.03776584330482
         },
         {
@@ -5220,7 +5226,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25019,
           "name": "GOMEZ ORTEGA, MARIA LUISA",
-          "sales_2025": 10425.68,
+          "sales_2025": 11084.39,
           "budget_2026": 14000.0,
           "sales_2026": 3422.0299999999997,
           "profit_2026": 46.080000000000005,
@@ -5236,7 +5242,7 @@ const DASHBOARD_DATA = {
             "OCT": 1501.7800000000002,
             "NOV": 784.13,
             "DIC": 369.83,
-            "ENE": 0.0
+            "ENE": 658.71
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -5285,13 +5291,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 3422.0299999999997,
           "profit_2026_ytd": 46.080000000000005,
           "deviation_pct": -75.55692857142859,
-          "growth_pct": -67.17691316058043,
+          "growth_pct": -69.12748468792599,
           "margin_pct": 1.3465691417082846
         },
         {
           "id": 25025,
           "name": "CERVERA GARCIA, JOSE GABRIEL",
-          "sales_2025": 38037.4,
+          "sales_2025": 44518.53,
           "budget_2026": 42000.0,
           "sales_2026": 13181.08,
           "profit_2026": -526.0699999999999,
@@ -5307,7 +5313,7 @@ const DASHBOARD_DATA = {
             "OCT": 2919.96,
             "NOV": 2463.9900000000002,
             "DIC": 5137.0,
-            "ENE": 0.0
+            "ENE": 6481.13
           },
           "budget_2026_monthly": {
             "FEB": 3000.0,
@@ -5356,13 +5362,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 13181.08,
           "profit_2026_ytd": -526.0699999999999,
           "deviation_pct": -68.61647619047618,
-          "growth_pct": -65.34705316346543,
+          "growth_pct": -70.3919244413506,
           "margin_pct": -3.9910993636333285
         },
         {
           "id": 25030,
           "name": "MAQSOOD, S.L.",
-          "sales_2025": 127630.69,
+          "sales_2025": 147290.18,
           "budget_2026": 142000.0,
           "sales_2026": 60479.68,
           "profit_2026": -9689.52,
@@ -5378,7 +5384,7 @@ const DASHBOARD_DATA = {
             "OCT": 9173.93,
             "NOV": 10002.83,
             "DIC": 15065.25,
-            "ENE": 0.0
+            "ENE": 19659.49
           },
           "budget_2026_monthly": {
             "FEB": 12000.0,
@@ -5427,13 +5433,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 60479.68,
           "profit_2026_ytd": -9689.52,
           "deviation_pct": -57.40867605633804,
-          "growth_pct": -52.61352892474373,
+          "growth_pct": -58.93841666837532,
           "margin_pct": -16.02111651384399
         },
         {
           "id": 25051,
           "name": "ALIMENTACION PEREZ NUÑEZ,S.L",
-          "sales_2025": 16084.54,
+          "sales_2025": 18046.47,
           "budget_2026": 24000.0,
           "sales_2026": 7950.41,
           "profit_2026": -29.67999999999992,
@@ -5449,7 +5455,7 @@ const DASHBOARD_DATA = {
             "OCT": 1791.91,
             "NOV": 1264.96,
             "DIC": 1514.06,
-            "ENE": 0.0
+            "ENE": 1961.9299999999998
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -5498,13 +5504,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 7950.41,
           "profit_2026_ytd": -29.67999999999992,
           "deviation_pct": -66.87329166666667,
-          "growth_pct": -50.57110741121599,
+          "growth_pct": -55.94479141904206,
           "margin_pct": -0.37331408065747457
         },
         {
           "id": 25059,
           "name": "SALAS GUERRERO, MANUEL",
-          "sales_2025": 25958.829999999998,
+          "sales_2025": 27683.54,
           "budget_2026": 30000.0,
           "sales_2026": 3263.99,
           "profit_2026": 29.96999999999999,
@@ -5520,7 +5526,7 @@ const DASHBOARD_DATA = {
             "OCT": 2569.47,
             "NOV": 1804.26,
             "DIC": 2493.71,
-            "ENE": 0.0
+            "ENE": 1724.71
           },
           "budget_2026_monthly": {
             "FEB": 2500.0,
@@ -5569,13 +5575,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 3263.99,
           "profit_2026_ytd": 29.96999999999999,
           "deviation_pct": -89.12003333333334,
-          "growth_pct": -87.42628230933366,
+          "growth_pct": -88.20963648435136,
           "margin_pct": 0.9182013425286227
         },
         {
           "id": 25077,
           "name": "RODRIGUEZ MOLES, S.L.",
-          "sales_2025": 257461.95,
+          "sales_2025": 292544.21,
           "budget_2026": 314000.0,
           "sales_2026": 154999.18,
           "profit_2026": -18887.17,
@@ -5591,7 +5597,7 @@ const DASHBOARD_DATA = {
             "OCT": 32718.63,
             "NOV": 22246.4,
             "DIC": 23047.97,
-            "ENE": 0.0
+            "ENE": 35082.26
           },
           "budget_2026_monthly": {
             "FEB": 30000.0,
@@ -5640,7 +5646,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 154999.18,
           "profit_2026_ytd": -18887.17,
           "deviation_pct": -50.63720382165605,
-          "growth_pct": -39.79724770980722,
+          "growth_pct": -47.01683550667436,
           "margin_pct": -12.185335432097125
         },
         {
@@ -5717,7 +5723,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25159,
           "name": "LOGISTICA CAÑA DE AZUCAR, S.L.",
-          "sales_2025": 115742.47,
+          "sales_2025": 128916.8,
           "budget_2026": 120000.0,
           "sales_2026": 46661.92,
           "profit_2026": -7085.07,
@@ -5733,7 +5739,7 @@ const DASHBOARD_DATA = {
             "OCT": 8266.66,
             "NOV": 4209.51,
             "DIC": 11449.800000000001,
-            "ENE": 0.0
+            "ENE": 13174.33
           },
           "budget_2026_monthly": {
             "FEB": 8000.0,
@@ -5782,7 +5788,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 46661.92,
           "profit_2026_ytd": -7085.07,
           "deviation_pct": -61.11506666666667,
-          "growth_pct": -59.68470346278251,
+          "growth_pct": -63.80462437789334,
           "margin_pct": -15.183837270305208
         },
         {
@@ -6072,7 +6078,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25221,
           "name": "JIAH MOHAMED",
-          "sales_2025": 7745.93,
+          "sales_2025": 8886.23,
           "budget_2026": 12000.0,
           "sales_2026": 2584.4700000000003,
           "profit_2026": -10.519999999999998,
@@ -6088,7 +6094,7 @@ const DASHBOARD_DATA = {
             "OCT": 590.96,
             "NOV": 1004.01,
             "DIC": 406.54999999999995,
-            "ENE": 0.0
+            "ENE": 1140.3
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -6137,7 +6143,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2584.4700000000003,
           "profit_2026_ytd": -10.519999999999998,
           "deviation_pct": -78.46274999999999,
-          "growth_pct": -66.63447771926676,
+          "growth_pct": -70.91601275231453,
           "margin_pct": -0.4070467059010163
         },
         {
@@ -6427,7 +6433,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25293,
           "name": "RUIZ CABEZAS, YOLANDA",
-          "sales_2025": 24317.79,
+          "sales_2025": 27632.25,
           "budget_2026": 30000.0,
           "sales_2026": 9729.57,
           "profit_2026": -809.99,
@@ -6443,7 +6449,7 @@ const DASHBOARD_DATA = {
             "OCT": 4002.37,
             "NOV": 2448.63,
             "DIC": 1029.7199999999998,
-            "ENE": 0.0
+            "ENE": 3314.46
           },
           "budget_2026_monthly": {
             "FEB": 2500.0,
@@ -6492,7 +6498,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 9729.57,
           "profit_2026_ytd": -809.99,
           "deviation_pct": -67.5681,
-          "growth_pct": -59.989908622452944,
+          "growth_pct": -64.78907797953478,
           "margin_pct": -8.325033891528609
         },
         {
@@ -6782,7 +6788,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25344,
           "name": "CLANDESTINO 1939, S.L.",
-          "sales_2025": 45591.0,
+          "sales_2025": 60736.2,
           "budget_2026": 48000.0,
           "sales_2026": 20708.809999999998,
           "profit_2026": -4275.7300000000005,
@@ -6798,7 +6804,7 @@ const DASHBOARD_DATA = {
             "OCT": 5611.62,
             "NOV": 9113.83,
             "DIC": 7283.0,
-            "ENE": 0.0
+            "ENE": 15145.2
           },
           "budget_2026_monthly": {
             "FEB": 4000.0,
@@ -6847,7 +6853,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 20708.809999999998,
           "profit_2026_ytd": -4275.7300000000005,
           "deviation_pct": -56.85664583333334,
-          "growth_pct": -54.57697791230726,
+          "growth_pct": -65.9036785310902,
           "margin_pct": -20.64691307709135
         },
         {
@@ -6924,7 +6930,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25351,
           "name": "ALIMENTOS DELACASA, S.L.",
-          "sales_2025": 177039.28,
+          "sales_2025": 185939.74,
           "budget_2026": 189000.0,
           "sales_2026": 37116.14,
           "profit_2026": -1985.3100000000002,
@@ -6940,7 +6946,7 @@ const DASHBOARD_DATA = {
             "OCT": 17387.010000000002,
             "NOV": 10315.94,
             "DIC": 18748.129999999997,
-            "ENE": 0.0
+            "ENE": 8900.46
           },
           "budget_2026_monthly": {
             "FEB": 10000.0,
@@ -6989,13 +6995,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 37116.14,
           "profit_2026_ytd": -1985.3100000000002,
           "deviation_pct": -80.36183068783068,
-          "growth_pct": -79.03508193210004,
+          "growth_pct": -80.0386189633265,
           "margin_pct": -5.348912898808982
         },
         {
           "id": 25360,
           "name": "SUPERMERCADOS PAREJO GONZALEZ,",
-          "sales_2025": 9277.64,
+          "sales_2025": 9969.94,
           "budget_2026": 12000.0,
           "sales_2026": 1588.46,
           "profit_2026": -579.24,
@@ -7011,7 +7017,7 @@ const DASHBOARD_DATA = {
             "OCT": 1624.71,
             "NOV": 1023.48,
             "DIC": 1406.66,
-            "ENE": 0.0
+            "ENE": 692.3
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -7060,7 +7066,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1588.46,
           "profit_2026_ytd": -579.24,
           "deviation_pct": -86.76283333333335,
-          "growth_pct": -82.87861999387775,
+          "growth_pct": -84.067506925819,
           "margin_pct": -36.465507472646465
         },
         {
@@ -7279,7 +7285,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25397,
           "name": "MORA TORRES, FRANCISCO JAVIER",
-          "sales_2025": 15817.77,
+          "sales_2025": 23625.870000000003,
           "budget_2026": 24000.0,
           "sales_2026": 10366.349999999999,
           "profit_2026": -83.6,
@@ -7295,7 +7301,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 5025.67,
             "DIC": 10792.1,
-            "ENE": 0.0
+            "ENE": 7808.1
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -7344,13 +7350,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 10366.349999999999,
           "profit_2026_ytd": -83.6,
           "deviation_pct": -56.806875,
-          "growth_pct": -34.46389724973876,
+          "growth_pct": -56.12288563341795,
           "margin_pct": -0.8064555026600492
         },
         {
           "id": 25403,
           "name": "MOTRIL GOURMET, S.L.",
-          "sales_2025": 23378.94,
+          "sales_2025": 27376.989999999998,
           "budget_2026": 36000.0,
           "sales_2026": 3966.99,
           "profit_2026": 128.25,
@@ -7366,7 +7372,7 @@ const DASHBOARD_DATA = {
             "OCT": 14898.48,
             "NOV": 2144.3,
             "DIC": 6336.16,
-            "ENE": 0.0
+            "ENE": 3998.05
           },
           "budget_2026_monthly": {
             "FEB": 3000.0,
@@ -7415,13 +7421,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 3966.99,
           "profit_2026_ytd": 128.25,
           "deviation_pct": -88.98058333333334,
-          "growth_pct": -83.03177988394683,
+          "growth_pct": -85.50976568278689,
           "margin_pct": 3.232929752784857
         },
         {
           "id": 25405,
           "name": "M.R. SAMOS DISTRIBUIDORES, S.L",
-          "sales_2025": 6093.59,
+          "sales_2025": 11253.59,
           "budget_2026": 24000.0,
           "sales_2026": 16264.92,
           "profit_2026": -1295.3200000000002,
@@ -7437,7 +7443,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 2377.71,
             "DIC": 3715.88,
-            "ENE": 0.0
+            "ENE": 5160.000000000001
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -7486,13 +7492,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 16264.92,
           "profit_2026_ytd": -1295.3200000000002,
           "deviation_pct": -32.2295,
-          "growth_pct": 166.9185160143692,
+          "growth_pct": 44.53094523614242,
           "margin_pct": -7.963887925670708
         },
         {
           "id": 25417,
           "name": "DISPACORUIZ, S.L.",
-          "sales_2025": 0.0,
+          "sales_2025": 4406.22,
           "budget_2026": 0.0,
           "sales_2026": 33772.5,
           "profit_2026": -5487.110000000001,
@@ -7508,7 +7514,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 0.0,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 4406.22
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -7557,13 +7563,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 33772.5,
           "profit_2026_ytd": -5487.110000000001,
           "deviation_pct": 0.0,
-          "growth_pct": 0.0,
+          "growth_pct": 666.4733036480247,
           "margin_pct": -16.2472721889111
         },
         {
           "id": 25419,
           "name": "SUMINSTROS VACAS, S.L.(BASES)",
-          "sales_2025": 0.0,
+          "sales_2025": 343.05,
           "budget_2026": 0.0,
           "sales_2026": 9104.08,
           "profit_2026": -892.47,
@@ -7579,7 +7585,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 0.0,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 343.05
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -7628,7 +7634,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 9104.08,
           "profit_2026_ytd": -892.47,
           "deviation_pct": 0.0,
-          "growth_pct": 0.0,
+          "growth_pct": 2553.8638682407814,
           "margin_pct": -9.802967460742876
         },
         {
@@ -7705,7 +7711,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25423,
           "name": "ALMACENES PEREIRA E HIJOS (BAS",
-          "sales_2025": 0.0,
+          "sales_2025": 816.24,
           "budget_2026": 0.0,
           "sales_2026": 13166.810000000001,
           "profit_2026": -1825.6200000000001,
@@ -7721,7 +7727,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 0.0,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 816.24
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -7770,7 +7776,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 13166.810000000001,
           "profit_2026_ytd": -1825.6200000000001,
           "deviation_pct": 0.0,
-          "growth_pct": 0.0,
+          "growth_pct": 1513.1052141527005,
           "margin_pct": -13.865317415531933
         },
         {
@@ -8358,7 +8364,7 @@ const DASHBOARD_DATA = {
         "OCT": 238785.69000000015,
         "NOV": 185291.48000000016,
         "DIC": 224463.16000000003,
-        "ENE": 0.0
+        "ENE": 244768.67000000007
       },
       "budget_2026_monthly": {
         "FEB": 206010.0,
@@ -8402,7 +8408,7 @@ const DASHBOARD_DATA = {
         "DIC": 0.0,
         "ENE": 0.0
       },
-      "total_sales_2025": 2563758.9,
+      "total_sales_2025": 2808527.5700000003,
       "total_budget_2026": 2887820.0,
       "sales_2025_ytd": 950854.1699999997,
       "budget_2026_ytd": 992840.0,
@@ -8491,7 +8497,7 @@ const DASHBOARD_DATA = {
         {
           "id": 4098,
           "name": "HEREDEROS DE JOSE PORTILLO SA",
-          "sales_2025": 20290.3,
+          "sales_2025": 21488.75,
           "budget_2026": 24000.0,
           "sales_2026": 6311.249999999999,
           "profit_2026": -349.94,
@@ -8507,7 +8513,7 @@ const DASHBOARD_DATA = {
             "OCT": 1936.8599999999997,
             "NOV": 1373.6499999999999,
             "DIC": 2401.56,
-            "ENE": 0.0
+            "ENE": 1198.45
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -8556,13 +8562,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 6311.249999999999,
           "profit_2026_ytd": -349.94,
           "deviation_pct": -73.703125,
-          "growth_pct": -68.8952356544753,
+          "growth_pct": -70.62998080390902,
           "margin_pct": -5.544701921172511
         },
         {
           "id": 6817,
           "name": "CRUZ TORRENTE MARI CARMEN",
-          "sales_2025": 18488.95,
+          "sales_2025": 19439.38,
           "budget_2026": 24000.0,
           "sales_2026": 4885.66,
           "profit_2026": -272.82,
@@ -8578,7 +8584,7 @@ const DASHBOARD_DATA = {
             "OCT": 980.61,
             "NOV": 1436.51,
             "DIC": 1689.56,
-            "ENE": 0.0
+            "ENE": 950.43
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -8627,13 +8633,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 4885.66,
           "profit_2026_ytd": -272.82,
           "deviation_pct": -79.64308333333334,
-          "growth_pct": -73.57524359144246,
+          "growth_pct": -74.867202554814,
           "margin_pct": -5.584097133243001
         },
         {
           "id": 9924,
           "name": "DISTRIBUCIONES POZO ALCON, S.L",
-          "sales_2025": 32023.5,
+          "sales_2025": 33914.950000000004,
           "budget_2026": 36000.0,
           "sales_2026": 9459.57,
           "profit_2026": -1484.1,
@@ -8649,7 +8655,7 @@ const DASHBOARD_DATA = {
             "OCT": 3326.2700000000004,
             "NOV": 3515.0,
             "DIC": 2172.1000000000004,
-            "ENE": 0.0
+            "ENE": 1891.45
           },
           "budget_2026_monthly": {
             "FEB": 3000.0,
@@ -8698,13 +8704,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 9459.57,
           "profit_2026_ytd": -1484.1,
           "deviation_pct": -73.72341666666667,
-          "growth_pct": -70.46053679329243,
+          "growth_pct": -72.10796418688514,
           "margin_pct": -15.688873807160366
         },
         {
           "id": 10043,
           "name": "AZOR VALDIVIESO, JOSEFA",
-          "sales_2025": 16635.48,
+          "sales_2025": 17768.73,
           "budget_2026": 21100.0,
           "sales_2026": 6027.95,
           "profit_2026": 11.24,
@@ -8720,7 +8726,7 @@ const DASHBOARD_DATA = {
             "OCT": 1257.5300000000002,
             "NOV": 1446.5600000000002,
             "DIC": 2312.62,
-            "ENE": 0.0
+            "ENE": 1133.25
           },
           "budget_2026_monthly": {
             "FEB": 1700.0,
@@ -8769,13 +8775,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 6027.95,
           "profit_2026_ytd": 11.24,
           "deviation_pct": -71.43151658767772,
-          "growth_pct": -63.76449612514937,
+          "growth_pct": -66.07551580782645,
           "margin_pct": 0.18646471851956303
         },
         {
           "id": 10051,
           "name": "ORTIZ ROMAN, MARIA",
-          "sales_2025": 13944.24,
+          "sales_2025": 15009.699999999999,
           "budget_2026": 18000.0,
           "sales_2026": 1715.8,
           "profit_2026": -104.71000000000001,
@@ -8791,7 +8797,7 @@ const DASHBOARD_DATA = {
             "OCT": 926.79,
             "NOV": 542.68,
             "DIC": 1588.83,
-            "ENE": 0.0
+            "ENE": 1065.46
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -8840,13 +8846,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1715.8,
           "profit_2026_ytd": -104.71000000000001,
           "deviation_pct": -90.46777777777778,
-          "growth_pct": -87.69527776343494,
+          "growth_pct": -88.56872555747285,
           "margin_pct": -6.10269262151766
         },
         {
           "id": 10063,
           "name": "GARCIA GARCIA, JUAN ANTONIO",
-          "sales_2025": 33830.37,
+          "sales_2025": 36503.340000000004,
           "budget_2026": 39350.0,
           "sales_2026": 10655.26,
           "profit_2026": -194.56,
@@ -8862,7 +8868,7 @@ const DASHBOARD_DATA = {
             "OCT": 3391.16,
             "NOV": 3387.7799999999997,
             "DIC": 2327.2100000000005,
-            "ENE": 0.0
+            "ENE": 2672.9700000000003
           },
           "budget_2026_monthly": {
             "FEB": 3300.0,
@@ -8911,13 +8917,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 10655.26,
           "profit_2026_ytd": -194.56,
           "deviation_pct": -72.92182973316392,
-          "growth_pct": -68.50386206240132,
+          "growth_pct": -70.81017791796586,
           "margin_pct": -1.8259526280916656
         },
         {
           "id": 10101,
           "name": "RUEDA PEREZ DONATO",
-          "sales_2025": 12076.400000000001,
+          "sales_2025": 13077.400000000001,
           "budget_2026": 12000.0,
           "sales_2026": 4350.42,
           "profit_2026": -83.58,
@@ -8933,7 +8939,7 @@ const DASHBOARD_DATA = {
             "OCT": 1518.14,
             "NOV": 1448.13,
             "DIC": 903.7,
-            "ENE": 0.0
+            "ENE": 1001.0
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -8982,13 +8988,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 4350.42,
           "profit_2026_ytd": -83.58,
           "deviation_pct": -63.7465,
-          "growth_pct": -63.97585373124441,
+          "growth_pct": -66.73329560921896,
           "margin_pct": -1.9211938157695119
         },
         {
           "id": 10147,
           "name": "GARCIA CORTES, MARIA JOSE",
-          "sales_2025": 10118.49,
+          "sales_2025": 10815.53,
           "budget_2026": 12000.0,
           "sales_2026": 2819.48,
           "profit_2026": 159.14999999999998,
@@ -9004,7 +9010,7 @@ const DASHBOARD_DATA = {
             "OCT": 553.6800000000001,
             "NOV": 1084.83,
             "DIC": 960.48,
-            "ENE": 0.0
+            "ENE": 697.04
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -9053,13 +9059,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2819.48,
           "profit_2026_ytd": 159.14999999999998,
           "deviation_pct": -76.50433333333334,
-          "growth_pct": -72.13536802428031,
+          "growth_pct": -73.9311896874217,
           "margin_pct": 5.644657880176485
         },
         {
           "id": 10179,
           "name": "SAEZ TRIPIANA, MARIA JOSE",
-          "sales_2025": 11184.17,
+          "sales_2025": 11525.05,
           "budget_2026": 12000.0,
           "sales_2026": 3216.57,
           "profit_2026": -18.449999999999996,
@@ -9075,7 +9081,7 @@ const DASHBOARD_DATA = {
             "OCT": 1045.11,
             "NOV": 1079.56,
             "DIC": 1108.81,
-            "ENE": 0.0
+            "ENE": 340.88
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -9124,13 +9130,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 3216.57,
           "profit_2026_ytd": -18.449999999999996,
           "deviation_pct": -73.19525,
-          "growth_pct": -71.23997578720639,
+          "growth_pct": -72.09061999731021,
           "margin_pct": -0.5735923670245011
         },
         {
           "id": 10203,
           "name": "FC.EMBUTIDOS NSTRA.SRA.REMEDIO",
-          "sales_2025": 19056.47,
+          "sales_2025": 20326.6,
           "budget_2026": 18000.0,
           "sales_2026": 6211.639999999999,
           "profit_2026": -64.25,
@@ -9146,7 +9152,7 @@ const DASHBOARD_DATA = {
             "OCT": 1901.83,
             "NOV": 1519.53,
             "DIC": 2639.59,
-            "ENE": 0.0
+            "ENE": 1270.13
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -9195,13 +9201,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 6211.639999999999,
           "profit_2026_ytd": -64.25,
           "deviation_pct": -65.49088888888889,
-          "growth_pct": -67.40403652932574,
+          "growth_pct": -69.44083122607815,
           "margin_pct": -1.034348416843217
         },
         {
           "id": 10205,
           "name": "NAVARRO VALDIVIESO,ENCARNACION",
-          "sales_2025": 11772.39,
+          "sales_2025": 12720.710000000001,
           "budget_2026": 12000.0,
           "sales_2026": 4921.84,
           "profit_2026": -324.28,
@@ -9217,7 +9223,7 @@ const DASHBOARD_DATA = {
             "OCT": 1116.1399999999999,
             "NOV": 751.63,
             "DIC": 1610.3400000000001,
-            "ENE": 0.0
+            "ENE": 948.32
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -9266,13 +9272,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 4921.84,
           "profit_2026_ytd": -324.28,
           "deviation_pct": -58.98466666666666,
-          "growth_pct": -58.19166711262539,
+          "growth_pct": -61.308448978083774,
           "margin_pct": -6.588592883962095
         },
         {
           "id": 18375,
           "name": "PANADEROS DE LUCAR S.L.",
-          "sales_2025": 48685.31,
+          "sales_2025": 52434.48,
           "budget_2026": 54950.0,
           "sales_2026": 17480.98,
           "profit_2026": -131.41,
@@ -9288,7 +9294,7 @@ const DASHBOARD_DATA = {
             "OCT": 3294.6400000000003,
             "NOV": 4287.47,
             "DIC": 3923.75,
-            "ENE": 0.0
+            "ENE": 3749.17
           },
           "budget_2026_monthly": {
             "FEB": 5200.0,
@@ -9337,13 +9343,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 17480.98,
           "profit_2026_ytd": -131.41,
           "deviation_pct": -68.1874795268426,
-          "growth_pct": -64.09393305701452,
+          "growth_pct": -66.6612885261759,
           "margin_pct": -0.7517313102583493
         },
         {
           "id": 19305,
           "name": "RUEDA PEREZ DONATO",
-          "sales_2025": 7453.4400000000005,
+          "sales_2025": 8184.4400000000005,
           "budget_2026": 9000.0,
           "sales_2026": 2736.3199999999997,
           "profit_2026": -8.77,
@@ -9359,7 +9365,7 @@ const DASHBOARD_DATA = {
             "OCT": 848.8100000000001,
             "NOV": 826.16,
             "DIC": 515.77,
-            "ENE": 0.0
+            "ENE": 731.0
           },
           "budget_2026_monthly": {
             "FEB": 750.0,
@@ -9408,13 +9414,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2736.3199999999997,
           "profit_2026_ytd": -8.77,
           "deviation_pct": -69.59644444444444,
-          "growth_pct": -63.287824145629415,
+          "growth_pct": -66.56680237132902,
           "margin_pct": -0.3205034498889019
         },
         {
           "id": 19471,
           "name": "ENCINAS PEREZ, MILAGROS",
-          "sales_2025": 3637.74,
+          "sales_2025": 3875.72,
           "budget_2026": 3900.0,
           "sales_2026": 1506.52,
           "profit_2026": 31.180000000000003,
@@ -9430,7 +9436,7 @@ const DASHBOARD_DATA = {
             "OCT": 282.71,
             "NOV": 347.07,
             "DIC": 427.92999999999995,
-            "ENE": 0.0
+            "ENE": 237.98
           },
           "budget_2026_monthly": {
             "FEB": 200.0,
@@ -9479,7 +9485,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1506.52,
           "profit_2026_ytd": 31.180000000000003,
           "deviation_pct": -61.37128205128205,
-          "growth_pct": -58.586375057040904,
+          "growth_pct": -61.12928694539337,
           "margin_pct": 2.069670498898123
         },
         {
@@ -9627,7 +9633,7 @@ const DASHBOARD_DATA = {
         {
           "id": 19595,
           "name": "RAMIREZ MARIN, ELISABET",
-          "sales_2025": 6107.86,
+          "sales_2025": 6590.85,
           "budget_2026": 12000.0,
           "sales_2026": 2341.5099999999998,
           "profit_2026": -100.08,
@@ -9643,7 +9649,7 @@ const DASHBOARD_DATA = {
             "OCT": 759.33,
             "NOV": 0.0,
             "DIC": 348.24,
-            "ENE": 0.0
+            "ENE": 482.99
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -9692,13 +9698,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2341.5099999999998,
           "profit_2026_ytd": -100.08,
           "deviation_pct": -80.48741666666666,
-          "growth_pct": -61.66398705929736,
+          "growth_pct": -64.47332286427395,
           "margin_pct": -4.274164961926279
         },
         {
           "id": 19600,
           "name": "RECOPEMA, S.L.",
-          "sales_2025": 1185.75,
+          "sales_2025": 1467.05,
           "budget_2026": 0.0,
           "sales_2026": 281.06,
           "profit_2026": -2.5,
@@ -9714,7 +9720,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 0.0,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 281.3
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -9763,13 +9769,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 281.06,
           "profit_2026_ytd": -2.5,
           "deviation_pct": 0.0,
-          "growth_pct": -76.29685852835757,
+          "growth_pct": -80.84182543198936,
           "margin_pct": -0.8894897886572263
         },
         {
           "id": 19607,
           "name": "FUTURAL, S.L.",
-          "sales_2025": 21051.24,
+          "sales_2025": 28836.48,
           "budget_2026": 0.0,
           "sales_2026": 9805.5,
           "profit_2026": -2176.3399999999997,
@@ -9785,7 +9791,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 0.0,
             "DIC": 6613.92,
-            "ENE": 0.0
+            "ENE": 7785.24
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -9834,13 +9840,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 9805.5,
           "profit_2026_ytd": -2176.3399999999997,
           "deviation_pct": 0.0,
-          "growth_pct": -53.42079611462318,
+          "growth_pct": -65.99619648445302,
           "margin_pct": -22.195094589771045
         },
         {
           "id": 19610,
           "name": "DURANLOR, S.L.",
-          "sales_2025": 9029.529999999999,
+          "sales_2025": 9494.24,
           "budget_2026": 12000.0,
           "sales_2026": 3097.52,
           "profit_2026": 50.28,
@@ -9856,7 +9862,7 @@ const DASHBOARD_DATA = {
             "OCT": 671.92,
             "NOV": 2608.1099999999997,
             "DIC": 677.62,
-            "ENE": 0.0
+            "ENE": 464.71
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -9905,13 +9911,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 3097.52,
           "profit_2026_ytd": 50.28,
           "deviation_pct": -74.18733333333333,
-          "growth_pct": -65.69566743784006,
+          "growth_pct": -67.37474510861323,
           "margin_pct": 1.62323407112787
         },
         {
           "id": 19614,
           "name": "DELIMED COMPANY, S.L.",
-          "sales_2025": 73057.06,
+          "sales_2025": 80344.9,
           "budget_2026": 92000.0,
           "sales_2026": 34709.65,
           "profit_2026": -6877.610000000001,
@@ -9927,7 +9933,7 @@ const DASHBOARD_DATA = {
             "OCT": 3638.3299999999995,
             "NOV": 2946.84,
             "DIC": 6064.17,
-            "ENE": 0.0
+            "ENE": 7287.839999999999
           },
           "budget_2026_monthly": {
             "FEB": 4000.0,
@@ -9976,13 +9982,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 34709.65,
           "profit_2026_ytd": -6877.610000000001,
           "deviation_pct": -62.27211956521739,
-          "growth_pct": -52.48967040283306,
+          "growth_pct": -56.799187005024585,
           "margin_pct": -19.814691303427146
         },
         {
           "id": 19623,
           "name": "S.A.T. PALOMASOL",
-          "sales_2025": 34015.95,
+          "sales_2025": 34011.15,
           "budget_2026": 41000.0,
           "sales_2026": 0.0,
           "profit_2026": 0.0,
@@ -9998,7 +10004,7 @@ const DASHBOARD_DATA = {
             "OCT": 3280.28,
             "NOV": 2128.02,
             "DIC": 1808.03,
-            "ENE": 0.0
+            "ENE": -4.8
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -10053,7 +10059,7 @@ const DASHBOARD_DATA = {
         {
           "id": 19663,
           "name": "FERNANDEZ PEREZ, NICOLASA",
-          "sales_2025": 16549.53,
+          "sales_2025": 17861.36,
           "budget_2026": 18000.0,
           "sales_2026": 5715.09,
           "profit_2026": -21.75,
@@ -10069,7 +10075,7 @@ const DASHBOARD_DATA = {
             "OCT": 939.84,
             "NOV": 1763.21,
             "DIC": 1179.64,
-            "ENE": 0.0
+            "ENE": 1311.83
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -10118,13 +10124,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 5715.09,
           "profit_2026_ytd": -21.75,
           "deviation_pct": -68.2495,
-          "growth_pct": -65.46675343650243,
+          "growth_pct": -68.00305239914542,
           "margin_pct": -0.3805714345705842
         },
         {
           "id": 19733,
           "name": "REVELLE GARCIA, AMPARO",
-          "sales_2025": 530.51,
+          "sales_2025": 552.66,
           "budget_2026": 600.0,
           "sales_2026": 158.47,
           "profit_2026": -1.85,
@@ -10140,7 +10146,7 @@ const DASHBOARD_DATA = {
             "OCT": 37.21,
             "NOV": 51.41,
             "DIC": 34.16,
-            "ENE": 0.0
+            "ENE": 22.15
           },
           "budget_2026_monthly": {
             "FEB": 50.0,
@@ -10189,13 +10195,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 158.47,
           "profit_2026_ytd": -1.85,
           "deviation_pct": -73.58833333333334,
-          "growth_pct": -70.12874403875516,
+          "growth_pct": -71.32595085586074,
           "margin_pct": -1.1674133905471067
         },
         {
           "id": 19818,
           "name": "ASOCIACION ENGLOBA",
-          "sales_2025": 3312.7599999999998,
+          "sales_2025": 3260.2599999999998,
           "budget_2026": 6000.0,
           "sales_2026": 1287.48,
           "profit_2026": 162.91,
@@ -10211,7 +10217,7 @@ const DASHBOARD_DATA = {
             "OCT": 363.05,
             "NOV": 19.680000000000007,
             "DIC": 484.73,
-            "ENE": 0.0
+            "ENE": -52.5
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -10260,13 +10266,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1287.48,
           "profit_2026_ytd": 162.91,
           "deviation_pct": -78.54200000000002,
-          "growth_pct": -61.13572972385563,
+          "growth_pct": -60.509897983596396,
           "margin_pct": 12.653400441171902
         },
         {
           "id": 19883,
           "name": "RODRIGUEZ CAMPOS, JUAN CARLOS",
-          "sales_2025": 19880.04,
+          "sales_2025": 20818.54,
           "budget_2026": 22720.0,
           "sales_2026": 8106.290000000001,
           "profit_2026": -401.33,
@@ -10282,7 +10288,7 @@ const DASHBOARD_DATA = {
             "OCT": 1871.14,
             "NOV": 1803.94,
             "DIC": 1840.1799999999998,
-            "ENE": 0.0
+            "ENE": 938.4999999999999
           },
           "budget_2026_monthly": {
             "FEB": 2060.0,
@@ -10331,7 +10337,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 8106.290000000001,
           "profit_2026_ytd": -401.33,
           "deviation_pct": -64.32090669014084,
-          "growth_pct": -59.22397540447605,
+          "growth_pct": -61.06215901787541,
           "margin_pct": -4.950846811550043
         },
         {
@@ -10408,7 +10414,7 @@ const DASHBOARD_DATA = {
         {
           "id": 20264,
           "name": "RESID.MUNIC.PERSON.MAYOR.SERON",
-          "sales_2025": 25784.91,
+          "sales_2025": 28150.46,
           "budget_2026": 30000.0,
           "sales_2026": 11136.05,
           "profit_2026": 489.96,
@@ -10424,7 +10430,7 @@ const DASHBOARD_DATA = {
             "OCT": 2321.57,
             "NOV": 2927.5999999999995,
             "DIC": 2210.96,
-            "ENE": 0.0
+            "ENE": 2365.55
           },
           "budget_2026_monthly": {
             "FEB": 3000.0,
@@ -10473,7 +10479,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 11136.05,
           "profit_2026_ytd": 489.96,
           "deviation_pct": -62.87983333333334,
-          "growth_pct": -56.811755402675445,
+          "growth_pct": -60.44096615117479,
           "margin_pct": 4.399764728067852
         },
         {
@@ -10550,7 +10556,7 @@ const DASHBOARD_DATA = {
         {
           "id": 22277,
           "name": "CUEVAS MARTINEZ MARIA ANGELES",
-          "sales_2025": 17004.010000000002,
+          "sales_2025": 18151.07,
           "budget_2026": 21900.0,
           "sales_2026": 6253.15,
           "profit_2026": -27.879999999999995,
@@ -10566,7 +10572,7 @@ const DASHBOARD_DATA = {
             "OCT": 1485.49,
             "NOV": 1247.7,
             "DIC": 2254.0,
-            "ENE": 0.0
+            "ENE": 1147.06
           },
           "budget_2026_monthly": {
             "FEB": 1800.0,
@@ -10615,13 +10621,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 6253.15,
           "profit_2026_ytd": -27.879999999999995,
           "deviation_pct": -71.44680365296804,
-          "growth_pct": -63.22543917581795,
+          "growth_pct": -65.54941389130228,
           "margin_pct": -0.4458552889343771
         },
         {
           "id": 22322,
           "name": "NAVARRO ORTEGA, MANUELA JOSE",
-          "sales_2025": 20026.13,
+          "sales_2025": 21784.69,
           "budget_2026": 24000.0,
           "sales_2026": 6849.3,
           "profit_2026": -173.59,
@@ -10637,7 +10643,7 @@ const DASHBOARD_DATA = {
             "OCT": 1526.88,
             "NOV": 1850.3899999999999,
             "DIC": 1753.9199999999998,
-            "ENE": 0.0
+            "ENE": 1758.56
           },
           "budget_2026_monthly": {
             "FEB": 1900.0,
@@ -10686,13 +10692,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 6849.3,
           "profit_2026_ytd": -173.59,
           "deviation_pct": -71.46124999999999,
-          "growth_pct": -65.79818467172639,
+          "growth_pct": -68.55911192677058,
           "margin_pct": -2.5344195757230668
         },
         {
           "id": 22367,
           "name": "CARPINTERIA RR PURCHENA, S.L.",
-          "sales_2025": 7363.26,
+          "sales_2025": 8024.22,
           "budget_2026": 12000.0,
           "sales_2026": 0.0,
           "profit_2026": 0.0,
@@ -10708,7 +10714,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 457.73,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 660.96
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -10834,7 +10840,7 @@ const DASHBOARD_DATA = {
         {
           "id": 22476,
           "name": "JOSEFA HERNANDEZ, S.L.",
-          "sales_2025": 19104.0,
+          "sales_2025": 23307.49,
           "budget_2026": 18000.0,
           "sales_2026": 7878.599999999999,
           "profit_2026": -1270.1599999999999,
@@ -10850,7 +10856,7 @@ const DASHBOARD_DATA = {
             "OCT": 2786.59,
             "NOV": 1529.5900000000001,
             "DIC": 4021.98,
-            "ENE": 0.0
+            "ENE": 4203.49
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -10899,13 +10905,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 7878.599999999999,
           "profit_2026_ytd": -1270.1599999999999,
           "deviation_pct": -56.23000000000001,
-          "growth_pct": -58.75942211055277,
+          "growth_pct": -66.19713233814538,
           "margin_pct": -16.121645977711776
         },
         {
           "id": 22559,
           "name": "SUPERMERCADO SUPERCOMPRA, S.L.",
-          "sales_2025": 11967.119999999999,
+          "sales_2025": 13221.099999999999,
           "budget_2026": 12000.0,
           "sales_2026": 4591.11,
           "profit_2026": -624.73,
@@ -10921,7 +10927,7 @@ const DASHBOARD_DATA = {
             "OCT": 1237.95,
             "NOV": 1054.92,
             "DIC": 1743.29,
-            "ENE": 0.0
+            "ENE": 1253.98
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -10970,13 +10976,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 4591.11,
           "profit_2026_ytd": -624.73,
           "deviation_pct": -61.74075,
-          "growth_pct": -61.63563163066803,
+          "growth_pct": -65.27437202653333,
           "margin_pct": -13.607384706530667
         },
         {
           "id": 22575,
           "name": "JESUS CABRERA, S.L.",
-          "sales_2025": 74651.15,
+          "sales_2025": 80637.3,
           "budget_2026": 87000.0,
           "sales_2026": 27123.84,
           "profit_2026": -4538.26,
@@ -10992,7 +10998,7 @@ const DASHBOARD_DATA = {
             "OCT": 7369.71,
             "NOV": 6641.2,
             "DIC": 6959.1900000000005,
-            "ENE": 0.0
+            "ENE": 5986.15
           },
           "budget_2026_monthly": {
             "FEB": 6000.0,
@@ -11041,13 +11047,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 27123.84,
           "profit_2026_ytd": -4538.26,
           "deviation_pct": -68.82317241379312,
-          "growth_pct": -63.6658778866769,
+          "growth_pct": -66.3631594807862,
           "margin_pct": -16.731627970080932
         },
         {
           "id": 22624,
           "name": "ENRIQUE MIRAS, S.L.",
-          "sales_2025": 29422.95,
+          "sales_2025": 30840.83,
           "budget_2026": 30000.0,
           "sales_2026": 6316.78,
           "profit_2026": -1132.55,
@@ -11063,7 +11069,7 @@ const DASHBOARD_DATA = {
             "OCT": 1737.2,
             "NOV": 4093.82,
             "DIC": 4751.450000000001,
-            "ENE": 0.0
+            "ENE": 1417.88
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -11112,13 +11118,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 6316.78,
           "profit_2026_ytd": -1132.55,
           "deviation_pct": -78.94406666666667,
-          "growth_pct": -78.53111261787143,
+          "growth_pct": -79.51812580919515,
           "margin_pct": -17.929229765798397
         },
         {
           "id": 22744,
           "name": "SUPER-TURRE, S.L.",
-          "sales_2025": 73398.26,
+          "sales_2025": 78972.94,
           "budget_2026": 82000.0,
           "sales_2026": 22257.66,
           "profit_2026": -917.8199999999999,
@@ -11134,7 +11140,7 @@ const DASHBOARD_DATA = {
             "OCT": 5882.43,
             "NOV": 7042.33,
             "DIC": 4720.629999999999,
-            "ENE": 0.0
+            "ENE": 5574.68
           },
           "budget_2026_monthly": {
             "FEB": 5000.0,
@@ -11183,13 +11189,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 22257.66,
           "profit_2026_ytd": -917.8199999999999,
           "deviation_pct": -72.85651219512195,
-          "growth_pct": -69.67549366974094,
+          "growth_pct": -71.81609295538446,
           "margin_pct": -4.123614072638363
         },
         {
           "id": 22895,
           "name": "GAP LOGIST. & DIST., S.L.",
-          "sales_2025": 48464.66,
+          "sales_2025": 54975.74,
           "budget_2026": 68000.0,
           "sales_2026": 11285.52,
           "profit_2026": -2537.25,
@@ -11205,7 +11211,7 @@ const DASHBOARD_DATA = {
             "OCT": 5258.46,
             "NOV": 2770.08,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 6511.08
           },
           "budget_2026_monthly": {
             "FEB": 5000.0,
@@ -11254,13 +11260,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 11285.52,
           "profit_2026_ytd": -2537.25,
           "deviation_pct": -83.40364705882352,
-          "growth_pct": -76.71391896693383,
+          "growth_pct": -79.47181793278271,
           "margin_pct": -22.48234906322438
         },
         {
           "id": 22934,
           "name": "NIETO ROMERO, FRANCISCO ANGEL",
-          "sales_2025": 3748.06,
+          "sales_2025": 4328.83,
           "budget_2026": 6000.0,
           "sales_2026": 2701.23,
           "profit_2026": -94.11,
@@ -11276,7 +11282,7 @@ const DASHBOARD_DATA = {
             "OCT": 169.8,
             "NOV": 197.3,
             "DIC": 647.8,
-            "ENE": 0.0
+            "ENE": 580.77
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -11325,13 +11331,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2701.23,
           "profit_2026_ytd": -94.11,
           "deviation_pct": -54.9795,
-          "growth_pct": -27.92991574307775,
+          "growth_pct": -37.5990741147146,
           "margin_pct": -3.483968414389001
         },
         {
           "id": 23057,
           "name": "MARIN MARTINEZ, VIOLETA",
-          "sales_2025": 17438.06,
+          "sales_2025": 18329.37,
           "budget_2026": 21000.0,
           "sales_2026": 5336.47,
           "profit_2026": -300.99,
@@ -11347,7 +11353,7 @@ const DASHBOARD_DATA = {
             "OCT": 1008.31,
             "NOV": 1697.99,
             "DIC": 1550.1699999999998,
-            "ENE": 0.0
+            "ENE": 891.31
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -11396,13 +11402,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 5336.47,
           "profit_2026_ytd": -300.99,
           "deviation_pct": -74.5882380952381,
-          "growth_pct": -69.39757060131689,
+          "growth_pct": -70.88568783324249,
           "margin_pct": -5.640245330714873
         },
         {
           "id": 23123,
           "name": "UPER SUPERTOTE, S.L.",
-          "sales_2025": 17770.55,
+          "sales_2025": 20078.13,
           "budget_2026": 22000.0,
           "sales_2026": 9004.37,
           "profit_2026": -2449.0299999999997,
@@ -11418,7 +11424,7 @@ const DASHBOARD_DATA = {
             "OCT": 654.53,
             "NOV": 1220.7,
             "DIC": 431.05,
-            "ENE": 0.0
+            "ENE": 2307.58
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -11467,13 +11473,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 9004.37,
           "profit_2026_ytd": -2449.0299999999997,
           "deviation_pct": -59.07104545454545,
-          "growth_pct": -49.329818154193305,
+          "growth_pct": -55.153343463758816,
           "margin_pct": -27.198238188790548
         },
         {
           "id": 23160,
           "name": "ALIMENTACION HIJOS DE ONOFRE F",
-          "sales_2025": 18034.04,
+          "sales_2025": 26443.4,
           "budget_2026": 27000.0,
           "sales_2026": 1813.2,
           "profit_2026": -461.4,
@@ -11489,7 +11495,7 @@ const DASHBOARD_DATA = {
             "OCT": 2641.32,
             "NOV": 0.0,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 8409.36
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -11538,13 +11544,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1813.2,
           "profit_2026_ytd": -461.4,
           "deviation_pct": -93.28444444444443,
-          "growth_pct": -89.94568050198403,
+          "growth_pct": -93.14309052542411,
           "margin_pct": -25.44672402382528
         },
         {
           "id": 23190,
           "name": "TERUEL CARRILLO, MIGUEL ANGEL",
-          "sales_2025": 14674.32,
+          "sales_2025": 15578.43,
           "budget_2026": 16500.0,
           "sales_2026": 4064.45,
           "profit_2026": 28.410000000000004,
@@ -11560,7 +11566,7 @@ const DASHBOARD_DATA = {
             "OCT": 3041.67,
             "NOV": 1120.53,
             "DIC": 1823.8799999999999,
-            "ENE": 0.0
+            "ENE": 904.11
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -11609,13 +11615,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 4064.45,
           "profit_2026_ytd": 28.410000000000004,
           "deviation_pct": -75.36696969696969,
-          "growth_pct": -72.30229407563688,
+          "growth_pct": -73.90975855718452,
           "margin_pct": 0.6989875628928884
         },
         {
           "id": 23251,
           "name": "EVEN MERKAIMPORT, S.L.",
-          "sales_2025": 24658.059999999998,
+          "sales_2025": 27718.059999999998,
           "budget_2026": 39000.0,
           "sales_2026": 11373.96,
           "profit_2026": -2862.89,
@@ -11631,7 +11637,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 3255.0,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 3060.0
           },
           "budget_2026_monthly": {
             "FEB": 3000.0,
@@ -11680,13 +11686,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 11373.96,
           "profit_2026_ytd": -2862.89,
           "deviation_pct": -70.836,
-          "growth_pct": -53.87325685800099,
+          "growth_pct": -58.96552644737763,
           "margin_pct": -25.170565045067857
         },
         {
           "id": 23434,
           "name": "MORENILLA JIMENEZ JOSE JULIAN",
-          "sales_2025": 24624.04,
+          "sales_2025": 26453.39,
           "budget_2026": 28000.0,
           "sales_2026": 8818.130000000001,
           "profit_2026": -390.06,
@@ -11702,7 +11708,7 @@ const DASHBOARD_DATA = {
             "OCT": 2187.09,
             "NOV": 2072.16,
             "DIC": 2840.58,
-            "ENE": 0.0
+            "ENE": 1829.35
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -11751,13 +11757,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 8818.130000000001,
           "profit_2026_ytd": -390.06,
           "deviation_pct": -68.50667857142857,
-          "growth_pct": -64.18893893934545,
+          "growth_pct": -66.66540658872077,
           "margin_pct": -4.423386817840063
         },
         {
           "id": 23509,
           "name": "MARTINEZ ORTEGA, RUBEN DARIO",
-          "sales_2025": 6221.71,
+          "sales_2025": 6846.200000000001,
           "budget_2026": 6000.0,
           "sales_2026": 1533.8600000000001,
           "profit_2026": -148.39,
@@ -11773,7 +11779,7 @@ const DASHBOARD_DATA = {
             "OCT": 810.32,
             "NOV": 0.0,
             "DIC": 841.07,
-            "ENE": 0.0
+            "ENE": 624.49
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -11822,13 +11828,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1533.8600000000001,
           "profit_2026_ytd": -148.39,
           "deviation_pct": -74.43566666666666,
-          "growth_pct": -75.34664907236113,
+          "growth_pct": -77.59545441266688,
           "margin_pct": -9.674285788794283
         },
         {
           "id": 23699,
           "name": "SUPERMERCADO LAS CARIÑAS, C.B.",
-          "sales_2025": 9028.94,
+          "sales_2025": 9469.41,
           "budget_2026": 12000.0,
           "sales_2026": 4073.38,
           "profit_2026": -80.16000000000001,
@@ -11844,7 +11850,7 @@ const DASHBOARD_DATA = {
             "OCT": 1309.9,
             "NOV": 1042.27,
             "DIC": 951.04,
-            "ENE": 0.0
+            "ENE": 440.46999999999997
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -11893,13 +11899,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 4073.38,
           "profit_2026_ytd": -80.16000000000001,
           "deviation_pct": -66.05516666666666,
-          "growth_pct": -54.88529107514282,
+          "growth_pct": -56.98380363718542,
           "margin_pct": -1.9678988947753464
         },
         {
           "id": 23734,
           "name": "OBDULIO Y ANTONIO GARCIA, S.L.",
-          "sales_2025": 78075.95,
+          "sales_2025": 85411.87,
           "budget_2026": 87000.0,
           "sales_2026": 20620.940000000002,
           "profit_2026": -2804.74,
@@ -11915,7 +11921,7 @@ const DASHBOARD_DATA = {
             "OCT": 6422.549999999999,
             "NOV": 8527.09,
             "DIC": 6206.420000000001,
-            "ENE": 0.0
+            "ENE": 7335.92
           },
           "budget_2026_monthly": {
             "FEB": 4000.0,
@@ -11964,13 +11970,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 20620.940000000002,
           "profit_2026_ytd": -2804.74,
           "deviation_pct": -76.29777011494254,
-          "growth_pct": -73.58861467583807,
+          "growth_pct": -75.85705593379468,
           "margin_pct": -13.60141681223067
         },
         {
           "id": 23756,
           "name": "GUERRERO ROMERO, PEDRO",
-          "sales_2025": 3945.0499999999997,
+          "sales_2025": 4483.29,
           "budget_2026": 6000.0,
           "sales_2026": 962.9200000000001,
           "profit_2026": -93.44,
@@ -11986,7 +11992,7 @@ const DASHBOARD_DATA = {
             "OCT": -92.48,
             "NOV": 461.11,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 538.24
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -12035,7 +12041,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 962.9200000000001,
           "profit_2026_ytd": -93.44,
           "deviation_pct": -83.95133333333334,
-          "growth_pct": -75.59169085309438,
+          "growth_pct": -78.52202288944056,
           "margin_pct": -9.703817554937064
         },
         {
@@ -12112,7 +12118,7 @@ const DASHBOARD_DATA = {
         {
           "id": 23933,
           "name": "MERITXELL PUERTOLAS JORDA",
-          "sales_2025": 23897.91,
+          "sales_2025": 25175.41,
           "budget_2026": 26400.0,
           "sales_2026": 6033.490000000001,
           "profit_2026": 19.09,
@@ -12128,7 +12134,7 @@ const DASHBOARD_DATA = {
             "OCT": 1795.22,
             "NOV": 1957.1700000000003,
             "DIC": 2468.87,
-            "ENE": 0.0
+            "ENE": 1277.5
           },
           "budget_2026_monthly": {
             "FEB": 2200.0,
@@ -12177,13 +12183,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 6033.490000000001,
           "profit_2026_ytd": 19.09,
           "deviation_pct": -77.14587121212121,
-          "growth_pct": -74.75306418008938,
+          "growth_pct": -76.03419368343951,
           "margin_pct": 0.3164006238512038
         },
         {
           "id": 23987,
           "name": "SERRAFER ALIMENTACION, S.L.U.",
-          "sales_2025": 31112.539999999997,
+          "sales_2025": 33611.52,
           "budget_2026": 36000.0,
           "sales_2026": 10845.65,
           "profit_2026": -245.51,
@@ -12199,7 +12205,7 @@ const DASHBOARD_DATA = {
             "OCT": 3211.35,
             "NOV": 1509.51,
             "DIC": 3205.98,
-            "ENE": 0.0
+            "ENE": 2498.98
           },
           "budget_2026_monthly": {
             "FEB": 3250.0,
@@ -12248,13 +12254,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 10845.65,
           "profit_2026_ytd": -245.51,
           "deviation_pct": -69.87319444444444,
-          "growth_pct": -65.14058318607225,
+          "growth_pct": -67.73234295860466,
           "margin_pct": -2.263672532305579
         },
         {
           "id": 24149,
           "name": "CRESPO CRESPO, NOELIA",
-          "sales_2025": 29924.05,
+          "sales_2025": 31559.829999999998,
           "budget_2026": 33000.0,
           "sales_2026": 10809.2,
           "profit_2026": -233.79999999999998,
@@ -12270,7 +12276,7 @@ const DASHBOARD_DATA = {
             "OCT": 2011.4,
             "NOV": 2309.91,
             "DIC": 2515.19,
-            "ENE": 0.0
+            "ENE": 1635.7799999999997
           },
           "budget_2026_monthly": {
             "FEB": 2500.0,
@@ -12319,13 +12325,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 10809.2,
           "profit_2026_ytd": -233.79999999999998,
           "deviation_pct": -67.24484848484849,
-          "growth_pct": -63.87788417677419,
+          "growth_pct": -65.75013236763316,
           "margin_pct": -2.162972282870147
         },
         {
           "id": 24215,
           "name": "ROMERO GOMEZ, ROCIO",
-          "sales_2025": 32700.89,
+          "sales_2025": 34883.42,
           "budget_2026": 37400.0,
           "sales_2026": 10866.34,
           "profit_2026": -81.45,
@@ -12341,7 +12347,7 @@ const DASHBOARD_DATA = {
             "OCT": 2849.89,
             "NOV": 2376.8199999999997,
             "DIC": 3203.27,
-            "ENE": 0.0
+            "ENE": 2182.53
           },
           "budget_2026_monthly": {
             "FEB": 3100.0,
@@ -12390,13 +12396,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 10866.34,
           "profit_2026_ytd": -81.45,
           "deviation_pct": -70.94561497326202,
-          "growth_pct": -66.77050685776442,
+          "growth_pct": -68.84955660884168,
           "margin_pct": -0.7495624101583421
         },
         {
           "id": 24292,
           "name": "SUPERCASH CALASPARRA, S.L.",
-          "sales_2025": 69279.07,
+          "sales_2025": 75480.02,
           "budget_2026": 79000.0,
           "sales_2026": 22750.940000000002,
           "profit_2026": -1729.6200000000001,
@@ -12412,7 +12418,7 @@ const DASHBOARD_DATA = {
             "OCT": 5678.410000000001,
             "NOV": 5871.9400000000005,
             "DIC": 5303.25,
-            "ENE": 0.0
+            "ENE": 6200.95
           },
           "budget_2026_monthly": {
             "FEB": 5500.0,
@@ -12461,13 +12467,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 22750.940000000002,
           "profit_2026_ytd": -1729.6200000000001,
           "deviation_pct": -71.20134177215189,
-          "growth_pct": -67.1604425405826,
+          "growth_pct": -69.8583280714552,
           "margin_pct": -7.602411153121586
         },
         {
           "id": 24308,
           "name": "SUPERCO 2018, S.L.",
-          "sales_2025": 29040.77,
+          "sales_2025": 31329.21,
           "budget_2026": 33200.0,
           "sales_2026": 9722.81,
           "profit_2026": -288.71,
@@ -12483,7 +12489,7 @@ const DASHBOARD_DATA = {
             "OCT": 1232.37,
             "NOV": 2659.96,
             "DIC": 2723.3,
-            "ENE": 0.0
+            "ENE": 2288.4399999999996
           },
           "budget_2026_monthly": {
             "FEB": 3350.0,
@@ -12532,13 +12538,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 9722.81,
           "profit_2026_ytd": -288.71,
           "deviation_pct": -70.71442771084338,
-          "growth_pct": -66.520137034934,
+          "growth_pct": -68.96567133355741,
           "margin_pct": -2.969409049441468
         },
         {
           "id": 24509,
           "name": "ESTACION DE SERVCIO PICA",
-          "sales_2025": 31340.32,
+          "sales_2025": 34088.43,
           "budget_2026": 36000.0,
           "sales_2026": 3234.91,
           "profit_2026": -251.57999999999998,
@@ -12554,7 +12560,7 @@ const DASHBOARD_DATA = {
             "OCT": 5348.29,
             "NOV": 1172.57,
             "DIC": 2631.53,
-            "ENE": 0.0
+            "ENE": 2748.1099999999997
           },
           "budget_2026_monthly": {
             "FEB": 3000.0,
@@ -12603,13 +12609,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 3234.91,
           "profit_2026_ytd": -251.57999999999998,
           "deviation_pct": -91.01413888888888,
-          "growth_pct": -89.67812070840374,
+          "growth_pct": -90.51024057136101,
           "margin_pct": -7.777032436760218
         },
         {
           "id": 24544,
           "name": "VALERA SANCHEZ, MARIA CONCEPCI",
-          "sales_2025": 10822.62,
+          "sales_2025": 11955.48,
           "budget_2026": 13800.0,
           "sales_2026": 3663.7799999999997,
           "profit_2026": -19.840000000000003,
@@ -12625,7 +12631,7 @@ const DASHBOARD_DATA = {
             "OCT": 967.09,
             "NOV": 885.8900000000001,
             "DIC": 725.65,
-            "ENE": 0.0
+            "ENE": 1132.8600000000001
           },
           "budget_2026_monthly": {
             "FEB": 1150.0,
@@ -12674,13 +12680,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 3663.7799999999997,
           "profit_2026_ytd": -19.840000000000003,
           "deviation_pct": -73.4508695652174,
-          "growth_pct": -66.14701430891967,
+          "growth_pct": -69.35480633148984,
           "margin_pct": -0.5415172308380963
         },
         {
           "id": 24560,
           "name": "GRUPO NAVILOP LORCASH, S.COOP.",
-          "sales_2025": 96857.71,
+          "sales_2025": 103386.15000000001,
           "budget_2026": 107000.0,
           "sales_2026": 9155.53,
           "profit_2026": -1832.3400000000001,
@@ -12696,7 +12702,7 @@ const DASHBOARD_DATA = {
             "OCT": 5394.179999999999,
             "NOV": 4293.33,
             "DIC": 3400.68,
-            "ENE": 0.0
+            "ENE": 6528.4400000000005
           },
           "budget_2026_monthly": {
             "FEB": 8000.0,
@@ -12745,7 +12751,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 9155.53,
           "profit_2026_ytd": -1832.3400000000001,
           "deviation_pct": -91.44342990654206,
-          "growth_pct": -90.54744325464642,
+          "growth_pct": -91.14433606435679,
           "margin_pct": -20.013478192960974
         },
         {
@@ -12893,7 +12899,7 @@ const DASHBOARD_DATA = {
         {
           "id": 24589,
           "name": "CALFASA DISTRIBUCIONES, S.L.",
-          "sales_2025": 65703.06999999999,
+          "sales_2025": 68533.94,
           "budget_2026": 70000.0,
           "sales_2026": 8828.47,
           "profit_2026": -1293.0800000000002,
@@ -12909,7 +12915,7 @@ const DASHBOARD_DATA = {
             "OCT": 3529.3599999999997,
             "NOV": 6976.23,
             "DIC": 10681.720000000001,
-            "ENE": 0.0
+            "ENE": 2830.87
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -12958,7 +12964,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 8828.47,
           "profit_2026_ytd": -1293.0800000000002,
           "deviation_pct": -87.3879,
-          "growth_pct": -86.56307840714292,
+          "growth_pct": -87.11810527747274,
           "margin_pct": -14.646705488040398
         },
         {
@@ -13035,7 +13041,7 @@ const DASHBOARD_DATA = {
         {
           "id": 24643,
           "name": "BODEGAS RAMON ASENSIO, S.L.",
-          "sales_2025": 22366.02,
+          "sales_2025": 23603.52,
           "budget_2026": 24000.0,
           "sales_2026": 22859.14,
           "profit_2026": -5834.7699999999995,
@@ -13051,7 +13057,7 @@ const DASHBOARD_DATA = {
             "OCT": 1267.5,
             "NOV": 94.68,
             "DIC": 3055.5,
-            "ENE": 0.0
+            "ENE": 1237.5
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -13100,7 +13106,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 22859.14,
           "profit_2026_ytd": -5834.7699999999995,
           "deviation_pct": -4.753583333333336,
-          "growth_pct": 2.2047731335302347,
+          "growth_pct": -3.1536821626604885,
           "margin_pct": -25.52488851286619
         },
         {
@@ -13319,7 +13325,7 @@ const DASHBOARD_DATA = {
         {
           "id": 24730,
           "name": "LEVANTE ENERGY CENTER, S.L.",
-          "sales_2025": 13793.13,
+          "sales_2025": 14562.67,
           "budget_2026": 18000.0,
           "sales_2026": 1820.25,
           "profit_2026": -146.01999999999998,
@@ -13335,7 +13341,7 @@ const DASHBOARD_DATA = {
             "OCT": 2568.52,
             "NOV": 244.37999999999994,
             "DIC": 1207.74,
-            "ENE": 0.0
+            "ENE": 769.54
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -13384,13 +13390,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1820.25,
           "profit_2026_ytd": -146.01999999999998,
           "deviation_pct": -89.8875,
-          "growth_pct": -86.80321290381517,
+          "growth_pct": -87.50057510058251,
           "margin_pct": -8.021975003433592
         },
         {
           "id": 24786,
           "name": "TUDELA COSTA, FRANCISCO",
-          "sales_2025": 17117.559999999998,
+          "sales_2025": 21954.219999999998,
           "budget_2026": 24000.0,
           "sales_2026": 6592.69,
           "profit_2026": -1645.6599999999999,
@@ -13406,7 +13412,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 3354.4299999999994,
             "DIC": 943.6,
-            "ENE": 0.0
+            "ENE": 4836.66
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -13455,13 +13461,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 6592.69,
           "profit_2026_ytd": -1645.6599999999999,
           "deviation_pct": -72.53045833333334,
-          "growth_pct": -61.48580755668448,
+          "growth_pct": -69.97073911074956,
           "margin_pct": -24.961889608035566
         },
         {
           "id": 24799,
           "name": "FERNANDEZ NAVARRO, MARIA",
-          "sales_2025": 17564.01,
+          "sales_2025": 18858.52,
           "budget_2026": 19000.0,
           "sales_2026": 5556.01,
           "profit_2026": -320.03,
@@ -13477,7 +13483,7 @@ const DASHBOARD_DATA = {
             "OCT": 1472.96,
             "NOV": 2250.61,
             "DIC": 1049.06,
-            "ENE": 0.0
+            "ENE": 1294.51
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -13526,13 +13532,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 5556.01,
           "profit_2026_ytd": -320.03,
           "deviation_pct": -70.75784210526315,
-          "growth_pct": -68.36707562794601,
+          "growth_pct": -70.53846219109452,
           "margin_pct": -5.760068826370002
         },
         {
           "id": 24851,
           "name": "HARO MARTINEZ, BEATRIZ",
-          "sales_2025": 6355.33,
+          "sales_2025": 6921.98,
           "budget_2026": 9000.0,
           "sales_2026": 2414.19,
           "profit_2026": -17.56,
@@ -13548,7 +13554,7 @@ const DASHBOARD_DATA = {
             "OCT": 780.5,
             "NOV": 682.5,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 566.65
           },
           "budget_2026_monthly": {
             "FEB": 750.0,
@@ -13597,13 +13603,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2414.19,
           "profit_2026_ytd": -17.56,
           "deviation_pct": -73.17566666666666,
-          "growth_pct": -62.01314487209948,
+          "growth_pct": -65.12284057451768,
           "margin_pct": -0.7273661145145991
         },
         {
           "id": 24861,
           "name": "ALONSO GONZALEZ, DOLORES",
-          "sales_2025": 27879.440000000002,
+          "sales_2025": 30384.47,
           "budget_2026": 34800.0,
           "sales_2026": 4484.24,
           "profit_2026": 27.52,
@@ -13619,7 +13625,7 @@ const DASHBOARD_DATA = {
             "OCT": 1811.84,
             "NOV": 3452.4300000000007,
             "DIC": 1503.03,
-            "ENE": 0.0
+            "ENE": 2505.0299999999997
           },
           "budget_2026_monthly": {
             "FEB": 2150.0,
@@ -13668,13 +13674,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 4484.24,
           "profit_2026_ytd": 27.52,
           "deviation_pct": -87.11425287356323,
-          "growth_pct": -83.91560232199787,
+          "growth_pct": -85.2416711563506,
           "margin_pct": 0.6137048864467557
         },
         {
           "id": 24895,
           "name": "SUPERMERCADO SUPERCOMPRA, S.L.",
-          "sales_2025": 5400.1,
+          "sales_2025": 6207.44,
           "budget_2026": 6000.0,
           "sales_2026": 2674.8,
           "profit_2026": -391.64,
@@ -13690,7 +13696,7 @@ const DASHBOARD_DATA = {
             "OCT": 765.8900000000001,
             "NOV": 473.49,
             "DIC": 705.27,
-            "ENE": 0.0
+            "ENE": 807.3399999999999
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -13739,13 +13745,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2674.8,
           "profit_2026_ytd": -391.64,
           "deviation_pct": -55.419999999999995,
-          "growth_pct": -50.467583933630856,
+          "growth_pct": -56.90977278878249,
           "margin_pct": -14.641842380738746
         },
         {
           "id": 24938,
           "name": "REPOSTERIA CELSUR, S.C.A.",
-          "sales_2025": 866.4,
+          "sales_2025": 2434.45,
           "budget_2026": 0.0,
           "sales_2026": 8218.08,
           "profit_2026": -1181.26,
@@ -13761,7 +13767,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 433.2,
             "DIC": 433.2,
-            "ENE": 0.0
+            "ENE": 1568.05
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -13810,7 +13816,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 8218.08,
           "profit_2026_ytd": -1181.26,
           "deviation_pct": 0.0,
-          "growth_pct": 848.5318559556788,
+          "growth_pct": 237.57440078867918,
           "margin_pct": -14.373917021980803
         },
         {
@@ -13958,7 +13964,7 @@ const DASHBOARD_DATA = {
         {
           "id": 24983,
           "name": "CANOLICAS, S.L.",
-          "sales_2025": 73717.28,
+          "sales_2025": 81059.33,
           "budget_2026": 84000.0,
           "sales_2026": 22127.78,
           "profit_2026": -2362.79,
@@ -13974,7 +13980,7 @@ const DASHBOARD_DATA = {
             "OCT": 2776.89,
             "NOV": 1620.1599999999999,
             "DIC": 3105.4,
-            "ENE": 0.0
+            "ENE": 7342.049999999999
           },
           "budget_2026_monthly": {
             "FEB": 6000.0,
@@ -14023,13 +14029,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 22127.78,
           "profit_2026_ytd": -2362.79,
           "deviation_pct": -73.65740476190477,
-          "growth_pct": -69.98291309717342,
+          "growth_pct": -72.70174821331487,
           "margin_pct": -10.677935156622128
         },
         {
           "id": 24989,
           "name": "FAMISAN 24 HORAS, S.L.",
-          "sales_2025": 1044.05,
+          "sales_2025": 4393.88,
           "budget_2026": 0.0,
           "sales_2026": 11474.88,
           "profit_2026": -1957.5400000000002,
@@ -14045,7 +14051,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 0.0,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 3349.83
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -14094,13 +14100,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 11474.88,
           "profit_2026_ytd": -1957.5400000000002,
           "deviation_pct": 0.0,
-          "growth_pct": 999.0737991475504,
+          "growth_pct": 161.15597148761455,
           "margin_pct": -17.059350511726485
         },
         {
           "id": 24990,
           "name": "FAMISAN 24 HORAS, S.L.",
-          "sales_2025": 638.7,
+          "sales_2025": 2058.54,
           "budget_2026": 0.0,
           "sales_2026": 5320.8,
           "profit_2026": -1619.4199999999998,
@@ -14116,7 +14122,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 0.0,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 1419.84
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -14165,13 +14171,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 5320.8,
           "profit_2026_ytd": -1619.4199999999998,
           "deviation_pct": 0.0,
-          "growth_pct": 733.0671676843589,
+          "growth_pct": 158.47445276749542,
           "margin_pct": -30.435648774620354
         },
         {
           "id": 25024,
           "name": "FERMAC 21, S.L.",
-          "sales_2025": 44440.51,
+          "sales_2025": 45500.75,
           "budget_2026": 55000.0,
           "sales_2026": 0.0,
           "profit_2026": 0.0,
@@ -14187,7 +14193,7 @@ const DASHBOARD_DATA = {
             "OCT": 6377.4,
             "NOV": 0.0,
             "DIC": 1846.26,
-            "ENE": 0.0
+            "ENE": 1060.24
           },
           "budget_2026_monthly": {
             "FEB": 4000.0,
@@ -14455,7 +14461,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25078,
           "name": "MECA LOPEZ, CLARA",
-          "sales_2025": 6730.93,
+          "sales_2025": 7418.41,
           "budget_2026": 6000.0,
           "sales_2026": 2433.8,
           "profit_2026": -277.07,
@@ -14471,7 +14477,7 @@ const DASHBOARD_DATA = {
             "OCT": 840.92,
             "NOV": 0.0,
             "DIC": 854.94,
-            "ENE": 0.0
+            "ENE": 687.48
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -14520,13 +14526,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2433.8,
           "profit_2026_ytd": -277.07,
           "deviation_pct": -59.43666666666666,
-          "growth_pct": -63.84154938470612,
+          "growth_pct": -67.19243072302555,
           "margin_pct": -11.384255074369298
         },
         {
           "id": 25082,
           "name": "DIST. CHACON MORENO, S.L.",
-          "sales_2025": 60539.14,
+          "sales_2025": 60744.64,
           "budget_2026": 75000.0,
           "sales_2026": 34173.58,
           "profit_2026": -10102.4,
@@ -14542,7 +14548,7 @@ const DASHBOARD_DATA = {
             "OCT": 6288.9,
             "NOV": 9107.7,
             "DIC": 4857.23,
-            "ENE": 0.0
+            "ENE": 205.5
           },
           "budget_2026_monthly": {
             "FEB": 5000.0,
@@ -14591,13 +14597,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 34173.58,
           "profit_2026_ytd": -10102.4,
           "deviation_pct": -54.43522666666667,
-          "growth_pct": -43.55126286894726,
+          "growth_pct": -43.74222976710373,
           "margin_pct": -29.562018377939914
         },
         {
           "id": 25091,
           "name": "CAPARROS CUEVAS, CATALINA",
-          "sales_2025": 10533.38,
+          "sales_2025": 11221.57,
           "budget_2026": 12000.0,
           "sales_2026": 3434.3,
           "profit_2026": 60.55,
@@ -14613,7 +14619,7 @@ const DASHBOARD_DATA = {
             "OCT": 925.88,
             "NOV": 859.6700000000001,
             "DIC": 1208.06,
-            "ENE": 0.0
+            "ENE": 688.19
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -14662,13 +14668,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 3434.3,
           "profit_2026_ytd": 60.55,
           "deviation_pct": -71.38083333333334,
-          "growth_pct": -67.3960305239154,
+          "growth_pct": -69.39554803828698,
           "margin_pct": 1.763095827388405
         },
         {
           "id": 25105,
           "name": "CARREÑO BERRUEZO, JOSE FRANCIS",
-          "sales_2025": 19519.760000000002,
+          "sales_2025": 21381.760000000002,
           "budget_2026": 24000.0,
           "sales_2026": 7177.6,
           "profit_2026": 4.469999999999992,
@@ -14684,7 +14690,7 @@ const DASHBOARD_DATA = {
             "OCT": 1749.55,
             "NOV": 2106.51,
             "DIC": 1171.13,
-            "ENE": 0.0
+            "ENE": 1862.0
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -14733,13 +14739,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 7177.6,
           "profit_2026_ytd": 4.469999999999992,
           "deviation_pct": -70.09333333333333,
-          "growth_pct": -63.229056094951986,
+          "growth_pct": -66.43120117333653,
           "margin_pct": 0.06227708426214879
         },
         {
           "id": 25109,
           "name": "GRUPO DISALMUL, S.L.",
-          "sales_2025": 156236.8,
+          "sales_2025": 183623.54,
           "budget_2026": 173000.0,
           "sales_2026": 45347.22,
           "profit_2026": -8699.029999999999,
@@ -14755,7 +14761,7 @@ const DASHBOARD_DATA = {
             "OCT": 10977.21,
             "NOV": 4927.639999999999,
             "DIC": 7168.26,
-            "ENE": 0.0
+            "ENE": 27386.74
           },
           "budget_2026_monthly": {
             "FEB": 8000.0,
@@ -14804,13 +14810,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 45347.22,
           "profit_2026_ytd": -8699.029999999999,
           "deviation_pct": -73.78773410404624,
-          "growth_pct": -70.97532719564148,
+          "growth_pct": -75.30424476077523,
           "margin_pct": -19.183160511272792
         },
         {
           "id": 25110,
           "name": "CENTRO ASISTENCIAL PUERTOSOL,",
-          "sales_2025": 40318.38,
+          "sales_2025": 43357.43,
           "budget_2026": 47000.0,
           "sales_2026": 13092.04,
           "profit_2026": 444.77000000000004,
@@ -14826,7 +14832,7 @@ const DASHBOARD_DATA = {
             "OCT": 3622.3,
             "NOV": 5625.67,
             "DIC": 3103.2000000000003,
-            "ENE": 0.0
+            "ENE": 3039.05
           },
           "budget_2026_monthly": {
             "FEB": 4000.0,
@@ -14875,13 +14881,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 13092.04,
           "profit_2026_ytd": 444.77000000000004,
           "deviation_pct": -72.14459574468086,
-          "growth_pct": -67.52835803422657,
+          "growth_pct": -69.80439108129795,
           "margin_pct": 3.3972551260155024
         },
         {
           "id": 25123,
           "name": "LIFECARE ASISTENCIAL INTEGRAL,",
-          "sales_2025": 15521.73,
+          "sales_2025": 17285.56,
           "budget_2026": 18000.0,
           "sales_2026": 5419.65,
           "profit_2026": 257.67,
@@ -14897,7 +14903,7 @@ const DASHBOARD_DATA = {
             "OCT": 2038.0499999999997,
             "NOV": 1136.81,
             "DIC": 1520.71,
-            "ENE": 0.0
+            "ENE": 1763.83
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -14946,13 +14952,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 5419.65,
           "profit_2026_ytd": 257.67,
           "deviation_pct": -69.89083333333333,
-          "growth_pct": -65.08346685582083,
+          "growth_pct": -68.64637304200733,
           "margin_pct": 4.754366056848689
         },
         {
           "id": 25138,
           "name": "INDUSTRIAS TUDELA, S.L.",
-          "sales_2025": 197646.63,
+          "sales_2025": 220651.65,
           "budget_2026": 212000.0,
           "sales_2026": 54412.6,
           "profit_2026": -10308.57,
@@ -14968,7 +14974,7 @@ const DASHBOARD_DATA = {
             "OCT": 27829.6,
             "NOV": 11625.24,
             "DIC": 16604.010000000002,
-            "ENE": 0.0
+            "ENE": 23005.019999999997
           },
           "budget_2026_monthly": {
             "FEB": 12000.0,
@@ -15017,13 +15023,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 54412.6,
           "profit_2026_ytd": -10308.57,
           "deviation_pct": -74.33367924528301,
-          "growth_pct": -72.46975574539267,
+          "growth_pct": -75.34004391084318,
           "margin_pct": -18.9451891657447
         },
         {
           "id": 25139,
           "name": "JUMASAN, S.L.",
-          "sales_2025": 47818.81,
+          "sales_2025": 60207.07,
           "budget_2026": 60000.0,
           "sales_2026": 19017.5,
           "profit_2026": -3751.8100000000004,
@@ -15039,7 +15045,7 @@ const DASHBOARD_DATA = {
             "OCT": 9147.269999999999,
             "NOV": 4506.869999999999,
             "DIC": 4309.68,
-            "ENE": 0.0
+            "ENE": 12388.26
           },
           "budget_2026_monthly": {
             "FEB": 5000.0,
@@ -15088,7 +15094,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 19017.5,
           "profit_2026_ytd": -3751.8100000000004,
           "deviation_pct": -68.30416666666666,
-          "growth_pct": -60.23008519032573,
+          "growth_pct": -68.41317805367376,
           "margin_pct": -19.728197712633104
         },
         {
@@ -15165,7 +15171,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25153,
           "name": "JOSEFA HERNANDEZ, S.L.",
-          "sales_2025": 4273.62,
+          "sales_2025": 4807.44,
           "budget_2026": 6000.0,
           "sales_2026": 2906.02,
           "profit_2026": -517.98,
@@ -15181,7 +15187,7 @@ const DASHBOARD_DATA = {
             "OCT": 361.0,
             "NOV": 581.42,
             "DIC": 436.62,
-            "ENE": 0.0
+            "ENE": 533.82
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -15230,13 +15236,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2906.02,
           "profit_2026_ytd": -517.98,
           "deviation_pct": -51.56633333333333,
-          "growth_pct": -32.000973413639954,
+          "growth_pct": -39.551611668580364,
           "margin_pct": -17.82437835940565
         },
         {
           "id": 25183,
           "name": "MORENILLA MARTINEZ, ALEJANDRO",
-          "sales_2025": 16081.57,
+          "sales_2025": 17273.62,
           "budget_2026": 18000.0,
           "sales_2026": 5429.75,
           "profit_2026": 188.0,
@@ -15252,7 +15258,7 @@ const DASHBOARD_DATA = {
             "OCT": 1618.8400000000001,
             "NOV": 983.1199999999999,
             "DIC": 859.0699999999998,
-            "ENE": 0.0
+            "ENE": 1192.0500000000002
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -15301,13 +15307,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 5429.75,
           "profit_2026_ytd": 188.0,
           "deviation_pct": -69.83472222222223,
-          "growth_pct": -66.23619460040283,
+          "growth_pct": -68.56622989274975,
           "margin_pct": 3.4624061881302084
         },
         {
           "id": 25212,
           "name": "PEREZ CORRAL, ISMAEL",
-          "sales_2025": 26219.91,
+          "sales_2025": 27634.46,
           "budget_2026": 30000.0,
           "sales_2026": 4939.31,
           "profit_2026": 95.24,
@@ -15323,7 +15329,7 @@ const DASHBOARD_DATA = {
             "OCT": 2383.93,
             "NOV": 2672.6400000000003,
             "DIC": 1747.84,
-            "ENE": 0.0
+            "ENE": 1414.5500000000002
           },
           "budget_2026_monthly": {
             "FEB": 2500.0,
@@ -15372,7 +15378,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 4939.31,
           "profit_2026_ytd": 95.24,
           "deviation_pct": -83.53563333333332,
-          "growth_pct": -81.1619872074313,
+          "growth_pct": -82.12626553947499,
           "margin_pct": 1.9282045467889235
         },
         {
@@ -15520,7 +15526,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25252,
           "name": "TURRE ENERGY 2022, S.L.",
-          "sales_2025": 5002.19,
+          "sales_2025": 5431.86,
           "budget_2026": 6000.0,
           "sales_2026": 0.0,
           "profit_2026": 0.0,
@@ -15536,7 +15542,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 596.22,
             "DIC": 485.02,
-            "ENE": 0.0
+            "ENE": 429.67
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -15591,7 +15597,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25255,
           "name": "JIMENEZ FERNANDEZ, JOSE DAVID",
-          "sales_2025": 26800.49,
+          "sales_2025": 28579.52,
           "budget_2026": 31200.0,
           "sales_2026": 8603.17,
           "profit_2026": -347.9,
@@ -15607,7 +15613,7 @@ const DASHBOARD_DATA = {
             "OCT": 1978.3400000000001,
             "NOV": 1921.3700000000001,
             "DIC": 2634.59,
-            "ENE": 0.0
+            "ENE": 1779.0299999999997
           },
           "budget_2026_monthly": {
             "FEB": 2600.0,
@@ -15656,13 +15662,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 8603.17,
           "profit_2026_ytd": -347.9,
           "deviation_pct": -72.42573717948719,
-          "growth_pct": -67.89920632048145,
+          "growth_pct": -69.89743004781045,
           "margin_pct": -4.043858252248881
         },
         {
           "id": 25283,
           "name": "HIPERCOMPRA ALIMENTACION, S.L.",
-          "sales_2025": 57434.67,
+          "sales_2025": 63305.62,
           "budget_2026": 52000.0,
           "sales_2026": 21463.0,
           "profit_2026": -3749.62,
@@ -15678,7 +15684,7 @@ const DASHBOARD_DATA = {
             "OCT": 8268.99,
             "NOV": 1463.3899999999999,
             "DIC": 14178.529999999999,
-            "ENE": 0.0
+            "ENE": 5870.950000000001
           },
           "budget_2026_monthly": {
             "FEB": 4000.0,
@@ -15727,7 +15733,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 21463.0,
           "profit_2026_ytd": -3749.62,
           "deviation_pct": -58.72500000000001,
-          "growth_pct": -62.63058532416047,
+          "growth_pct": -66.09621704992385,
           "margin_pct": -17.47015794623305
         },
         {
@@ -15804,7 +15810,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25298,
           "name": "FERNANDEZ CAMPOY, JOSE MANUEL",
-          "sales_2025": 37942.64,
+          "sales_2025": 40849.49,
           "budget_2026": 48000.0,
           "sales_2026": 14647.27,
           "profit_2026": -99.07,
@@ -15820,7 +15826,7 @@ const DASHBOARD_DATA = {
             "OCT": 3383.18,
             "NOV": 2838.6000000000004,
             "DIC": 3565.0800000000004,
-            "ENE": 0.0
+            "ENE": 2906.8499999999995
           },
           "budget_2026_monthly": {
             "FEB": 4000.0,
@@ -15869,13 +15875,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 14647.27,
           "profit_2026_ytd": -99.07,
           "deviation_pct": -69.48485416666665,
-          "growth_pct": -61.39628133414017,
+          "growth_pct": -64.14332222997153,
           "margin_pct": -0.6763717743989153
         },
         {
           "id": 25306,
           "name": "GALLARDO SELFA,  MARIA DOLORES",
-          "sales_2025": 35419.049999999996,
+          "sales_2025": 38327.18,
           "budget_2026": 39600.0,
           "sales_2026": 13605.029999999999,
           "profit_2026": -320.19,
@@ -15891,7 +15897,7 @@ const DASHBOARD_DATA = {
             "OCT": 3072.0199999999995,
             "NOV": 3325.1,
             "DIC": 3833.6399999999994,
-            "ENE": 0.0
+            "ENE": 2908.13
           },
           "budget_2026_monthly": {
             "FEB": 3300.0,
@@ -15940,7 +15946,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 13605.029999999999,
           "profit_2026_ytd": -320.19,
           "deviation_pct": -65.64386363636365,
-          "growth_pct": -61.58838252296434,
+          "growth_pct": -64.50291933818247,
           "margin_pct": -2.3534677983069496
         },
         {
@@ -16017,7 +16023,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25313,
           "name": "PEÑA CRUZ, S.L.",
-          "sales_2025": 2399.16,
+          "sales_2025": 2623.66,
           "budget_2026": 0.0,
           "sales_2026": 539.3399999999999,
           "profit_2026": 9.66,
@@ -16033,7 +16039,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 81.08,
             "DIC": 447.0,
-            "ENE": 0.0
+            "ENE": 224.5
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -16082,7 +16088,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 539.3399999999999,
           "profit_2026_ytd": 9.66,
           "deviation_pct": 0.0,
-          "growth_pct": -77.5196318711549,
+          "growth_pct": -79.4432205392467,
           "margin_pct": 1.791077984202915
         },
         {
@@ -16230,7 +16236,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25393,
           "name": "SUMINISTROS JDCC, S.L.U.",
-          "sales_2025": 0.0,
+          "sales_2025": 2913.19,
           "budget_2026": 0.0,
           "sales_2026": 14860.7,
           "profit_2026": -1378.6599999999999,
@@ -16246,7 +16252,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 0.0,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 2913.19
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -16295,7 +16301,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 14860.7,
           "profit_2026_ytd": -1378.6599999999999,
           "deviation_pct": 0.0,
-          "growth_pct": 0.0,
+          "growth_pct": 410.11777467312464,
           "margin_pct": -9.277221126864816
         },
         {
@@ -16443,7 +16449,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25421,
           "name": "PALOMASOL MULTISERVICIO, S.L.",
-          "sales_2025": 0.0,
+          "sales_2025": 2911.23,
           "budget_2026": 0.0,
           "sales_2026": 12832.98,
           "profit_2026": -2654.12,
@@ -16459,7 +16465,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 0.0,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 2911.23
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -16508,13 +16514,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 12832.98,
           "profit_2026_ytd": -2654.12,
           "deviation_pct": 0.0,
-          "growth_pct": 0.0,
+          "growth_pct": 340.8095547242918,
           "margin_pct": -20.68202397260808
         },
         {
           "id": 25428,
           "name": "GARCIA MARTINEZ, JOSE",
-          "sales_2025": 0.0,
+          "sales_2025": 371.15,
           "budget_2026": 0.0,
           "sales_2026": 930.42,
           "profit_2026": -122.93,
@@ -16530,7 +16536,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 0.0,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 371.15
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -16579,7 +16585,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 930.42,
           "profit_2026_ytd": -122.93,
           "deviation_pct": 0.0,
-          "growth_pct": 0.0,
+          "growth_pct": 150.68570658763304,
           "margin_pct": -13.212312718987127
         },
         {
@@ -16812,7 +16818,7 @@ const DASHBOARD_DATA = {
         "OCT": 23172.280000000002,
         "NOV": 18263.399999999998,
         "DIC": 17243.32,
-        "ENE": 0.0
+        "ENE": 15518.830000000002
       },
       "budget_2026_monthly": {
         "FEB": 26000.0,
@@ -16856,7 +16862,7 @@ const DASHBOARD_DATA = {
         "DIC": 0.0,
         "ENE": 0.0
       },
-      "total_sales_2025": 378815.3900000001,
+      "total_sales_2025": 394334.22000000003,
       "total_budget_2026": 327000.0,
       "sales_2025_ytd": 216772.92000000004,
       "budget_2026_ytd": 105000.0,
@@ -17584,7 +17590,7 @@ const DASHBOARD_DATA = {
         {
           "id": 22654,
           "name": "CASA COGOAL, S.L.",
-          "sales_2025": 15708.35,
+          "sales_2025": 15928.67,
           "budget_2026": 44000.0,
           "sales_2026": 10708.18,
           "profit_2026": 353.23000000000013,
@@ -17600,7 +17606,7 @@ const DASHBOARD_DATA = {
             "OCT": 2861.95,
             "NOV": 1482.1,
             "DIC": 715.62,
-            "ENE": 0.0
+            "ENE": 220.32
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -17649,7 +17655,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 10708.18,
           "profit_2026_ytd": 353.23000000000013,
           "deviation_pct": -75.66322727272727,
-          "growth_pct": -31.831287181658162,
+          "growth_pct": -32.7741738638568,
           "margin_pct": 3.2986931486022844
         },
         {
@@ -17726,7 +17732,7 @@ const DASHBOARD_DATA = {
         {
           "id": 22754,
           "name": "BEDORUE, S.L.",
-          "sales_2025": 6540.51,
+          "sales_2025": 7960.349999999999,
           "budget_2026": 12000.0,
           "sales_2026": 8152.25,
           "profit_2026": -1845.8200000000002,
@@ -17742,7 +17748,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 453.6,
             "DIC": 622.08,
-            "ENE": 0.0
+            "ENE": 1419.84
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -17791,13 +17797,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 8152.25,
           "profit_2026_ytd": -1845.8200000000002,
           "deviation_pct": -32.06458333333334,
-          "growth_pct": 24.64242085097339,
+          "growth_pct": 2.4106980220719008,
           "margin_pct": -22.641847342758137
         },
         {
           "id": 22755,
           "name": "HIDIVAR 44-48, S.L.",
-          "sales_2025": 11520.36,
+          "sales_2025": 11946.11,
           "budget_2026": 12000.0,
           "sales_2026": 6883.81,
           "profit_2026": -446.78000000000003,
@@ -17813,7 +17819,7 @@ const DASHBOARD_DATA = {
             "OCT": 800.54,
             "NOV": 636.72,
             "DIC": 1074.16,
-            "ENE": 0.0
+            "ENE": 425.75
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -17862,13 +17868,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 6883.81,
           "profit_2026_ytd": -446.78000000000003,
           "deviation_pct": -42.63491666666666,
-          "growth_pct": -40.24657215573124,
+          "growth_pct": -42.376137504175,
           "margin_pct": -6.490301155900584
         },
         {
           "id": 22844,
           "name": "ALCOHOLADO TRUJILLO, SALVADOR",
-          "sales_2025": 52438.09,
+          "sales_2025": 57071.46,
           "budget_2026": 58000.0,
           "sales_2026": 14991.12,
           "profit_2026": -582.13,
@@ -17884,7 +17890,7 @@ const DASHBOARD_DATA = {
             "OCT": 3646.5299999999997,
             "NOV": 3153.8999999999996,
             "DIC": 3878.13,
-            "ENE": 0.0
+            "ENE": 4633.37
           },
           "budget_2026_monthly": {
             "FEB": 5000.0,
@@ -17933,7 +17939,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 14991.12,
           "profit_2026_ytd": -582.13,
           "deviation_pct": -74.15324137931034,
-          "growth_pct": -71.41177338839,
+          "growth_pct": -73.73272034743809,
           "margin_pct": -3.8831655006430474
         },
         {
@@ -18010,7 +18016,7 @@ const DASHBOARD_DATA = {
         {
           "id": 23275,
           "name": "FRANCISCO CARNERO CARNERO, S.A",
-          "sales_2025": 22421.63,
+          "sales_2025": 23333.27,
           "budget_2026": 31000.0,
           "sales_2026": 4526.64,
           "profit_2026": -339.05,
@@ -18026,7 +18032,7 @@ const DASHBOARD_DATA = {
             "OCT": 1837.12,
             "NOV": 791.3599999999999,
             "DIC": 803.13,
-            "ENE": 0.0
+            "ENE": 911.64
           },
           "budget_2026_monthly": {
             "FEB": 3000.0,
@@ -18075,7 +18081,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 4526.64,
           "profit_2026_ytd": -339.05,
           "deviation_pct": -85.39793548387097,
-          "growth_pct": -79.81128044660446,
+          "growth_pct": -80.6000616287387,
           "margin_pct": -7.49010303448032
         },
         {
@@ -19075,7 +19081,7 @@ const DASHBOARD_DATA = {
         {
           "id": 24785,
           "name": "CASH MAMELY, S.L.",
-          "sales_2025": 31753.83,
+          "sales_2025": 33166.65,
           "budget_2026": 38000.0,
           "sales_2026": 8085.05,
           "profit_2026": -346.86,
@@ -19091,7 +19097,7 @@ const DASHBOARD_DATA = {
             "OCT": 2473.76,
             "NOV": 2535.29,
             "DIC": 3528.7400000000002,
-            "ENE": 0.0
+            "ENE": 1412.8200000000002
           },
           "budget_2026_monthly": {
             "FEB": 3000.0,
@@ -19140,7 +19146,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 8085.05,
           "profit_2026_ytd": -346.86,
           "deviation_pct": -78.72355263157895,
-          "growth_pct": -74.53834702774438,
+          "growth_pct": -75.62295257434803,
           "margin_pct": -4.290140444400468
         },
         {
@@ -19572,7 +19578,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25026,
           "name": "BENALBRITISH SUPERMARKET, S.L.",
-          "sales_2025": 14738.460000000001,
+          "sales_2025": 15656.99,
           "budget_2026": 18000.0,
           "sales_2026": 3195.91,
           "profit_2026": 222.04,
@@ -19588,7 +19594,7 @@ const DASHBOARD_DATA = {
             "OCT": 2323.85,
             "NOV": 2226.6,
             "DIC": -39.96,
-            "ENE": 0.0
+            "ENE": 918.53
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -19637,7 +19643,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 3195.91,
           "profit_2026_ytd": 222.04,
           "deviation_pct": -82.24494444444444,
-          "growth_pct": -78.31584846720757,
+          "growth_pct": -79.58796678033262,
           "margin_pct": 6.947629939516445
         },
         {
@@ -19714,7 +19720,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25057,
           "name": "RIBAS BERLANGA, S.L.",
-          "sales_2025": 9084.27,
+          "sales_2025": 9512.14,
           "budget_2026": 12000.0,
           "sales_2026": 3408.29,
           "profit_2026": 175.59,
@@ -19730,7 +19736,7 @@ const DASHBOARD_DATA = {
             "OCT": 403.99,
             "NOV": 837.8,
             "DIC": 616.82,
-            "ENE": 0.0
+            "ENE": 427.87
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -19779,7 +19785,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 3408.29,
           "profit_2026_ytd": 175.59,
           "deviation_pct": -71.59758333333332,
-          "growth_pct": -62.48141017384996,
+          "growth_pct": -64.16905133860519,
           "margin_pct": 5.1518503413735335
         },
         {
@@ -19998,7 +20004,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25193,
           "name": "MARTIN RUBIO, JOSE MIGUEL",
-          "sales_2025": 1962.49,
+          "sales_2025": 2296.81,
           "budget_2026": 6000.0,
           "sales_2026": 394.73,
           "profit_2026": 18.81,
@@ -20014,7 +20020,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 410.97,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 334.32
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -20063,7 +20069,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 394.73,
           "profit_2026_ytd": 18.81,
           "deviation_pct": -93.42116666666668,
-          "growth_pct": -79.88626693639203,
+          "growth_pct": -82.81398983807978,
           "margin_pct": 4.765282598231702
         },
         {
@@ -20353,7 +20359,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25350,
           "name": "VILLALOBOS SERRA, MARIA",
-          "sales_2025": 58399.36,
+          "sales_2025": 63213.729999999996,
           "budget_2026": 60000.0,
           "sales_2026": 21114.53,
           "profit_2026": -350.47999999999996,
@@ -20369,7 +20375,7 @@ const DASHBOARD_DATA = {
             "OCT": 5780.369999999999,
             "NOV": 5125.219999999999,
             "DIC": 6044.6,
-            "ENE": 0.0
+            "ENE": 4814.37
           },
           "budget_2026_monthly": {
             "FEB": 5000.0,
@@ -20418,7 +20424,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 21114.53,
           "profit_2026_ytd": -350.47999999999996,
           "deviation_pct": -64.80911666666667,
-          "growth_pct": -63.84458665300442,
+          "growth_pct": -66.59818998182831,
           "margin_pct": -1.6598996046798105
         },
         {
@@ -20509,7 +20515,7 @@ const DASHBOARD_DATA = {
         "OCT": 195349.33999999997,
         "NOV": 165568.0999999999,
         "DIC": 217494.18999999992,
-        "ENE": 0.0
+        "ENE": 162463.34999999995
       },
       "budget_2026_monthly": {
         "FEB": 198135.0,
@@ -20553,7 +20559,7 @@ const DASHBOARD_DATA = {
         "DIC": 0.0,
         "ENE": 0.0
       },
-      "total_sales_2025": 2374396.05,
+      "total_sales_2025": 2536859.3999999994,
       "total_budget_2026": 2472225.0,
       "sales_2025_ytd": 875316.07,
       "budget_2026_ytd": 810395.0,
@@ -20571,7 +20577,7 @@ const DASHBOARD_DATA = {
         {
           "id": 61,
           "name": "*DIVISAL DE LA SERENA",
-          "sales_2025": 310540.55,
+          "sales_2025": 330970.62,
           "budget_2026": 331825.0,
           "sales_2026": 131807.31,
           "profit_2026": -7897.529999999999,
@@ -20587,7 +20593,7 @@ const DASHBOARD_DATA = {
             "OCT": 19490.349999999995,
             "NOV": 28422.61,
             "DIC": 37610.840000000004,
-            "ENE": 0.0
+            "ENE": 20430.07
           },
           "budget_2026_monthly": {
             "FEB": 27285.0,
@@ -20636,13 +20642,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 131807.31,
           "profit_2026_ytd": -7897.529999999999,
           "deviation_pct": -60.27806524523469,
-          "growth_pct": -57.555523747220775,
+          "growth_pct": -60.175525549669636,
           "margin_pct": -5.991723827760387
         },
         {
           "id": 19996,
           "name": "SUPERMERCADOS EXTREMADURA, S.L",
-          "sales_2025": 2091.33,
+          "sales_2025": 2535.58,
           "budget_2026": 0.0,
           "sales_2026": 1860.59,
           "profit_2026": -281.85,
@@ -20658,7 +20664,7 @@ const DASHBOARD_DATA = {
             "OCT": 770.39,
             "NOV": 0.0,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 444.25
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -20707,13 +20713,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1860.59,
           "profit_2026_ytd": -281.85,
           "deviation_pct": 0.0,
-          "growth_pct": -11.033170279200318,
+          "growth_pct": -26.620733717729276,
           "margin_pct": -15.148420662263048
         },
         {
           "id": 22047,
           "name": "ALMACENES BOINA, S.L.",
-          "sales_2025": 43448.560000000005,
+          "sales_2025": 47157.85,
           "budget_2026": 48000.0,
           "sales_2026": 19229.73,
           "profit_2026": -2291.5299999999997,
@@ -20729,7 +20735,7 @@ const DASHBOARD_DATA = {
             "OCT": 4332.52,
             "NOV": 2100.09,
             "DIC": 3369.99,
-            "ENE": 0.0
+            "ENE": 3709.29
           },
           "budget_2026_monthly": {
             "FEB": 4000.0,
@@ -20778,13 +20784,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 19229.73,
           "profit_2026_ytd": -2291.5299999999997,
           "deviation_pct": -59.9380625,
-          "growth_pct": -55.74138705632592,
+          "growth_pct": -59.222632075041595,
           "margin_pct": -11.916599973062542
         },
         {
           "id": 22463,
           "name": "PANIFICADORA NTRA.SRA.GUADALUP",
-          "sales_2025": 0.0,
+          "sales_2025": 2067.43,
           "budget_2026": 0.0,
           "sales_2026": -430.13,
           "profit_2026": -17.11,
@@ -20800,7 +20806,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 0.0,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 2067.43
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -20849,13 +20855,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": -430.13,
           "profit_2026_ytd": -17.11,
           "deviation_pct": 0.0,
-          "growth_pct": 0.0,
+          "growth_pct": -120.80505748683149,
           "margin_pct": 0.0
         },
         {
           "id": 22607,
           "name": "SUPER GORIA ALIMENTACION, S.L.",
-          "sales_2025": 19408.89,
+          "sales_2025": 20626.73,
           "budget_2026": 24000.0,
           "sales_2026": 4772.14,
           "profit_2026": -30.009999999999998,
@@ -20871,7 +20877,7 @@ const DASHBOARD_DATA = {
             "OCT": 1659.7099999999998,
             "NOV": 1451.8799999999999,
             "DIC": 1845.76,
-            "ENE": 0.0
+            "ENE": 1217.8400000000001
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -20920,13 +20926,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 4772.14,
           "profit_2026_ytd": -30.009999999999998,
           "deviation_pct": -80.11608333333334,
-          "growth_pct": -75.41260731551367,
+          "growth_pct": -76.86429211028603,
           "margin_pct": -0.628858331901411
         },
         {
           "id": 22692,
           "name": "MESTOS MUÑOZ, SARA",
-          "sales_2025": 50871.95,
+          "sales_2025": 54327.86,
           "budget_2026": 55000.0,
           "sales_2026": 15543.449999999999,
           "profit_2026": -262.76,
@@ -20942,7 +20948,7 @@ const DASHBOARD_DATA = {
             "OCT": 3484.38,
             "NOV": 2924.9100000000003,
             "DIC": 6470.07,
-            "ENE": 0.0
+            "ENE": 3455.9100000000003
           },
           "budget_2026_monthly": {
             "FEB": 3500.0,
@@ -20991,13 +20997,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 15543.449999999999,
           "profit_2026_ytd": -262.76,
           "deviation_pct": -71.73918181818182,
-          "growth_pct": -69.44593238513562,
+          "growth_pct": -71.3895412040894,
           "margin_pct": -1.6904869896966248
         },
         {
           "id": 23090,
           "name": "MONTERO SILOS, JUAN CARLOS",
-          "sales_2025": 12289.44,
+          "sales_2025": 13206.38,
           "budget_2026": 14400.0,
           "sales_2026": 3861.85,
           "profit_2026": 1.2599999999999998,
@@ -21013,7 +21019,7 @@ const DASHBOARD_DATA = {
             "OCT": 1103.62,
             "NOV": 977.65,
             "DIC": 992.8899999999999,
-            "ENE": 0.0
+            "ENE": 916.94
           },
           "budget_2026_monthly": {
             "FEB": 1200.0,
@@ -21062,13 +21068,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 3861.85,
           "profit_2026_ytd": 1.2599999999999998,
           "deviation_pct": -73.18159722222222,
-          "growth_pct": -68.57586676040567,
+          "growth_pct": -70.75769438710682,
           "margin_pct": 0.03262684982586066
         },
         {
           "id": 23305,
           "name": "SUPERMERCADOS EXTREMADURA, S.L",
-          "sales_2025": 2966.36,
+          "sales_2025": 3575.36,
           "budget_2026": 0.0,
           "sales_2026": 3254.81,
           "profit_2026": -453.15,
@@ -21084,7 +21090,7 @@ const DASHBOARD_DATA = {
             "OCT": 1302.7,
             "NOV": 0.0,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 609.0
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -21133,13 +21139,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 3254.81,
           "profit_2026_ytd": -453.15,
           "deviation_pct": 0.0,
-          "growth_pct": 9.724038889413281,
+          "growth_pct": -8.965530743757277,
           "margin_pct": -13.922471665012704
         },
         {
           "id": 23373,
           "name": "FERNANDO PEREZ PRIETO E HIJOS",
-          "sales_2025": 11897.48,
+          "sales_2025": 13734.75,
           "budget_2026": 14000.0,
           "sales_2026": 3919.92,
           "profit_2026": -183.01,
@@ -21155,7 +21161,7 @@ const DASHBOARD_DATA = {
             "OCT": 1934.38,
             "NOV": 695.25,
             "DIC": 1025.5,
-            "ENE": 0.0
+            "ENE": 1837.27
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -21204,13 +21210,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 3919.92,
           "profit_2026_ytd": -183.01,
           "deviation_pct": -72.00057142857142,
-          "growth_pct": -67.05251868462902,
+          "growth_pct": -71.45983727406761,
           "margin_pct": -4.668717728933243
         },
         {
           "id": 23654,
           "name": "MERCAPEÑA, S.L.",
-          "sales_2025": 1998.45,
+          "sales_2025": 2076.42,
           "budget_2026": 2400.0,
           "sales_2026": 831.26,
           "profit_2026": -1.88,
@@ -21226,7 +21232,7 @@ const DASHBOARD_DATA = {
             "OCT": 102.28,
             "NOV": 161.16,
             "DIC": 187.95,
-            "ENE": 0.0
+            "ENE": 77.97
           },
           "budget_2026_monthly": {
             "FEB": 200.0,
@@ -21275,7 +21281,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 831.26,
           "profit_2026_ytd": -1.88,
           "deviation_pct": -65.36416666666666,
-          "growth_pct": -58.40476369186119,
+          "growth_pct": -59.96667340904056,
           "margin_pct": -0.22616269277963572
         },
         {
@@ -21352,7 +21358,7 @@ const DASHBOARD_DATA = {
         {
           "id": 23681,
           "name": "BAR LA PIRAMIDE, C.B.",
-          "sales_2025": 8225.76,
+          "sales_2025": 8583.28,
           "budget_2026": 9000.0,
           "sales_2026": 3849.6499999999996,
           "profit_2026": -200.87,
@@ -21368,7 +21374,7 @@ const DASHBOARD_DATA = {
             "OCT": 450.77,
             "NOV": 701.28,
             "DIC": 1378.6100000000001,
-            "ENE": 0.0
+            "ENE": 357.52
           },
           "budget_2026_monthly": {
             "FEB": 750.0,
@@ -21417,13 +21423,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 3849.6499999999996,
           "profit_2026_ytd": -200.87,
           "deviation_pct": -57.22611111111111,
-          "growth_pct": -53.200069051370335,
+          "growth_pct": -55.149430054711026,
           "margin_pct": -5.2178769498525845
         },
         {
           "id": 23683,
           "name": "PEROMINGO GAMINO, MERCEDES",
-          "sales_2025": 19792.98,
+          "sales_2025": 21016.1,
           "budget_2026": 22000.0,
           "sales_2026": 5996.4,
           "profit_2026": -484.33000000000004,
@@ -21439,7 +21445,7 @@ const DASHBOARD_DATA = {
             "OCT": 1960.08,
             "NOV": 1449.37,
             "DIC": 1760.55,
-            "ENE": 0.0
+            "ENE": 1223.12
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -21488,13 +21494,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 5996.4,
           "profit_2026_ytd": -484.33000000000004,
           "deviation_pct": -72.74363636363637,
-          "growth_pct": -69.70441035154889,
+          "growth_pct": -71.46758913404486,
           "margin_pct": -8.077012874391302
         },
         {
           "id": 23718,
           "name": "SUPER ALVAREZ, S.L.",
-          "sales_2025": 5335.87,
+          "sales_2025": 5778.7699999999995,
           "budget_2026": 6000.0,
           "sales_2026": 1855.2399999999998,
           "profit_2026": 7.729999999999999,
@@ -21510,7 +21516,7 @@ const DASHBOARD_DATA = {
             "OCT": 589.89,
             "NOV": 467.54999999999995,
             "DIC": 417.51,
-            "ENE": 0.0
+            "ENE": 442.9
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -21559,13 +21565,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1855.2399999999998,
           "profit_2026_ytd": 7.729999999999999,
           "deviation_pct": -69.07933333333334,
-          "growth_pct": -65.23078710688229,
+          "growth_pct": -67.89559023806105,
           "margin_pct": 0.4166576831029947
         },
         {
           "id": 23807,
           "name": "ABN BERNAL ALMADEN, S.L.",
-          "sales_2025": 75354.32,
+          "sales_2025": 81146.54,
           "budget_2026": 77000.0,
           "sales_2026": 31456.64,
           "profit_2026": 258.99,
@@ -21581,7 +21587,7 @@ const DASHBOARD_DATA = {
             "OCT": 7043.0,
             "NOV": 8031.3,
             "DIC": 8243.44,
-            "ENE": 0.0
+            "ENE": 5792.219999999999
           },
           "budget_2026_monthly": {
             "FEB": 6000.0,
@@ -21630,13 +21636,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 31456.64,
           "profit_2026_ytd": 258.99,
           "deviation_pct": -59.147220779220774,
-          "growth_pct": -58.255027714403106,
+          "growth_pct": -61.23477353439838,
           "margin_pct": 0.8233237879188624
         },
         {
           "id": 23808,
           "name": "VENTA AMBULANTE EL MERCAILLO,",
-          "sales_2025": 207.24,
+          "sales_2025": 247.84,
           "budget_2026": 0.0,
           "sales_2026": 57.64,
           "profit_2026": 4.76,
@@ -21652,7 +21658,7 @@ const DASHBOARD_DATA = {
             "OCT": 40.6,
             "NOV": 40.6,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 40.6
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -21701,13 +21707,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 57.64,
           "profit_2026_ytd": 4.76,
           "deviation_pct": 0.0,
-          "growth_pct": -72.18683651804672,
+          "growth_pct": -76.74306003873467,
           "margin_pct": 8.258154059680777
         },
         {
           "id": 23862,
           "name": "SUPERMERCADOS EXTREMADURA, S.L",
-          "sales_2025": 1276.8200000000002,
+          "sales_2025": 1512.79,
           "budget_2026": 0.0,
           "sales_2026": 2338.94,
           "profit_2026": -344.9,
@@ -21723,7 +21729,7 @@ const DASHBOARD_DATA = {
             "OCT": 750.94,
             "NOV": -60.85,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 235.97
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -21772,13 +21778,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2338.94,
           "profit_2026_ytd": -344.9,
           "deviation_pct": 0.0,
-          "growth_pct": 83.18478720571417,
+          "growth_pct": 54.61101673067644,
           "margin_pct": -14.745996049492504
         },
         {
           "id": 24005,
           "name": "DURAN CARRASCO, MANUEL",
-          "sales_2025": 1093.5900000000001,
+          "sales_2025": 1345.42,
           "budget_2026": 0.0,
           "sales_2026": 632.08,
           "profit_2026": 23.22,
@@ -21794,7 +21800,7 @@ const DASHBOARD_DATA = {
             "OCT": 224.46,
             "NOV": 0.0,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 251.83
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -21843,13 +21849,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 632.08,
           "profit_2026_ytd": 23.22,
           "deviation_pct": 0.0,
-          "growth_pct": -42.201373458060154,
+          "growth_pct": -53.01987483462413,
           "margin_pct": 3.673585622073155
         },
         {
           "id": 24058,
           "name": "CASADO RODRIGUEZ, ESTHER",
-          "sales_2025": 56369.22,
+          "sales_2025": 61619.92,
           "budget_2026": 63000.0,
           "sales_2026": 21305.15,
           "profit_2026": -92.44000000000001,
@@ -21865,7 +21871,7 @@ const DASHBOARD_DATA = {
             "OCT": 3881.42,
             "NOV": 3635.63,
             "DIC": 5547.7,
-            "ENE": 0.0
+            "ENE": 5250.7
           },
           "budget_2026_monthly": {
             "FEB": 6000.0,
@@ -21914,13 +21920,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 21305.15,
           "profit_2026_ytd": -92.44000000000001,
           "deviation_pct": -66.18230158730158,
-          "growth_pct": -62.20428453684475,
+          "growth_pct": -65.42489831210426,
           "margin_pct": -0.433885703691361
         },
         {
           "id": 24267,
           "name": "GARCIA ACEDO, ELISABETH",
-          "sales_2025": 22055.94,
+          "sales_2025": 23970.63,
           "budget_2026": 24000.0,
           "sales_2026": 10227.269999999999,
           "profit_2026": -11.749999999999998,
@@ -21936,7 +21942,7 @@ const DASHBOARD_DATA = {
             "OCT": 1758.1799999999998,
             "NOV": 1678.92,
             "DIC": 2288.06,
-            "ENE": 0.0
+            "ENE": 1914.69
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -21985,13 +21991,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 10227.269999999999,
           "profit_2026_ytd": -11.749999999999998,
           "deviation_pct": -57.386375,
-          "growth_pct": -53.630314554718595,
+          "growth_pct": -57.33416268158159,
           "margin_pct": -0.1148889195259341
         },
         {
           "id": 24343,
           "name": "OVEJERO ROMERO, KATERIN",
-          "sales_2025": 29216.89,
+          "sales_2025": 31318.5,
           "budget_2026": 35000.0,
           "sales_2026": 11344.54,
           "profit_2026": -265.58,
@@ -22007,7 +22013,7 @@ const DASHBOARD_DATA = {
             "OCT": 3177.3799999999997,
             "NOV": 1955.1100000000001,
             "DIC": 1946.31,
-            "ENE": 0.0
+            "ENE": 2101.61
           },
           "budget_2026_monthly": {
             "FEB": 3000.0,
@@ -22056,13 +22062,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 11344.54,
           "profit_2026_ytd": -265.58,
           "deviation_pct": -67.58702857142856,
-          "growth_pct": -61.1712950967745,
+          "growth_pct": -63.77687309417755,
           "margin_pct": -2.3410380676519273
         },
         {
           "id": 24634,
           "name": "HERNICA GOMEZ, ANTONIO",
-          "sales_2025": 2077.8,
+          "sales_2025": 2361.27,
           "budget_2026": 6000.0,
           "sales_2026": 456.19,
           "profit_2026": 6.510000000000001,
@@ -22078,7 +22084,7 @@ const DASHBOARD_DATA = {
             "OCT": 185.66,
             "NOV": 139.92000000000002,
             "DIC": 151.17,
-            "ENE": 0.0
+            "ENE": 283.47
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -22127,7 +22133,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 456.19,
           "profit_2026_ytd": 6.510000000000001,
           "deviation_pct": -92.39683333333333,
-          "growth_pct": -78.04456636827413,
+          "growth_pct": -80.68031186607207,
           "margin_pct": 1.4270369802056162
         },
         {
@@ -22204,7 +22210,7 @@ const DASHBOARD_DATA = {
         {
           "id": 24652,
           "name": "AURORA Y GLORIA MAYORALA, S.L.",
-          "sales_2025": 600.8,
+          "sales_2025": 523.2,
           "budget_2026": 0.0,
           "sales_2026": 0.0,
           "profit_2026": 0.0,
@@ -22220,7 +22226,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 0.0,
             "DIC": 332.0,
-            "ENE": 0.0
+            "ENE": -77.6
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -22275,7 +22281,7 @@ const DASHBOARD_DATA = {
         {
           "id": 24702,
           "name": "FUENTES QUITERIO, S.L.",
-          "sales_2025": 17874.67,
+          "sales_2025": 18921.97,
           "budget_2026": 24000.0,
           "sales_2026": 5183.98,
           "profit_2026": -482.81,
@@ -22291,7 +22297,7 @@ const DASHBOARD_DATA = {
             "OCT": 1908.1499999999999,
             "NOV": 594.56,
             "DIC": 2151.85,
-            "ENE": 0.0
+            "ENE": 1047.3000000000002
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -22340,13 +22346,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 5183.98,
           "profit_2026_ytd": -482.81,
           "deviation_pct": -78.40008333333334,
-          "growth_pct": -70.99817786845854,
+          "growth_pct": -72.60338114900298,
           "margin_pct": -9.313500437887493
         },
         {
           "id": 24706,
           "name": "GIL MILLAN, PAULA",
-          "sales_2025": 44018.63,
+          "sales_2025": 46506.159999999996,
           "budget_2026": 49000.0,
           "sales_2026": 12369.13,
           "profit_2026": -1175.07,
@@ -22362,7 +22368,7 @@ const DASHBOARD_DATA = {
             "OCT": 2324.79,
             "NOV": 2568.13,
             "DIC": 4598.1900000000005,
-            "ENE": 0.0
+            "ENE": 2487.5299999999997
           },
           "budget_2026_monthly": {
             "FEB": 4000.0,
@@ -22411,7 +22417,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 12369.13,
           "profit_2026_ytd": -1175.07,
           "deviation_pct": -74.75687755102042,
-          "growth_pct": -71.90023860351856,
+          "growth_pct": -73.40324378533941,
           "margin_pct": -9.500021424303892
         },
         {
@@ -22488,7 +22494,7 @@ const DASHBOARD_DATA = {
         {
           "id": 24856,
           "name": "TUÑON POZO, MARIA",
-          "sales_2025": 2903.79,
+          "sales_2025": 3153.43,
           "budget_2026": 6000.0,
           "sales_2026": 1253.35,
           "profit_2026": -3.34,
@@ -22504,7 +22510,7 @@ const DASHBOARD_DATA = {
             "OCT": 375.07,
             "NOV": 300.86,
             "DIC": 175.32999999999998,
-            "ENE": 0.0
+            "ENE": 249.64000000000001
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -22553,13 +22559,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1253.35,
           "profit_2026_ytd": -3.34,
           "deviation_pct": -79.11083333333333,
-          "growth_pct": -56.837443479039464,
+          "growth_pct": -60.25438966458745,
           "margin_pct": -0.26648581800773924
         },
         {
           "id": 24878,
           "name": "PRIETO CAMACHO, MERCEDES",
-          "sales_2025": 10079.99,
+          "sales_2025": 10551.369999999999,
           "budget_2026": 12000.0,
           "sales_2026": 3342.83,
           "profit_2026": 143.65,
@@ -22575,7 +22581,7 @@ const DASHBOARD_DATA = {
             "OCT": 865.8100000000001,
             "NOV": 684.3399999999999,
             "DIC": 1098.36,
-            "ENE": 0.0
+            "ENE": 471.38
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -22624,13 +22630,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 3342.83,
           "profit_2026_ytd": 143.65,
           "deviation_pct": -72.14308333333334,
-          "growth_pct": -66.83697106842368,
+          "growth_pct": -68.31852167064561,
           "margin_pct": 4.2972571144808445
         },
         {
           "id": 24880,
           "name": "CANO FERNANDEZ,RUBEN",
-          "sales_2025": 4733.12,
+          "sales_2025": 5040.38,
           "budget_2026": 6000.0,
           "sales_2026": 1542.06,
           "profit_2026": -51.18,
@@ -22646,7 +22652,7 @@ const DASHBOARD_DATA = {
             "OCT": 357.53999999999996,
             "NOV": 244.39000000000001,
             "DIC": 508.64,
-            "ENE": 0.0
+            "ENE": 307.26
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -22695,13 +22701,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1542.06,
           "profit_2026_ytd": -51.18,
           "deviation_pct": -74.299,
-          "growth_pct": -67.41979920221756,
+          "growth_pct": -69.40587812823637,
           "margin_pct": -3.318937006342166
         },
         {
           "id": 24937,
           "name": "CARNICERIA PATRICIO PEREZ, S.L",
-          "sales_2025": 17322.18,
+          "sales_2025": 18550.33,
           "budget_2026": 24000.0,
           "sales_2026": 6450.87,
           "profit_2026": 5.019999999999996,
@@ -22717,7 +22723,7 @@ const DASHBOARD_DATA = {
             "OCT": 609.01,
             "NOV": 1664.45,
             "DIC": 1541.5500000000002,
-            "ENE": 0.0
+            "ENE": 1228.15
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -22766,13 +22772,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 6450.87,
           "profit_2026_ytd": 5.019999999999996,
           "deviation_pct": -73.121375,
-          "growth_pct": -62.75947946505579,
+          "growth_pct": -65.22503912329324,
           "margin_pct": 0.0778189608533422
         },
         {
           "id": 24940,
           "name": "CASTRO RUBIO, OLGA",
-          "sales_2025": 2299.74,
+          "sales_2025": 2570.96,
           "budget_2026": 0.0,
           "sales_2026": 573.72,
           "profit_2026": -10.65,
@@ -22788,7 +22794,7 @@ const DASHBOARD_DATA = {
             "OCT": 271.9,
             "NOV": 0.0,
             "DIC": 394.76,
-            "ENE": 0.0
+            "ENE": 271.22
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -22837,13 +22843,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 573.72,
           "profit_2026_ytd": -10.65,
           "deviation_pct": 0.0,
-          "growth_pct": -75.05283205927627,
+          "growth_pct": -77.68460030494445,
           "margin_pct": -1.8563062120895208
         },
         {
           "id": 24949,
           "name": "CHAMERO MARTIN, SARA",
-          "sales_2025": 25365.28,
+          "sales_2025": 27130.26,
           "budget_2026": 31000.0,
           "sales_2026": 1219.53,
           "profit_2026": 16.98,
@@ -22859,7 +22865,7 @@ const DASHBOARD_DATA = {
             "OCT": 2186.02,
             "NOV": 1710.03,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 1764.98
           },
           "budget_2026_monthly": {
             "FEB": 3000.0,
@@ -22908,13 +22914,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1219.53,
           "profit_2026_ytd": 16.98,
           "deviation_pct": -96.06603225806451,
-          "growth_pct": -95.19212876814291,
+          "growth_pct": -95.50490854123773,
           "margin_pct": 1.3923396718407912
         },
         {
           "id": 24964,
           "name": "JIMENEZ GARRIDO, ALMUDENA",
-          "sales_2025": 12503.119999999999,
+          "sales_2025": 13340.07,
           "budget_2026": 18000.0,
           "sales_2026": 2761.92,
           "profit_2026": 53.81,
@@ -22930,7 +22936,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 815.8199999999999,
             "DIC": 1004.27,
-            "ENE": 0.0
+            "ENE": 836.9499999999999
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -22979,13 +22985,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2761.92,
           "profit_2026_ytd": 53.81,
           "deviation_pct": -84.65599999999999,
-          "growth_pct": -77.91015362565503,
+          "growth_pct": -79.29606066534883,
           "margin_pct": 1.948282354304252
         },
         {
           "id": 24966,
           "name": "RODRIGUEZ GONZALEZ, LIDIA",
-          "sales_2025": 7786.96,
+          "sales_2025": 8486.06,
           "budget_2026": 12000.0,
           "sales_2026": 4590.9800000000005,
           "profit_2026": 176.18,
@@ -23001,7 +23007,7 @@ const DASHBOARD_DATA = {
             "OCT": 622.4,
             "NOV": 671.79,
             "DIC": 513.16,
-            "ENE": 0.0
+            "ENE": 699.1
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -23050,13 +23056,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 4590.9800000000005,
           "profit_2026_ytd": 176.18,
           "deviation_pct": -61.74183333333333,
-          "growth_pct": -41.0427175688587,
+          "growth_pct": -45.8997461719573,
           "margin_pct": 3.83752488575424
         },
         {
           "id": 24994,
           "name": "RAMOS CIUDAD, MAITE",
-          "sales_2025": 4488.9,
+          "sales_2025": 4891.85,
           "budget_2026": 6000.0,
           "sales_2026": 1444.12,
           "profit_2026": -11.09,
@@ -23072,7 +23078,7 @@ const DASHBOARD_DATA = {
             "OCT": 382.72,
             "NOV": 444.2,
             "DIC": 436.5,
-            "ENE": 0.0
+            "ENE": 402.95
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -23121,7 +23127,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1444.12,
           "profit_2026_ytd": -11.09,
           "deviation_pct": -75.93133333333334,
-          "growth_pct": -67.8290895319566,
+          "growth_pct": -70.47906211351534,
           "margin_pct": -0.7679417222945463
         },
         {
@@ -23198,7 +23204,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25053,
           "name": "ALFONSO BARBOSA FUENTES",
-          "sales_2025": 25864.190000000002,
+          "sales_2025": 28863.1,
           "budget_2026": 30000.0,
           "sales_2026": 9549.06,
           "profit_2026": -105.88,
@@ -23214,7 +23220,7 @@ const DASHBOARD_DATA = {
             "OCT": 2634.8500000000004,
             "NOV": 1845.62,
             "DIC": 1915.5900000000001,
-            "ENE": 0.0
+            "ENE": 2998.91
           },
           "budget_2026_monthly": {
             "FEB": 2500.0,
@@ -23263,13 +23269,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 9549.06,
           "profit_2026_ytd": -105.88,
           "deviation_pct": -68.16980000000001,
-          "growth_pct": -63.079995932600255,
+          "growth_pct": -66.91602773090902,
           "margin_pct": -1.1088002379291784
         },
         {
           "id": 25058,
           "name": "MENA ESTUDILLO, MARIA DEL CARM",
-          "sales_2025": 26003.71,
+          "sales_2025": 28600.510000000002,
           "budget_2026": 30000.0,
           "sales_2026": 9748.41,
           "profit_2026": 308.98,
@@ -23285,7 +23291,7 @@ const DASHBOARD_DATA = {
             "OCT": 3132.04,
             "NOV": 1935.7,
             "DIC": 2579.92,
-            "ENE": 0.0
+            "ENE": 2596.8
           },
           "budget_2026_monthly": {
             "FEB": 2500.0,
@@ -23334,13 +23340,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 9748.41,
           "profit_2026_ytd": 308.98,
           "deviation_pct": -67.5053,
-          "growth_pct": -62.511464710227884,
+          "growth_pct": -65.91525815448746,
           "margin_pct": 3.1695425202674077
         },
         {
           "id": 25063,
           "name": "MUÑOZ GOMEZ, GREGORIO",
-          "sales_2025": 9567.130000000001,
+          "sales_2025": 10073.67,
           "budget_2026": 12000.0,
           "sales_2026": 3376.24,
           "profit_2026": -164.21,
@@ -23356,7 +23362,7 @@ const DASHBOARD_DATA = {
             "OCT": 1085.14,
             "NOV": 482.13,
             "DIC": 1057.5,
-            "ENE": 0.0
+            "ENE": 506.54
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -23405,13 +23411,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 3376.24,
           "profit_2026_ytd": -164.21,
           "deviation_pct": -71.86466666666666,
-          "growth_pct": -64.71000185008462,
+          "growth_pct": -66.48450862495993,
           "margin_pct": -4.863694524085966
         },
         {
           "id": 25067,
           "name": "PIZARRO SOLIS, SANDRA",
-          "sales_2025": 2829.44,
+          "sales_2025": 3067.56,
           "budget_2026": 6000.0,
           "sales_2026": 52.28,
           "profit_2026": 5.68,
@@ -23427,7 +23433,7 @@ const DASHBOARD_DATA = {
             "OCT": 102.62,
             "NOV": 355.95,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 238.12
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -23476,13 +23482,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 52.28,
           "profit_2026_ytd": 5.68,
           "deviation_pct": -99.12866666666667,
-          "growth_pct": -98.15228455100655,
+          "growth_pct": -98.29571385726766,
           "margin_pct": 10.864575363427695
         },
         {
           "id": 25076,
           "name": "CAMARERO PRIETO, MARIA MERCEDE",
-          "sales_2025": 6105.78,
+          "sales_2025": 6636.37,
           "budget_2026": 6000.0,
           "sales_2026": 2234.18,
           "profit_2026": -11.530000000000001,
@@ -23498,7 +23504,7 @@ const DASHBOARD_DATA = {
             "OCT": 673.1,
             "NOV": 582.96,
             "DIC": 799.79,
-            "ENE": 0.0
+            "ENE": 530.59
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -23547,7 +23553,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2234.18,
           "profit_2026_ytd": -11.530000000000001,
           "deviation_pct": -62.76366666666667,
-          "growth_pct": -63.408770050673304,
+          "growth_pct": -66.33430625477483,
           "margin_pct": -0.516073011127125
         },
         {
@@ -23695,7 +23701,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25152,
           "name": "RAYO RUBIO, NATIVIDAD",
-          "sales_2025": 4429.24,
+          "sales_2025": 4682.79,
           "budget_2026": 6000.0,
           "sales_2026": 1829.26,
           "profit_2026": 13.35,
@@ -23711,7 +23717,7 @@ const DASHBOARD_DATA = {
             "OCT": 723.54,
             "NOV": 258.13,
             "DIC": 266.87,
-            "ENE": 0.0
+            "ENE": 253.55
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -23760,13 +23766,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1829.26,
           "profit_2026_ytd": 13.35,
           "deviation_pct": -69.51233333333333,
-          "growth_pct": -58.70036394505603,
+          "growth_pct": -60.93653569773575,
           "margin_pct": 0.7298033084416649
         },
         {
           "id": 25154,
           "name": "SERVICIOS TECNICOS FEDUVIR, S",
-          "sales_2025": 2593.85,
+          "sales_2025": 3096.05,
           "budget_2026": 6000.0,
           "sales_2026": 426.12,
           "profit_2026": -36.89,
@@ -23782,7 +23788,7 @@ const DASHBOARD_DATA = {
             "OCT": 366.71,
             "NOV": 0.0,
             "DIC": 399.69,
-            "ENE": 0.0
+            "ENE": 502.2
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -23831,13 +23837,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 426.12,
           "profit_2026_ytd": -36.89,
           "deviation_pct": -92.898,
-          "growth_pct": -83.57191048055978,
+          "growth_pct": -86.23665638474831,
           "margin_pct": -8.657185769266873
         },
         {
           "id": 25213,
           "name": "TEODORA TOMUT, RAMONA",
-          "sales_2025": 6356.23,
+          "sales_2025": 6557.79,
           "budget_2026": 12000.0,
           "sales_2026": 1160.94,
           "profit_2026": 13.56,
@@ -23853,7 +23859,7 @@ const DASHBOARD_DATA = {
             "OCT": 508.27,
             "NOV": 56.81,
             "DIC": 334.63,
-            "ENE": 0.0
+            "ENE": 201.56
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -23902,7 +23908,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1160.94,
           "profit_2026_ytd": 13.56,
           "deviation_pct": -90.32549999999999,
-          "growth_pct": -81.73539975740336,
+          "growth_pct": -82.29677986028831,
           "margin_pct": 1.168019019070753
         },
         {
@@ -23979,7 +23985,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25232,
           "name": "PLAZA MARQUES, MARIA",
-          "sales_2025": 20313.99,
+          "sales_2025": 21684.32,
           "budget_2026": 24000.0,
           "sales_2026": 5985.5199999999995,
           "profit_2026": -42.67,
@@ -23995,7 +24001,7 @@ const DASHBOARD_DATA = {
             "OCT": 1348.83,
             "NOV": 1103.54,
             "DIC": 1778.9299999999998,
-            "ENE": 0.0
+            "ENE": 1370.33
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -24044,13 +24050,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 5985.5199999999995,
           "profit_2026_ytd": -42.67,
           "deviation_pct": -75.06033333333333,
-          "growth_pct": -70.5349859874894,
+          "growth_pct": -72.39701314129287,
           "margin_pct": -0.7128871008700999
         },
         {
           "id": 25234,
           "name": "ARTESANOS VIRGEN EXTREMADURA,S",
-          "sales_2025": 324557.99,
+          "sales_2025": 339850.81,
           "budget_2026": 186000.0,
           "sales_2026": 25840.78,
           "profit_2026": -2140.5,
@@ -24066,7 +24072,7 @@ const DASHBOARD_DATA = {
             "OCT": 18172.0,
             "NOV": 14504.400000000001,
             "DIC": 20936.06,
-            "ENE": 0.0
+            "ENE": 15292.82
           },
           "budget_2026_monthly": {
             "FEB": 15500.0,
@@ -24115,7 +24121,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 25840.78,
           "profit_2026_ytd": -2140.5,
           "deviation_pct": -86.10710752688172,
-          "growth_pct": -92.03816242514935,
+          "growth_pct": -92.39643418828398,
           "margin_pct": -8.283418689373928
         },
         {
@@ -24192,7 +24198,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25266,
           "name": "TALAN GARCIA, JOSE MANUEL",
-          "sales_2025": 11657.03,
+          "sales_2025": 12507.539999999999,
           "budget_2026": 18000.0,
           "sales_2026": 2639.35,
           "profit_2026": 56.72,
@@ -24208,7 +24214,7 @@ const DASHBOARD_DATA = {
             "OCT": 442.82,
             "NOV": 764.69,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 850.51
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -24257,13 +24263,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2639.35,
           "profit_2026_ytd": 56.72,
           "deviation_pct": -85.33694444444444,
-          "growth_pct": -77.35829795411009,
+          "growth_pct": -78.89792876936632,
           "margin_pct": 2.1490139617708905
         },
         {
           "id": 25275,
           "name": "GRANDE ROMERO, ALEJANDRO",
-          "sales_2025": 26098.29,
+          "sales_2025": 27748.52,
           "budget_2026": 30000.0,
           "sales_2026": 10532.81,
           "profit_2026": -222.79999999999998,
@@ -24279,7 +24285,7 @@ const DASHBOARD_DATA = {
             "OCT": 520.22,
             "NOV": 1847.94,
             "DIC": 4135.47,
-            "ENE": 0.0
+            "ENE": 1650.23
           },
           "budget_2026_monthly": {
             "FEB": 2500.0,
@@ -24328,13 +24334,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 10532.81,
           "profit_2026_ytd": -222.79999999999998,
           "deviation_pct": -64.89063333333334,
-          "growth_pct": -59.64176196984554,
+          "growth_pct": -62.04190349611438,
           "margin_pct": -2.115294968769018
         },
         {
           "id": 25276,
           "name": "VILLALOBOS HERNANDEZ, LAURA",
-          "sales_2025": 6184.25,
+          "sales_2025": 6456.81,
           "budget_2026": 6000.0,
           "sales_2026": 3085.11,
           "profit_2026": 28.6,
@@ -24350,7 +24356,7 @@ const DASHBOARD_DATA = {
             "OCT": 574.95,
             "NOV": 379.59,
             "DIC": 525.91,
-            "ENE": 0.0
+            "ENE": 272.56
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -24399,13 +24405,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 3085.11,
           "profit_2026_ytd": 28.6,
           "deviation_pct": -48.5815,
-          "growth_pct": -50.11343331851074,
+          "growth_pct": -52.219284755165475,
           "margin_pct": 0.9270333958918807
         },
         {
           "id": 25315,
           "name": "NEGOCIOS INMOBILIARIOS EXTREME",
-          "sales_2025": 17827.34,
+          "sales_2025": 19040.15,
           "budget_2026": 20000.0,
           "sales_2026": 6430.14,
           "profit_2026": -540.53,
@@ -24421,7 +24427,7 @@ const DASHBOARD_DATA = {
             "OCT": 1110.48,
             "NOV": 1266.72,
             "DIC": 2153.78,
-            "ENE": 0.0
+            "ENE": 1212.81
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -24470,7 +24476,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 6430.14,
           "profit_2026_ytd": -540.53,
           "deviation_pct": -67.8493,
-          "growth_pct": -63.93101831232254,
+          "growth_pct": -66.22852235933016,
           "margin_pct": -8.406193333271125
         },
         {
@@ -24547,7 +24553,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25329,
           "name": "SANCHEZ POLO, BEATRIZ",
-          "sales_2025": 106292.29,
+          "sales_2025": 112019.55,
           "budget_2026": 112000.0,
           "sales_2026": 37771.46,
           "profit_2026": -357.76,
@@ -24563,7 +24569,7 @@ const DASHBOARD_DATA = {
             "OCT": 8053.93,
             "NOV": 9287.74,
             "DIC": 12701.75,
-            "ENE": 0.0
+            "ENE": 5727.259999999999
           },
           "budget_2026_monthly": {
             "FEB": 7000.0,
@@ -24612,7 +24618,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 37771.46,
           "profit_2026_ytd": -357.76,
           "deviation_pct": -66.27548214285714,
-          "growth_pct": -64.46453453961712,
+          "growth_pct": -66.28136785052251,
           "margin_pct": -0.9471701649870033
         },
         {
@@ -24831,7 +24837,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25355,
           "name": "SUPERMERCADOS EXTREMADURA, S.L",
-          "sales_2025": 1356.2,
+          "sales_2025": 1603.99,
           "budget_2026": 0.0,
           "sales_2026": 758.8,
           "profit_2026": -90.81,
@@ -24847,7 +24853,7 @@ const DASHBOARD_DATA = {
             "OCT": 629.39,
             "NOV": 0.0,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 247.79
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -24896,13 +24902,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 758.8,
           "profit_2026_ytd": -90.81,
           "deviation_pct": 0.0,
-          "growth_pct": -44.049550213832774,
+          "growth_pct": -52.69297190132109,
           "margin_pct": -11.967580390089616
         },
         {
           "id": 25356,
           "name": "ARTESANOS VIRGEN EXTREMADURA,S",
-          "sales_2025": 28770.61,
+          "sales_2025": 31707.739999999998,
           "budget_2026": 24000.0,
           "sales_2026": 3606.9800000000005,
           "profit_2026": 51.75,
@@ -24918,7 +24924,7 @@ const DASHBOARD_DATA = {
             "OCT": 2849.6400000000003,
             "NOV": 2505.4300000000003,
             "DIC": 2493.24,
-            "ENE": 0.0
+            "ENE": 2937.13
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -24967,13 +24973,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 3606.9800000000005,
           "profit_2026_ytd": 51.75,
           "deviation_pct": -84.97091666666667,
-          "growth_pct": -87.46297002392373,
+          "growth_pct": -88.62429173444717,
           "margin_pct": 1.4347182407443344
         },
         {
           "id": 25357,
           "name": "PRODUCTOS MARTIN PAN, S.L.",
-          "sales_2025": 817.32,
+          "sales_2025": 922.62,
           "budget_2026": 0.0,
           "sales_2026": 321.72,
           "profit_2026": 19.200000000000003,
@@ -24989,7 +24995,7 @@ const DASHBOARD_DATA = {
             "OCT": 106.14,
             "NOV": 106.14,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 105.3
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -25038,13 +25044,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 321.72,
           "profit_2026_ytd": 19.200000000000003,
           "deviation_pct": 0.0,
-          "growth_pct": -60.63720452209661,
+          "growth_pct": -65.12973922091435,
           "margin_pct": 5.967922417008579
         },
         {
           "id": 25373,
           "name": "FLORES SANCHEZ, MANUELA",
-          "sales_2025": 24397.92,
+          "sales_2025": 26573.57,
           "budget_2026": 36000.0,
           "sales_2026": 17220.5,
           "profit_2026": -435.26000000000005,
@@ -25060,7 +25066,7 @@ const DASHBOARD_DATA = {
             "OCT": 3427.0600000000004,
             "NOV": 2427.8900000000003,
             "DIC": 2353.5699999999997,
-            "ENE": 0.0
+            "ENE": 2175.65
           },
           "budget_2026_monthly": {
             "FEB": 3000.0,
@@ -25109,13 +25115,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 17220.5,
           "profit_2026_ytd": -435.26000000000005,
           "deviation_pct": -52.165277777777774,
-          "growth_pct": -29.41816351557837,
+          "growth_pct": -35.19688923994781,
           "margin_pct": -2.5275688859208505
         },
         {
           "id": 25379,
           "name": "CHACON LEDESMA, ENRIQUE",
-          "sales_2025": 8957.43,
+          "sales_2025": 10190.85,
           "budget_2026": 18000.0,
           "sales_2026": 9775.09,
           "profit_2026": -34.76,
@@ -25131,7 +25137,7 @@ const DASHBOARD_DATA = {
             "OCT": 1208.22,
             "NOV": 1350.3200000000002,
             "DIC": 1253.59,
-            "ENE": 0.0
+            "ENE": 1233.42
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -25180,13 +25186,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 9775.09,
           "profit_2026_ytd": -34.76,
           "deviation_pct": -45.69394444444445,
-          "growth_pct": 9.128287912939312,
+          "growth_pct": -4.079738196519429,
           "margin_pct": -0.3555977489721322
         },
         {
           "id": 25382,
           "name": "PAREDES RONCERO, MARIA DEL CA",
-          "sales_2025": 13101.039999999999,
+          "sales_2025": 14589.039999999999,
           "budget_2026": 24000.0,
           "sales_2026": 7199.1,
           "profit_2026": -168.53,
@@ -25202,7 +25208,7 @@ const DASHBOARD_DATA = {
             "OCT": 2123.34,
             "NOV": 979.13,
             "DIC": 3570.8599999999997,
-            "ENE": 0.0
+            "ENE": 1488.0000000000002
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -25251,7 +25257,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 7199.1,
           "profit_2026_ytd": -168.53,
           "deviation_pct": -70.00375000000001,
-          "growth_pct": -45.04940065826835,
+          "growth_pct": -50.654052631290334,
           "margin_pct": -2.3409870678279225
         },
         {
@@ -25328,7 +25334,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25387,
           "name": "RISQUE MOLERO, SERGIO",
-          "sales_2025": 7356.22,
+          "sales_2025": 8288.24,
           "budget_2026": 12000.0,
           "sales_2026": 1903.66,
           "profit_2026": -0.16000000000000014,
@@ -25344,7 +25350,7 @@ const DASHBOARD_DATA = {
             "OCT": 728.14,
             "NOV": 501.43,
             "DIC": 535.05,
-            "ENE": 0.0
+            "ENE": 932.02
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -25393,13 +25399,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1903.66,
           "profit_2026_ytd": -0.16000000000000014,
           "deviation_pct": -84.13616666666667,
-          "growth_pct": -74.12176362316517,
+          "growth_pct": -77.03179444610677,
           "margin_pct": -0.008404862212790108
         },
         {
           "id": 25391,
           "name": "DISTR.EXTREMEÑAS LAS VEGAS,S.L",
-          "sales_2025": 4214.3,
+          "sales_2025": 4855.82,
           "budget_2026": 6000.0,
           "sales_2026": 32041.22,
           "profit_2026": -5912.58,
@@ -25415,7 +25421,7 @@ const DASHBOARD_DATA = {
             "OCT": 676.8,
             "NOV": 641.52,
             "DIC": 1959.84,
-            "ENE": 0.0
+            "ENE": 641.52
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -25464,13 +25470,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 32041.22,
           "profit_2026_ytd": -5912.58,
           "deviation_pct": 434.0203333333333,
-          "growth_pct": 660.2975583133617,
+          "growth_pct": 559.8518890733183,
           "margin_pct": -18.453042674405033
         },
         {
           "id": 25429,
           "name": "CURIEL RODRIGUEZ, ANDREA",
-          "sales_2025": 0.0,
+          "sales_2025": 824.26,
           "budget_2026": 0.0,
           "sales_2026": 9824.26,
           "profit_2026": -112.0,
@@ -25486,7 +25492,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 0.0,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 824.26
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -25535,7 +25541,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 9824.26,
           "profit_2026_ytd": -112.0,
           "deviation_pct": 0.0,
-          "growth_pct": 0.0,
+          "growth_pct": 1091.8884817897265,
           "margin_pct": -1.1400349746444005
         },
         {
@@ -26535,7 +26541,7 @@ const DASHBOARD_DATA = {
         {
           "id": 30589,
           "name": "GARCIA GIL MANUEL",
-          "sales_2025": 5479.09,
+          "sales_2025": 5917.179999999999,
           "budget_2026": 6000.0,
           "sales_2026": 1307.82,
           "profit_2026": -13.940000000000001,
@@ -26551,7 +26557,7 @@ const DASHBOARD_DATA = {
             "OCT": 588.03,
             "NOV": 595.0799999999999,
             "DIC": 510.77000000000004,
-            "ENE": 0.0
+            "ENE": 438.09
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -26600,13 +26606,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1307.82,
           "profit_2026_ytd": -13.940000000000001,
           "deviation_pct": -78.203,
-          "growth_pct": -76.1307078365203,
+          "growth_pct": -77.89791758912185,
           "margin_pct": -1.0658959183985566
         },
         {
           "id": 30744,
           "name": "MERCAPEÑA, S.L. 42",
-          "sales_2025": 33651.61,
+          "sales_2025": 35307.9,
           "budget_2026": 40200.0,
           "sales_2026": 12231.32,
           "profit_2026": -444.72,
@@ -26622,7 +26628,7 @@ const DASHBOARD_DATA = {
             "OCT": 2933.38,
             "NOV": 2097.16,
             "DIC": 3050.51,
-            "ENE": 0.0
+            "ENE": 1656.29
           },
           "budget_2026_monthly": {
             "FEB": 3500.0,
@@ -26671,13 +26677,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 12231.32,
           "profit_2026_ytd": -444.72,
           "deviation_pct": -69.57383084577114,
-          "growth_pct": -63.65309118939629,
+          "growth_pct": -65.35812098708787,
           "margin_pct": -3.6359117413329063
         },
         {
           "id": 30967,
           "name": "ALBA PEñA, PILAR",
-          "sales_2025": 12692.69,
+          "sales_2025": 13288.160000000002,
           "budget_2026": 12000.0,
           "sales_2026": 9108.61,
           "profit_2026": -13.190000000000001,
@@ -26693,7 +26699,7 @@ const DASHBOARD_DATA = {
             "OCT": 892.58,
             "NOV": 705.22,
             "DIC": 1602.67,
-            "ENE": 0.0
+            "ENE": 595.47
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -26742,7 +26748,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 9108.61,
           "profit_2026_ytd": -13.190000000000001,
           "deviation_pct": -24.094916666666663,
-          "growth_pct": -28.23735551723078,
+          "growth_pct": -31.45318840230702,
           "margin_pct": -0.14480804425702715
         },
         {
@@ -26890,7 +26896,7 @@ const DASHBOARD_DATA = {
         {
           "id": 31096,
           "name": "SUPER ALVAREZ, S.L.",
-          "sales_2025": 120863.94,
+          "sales_2025": 132548.56,
           "budget_2026": 139000.0,
           "sales_2026": 45577.259999999995,
           "profit_2026": -593.8199999999999,
@@ -26906,7 +26912,7 @@ const DASHBOARD_DATA = {
             "OCT": 11667.35,
             "NOV": 9433.11,
             "DIC": 10508.289999999999,
-            "ENE": 0.0
+            "ENE": 11684.619999999999
           },
           "budget_2026_monthly": {
             "FEB": 10500.0,
@@ -26955,13 +26961,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 45577.259999999995,
           "profit_2026_ytd": -593.8199999999999,
           "deviation_pct": -67.21060431654676,
-          "growth_pct": -62.29043997738284,
+          "growth_pct": -65.61466982364803,
           "margin_pct": -1.3028865710663606
         },
         {
           "id": 31107,
           "name": "RAMOS MILLAN, ANTONIO",
-          "sales_2025": 15532.269999999999,
+          "sales_2025": 16419.75,
           "budget_2026": 18000.0,
           "sales_2026": 4589.18,
           "profit_2026": -221.56,
@@ -26977,7 +26983,7 @@ const DASHBOARD_DATA = {
             "OCT": 1773.6799999999998,
             "NOV": 1715.1399999999999,
             "DIC": 1957.21,
-            "ENE": 0.0
+            "ENE": 887.48
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -27026,13 +27032,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 4589.18,
           "profit_2026_ytd": -221.56,
           "deviation_pct": -74.50455555555556,
-          "growth_pct": -70.45390017041939,
+          "growth_pct": -72.05085339301756,
           "margin_pct": -4.827877747222815
         },
         {
           "id": 31265,
           "name": "AGUDO GUILLERMO, FRANCISCA",
-          "sales_2025": 3584.19,
+          "sales_2025": 3729.27,
           "budget_2026": 6000.0,
           "sales_2026": 881.8100000000001,
           "profit_2026": 8.95,
@@ -27048,7 +27054,7 @@ const DASHBOARD_DATA = {
             "OCT": 273.19,
             "NOV": 295.77,
             "DIC": 293.8,
-            "ENE": 0.0
+            "ENE": 145.08
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -27097,13 +27103,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 881.8100000000001,
           "profit_2026_ytd": 8.95,
           "deviation_pct": -85.30316666666667,
-          "growth_pct": -75.39723061556447,
+          "growth_pct": -76.35435353299708,
           "margin_pct": 1.0149578707431304
         },
         {
           "id": 31354,
           "name": "MERCATUYO S.L.",
-          "sales_2025": 19308.15,
+          "sales_2025": 20997.62,
           "budget_2026": 24000.0,
           "sales_2026": 9326.35,
           "profit_2026": -1123.44,
@@ -27119,7 +27125,7 @@ const DASHBOARD_DATA = {
             "OCT": 2042.7000000000003,
             "NOV": 1884.75,
             "DIC": 1809.46,
-            "ENE": 0.0
+            "ENE": 1689.47
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -27168,13 +27174,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 9326.35,
           "profit_2026_ytd": -1123.44,
           "deviation_pct": -61.140208333333334,
-          "growth_pct": -51.6973402423329,
+          "growth_pct": -55.58377568505383,
           "margin_pct": -12.045870034901114
         },
         {
           "id": 31436,
           "name": "PEÑA MARTIN, AMALIA",
-          "sales_2025": 7670.5,
+          "sales_2025": 8186.45,
           "budget_2026": 9000.0,
           "sales_2026": 3537.65,
           "profit_2026": -38.67999999999999,
@@ -27190,7 +27196,7 @@ const DASHBOARD_DATA = {
             "OCT": 566.78,
             "NOV": 542.9,
             "DIC": 802.6600000000001,
-            "ENE": 0.0
+            "ENE": 515.95
           },
           "budget_2026_monthly": {
             "FEB": 750.0,
@@ -27239,13 +27245,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 3537.65,
           "profit_2026_ytd": -38.67999999999999,
           "deviation_pct": -60.692777777777785,
-          "growth_pct": -53.87979923081938,
+          "growth_pct": -56.78651918719346,
           "margin_pct": -1.0933811993837714
         },
         {
           "id": 31464,
           "name": "MOLINA ZAMORA, JULIA",
-          "sales_2025": 13077.78,
+          "sales_2025": 13809.16,
           "budget_2026": 14000.0,
           "sales_2026": 3826.8,
           "profit_2026": -94.07,
@@ -27261,7 +27267,7 @@ const DASHBOARD_DATA = {
             "OCT": 483.79,
             "NOV": 1007.24,
             "DIC": 1527.53,
-            "ENE": 0.0
+            "ENE": 731.38
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -27310,13 +27316,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 3826.8,
           "profit_2026_ytd": -94.07,
           "deviation_pct": -72.66571428571429,
-          "growth_pct": -70.73815280575143,
+          "growth_pct": -72.28795958624565,
           "margin_pct": -2.458189610118114
         },
         {
           "id": 31504,
           "name": "SANCHEZ LOPEZ, AMANDA",
-          "sales_2025": 1610.86,
+          "sales_2025": 1645.3,
           "budget_2026": 0.0,
           "sales_2026": 331.17999999999995,
           "profit_2026": -2.08,
@@ -27332,7 +27338,7 @@ const DASHBOARD_DATA = {
             "OCT": 103.98,
             "NOV": 217.76,
             "DIC": 61.44,
-            "ENE": 0.0
+            "ENE": 34.44
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -27381,13 +27387,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 331.17999999999995,
           "profit_2026_ytd": -2.08,
           "deviation_pct": 0.0,
-          "growth_pct": -79.44079559986591,
+          "growth_pct": -79.8711481188841,
           "margin_pct": -0.6280572498339273
         },
         {
           "id": 31505,
           "name": "SERRANO MARTINEZ MARIA ANGELES",
-          "sales_2025": 7365.55,
+          "sales_2025": 8323.77,
           "budget_2026": 9000.0,
           "sales_2026": 5861.7300000000005,
           "profit_2026": 35.8,
@@ -27403,7 +27409,7 @@ const DASHBOARD_DATA = {
             "OCT": 875.1700000000001,
             "NOV": 716.52,
             "DIC": 1540.81,
-            "ENE": 0.0
+            "ENE": 958.22
           },
           "budget_2026_monthly": {
             "FEB": 750.0,
@@ -27452,13 +27458,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 5861.7300000000005,
           "profit_2026_ytd": 35.8,
           "deviation_pct": -34.86966666666666,
-          "growth_pct": -20.41694102952257,
+          "growth_pct": -29.57842419961147,
           "margin_pct": 0.6107411975645415
         },
         {
           "id": 31521,
           "name": "GONZALEZ CITA MARIA JOSEFA",
-          "sales_2025": 21180.559999999998,
+          "sales_2025": 21957.44,
           "budget_2026": 24000.0,
           "sales_2026": 5592.79,
           "profit_2026": -361.14,
@@ -27474,7 +27480,7 @@ const DASHBOARD_DATA = {
             "OCT": 1384.36,
             "NOV": 1459.47,
             "DIC": 2072.08,
-            "ENE": 0.0
+            "ENE": 776.88
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -27523,13 +27529,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 5592.79,
           "profit_2026_ytd": -361.14,
           "deviation_pct": -76.69670833333333,
-          "growth_pct": -73.59470193422646,
+          "growth_pct": -74.52895237331856,
           "margin_pct": -6.457242270852294
         },
         {
           "id": 31699,
           "name": "AUTOSERVICIO SIP,S.L.",
-          "sales_2025": 32601.989999999998,
+          "sales_2025": 34388.08,
           "budget_2026": 39600.0,
           "sales_2026": 9570.69,
           "profit_2026": -334.71000000000004,
@@ -27545,7 +27551,7 @@ const DASHBOARD_DATA = {
             "OCT": 3913.4500000000003,
             "NOV": 1746.8400000000001,
             "DIC": 2934.3999999999996,
-            "ENE": 0.0
+            "ENE": 1786.0900000000001
           },
           "budget_2026_monthly": {
             "FEB": 3300.0,
@@ -27594,13 +27600,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 9570.69,
           "profit_2026_ytd": -334.71000000000004,
           "deviation_pct": -75.8315909090909,
-          "growth_pct": -70.64384720073835,
+          "growth_pct": -72.16858283451707,
           "margin_pct": -3.497240010908305
         },
         {
           "id": 31742,
           "name": "CURIEL TALAVAN, JULIAN",
-          "sales_2025": 25389.52,
+          "sales_2025": 25784.329999999998,
           "budget_2026": 28000.0,
           "sales_2026": 0.0,
           "profit_2026": 0.0,
@@ -27616,7 +27622,7 @@ const DASHBOARD_DATA = {
             "OCT": 2087.06,
             "NOV": 1808.4,
             "DIC": 2608.39,
-            "ENE": 0.0
+            "ENE": 394.80999999999995
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -27671,7 +27677,7 @@ const DASHBOARD_DATA = {
         {
           "id": 31770,
           "name": "LOPEZ CLEMENTE,JUAN CLAUDIO",
-          "sales_2025": 5140.77,
+          "sales_2025": 6095.76,
           "budget_2026": 6000.0,
           "sales_2026": 1419.6799999999998,
           "profit_2026": -26.380000000000003,
@@ -27687,7 +27693,7 @@ const DASHBOARD_DATA = {
             "OCT": 1188.46,
             "NOV": 0.0,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 954.99
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -27736,13 +27742,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1419.6799999999998,
           "profit_2026_ytd": -26.380000000000003,
           "deviation_pct": -76.33866666666667,
-          "growth_pct": -72.38390357864678,
+          "growth_pct": -76.71036917463941,
           "margin_pct": -1.8581652203313426
         },
         {
           "id": 32165,
           "name": "ROMANO GOMEZ, ANTONIO",
-          "sales_2025": 8489.74,
+          "sales_2025": 9268.28,
           "budget_2026": 9000.0,
           "sales_2026": 2778.58,
           "profit_2026": -41.26,
@@ -27758,7 +27764,7 @@ const DASHBOARD_DATA = {
             "OCT": 758.76,
             "NOV": 450.55,
             "DIC": 832.62,
-            "ENE": 0.0
+            "ENE": 778.54
           },
           "budget_2026_monthly": {
             "FEB": 750.0,
@@ -27807,13 +27813,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2778.58,
           "profit_2026_ytd": -41.26,
           "deviation_pct": -69.1268888888889,
-          "growth_pct": -67.27131808512392,
+          "growth_pct": -70.02054318600646,
           "margin_pct": -1.4849311518833361
         },
         {
           "id": 32259,
           "name": "COOPERATIVA CONS.NTRA.SRA.BELE",
-          "sales_2025": 36387.53,
+          "sales_2025": 38671.93,
           "budget_2026": 41000.0,
           "sales_2026": 13244.73,
           "profit_2026": -1168.36,
@@ -27829,7 +27835,7 @@ const DASHBOARD_DATA = {
             "OCT": 3484.17,
             "NOV": 2340.47,
             "DIC": 3118.36,
-            "ENE": 0.0
+            "ENE": 2284.4
           },
           "budget_2026_monthly": {
             "FEB": 3000.0,
@@ -27878,13 +27884,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 13244.73,
           "profit_2026_ytd": -1168.36,
           "deviation_pct": -67.69578048780488,
-          "growth_pct": -63.60090943243468,
+          "growth_pct": -65.7510499217391,
           "margin_pct": -8.82131987590536
         },
         {
           "id": 32660,
           "name": "PASTOR PINEDA, C.B.",
-          "sales_2025": 35899.83,
+          "sales_2025": 38419.83,
           "budget_2026": 39000.0,
           "sales_2026": 18040.69,
           "profit_2026": -840.37,
@@ -27900,7 +27906,7 @@ const DASHBOARD_DATA = {
             "OCT": 2624.47,
             "NOV": 2663.0,
             "DIC": 3330.7599999999998,
-            "ENE": 0.0
+            "ENE": 2520.0
           },
           "budget_2026_monthly": {
             "FEB": 3000.0,
@@ -27949,13 +27955,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 18040.69,
           "profit_2026_ytd": -840.37,
           "deviation_pct": -53.74182051282052,
-          "growth_pct": -49.747143649426754,
+          "growth_pct": -53.04328519933586,
           "margin_pct": -4.658192120146181
         },
         {
           "id": 32731,
           "name": "MOYANO RODRIGUEZ, JUANA",
-          "sales_2025": 15619.66,
+          "sales_2025": 16703.64,
           "budget_2026": 18000.0,
           "sales_2026": 4180.74,
           "profit_2026": -228.98,
@@ -27971,7 +27977,7 @@ const DASHBOARD_DATA = {
             "OCT": 965.5699999999999,
             "NOV": 1072.1000000000001,
             "DIC": 1198.87,
-            "ENE": 0.0
+            "ENE": 1083.98
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -28020,13 +28026,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 4180.74,
           "profit_2026_ytd": -228.98,
           "deviation_pct": -76.77366666666667,
-          "growth_pct": -73.23411649165219,
+          "growth_pct": -74.97108414692846,
           "margin_pct": -5.477020814496955
         },
         {
           "id": 33046,
           "name": "BRAVO GOMEZ, CLEMENTINA",
-          "sales_2025": 21876.35,
+          "sales_2025": 23511.84,
           "budget_2026": 24000.0,
           "sales_2026": 8614.69,
           "profit_2026": -134.75,
@@ -28042,7 +28048,7 @@ const DASHBOARD_DATA = {
             "OCT": 2248.93,
             "NOV": 1038.71,
             "DIC": 1811.44,
-            "ENE": 0.0
+            "ENE": 1635.49
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -28091,7 +28097,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 8614.69,
           "profit_2026_ytd": -134.75,
           "deviation_pct": -64.10545833333333,
-          "growth_pct": -60.620990247459005,
+          "growth_pct": -63.360204901020076,
           "margin_pct": -1.5641886127068996
         },
         {
@@ -28168,7 +28174,7 @@ const DASHBOARD_DATA = {
         {
           "id": 33102,
           "name": "PROVECAEX, S.L.",
-          "sales_2025": 18070.2,
+          "sales_2025": 18805.32,
           "budget_2026": 24000.0,
           "sales_2026": 4547.62,
           "profit_2026": 16.33,
@@ -28184,7 +28190,7 @@ const DASHBOARD_DATA = {
             "OCT": 4869.38,
             "NOV": 870.14,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 735.12
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -28233,13 +28239,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 4547.62,
           "profit_2026_ytd": 16.33,
           "deviation_pct": -81.05158333333333,
-          "growth_pct": -74.8335934300672,
+          "growth_pct": -75.81737508322114,
           "margin_pct": 0.35908893003373193
         },
         {
           "id": 33416,
           "name": "MENA LOPEZ, FRANCISCO",
-          "sales_2025": 11839.15,
+          "sales_2025": 13336.63,
           "budget_2026": 12000.0,
           "sales_2026": 5127.81,
           "profit_2026": -252.29,
@@ -28255,7 +28261,7 @@ const DASHBOARD_DATA = {
             "OCT": 720.79,
             "NOV": 757.25,
             "DIC": 1306.1599999999999,
-            "ENE": 0.0
+            "ENE": 1497.48
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -28304,7 +28310,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 5127.81,
           "profit_2026_ytd": -252.29,
           "deviation_pct": -57.268249999999995,
-          "growth_pct": -56.68768450437742,
+          "growth_pct": -61.550931532178666,
           "margin_pct": -4.920034088626528
         },
         {
@@ -28381,7 +28387,7 @@ const DASHBOARD_DATA = {
         {
           "id": 33547,
           "name": "FRADES GALAN, DAVID",
-          "sales_2025": 3238.71,
+          "sales_2025": 3625.85,
           "budget_2026": 6000.0,
           "sales_2026": 1596.8600000000001,
           "profit_2026": -66.56,
@@ -28397,7 +28403,7 @@ const DASHBOARD_DATA = {
             "OCT": 232.83,
             "NOV": 314.81,
             "DIC": 230.01,
-            "ENE": 0.0
+            "ENE": 387.14
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -28446,13 +28452,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1596.8600000000001,
           "profit_2026_ytd": -66.56,
           "deviation_pct": -73.38566666666667,
-          "growth_pct": -50.69456666388778,
+          "growth_pct": -55.959016506474335,
           "margin_pct": -4.168180053354709
         },
         {
           "id": 33763,
           "name": "RONCERO FELIPE, MARIBEL",
-          "sales_2025": 29199.18,
+          "sales_2025": 30597.2,
           "budget_2026": 33800.0,
           "sales_2026": 9514.48,
           "profit_2026": -76.77,
@@ -28468,7 +28474,7 @@ const DASHBOARD_DATA = {
             "OCT": 2371.76,
             "NOV": 2723.15,
             "DIC": 2189.6800000000003,
-            "ENE": 0.0
+            "ENE": 1398.02
           },
           "budget_2026_monthly": {
             "FEB": 2400.0,
@@ -28517,13 +28523,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 9514.48,
           "profit_2026_ytd": -76.77,
           "deviation_pct": -71.85065088757396,
-          "growth_pct": -67.41524933234426,
+          "growth_pct": -68.904082726524,
           "margin_pct": -0.8068754151566875
         },
         {
           "id": 33938,
           "name": "2007 DE DIST.ALMADEN, S.L.",
-          "sales_2025": 46748.08,
+          "sales_2025": 48601.19,
           "budget_2026": 56000.0,
           "sales_2026": 16261.46,
           "profit_2026": -1484.4099999999999,
@@ -28539,7 +28545,7 @@ const DASHBOARD_DATA = {
             "OCT": 4890.45,
             "NOV": 2156.04,
             "DIC": 2911.0000000000005,
-            "ENE": 0.0
+            "ENE": 1853.11
           },
           "budget_2026_monthly": {
             "FEB": 4000.0,
@@ -28588,7 +28594,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 16261.46,
           "profit_2026_ytd": -1484.4099999999999,
           "deviation_pct": -70.96167857142858,
-          "growth_pct": -65.21469972670536,
+          "growth_pct": -66.54102502428438,
           "margin_pct": -9.12839314551092
         },
         {
@@ -28665,7 +28671,7 @@ const DASHBOARD_DATA = {
         {
           "id": 33943,
           "name": "FRANCISCOJOSE LABRADA DELA HOZ",
-          "sales_2025": 8542.78,
+          "sales_2025": 9241.5,
           "budget_2026": 12000.0,
           "sales_2026": 3141.49,
           "profit_2026": 26.91,
@@ -28681,7 +28687,7 @@ const DASHBOARD_DATA = {
             "OCT": 971.89,
             "NOV": 721.82,
             "DIC": 719.05,
-            "ENE": 0.0
+            "ENE": 698.72
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -28730,13 +28736,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 3141.49,
           "profit_2026_ytd": 26.91,
           "deviation_pct": -73.82091666666668,
-          "growth_pct": -63.22637361608283,
+          "growth_pct": -66.00670886760808,
           "margin_pct": 0.8565998936810241
         },
         {
           "id": 33986,
           "name": "ARCHILLA ALVAREZ GABRIEL",
-          "sales_2025": 28517.309999999998,
+          "sales_2025": 30236.46,
           "budget_2026": 33000.0,
           "sales_2026": 13968.39,
           "profit_2026": -608.6700000000001,
@@ -28752,7 +28758,7 @@ const DASHBOARD_DATA = {
             "OCT": 3403.2799999999997,
             "NOV": 2176.36,
             "DIC": 2795.77,
-            "ENE": 0.0
+            "ENE": 1719.15
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -28801,13 +28807,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 13968.39,
           "profit_2026_ytd": -608.6700000000001,
           "deviation_pct": -57.67154545454546,
-          "growth_pct": -51.017855470940276,
+          "growth_pct": -53.80282612448679,
           "margin_pct": -4.357481427709279
         },
         {
           "id": 34030,
           "name": "HERMANOS GARCIA C.B.",
-          "sales_2025": 9251.97,
+          "sales_2025": 9883.72,
           "budget_2026": 12000.0,
           "sales_2026": 3517.6099999999997,
           "profit_2026": -30.88,
@@ -28823,7 +28829,7 @@ const DASHBOARD_DATA = {
             "OCT": 979.97,
             "NOV": 346.86,
             "DIC": 488.57,
-            "ENE": 0.0
+            "ENE": 631.75
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -28872,7 +28878,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 3517.6099999999997,
           "profit_2026_ytd": -30.88,
           "deviation_pct": -70.68658333333333,
-          "growth_pct": -61.97988104155115,
+          "growth_pct": -64.41006017977037,
           "margin_pct": -0.8778687802229355
         },
         {
@@ -29091,7 +29097,7 @@ const DASHBOARD_DATA = {
         {
           "id": 34063,
           "name": "RETAMOSA CHAVES, ROSA",
-          "sales_2025": 38821.0,
+          "sales_2025": 41086.79,
           "budget_2026": 42000.0,
           "sales_2026": 12341.06,
           "profit_2026": -875.9599999999999,
@@ -29107,7 +29113,7 @@ const DASHBOARD_DATA = {
             "OCT": 2388.75,
             "NOV": 3142.12,
             "DIC": 3591.3199999999997,
-            "ENE": 0.0
+            "ENE": 2265.79
           },
           "budget_2026_monthly": {
             "FEB": 3000.0,
@@ -29156,13 +29162,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 12341.06,
           "profit_2026_ytd": -875.9599999999999,
           "deviation_pct": -70.61652380952381,
-          "growth_pct": -68.21035006826203,
+          "growth_pct": -69.96343593646523,
           "margin_pct": -7.097931620136358
         },
         {
           "id": 34070,
           "name": "ABN BERNAL ALMADEN, S.L.",
-          "sales_2025": 46280.2,
+          "sales_2025": 48284.2,
           "budget_2026": 48000.0,
           "sales_2026": 25543.81,
           "profit_2026": -3107.6699999999996,
@@ -29178,7 +29184,7 @@ const DASHBOARD_DATA = {
             "OCT": 3918.84,
             "NOV": 2996.4,
             "DIC": 3762.1200000000003,
-            "ENE": 0.0
+            "ENE": 2004.0
           },
           "budget_2026_monthly": {
             "FEB": 4000.0,
@@ -29227,13 +29233,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 25543.81,
           "profit_2026_ytd": -3107.6699999999996,
           "deviation_pct": -46.78372916666667,
-          "growth_pct": -44.80618061287548,
+          "growth_pct": -47.09695925375174,
           "margin_pct": -12.166039443606884
         },
         {
           "id": 34078,
           "name": "URBINA GINER, BELEN",
-          "sales_2025": 6468.95,
+          "sales_2025": 7484.46,
           "budget_2026": 9000.0,
           "sales_2026": 2383.9300000000003,
           "profit_2026": -16.2,
@@ -29249,7 +29255,7 @@ const DASHBOARD_DATA = {
             "OCT": 866.88,
             "NOV": 0.0,
             "DIC": 735.44,
-            "ENE": 0.0
+            "ENE": 1015.51
           },
           "budget_2026_monthly": {
             "FEB": 750.0,
@@ -29298,13 +29304,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2383.9300000000003,
           "profit_2026_ytd": -16.2,
           "deviation_pct": -73.51188888888889,
-          "growth_pct": -63.148115227355284,
+          "growth_pct": -68.14826988186188,
           "margin_pct": -0.6795501545766863
         },
         {
           "id": 34083,
           "name": "DE LA CALLE BAUTISTA, RAFAEL",
-          "sales_2025": 9267.93,
+          "sales_2025": 9962.99,
           "budget_2026": 9000.0,
           "sales_2026": 3317.36,
           "profit_2026": -789.06,
@@ -29320,7 +29326,7 @@ const DASHBOARD_DATA = {
             "OCT": 1535.59,
             "NOV": 871.82,
             "DIC": 1094.72,
-            "ENE": 0.0
+            "ENE": 695.06
           },
           "budget_2026_monthly": {
             "FEB": 750.0,
@@ -29369,13 +29375,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 3317.36,
           "profit_2026_ytd": -789.06,
           "deviation_pct": -63.14044444444444,
-          "growth_pct": -64.20603090441986,
+          "growth_pct": -66.70316842634591,
           "margin_pct": -23.78578146477922
         },
         {
           "id": 34094,
           "name": "MENDEZ MAYORAL, FRANCISCO",
-          "sales_2025": 7857.36,
+          "sales_2025": 8349.07,
           "budget_2026": 9000.0,
           "sales_2026": 2550.8,
           "profit_2026": -135.35,
@@ -29391,7 +29397,7 @@ const DASHBOARD_DATA = {
             "OCT": 1523.08,
             "NOV": 457.83,
             "DIC": 585.65,
-            "ENE": 0.0
+            "ENE": 491.71
           },
           "budget_2026_monthly": {
             "FEB": 750.0,
@@ -29440,13 +29446,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2550.8,
           "profit_2026_ytd": -135.35,
           "deviation_pct": -71.65777777777778,
-          "growth_pct": -67.53616990948613,
+          "growth_pct": -69.44809421887706,
           "margin_pct": -5.30617845381841
         },
         {
           "id": 34135,
           "name": "COPALDE ALIMENTACION, S.L.U.",
-          "sales_2025": 0.0,
+          "sales_2025": 898.56,
           "budget_2026": 0.0,
           "sales_2026": 7561.32,
           "profit_2026": -957.76,
@@ -29462,7 +29468,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 0.0,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 898.56
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -29511,13 +29517,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 7561.32,
           "profit_2026_ytd": -957.76,
           "deviation_pct": 0.0,
-          "growth_pct": 0.0,
+          "growth_pct": 741.4930555555557,
           "margin_pct": -12.6665714451974
         },
         {
           "id": 34138,
           "name": "ALMACENES IMABO, S.A.",
-          "sales_2025": 73330.05,
+          "sales_2025": 80811.27,
           "budget_2026": 81000.0,
           "sales_2026": 26192.08,
           "profit_2026": -935.01,
@@ -29533,7 +29539,7 @@ const DASHBOARD_DATA = {
             "OCT": 8383.78,
             "NOV": 5472.17,
             "DIC": 3655.57,
-            "ENE": 0.0
+            "ENE": 7481.219999999999
           },
           "budget_2026_monthly": {
             "FEB": 7000.0,
@@ -29582,7 +29588,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 26192.08,
           "profit_2026_ytd": -935.01,
           "deviation_pct": -67.6640987654321,
-          "growth_pct": -64.28192807723437,
+          "growth_pct": -67.58858015719838,
           "margin_pct": -3.569819579048323
         }
       ]
@@ -29602,7 +29608,7 @@ const DASHBOARD_DATA = {
         "OCT": 36496.22,
         "NOV": 32004.47,
         "DIC": 36484.829999999994,
-        "ENE": 0.0
+        "ENE": 26429.65
       },
       "budget_2026_monthly": {
         "FEB": 28600.0,
@@ -29646,7 +29652,7 @@ const DASHBOARD_DATA = {
         "DIC": 0.0,
         "ENE": 0.0
       },
-      "total_sales_2025": 346824.52999999997,
+      "total_sales_2025": 373254.18,
       "total_budget_2026": 378300.0,
       "sales_2025_ytd": 119710.6,
       "budget_2026_ytd": 120800.0,
@@ -29664,7 +29670,7 @@ const DASHBOARD_DATA = {
         {
           "id": 18865,
           "name": "FRIJORA, S.L.",
-          "sales_2025": 346824.52999999997,
+          "sales_2025": 373254.18,
           "budget_2026": 378300.0,
           "sales_2026": 130408.76,
           "profit_2026": -3468.7099999999996,
@@ -29680,7 +29686,7 @@ const DASHBOARD_DATA = {
             "OCT": 36496.22,
             "NOV": 32004.47,
             "DIC": 36484.829999999994,
-            "ENE": 0.0
+            "ENE": 26429.65
           },
           "budget_2026_monthly": {
             "FEB": 28600.0,
@@ -29729,7 +29735,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 130408.76,
           "profit_2026_ytd": -3468.7099999999996,
           "deviation_pct": -65.5276870208829,
-          "growth_pct": -62.399210920865364,
+          "growth_pct": -65.0616745939724,
           "margin_pct": -2.6598749961275607
         }
       ]
@@ -30043,7 +30049,7 @@ const DASHBOARD_DATA = {
         "OCT": 487846.0100000001,
         "NOV": 416424.63000000006,
         "DIC": 429040.3,
-        "ENE": 0.0
+        "ENE": 492568.6999999995
       },
       "budget_2026_monthly": {
         "FEB": 367450.0,
@@ -30087,7 +30093,7 @@ const DASHBOARD_DATA = {
         "DIC": 0.0,
         "ENE": 0.0
       },
-      "total_sales_2025": 4675189.289999999,
+      "total_sales_2025": 5167757.989999999,
       "total_budget_2026": 5320700.0,
       "sales_2025_ytd": 1451739.4,
       "budget_2026_ytd": 1522400.0,
@@ -30105,7 +30111,7 @@ const DASHBOARD_DATA = {
         {
           "id": 80,
           "name": "DISTRIB.LOPEZ Y DOBLAS, S.L.",
-          "sales_2025": 232450.03,
+          "sales_2025": 254134.16,
           "budget_2026": 279000.0,
           "sales_2026": 48128.95,
           "profit_2026": -5710.219999999999,
@@ -30121,7 +30127,7 @@ const DASHBOARD_DATA = {
             "OCT": 30405.81,
             "NOV": 21490.559999999998,
             "DIC": 11169.89,
-            "ENE": 0.0
+            "ENE": 21684.13
           },
           "budget_2026_monthly": {
             "FEB": 31000.0,
@@ -30170,13 +30176,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 48128.95,
           "profit_2026_ytd": -5710.219999999999,
           "deviation_pct": -82.74948028673835,
-          "growth_pct": -79.29492631168945,
+          "growth_pct": -81.06159754359666,
           "margin_pct": -11.864418400983192
         },
         {
           "id": 2118,
           "name": "DIST. RODRIGUEZ Y FLORES 2000",
-          "sales_2025": 17295.68,
+          "sales_2025": 18911.48,
           "budget_2026": 18000.0,
           "sales_2026": 20346.14,
           "profit_2026": -3418.82,
@@ -30192,7 +30198,7 @@ const DASHBOARD_DATA = {
             "OCT": 3329.2799999999997,
             "NOV": 1641.6,
             "DIC": 1962.48,
-            "ENE": 0.0
+            "ENE": 1615.8000000000002
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -30241,13 +30247,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 20346.14,
           "profit_2026_ytd": -3418.82,
           "deviation_pct": 13.034111111111107,
-          "growth_pct": 17.637120945808427,
+          "growth_pct": 7.586185745377939,
           "margin_pct": -16.80328553720755
         },
         {
           "id": 3298,
           "name": "MI SUPER ALBEYCO, S.A.",
-          "sales_2025": 131538.12,
+          "sales_2025": 140595.55,
           "budget_2026": 240000.0,
           "sales_2026": 54443.03,
           "profit_2026": -8677.58,
@@ -30263,7 +30269,7 @@ const DASHBOARD_DATA = {
             "OCT": 10003.14,
             "NOV": 12897.27,
             "DIC": 20853.839999999997,
-            "ENE": 0.0
+            "ENE": 9057.43
           },
           "budget_2026_monthly": {
             "FEB": 11000.0,
@@ -30312,13 +30318,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 54443.03,
           "profit_2026_ytd": -8677.58,
           "deviation_pct": -77.31540416666667,
-          "growth_pct": -58.61045452071232,
+          "growth_pct": -61.27684695568245,
           "margin_pct": -15.938826329100348
         },
         {
           "id": 3422,
           "name": "DIST.MANUEL Y ANTONIO ABAD,SRL",
-          "sales_2025": 72642.93000000001,
+          "sales_2025": 99762.26000000001,
           "budget_2026": 62000.0,
           "sales_2026": 23436.409999999996,
           "profit_2026": -5351.41,
@@ -30334,7 +30340,7 @@ const DASHBOARD_DATA = {
             "OCT": 2978.6,
             "NOV": 2022.2800000000002,
             "DIC": 21377.68,
-            "ENE": 0.0
+            "ENE": 27119.33
           },
           "budget_2026_monthly": {
             "FEB": 3000.0,
@@ -30383,13 +30389,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 23436.409999999996,
           "profit_2026_ytd": -5351.41,
           "deviation_pct": -62.19933870967742,
-          "growth_pct": -67.73752104988057,
+          "growth_pct": -76.50773949988702,
           "margin_pct": -22.833744588014977
         },
         {
           "id": 3470,
           "name": "ACOSTA DEPOSITO Y DISTRIB.,SL.",
-          "sales_2025": 295618.01,
+          "sales_2025": 338890.26,
           "budget_2026": 333000.0,
           "sales_2026": 88624.61,
           "profit_2026": -9523.65,
@@ -30405,7 +30411,7 @@ const DASHBOARD_DATA = {
             "OCT": 42234.979999999996,
             "NOV": 41843.59,
             "DIC": 32110.019999999997,
-            "ENE": 0.0
+            "ENE": 43272.25000000001
           },
           "budget_2026_monthly": {
             "FEB": 18000.0,
@@ -30454,13 +30460,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 88624.61,
           "profit_2026_ytd": -9523.65,
           "deviation_pct": -73.38600300300301,
-          "growth_pct": -70.0205647145788,
+          "growth_pct": -73.84858154377173,
           "margin_pct": -10.746055751331374
         },
         {
           "id": 3729,
           "name": "DULCES MAYMA, S.L.",
-          "sales_2025": 113399.57999999999,
+          "sales_2025": 119591.26,
           "budget_2026": 172000.0,
           "sales_2026": 70156.04000000001,
           "profit_2026": -7854.88,
@@ -30476,7 +30482,7 @@ const DASHBOARD_DATA = {
             "OCT": 11609.999999999998,
             "NOV": 8169.6,
             "DIC": 15095.319999999998,
-            "ENE": 0.0
+            "ENE": 6191.68
           },
           "budget_2026_monthly": {
             "FEB": 11000.0,
@@ -30525,13 +30531,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 70156.04000000001,
           "profit_2026_ytd": -7854.88,
           "deviation_pct": -59.21160465116279,
-          "growth_pct": -38.13377439316793,
+          "growth_pct": -41.33681675400024,
           "margin_pct": -11.196298992930615
         },
         {
           "id": 3751,
           "name": "CASH HERMANOS ROMERAL, S.L.",
-          "sales_2025": 96080.06,
+          "sales_2025": 98559.8,
           "budget_2026": 97000.0,
           "sales_2026": 35343.61,
           "profit_2026": -4454.84,
@@ -30547,7 +30553,7 @@ const DASHBOARD_DATA = {
             "OCT": 4691.16,
             "NOV": 4403.610000000001,
             "DIC": 12768.64,
-            "ENE": 0.0
+            "ENE": 2479.74
           },
           "budget_2026_monthly": {
             "FEB": 9000.0,
@@ -30596,13 +30602,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 35343.61,
           "profit_2026_ytd": -4454.84,
           "deviation_pct": -63.56328865979381,
-          "growth_pct": -63.2144172266337,
+          "growth_pct": -64.13993331966988,
           "margin_pct": -12.604371766211772
         },
         {
           "id": 3764,
           "name": "MAYORISTA DE ALIMENT. LOJO S.L",
-          "sales_2025": 164136.02,
+          "sales_2025": 185113.6,
           "budget_2026": 177000.0,
           "sales_2026": 38846.37,
           "profit_2026": -680.74,
@@ -30618,7 +30624,7 @@ const DASHBOARD_DATA = {
             "OCT": 17476.28,
             "NOV": 9178.64,
             "DIC": 13357.12,
-            "ENE": 0.0
+            "ENE": 20977.579999999998
           },
           "budget_2026_monthly": {
             "FEB": 13000.0,
@@ -30667,13 +30673,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 38846.37,
           "profit_2026_ytd": -680.74,
           "deviation_pct": -78.05289830508475,
-          "growth_pct": -76.33281835394816,
+          "growth_pct": -79.01484817971235,
           "margin_pct": -1.75239024907604
         },
         {
           "id": 3778,
           "name": "ALMACENES GOMESAN, S.L.",
-          "sales_2025": 49307.57,
+          "sales_2025": 56103.6,
           "budget_2026": 54000.0,
           "sales_2026": 7622.299999999999,
           "profit_2026": -1038.4499999999998,
@@ -30689,7 +30695,7 @@ const DASHBOARD_DATA = {
             "OCT": 2400.21,
             "NOV": 2201.06,
             "DIC": 2849.3,
-            "ENE": 0.0
+            "ENE": 6796.030000000001
           },
           "budget_2026_monthly": {
             "FEB": 5500.0,
@@ -30738,13 +30744,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 7622.299999999999,
           "profit_2026_ytd": -1038.4499999999998,
           "deviation_pct": -85.88462962962963,
-          "growth_pct": -84.5413189090438,
+          "growth_pct": -86.41388431401907,
           "margin_pct": -13.623840573055377
         },
         {
           "id": 3855,
           "name": "DIZVALLE ALIMENTACION, S.L.",
-          "sales_2025": 58701.87,
+          "sales_2025": 69548.53,
           "budget_2026": 96000.0,
           "sales_2026": 20944.43,
           "profit_2026": -3805.5600000000004,
@@ -30760,7 +30766,7 @@ const DASHBOARD_DATA = {
             "OCT": 9571.08,
             "NOV": 0.0,
             "DIC": 3904.4,
-            "ENE": 0.0
+            "ENE": 10846.66
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -30809,13 +30815,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 20944.43,
           "profit_2026_ytd": -3805.5600000000004,
           "deviation_pct": -78.18288541666666,
-          "growth_pct": -64.32067666668881,
+          "growth_pct": -69.88515788903086,
           "margin_pct": -18.169795024261823
         },
         {
           "id": 3885,
           "name": "DULCES VALERO, S.L.",
-          "sales_2025": 145640.36000000002,
+          "sales_2025": 157473.2,
           "budget_2026": 156000.0,
           "sales_2026": 64131.19,
           "profit_2026": -4594.23,
@@ -30831,7 +30837,7 @@ const DASHBOARD_DATA = {
             "OCT": 20300.050000000003,
             "NOV": 10328.99,
             "DIC": 11775.78,
-            "ENE": 0.0
+            "ENE": 11832.84
           },
           "budget_2026_monthly": {
             "FEB": 5000.0,
@@ -30880,13 +30886,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 64131.19,
           "profit_2026_ytd": -4594.23,
           "deviation_pct": -58.89026282051282,
-          "growth_pct": -55.96605913360829,
+          "growth_pct": -59.27485438792125,
           "margin_pct": -7.163799704948557
         },
         {
           "id": 4168,
           "name": "ALIMENTACION PEREZ ACUÑA, S.L.",
-          "sales_2025": 51991.71,
+          "sales_2025": 57073.85,
           "budget_2026": 85500.0,
           "sales_2026": 19430.92,
           "profit_2026": 1063.51,
@@ -30902,7 +30908,7 @@ const DASHBOARD_DATA = {
             "OCT": 5628.76,
             "NOV": 5936.389999999999,
             "DIC": 954.62,
-            "ENE": 0.0
+            "ENE": 5082.139999999999
           },
           "budget_2026_monthly": {
             "FEB": 5000.0,
@@ -30951,13 +30957,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 19430.92,
           "profit_2026_ytd": 1063.51,
           "deviation_pct": -77.27377777777778,
-          "growth_pct": -62.62688801733969,
+          "growth_pct": -65.95477613653188,
           "margin_pct": 5.473286905612293
         },
         {
           "id": 4266,
           "name": "DISTRIB. PRADOS CARLITOS,S.L.",
-          "sales_2025": 14230.66,
+          "sales_2025": 15063.91,
           "budget_2026": 18000.0,
           "sales_2026": 5682.83,
           "profit_2026": -427.41999999999996,
@@ -30973,7 +30979,7 @@ const DASHBOARD_DATA = {
             "OCT": 862.36,
             "NOV": 2561.5699999999997,
             "DIC": 536.12,
-            "ENE": 0.0
+            "ENE": 833.25
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -31022,13 +31028,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 5682.83,
           "profit_2026_ytd": -427.41999999999996,
           "deviation_pct": -68.42872222222223,
-          "growth_pct": -60.066293481820246,
+          "growth_pct": -62.2751994668051,
           "margin_pct": -7.5212526153342605
         },
         {
           "id": 6028,
           "name": "DIST.NIETO GALLARDO ESTEPA S.L",
-          "sales_2025": 129950.23,
+          "sales_2025": 134072.41999999998,
           "budget_2026": 0.0,
           "sales_2026": 74925.0,
           "profit_2026": -26966.25,
@@ -31044,7 +31050,7 @@ const DASHBOARD_DATA = {
             "OCT": 28975.659999999996,
             "NOV": 6958.86,
             "DIC": 28328.64,
-            "ENE": 0.0
+            "ENE": 4122.19
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -31093,13 +31099,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 74925.0,
           "profit_2026_ytd": -26966.25,
           "deviation_pct": 0.0,
-          "growth_pct": -42.343310973747414,
+          "growth_pct": -44.11602326563509,
           "margin_pct": -35.99099099099099
         },
         {
           "id": 6182,
           "name": "COOP. AGRICOLA SAN PATRICION D",
-          "sales_2025": 20440.2,
+          "sales_2025": 23018.89,
           "budget_2026": 24000.0,
           "sales_2026": 11989.6,
           "profit_2026": -1567.39,
@@ -31115,7 +31121,7 @@ const DASHBOARD_DATA = {
             "OCT": 2830.4,
             "NOV": 2330.43,
             "DIC": 2026.67,
-            "ENE": 0.0
+            "ENE": 2578.69
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -31164,13 +31170,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 11989.6,
           "profit_2026_ytd": -1567.39,
           "deviation_pct": -50.04333333333333,
-          "growth_pct": -41.34303969628477,
+          "growth_pct": -47.914082738133764,
           "margin_pct": -13.072913191432574
         },
         {
           "id": 6338,
           "name": "FERNANDEZ PINTO S.L.",
-          "sales_2025": 73512.73,
+          "sales_2025": 74285.81,
           "budget_2026": 85000.0,
           "sales_2026": 12690.470000000001,
           "profit_2026": -2978.01,
@@ -31186,7 +31192,7 @@ const DASHBOARD_DATA = {
             "OCT": 2532.8,
             "NOV": 630.36,
             "DIC": 8017.2,
-            "ENE": 0.0
+            "ENE": 773.08
           },
           "budget_2026_monthly": {
             "FEB": 15000.0,
@@ -31235,7 +31241,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 12690.470000000001,
           "profit_2026_ytd": -2978.01,
           "deviation_pct": -85.07003529411764,
-          "growth_pct": -82.73704431871867,
+          "growth_pct": -82.91669701117885,
           "margin_pct": -23.466506756644947
         },
         {
@@ -31312,7 +31318,7 @@ const DASHBOARD_DATA = {
         {
           "id": 6668,
           "name": "DULCES ZABALA S.L.",
-          "sales_2025": 189918.59,
+          "sales_2025": 239894.63,
           "budget_2026": 195000.0,
           "sales_2026": 69767.84,
           "profit_2026": -4735.05,
@@ -31328,7 +31334,7 @@ const DASHBOARD_DATA = {
             "OCT": 20509.53,
             "NOV": 24565.8,
             "DIC": 20655.7,
-            "ENE": 0.0
+            "ENE": 49976.04
           },
           "budget_2026_monthly": {
             "FEB": 16000.0,
@@ -31377,13 +31383,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 69767.84,
           "profit_2026_ytd": -4735.05,
           "deviation_pct": -64.22162051282051,
-          "growth_pct": -63.2643439486361,
+          "growth_pct": -70.91729814877473,
           "margin_pct": -6.786866269616489
         },
         {
           "id": 18073,
           "name": "DIST. MARILIZA S.L.",
-          "sales_2025": 53284.71,
+          "sales_2025": 55479.7,
           "budget_2026": 60000.0,
           "sales_2026": 18527.73,
           "profit_2026": -1648.46,
@@ -31399,7 +31405,7 @@ const DASHBOARD_DATA = {
             "OCT": 5293.75,
             "NOV": 2613.12,
             "DIC": 7542.61,
-            "ENE": 0.0
+            "ENE": 2194.99
           },
           "budget_2026_monthly": {
             "FEB": 5000.0,
@@ -31448,13 +31454,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 18527.73,
           "profit_2026_ytd": -1648.46,
           "deviation_pct": -69.12045,
-          "growth_pct": -65.22880578687582,
+          "growth_pct": -66.60448776759789,
           "margin_pct": -8.897258325763598
         },
         {
           "id": 18272,
           "name": "ALIMENTACION JURADO S.L.U",
-          "sales_2025": 95616.31,
+          "sales_2025": 103195.03,
           "budget_2026": 100000.0,
           "sales_2026": 24009.24,
           "profit_2026": -963.3499999999999,
@@ -31470,7 +31476,7 @@ const DASHBOARD_DATA = {
             "OCT": 9175.01,
             "NOV": 7794.619999999999,
             "DIC": 10325.92,
-            "ENE": 0.0
+            "ENE": 7578.719999999999
           },
           "budget_2026_monthly": {
             "FEB": 9000.0,
@@ -31519,13 +31525,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 24009.24,
           "profit_2026_ytd": -963.3499999999999,
           "deviation_pct": -75.99076,
-          "growth_pct": -74.89001614891852,
+          "growth_pct": -76.73411209822798,
           "margin_pct": -4.012413554114999
         },
         {
           "id": 18286,
           "name": "MANUEL RELINQUE E HIJOS S.L.",
-          "sales_2025": 102702.55,
+          "sales_2025": 108283.03,
           "budget_2026": 117000.0,
           "sales_2026": 32145.92,
           "profit_2026": -2506.6,
@@ -31541,7 +31547,7 @@ const DASHBOARD_DATA = {
             "OCT": 11816.66,
             "NOV": 5129.0,
             "DIC": 4870.11,
-            "ENE": 0.0
+            "ENE": 5580.48
           },
           "budget_2026_monthly": {
             "FEB": 5000.0,
@@ -31590,13 +31596,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 32145.92,
           "profit_2026_ytd": -2506.6,
           "deviation_pct": -72.5248547008547,
-          "growth_pct": -68.69997872496837,
+          "growth_pct": -70.31305828808078,
           "margin_pct": -7.7975680895118265
         },
         {
           "id": 18410,
           "name": "BEALSUR XXI S.L.",
-          "sales_2025": 40153.46,
+          "sales_2025": 42145.16,
           "budget_2026": 51000.0,
           "sales_2026": 12269.92,
           "profit_2026": -1709.7,
@@ -31612,7 +31618,7 @@ const DASHBOARD_DATA = {
             "OCT": 4662.83,
             "NOV": 960.66,
             "DIC": 4070.54,
-            "ENE": 0.0
+            "ENE": 1991.6999999999998
           },
           "budget_2026_monthly": {
             "FEB": 6000.0,
@@ -31661,13 +31667,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 12269.92,
           "profit_2026_ytd": -1709.7,
           "deviation_pct": -75.94133333333333,
-          "growth_pct": -69.44243410156933,
+          "growth_pct": -70.88652647184162,
           "margin_pct": -13.934076179795793
         },
         {
           "id": 18959,
           "name": "SUPHERME ALIMENTACION S.L.",
-          "sales_2025": 87687.25,
+          "sales_2025": 96313.55,
           "budget_2026": 97000.0,
           "sales_2026": 29646.28,
           "profit_2026": -3134.77,
@@ -31683,7 +31689,7 @@ const DASHBOARD_DATA = {
             "OCT": 4431.23,
             "NOV": 9428.34,
             "DIC": 10145.240000000002,
-            "ENE": 0.0
+            "ENE": 8626.3
           },
           "budget_2026_monthly": {
             "FEB": 5000.0,
@@ -31732,13 +31738,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 29646.28,
           "profit_2026_ytd": -3134.77,
           "deviation_pct": -69.43682474226804,
-          "growth_pct": -66.19088864116505,
+          "growth_pct": -69.21899358916788,
           "margin_pct": -10.573906743105713
         },
         {
           "id": 19378,
           "name": "ROTADIS-NIÑO, S.L.",
-          "sales_2025": 59709.45,
+          "sales_2025": 66743.3,
           "budget_2026": 66000.0,
           "sales_2026": 19462.84,
           "profit_2026": -503.59000000000003,
@@ -31754,7 +31760,7 @@ const DASHBOARD_DATA = {
             "OCT": 5042.78,
             "NOV": 3952.8600000000006,
             "DIC": 4220.96,
-            "ENE": 0.0
+            "ENE": 7033.849999999999
           },
           "budget_2026_monthly": {
             "FEB": 5000.0,
@@ -31803,13 +31809,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 19462.84,
           "profit_2026_ytd": -503.59000000000003,
           "deviation_pct": -70.51084848484848,
-          "growth_pct": -67.40408762767032,
+          "growth_pct": -70.83926027031927,
           "margin_pct": -2.5874435591105924
         },
         {
           "id": 19559,
           "name": "BEBIDAS SAN RAFAEL, S.L.",
-          "sales_2025": 39275.4,
+          "sales_2025": 43244.520000000004,
           "budget_2026": 48000.0,
           "sales_2026": 20277.41,
           "profit_2026": -3203.94,
@@ -31825,7 +31831,7 @@ const DASHBOARD_DATA = {
             "OCT": 5132.87,
             "NOV": 2117.28,
             "DIC": 3846.66,
-            "ENE": 0.0
+            "ENE": 3969.12
           },
           "budget_2026_monthly": {
             "FEB": 4000.0,
@@ -31874,13 +31880,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 20277.41,
           "profit_2026_ytd": -3203.94,
           "deviation_pct": -57.75539583333333,
-          "growth_pct": -48.37121964384831,
+          "growth_pct": -53.10987380597588,
           "margin_pct": -15.800538628947189
         },
         {
           "id": 19752,
           "name": "SUPER TEJERO, S.L.",
-          "sales_2025": 72855.97,
+          "sales_2025": 75986.07,
           "budget_2026": 77000.0,
           "sales_2026": 19417.22,
           "profit_2026": -3163.0099999999998,
@@ -31896,7 +31902,7 @@ const DASHBOARD_DATA = {
             "OCT": 1991.68,
             "NOV": 1977.72,
             "DIC": 1609.36,
-            "ENE": 0.0
+            "ENE": 3130.1
           },
           "budget_2026_monthly": {
             "FEB": 4000.0,
@@ -31945,13 +31951,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 19417.22,
           "profit_2026_ytd": -3163.0099999999998,
           "deviation_pct": -74.78283116883117,
-          "growth_pct": -73.34848468835155,
+          "growth_pct": -74.4463425993738,
           "margin_pct": -16.289716035560186
         },
         {
           "id": 20103,
           "name": "SUPERMERCADOS ALACASA XXI,S.L.",
-          "sales_2025": 11586.1,
+          "sales_2025": 12500.93,
           "budget_2026": 16000.0,
           "sales_2026": 1401.48,
           "profit_2026": -5.4799999999999995,
@@ -31967,7 +31973,7 @@ const DASHBOARD_DATA = {
             "OCT": 576.26,
             "NOV": 1289.32,
             "DIC": 377.25,
-            "ENE": 0.0
+            "ENE": 914.83
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -32016,13 +32022,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1401.48,
           "profit_2026_ytd": -5.4799999999999995,
           "deviation_pct": -91.24075,
-          "growth_pct": -87.90378125512468,
+          "growth_pct": -88.78899409883904,
           "margin_pct": -0.39101521248965376
         },
         {
           "id": 20230,
           "name": "JUCAR ALIMENTACION, S.L.U.",
-          "sales_2025": 38377.89,
+          "sales_2025": 39808.049999999996,
           "budget_2026": 44000.0,
           "sales_2026": 6552.6,
           "profit_2026": -283.43,
@@ -32038,7 +32044,7 @@ const DASHBOARD_DATA = {
             "OCT": 2892.63,
             "NOV": 7079.13,
             "DIC": 3894.7799999999997,
-            "ENE": 0.0
+            "ENE": 1430.1599999999999
           },
           "budget_2026_monthly": {
             "FEB": 4000.0,
@@ -32087,13 +32093,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 6552.6,
           "profit_2026_ytd": -283.43,
           "deviation_pct": -85.10772727272727,
-          "growth_pct": -82.92610667235745,
+          "growth_pct": -83.53951022469074,
           "margin_pct": -4.325458596587614
         },
         {
           "id": 22451,
           "name": "DISCAMO P. DE CAZALLA, S.L.",
-          "sales_2025": 56996.81,
+          "sales_2025": 61469.64,
           "budget_2026": 80000.0,
           "sales_2026": 19045.09,
           "profit_2026": -3354.96,
@@ -32109,7 +32115,7 @@ const DASHBOARD_DATA = {
             "OCT": 8375.87,
             "NOV": 4201.24,
             "DIC": 6982.21,
-            "ENE": 0.0
+            "ENE": 4472.83
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -32158,13 +32164,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 19045.09,
           "profit_2026_ytd": -3354.96,
           "deviation_pct": -76.1936375,
-          "growth_pct": -66.58569137465764,
+          "growth_pct": -69.01707900029999,
           "margin_pct": -17.615878948327364
         },
         {
           "id": 22647,
           "name": "MUÑOZ Y BERROCAL, S.L.U.",
-          "sales_2025": 14426.08,
+          "sales_2025": 15476.42,
           "budget_2026": 18000.0,
           "sales_2026": 10444.380000000001,
           "profit_2026": 1026.06,
@@ -32180,7 +32186,7 @@ const DASHBOARD_DATA = {
             "OCT": 505.58000000000004,
             "NOV": 951.7,
             "DIC": 1884.56,
-            "ENE": 0.0
+            "ENE": 1050.34
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -32229,13 +32235,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 10444.380000000001,
           "profit_2026_ytd": 1026.06,
           "deviation_pct": -41.97566666666666,
-          "growth_pct": -27.600706498230977,
+          "growth_pct": -32.51423778884263,
           "margin_pct": 9.824039339817201
         },
         {
           "id": 23258,
           "name": "EL ALMACEN DE JIMENEZ PRADOS,S",
-          "sales_2025": 108548.93000000001,
+          "sales_2025": 117142.52,
           "budget_2026": 119000.0,
           "sales_2026": 52118.770000000004,
           "profit_2026": -5996.719999999999,
@@ -32251,7 +32257,7 @@ const DASHBOARD_DATA = {
             "OCT": 11892.45,
             "NOV": 16145.07,
             "DIC": 10518.35,
-            "ENE": 0.0
+            "ENE": 8593.59
           },
           "budget_2026_monthly": {
             "FEB": 14000.0,
@@ -32300,13 +32306,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 52118.770000000004,
           "profit_2026_ytd": -5996.719999999999,
           "deviation_pct": -56.202714285714286,
-          "growth_pct": -51.98592008230758,
+          "growth_pct": -55.508239023712314,
           "margin_pct": -11.505873987432933
         },
         {
           "id": 23337,
           "name": "SUPERMERCADOS PEPA E HIJOS, SL",
-          "sales_2025": 29398.64,
+          "sales_2025": 31960.18,
           "budget_2026": 41000.0,
           "sales_2026": 12379.99,
           "profit_2026": -2242.5299999999997,
@@ -32322,7 +32328,7 @@ const DASHBOARD_DATA = {
             "OCT": 2672.7,
             "NOV": 1126.44,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 2561.54
           },
           "budget_2026_monthly": {
             "FEB": 3000.0,
@@ -32371,13 +32377,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 12379.99,
           "profit_2026_ytd": -2242.5299999999997,
           "deviation_pct": -69.8049024390244,
-          "growth_pct": -57.889242495571224,
+          "growth_pct": -61.26432955008389,
           "margin_pct": -18.11415033453177
         },
         {
           "id": 23405,
           "name": "CASH AHORRO LA NAVE, S.L.",
-          "sales_2025": 38840.88,
+          "sales_2025": 42189.63,
           "budget_2026": 43000.0,
           "sales_2026": 16196.15,
           "profit_2026": -1950.2400000000002,
@@ -32393,7 +32399,7 @@ const DASHBOARD_DATA = {
             "OCT": 4418.889999999999,
             "NOV": 3044.8599999999997,
             "DIC": 4205.2,
-            "ENE": 0.0
+            "ENE": 3348.75
           },
           "budget_2026_monthly": {
             "FEB": 4000.0,
@@ -32442,13 +32448,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 16196.15,
           "profit_2026_ytd": -1950.2400000000002,
           "deviation_pct": -62.33453488372093,
-          "growth_pct": -58.301279476675084,
+          "growth_pct": -61.61106414064309,
           "margin_pct": -12.04138020455479
         },
         {
           "id": 23418,
           "name": "SUPERMERCADOS ALACASA XXI, S.L",
-          "sales_2025": 15073.529999999999,
+          "sales_2025": 16193.11,
           "budget_2026": 20000.0,
           "sales_2026": 1401.29,
           "profit_2026": 5.329999999999995,
@@ -32464,7 +32470,7 @@ const DASHBOARD_DATA = {
             "OCT": 1581.8899999999999,
             "NOV": 978.72,
             "DIC": 535.77,
-            "ENE": 0.0
+            "ENE": 1119.58
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -32513,13 +32519,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1401.29,
           "profit_2026_ytd": 5.329999999999995,
           "deviation_pct": -92.99354999999998,
-          "growth_pct": -90.70363743595561,
+          "growth_pct": -91.34638126956465,
           "margin_pct": 0.38036380763439365
         },
         {
           "id": 23441,
           "name": "MERCA MORON, S.L.",
-          "sales_2025": 68451.08,
+          "sales_2025": 78713.54000000001,
           "budget_2026": 86000.0,
           "sales_2026": 30448.620000000003,
           "profit_2026": -4255.62,
@@ -32535,7 +32541,7 @@ const DASHBOARD_DATA = {
             "OCT": 8006.570000000001,
             "NOV": 6594.1900000000005,
             "DIC": 4708.700000000001,
-            "ENE": 0.0
+            "ENE": 10262.46
           },
           "budget_2026_monthly": {
             "FEB": 7000.0,
@@ -32584,13 +32590,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 30448.620000000003,
           "profit_2026_ytd": -4255.62,
           "deviation_pct": -64.59462790697674,
-          "growth_pct": -55.51769234320335,
+          "growth_pct": -61.31717618087053,
           "margin_pct": -13.97639695986222
         },
         {
           "id": 23575,
           "name": "CASH RINCON, S.L.",
-          "sales_2025": 39142.17,
+          "sales_2025": 41848.590000000004,
           "budget_2026": 44000.0,
           "sales_2026": 15880.93,
           "profit_2026": -851.99,
@@ -32606,7 +32612,7 @@ const DASHBOARD_DATA = {
             "OCT": 4686.28,
             "NOV": 3118.6800000000003,
             "DIC": 3406.09,
-            "ENE": 0.0
+            "ENE": 2706.4199999999996
           },
           "budget_2026_monthly": {
             "FEB": 3000.0,
@@ -32655,13 +32661,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 15880.93,
           "profit_2026_ytd": -851.99,
           "deviation_pct": -63.906977272727275,
-          "growth_pct": -59.42756878323302,
+          "growth_pct": -62.051457408720346,
           "margin_pct": -5.364862133388914
         },
         {
           "id": 23710,
           "name": "SUPERMERCADOS ALACASA XXI, S.L",
-          "sales_2025": 11598.95,
+          "sales_2025": 12521.43,
           "budget_2026": 15000.0,
           "sales_2026": 2646.87,
           "profit_2026": -141.17,
@@ -32677,7 +32683,7 @@ const DASHBOARD_DATA = {
             "OCT": 1094.9,
             "NOV": 864.6899999999999,
             "DIC": 339.9,
-            "ENE": 0.0
+            "ENE": 922.48
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -32726,7 +32732,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2646.87,
           "profit_2026_ytd": -141.17,
           "deviation_pct": -82.3542,
-          "growth_pct": -77.1800895770738,
+          "growth_pct": -78.8612802211888,
           "margin_pct": -5.333469343035358
         },
         {
@@ -32945,7 +32951,7 @@ const DASHBOARD_DATA = {
         {
           "id": 23897,
           "name": "ROTADIS-NIÑO, S.L.",
-          "sales_2025": 5484.41,
+          "sales_2025": 5786.39,
           "budget_2026": 6600.0,
           "sales_2026": 1851.8000000000002,
           "profit_2026": 69.8,
@@ -32961,7 +32967,7 @@ const DASHBOARD_DATA = {
             "OCT": 261.12,
             "NOV": 593.76,
             "DIC": 378.73,
-            "ENE": 0.0
+            "ENE": 301.98
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -33010,13 +33016,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1851.8000000000002,
           "profit_2026_ytd": 69.8,
           "deviation_pct": -71.94242424242424,
-          "growth_pct": -66.2352012340434,
+          "growth_pct": -67.99731784411351,
           "margin_pct": 3.7693055405551354
         },
         {
           "id": 23905,
           "name": "CASH ALFA, S.L.",
-          "sales_2025": 7277.610000000001,
+          "sales_2025": 9572.16,
           "budget_2026": 0.0,
           "sales_2026": 6971.049999999999,
           "profit_2026": -761.06,
@@ -33032,7 +33038,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 0.0,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 2294.5499999999997
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -33081,13 +33087,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 6971.049999999999,
           "profit_2026_ytd": -761.06,
           "deviation_pct": 0.0,
-          "growth_pct": -4.212371918803031,
+          "growth_pct": -27.173699562063327,
           "margin_pct": -10.9174371149253
         },
         {
           "id": 23927,
           "name": "BERRO CASH, S.L.",
-          "sales_2025": 40097.82,
+          "sales_2025": 42962.17,
           "budget_2026": 49600.0,
           "sales_2026": 15912.61,
           "profit_2026": -224.34,
@@ -33103,7 +33109,7 @@ const DASHBOARD_DATA = {
             "OCT": 3723.2000000000003,
             "NOV": 3314.02,
             "DIC": 4479.01,
-            "ENE": 0.0
+            "ENE": 2864.35
           },
           "budget_2026_monthly": {
             "FEB": 4700.0,
@@ -33152,13 +33158,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 15912.61,
           "profit_2026_ytd": -224.34,
           "deviation_pct": -67.91812499999999,
-          "growth_pct": -60.315523387555736,
+          "growth_pct": -62.961344829648965,
           "margin_pct": -1.4098252895031047
         },
         {
           "id": 23938,
           "name": "MANTEQUERIAS MANCHEGAS, S.L.",
-          "sales_2025": 12386.8,
+          "sales_2025": 12890.46,
           "budget_2026": 18000.0,
           "sales_2026": 3157.23,
           "profit_2026": -412.96,
@@ -33174,7 +33180,7 @@ const DASHBOARD_DATA = {
             "OCT": 732.95,
             "NOV": 1487.43,
             "DIC": 1718.87,
-            "ENE": 0.0
+            "ENE": 503.66
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -33223,13 +33229,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 3157.23,
           "profit_2026_ytd": -412.96,
           "deviation_pct": -82.45983333333334,
-          "growth_pct": -74.51133464655925,
+          "growth_pct": -75.50723558352456,
           "margin_pct": -13.079819968770092
         },
         {
           "id": 24110,
           "name": "ROTADIS-NIÑO, S.L.",
-          "sales_2025": 12015.76,
+          "sales_2025": 12661.36,
           "budget_2026": 12000.0,
           "sales_2026": 3318.72,
           "profit_2026": -461.21,
@@ -33245,7 +33251,7 @@ const DASHBOARD_DATA = {
             "OCT": 399.26,
             "NOV": 989.88,
             "DIC": 759.12,
-            "ENE": 0.0
+            "ENE": 645.6
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -33294,13 +33300,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 3318.72,
           "profit_2026_ytd": -461.21,
           "deviation_pct": -72.34400000000001,
-          "growth_pct": -72.38027390693557,
+          "growth_pct": -73.7885977493729,
           "margin_pct": -13.897225436312796
         },
         {
           "id": 24481,
           "name": "DISTRIBUCIONES LOGISTISUR, S.L",
-          "sales_2025": 28431.13,
+          "sales_2025": 31313.95,
           "budget_2026": 36000.0,
           "sales_2026": 6219.76,
           "profit_2026": -1368.09,
@@ -33316,7 +33322,7 @@ const DASHBOARD_DATA = {
             "OCT": 544.8,
             "NOV": 4119.06,
             "DIC": 831.68,
-            "ENE": 0.0
+            "ENE": 2882.8199999999997
           },
           "budget_2026_monthly": {
             "FEB": 3000.0,
@@ -33365,13 +33371,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 6219.76,
           "profit_2026_ytd": -1368.09,
           "deviation_pct": -82.72288888888887,
-          "growth_pct": -78.12341612872933,
+          "growth_pct": -80.13741479436482,
           "margin_pct": -21.99586479221063
         },
         {
           "id": 24590,
           "name": "FINCARENTALIA, S.L.",
-          "sales_2025": 32608.28,
+          "sales_2025": 35527.64,
           "budget_2026": 36000.0,
           "sales_2026": 7763.74,
           "profit_2026": -254.42,
@@ -33387,7 +33393,7 @@ const DASHBOARD_DATA = {
             "OCT": 3706.7700000000004,
             "NOV": 2658.11,
             "DIC": 3274.16,
-            "ENE": 0.0
+            "ENE": 2919.36
           },
           "budget_2026_monthly": {
             "FEB": 3000.0,
@@ -33436,7 +33442,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 7763.74,
           "profit_2026_ytd": -254.42,
           "deviation_pct": -78.43405555555556,
-          "growth_pct": -76.19089384659357,
+          "growth_pct": -78.14732416788732,
           "margin_pct": -3.2770288546499495
         },
         {
@@ -33513,7 +33519,7 @@ const DASHBOARD_DATA = {
         {
           "id": 24648,
           "name": "SANTANIANA DE LICORES, S.L.",
-          "sales_2025": 40470.93,
+          "sales_2025": 45278.55,
           "budget_2026": 55000.0,
           "sales_2026": 7491.0,
           "profit_2026": -1589.29,
@@ -33529,7 +33535,7 @@ const DASHBOARD_DATA = {
             "OCT": 4523.88,
             "NOV": 3625.56,
             "DIC": 2284.8,
-            "ENE": 0.0
+            "ENE": 4807.62
           },
           "budget_2026_monthly": {
             "FEB": 3000.0,
@@ -33578,13 +33584,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 7491.0,
           "profit_2026_ytd": -1589.29,
           "deviation_pct": -86.38,
-          "growth_pct": -81.49041793702294,
+          "growth_pct": -83.45574228856711,
           "margin_pct": -21.215992524362566
         },
         {
           "id": 24659,
           "name": "ALIMENTACION SIDONIA, S.L.",
-          "sales_2025": 34168.4,
+          "sales_2025": 36661.85,
           "budget_2026": 43000.0,
           "sales_2026": 15506.2,
           "profit_2026": -3678.44,
@@ -33600,7 +33606,7 @@ const DASHBOARD_DATA = {
             "OCT": 3983.18,
             "NOV": 1931.44,
             "DIC": 3839.56,
-            "ENE": 0.0
+            "ENE": 2493.45
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -33649,13 +33655,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 15506.2,
           "profit_2026_ytd": -3678.44,
           "deviation_pct": -63.93906976744186,
-          "growth_pct": -54.618302291005726,
+          "growth_pct": -57.70480758608743,
           "margin_pct": -23.72238201493596
         },
         {
           "id": 24661,
           "name": "DIZVALLE ALIMENTACION, S.L.",
-          "sales_2025": 77222.25,
+          "sales_2025": 82022.15,
           "budget_2026": 97000.0,
           "sales_2026": 19481.27,
           "profit_2026": -1186.7499999999998,
@@ -33671,7 +33677,7 @@ const DASHBOARD_DATA = {
             "OCT": 7983.4800000000005,
             "NOV": 5634.99,
             "DIC": 6098.28,
-            "ENE": 0.0
+            "ENE": 4799.900000000001
           },
           "budget_2026_monthly": {
             "FEB": 8000.0,
@@ -33720,13 +33726,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 19481.27,
           "profit_2026_ytd": -1186.7499999999998,
           "deviation_pct": -79.91621649484536,
-          "growth_pct": -74.77246518976072,
+          "growth_pct": -76.24876938729355,
           "margin_pct": -6.091748638564117
         },
         {
           "id": 24667,
           "name": "BERRO CASH, S.L. (PALET)",
-          "sales_2025": 213186.53,
+          "sales_2025": 233875.01,
           "budget_2026": 237000.0,
           "sales_2026": 55819.75,
           "profit_2026": -3090.63,
@@ -33742,7 +33748,7 @@ const DASHBOARD_DATA = {
             "OCT": 13296.36,
             "NOV": 13898.96,
             "DIC": 21738.6,
-            "ENE": 0.0
+            "ENE": 20688.48
           },
           "budget_2026_monthly": {
             "FEB": 13000.0,
@@ -33791,7 +33797,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 55819.75,
           "profit_2026_ytd": -3090.63,
           "deviation_pct": -76.44736286919832,
-          "growth_pct": -73.81647423971862,
+          "growth_pct": -76.13265735402854,
           "margin_pct": -5.536803729862639
         },
         {
@@ -33868,7 +33874,7 @@ const DASHBOARD_DATA = {
         {
           "id": 24715,
           "name": "ACOSTA DEPOSITO Y DISTRIB.,SL.",
-          "sales_2025": 149463.85,
+          "sales_2025": 163576.85,
           "budget_2026": 165000.0,
           "sales_2026": 56187.67,
           "profit_2026": -15097.979999999998,
@@ -33884,7 +33890,7 @@ const DASHBOARD_DATA = {
             "OCT": 13434.92,
             "NOV": 25101.520000000004,
             "DIC": 19026.82,
-            "ENE": 0.0
+            "ENE": 14112.999999999998
           },
           "budget_2026_monthly": {
             "FEB": 8000.0,
@@ -33933,7 +33939,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 56187.67,
           "profit_2026_ytd": -15097.979999999998,
           "deviation_pct": -65.94686666666666,
-          "growth_pct": -62.4071840782905,
+          "growth_pct": -65.65059786883046,
           "margin_pct": -26.87062837807654
         },
         {
@@ -34010,7 +34016,7 @@ const DASHBOARD_DATA = {
         {
           "id": 24844,
           "name": "LASAL ALIMENTACION, S.L.",
-          "sales_2025": 60694.2,
+          "sales_2025": 63419.18,
           "budget_2026": 67000.0,
           "sales_2026": 15001.43,
           "profit_2026": -1966.29,
@@ -34026,7 +34032,7 @@ const DASHBOARD_DATA = {
             "OCT": 5682.0,
             "NOV": 6275.219999999999,
             "DIC": 4821.72,
-            "ENE": 0.0
+            "ENE": 2724.9799999999996
           },
           "budget_2026_monthly": {
             "FEB": 4000.0,
@@ -34075,13 +34081,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 15001.43,
           "profit_2026_ytd": -1966.29,
           "deviation_pct": -77.60980597014925,
-          "growth_pct": -75.28358558148884,
+          "growth_pct": -76.34559450311404,
           "margin_pct": -13.107350432592094
         },
         {
           "id": 24873,
           "name": "GRUPO AMIGOS 168, S.L.",
-          "sales_2025": 59519.75,
+          "sales_2025": 64830.83,
           "budget_2026": 77000.0,
           "sales_2026": 30468.440000000002,
           "profit_2026": -3777.42,
@@ -34097,7 +34103,7 @@ const DASHBOARD_DATA = {
             "OCT": 9941.52,
             "NOV": 6367.5,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 5311.08
           },
           "budget_2026_monthly": {
             "FEB": 3000.0,
@@ -34146,7 +34152,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 30468.440000000002,
           "profit_2026_ytd": -3777.42,
           "deviation_pct": -60.4305974025974,
-          "growth_pct": -48.809529609919394,
+          "growth_pct": -53.003162230068625,
           "margin_pct": -12.397812293638925
         },
         {
@@ -34365,7 +34371,7 @@ const DASHBOARD_DATA = {
         {
           "id": 24974,
           "name": "LUNA INNOVATION, S.L.",
-          "sales_2025": 27818.370000000003,
+          "sales_2025": 29985.41,
           "budget_2026": 30000.0,
           "sales_2026": 5539.68,
           "profit_2026": -214.03000000000003,
@@ -34381,7 +34387,7 @@ const DASHBOARD_DATA = {
             "OCT": 2169.81,
             "NOV": 2908.59,
             "DIC": 4174.29,
-            "ENE": 0.0
+            "ENE": 2167.04
           },
           "budget_2026_monthly": {
             "FEB": 2500.0,
@@ -34430,13 +34436,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 5539.68,
           "profit_2026_ytd": -214.03000000000003,
           "deviation_pct": -81.53439999999999,
-          "growth_pct": -80.08625235770464,
+          "growth_pct": -81.52541519358914,
           "margin_pct": -3.863580567830633
         },
         {
           "id": 25098,
           "name": "FUTURE GREEN FOOD, S.L.",
-          "sales_2025": 26717.77,
+          "sales_2025": 29169.04,
           "budget_2026": 30000.0,
           "sales_2026": 8460.279999999999,
           "profit_2026": -2127.02,
@@ -34452,7 +34458,7 @@ const DASHBOARD_DATA = {
             "OCT": 2814.18,
             "NOV": 1468.01,
             "DIC": 1981.87,
-            "ENE": 0.0
+            "ENE": 2451.27
           },
           "budget_2026_monthly": {
             "FEB": 2500.0,
@@ -34501,13 +34507,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 8460.279999999999,
           "profit_2026_ytd": -2127.02,
           "deviation_pct": -71.79906666666666,
-          "growth_pct": -68.33463271822463,
+          "growth_pct": -70.99568583676391,
           "margin_pct": -25.14124828019877
         },
         {
           "id": 25132,
           "name": "CASH ANTORCHA, S.L.U.",
-          "sales_2025": 9498.79,
+          "sales_2025": 10887.55,
           "budget_2026": 12000.0,
           "sales_2026": 4173.81,
           "profit_2026": -708.6,
@@ -34523,7 +34529,7 @@ const DASHBOARD_DATA = {
             "OCT": 846.08,
             "NOV": 1005.66,
             "DIC": 731.57,
-            "ENE": 0.0
+            "ENE": 1388.76
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -34572,13 +34578,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 4173.81,
           "profit_2026_ytd": -708.6,
           "deviation_pct": -65.21825,
-          "growth_pct": -56.059561270435495,
+          "growth_pct": -61.664378119962706,
           "margin_pct": -16.97729412694876
         },
         {
           "id": 25162,
           "name": "DIST. MANUEL Y ANTONIO ABAD, S",
-          "sales_2025": 149013.11,
+          "sales_2025": 232115.55,
           "budget_2026": 156000.0,
           "sales_2026": 51561.18,
           "profit_2026": -7206.33,
@@ -34594,7 +34600,7 @@ const DASHBOARD_DATA = {
             "OCT": 11574.359999999999,
             "NOV": 19112.68,
             "DIC": 16211.039999999999,
-            "ENE": 0.0
+            "ENE": 83102.44
           },
           "budget_2026_monthly": {
             "FEB": 6000.0,
@@ -34643,13 +34649,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 51561.18,
           "profit_2026_ytd": -7206.33,
           "deviation_pct": -66.94796153846154,
-          "growth_pct": -65.39822569973876,
+          "growth_pct": -77.78641715300849,
           "margin_pct": -13.976270519798033
         },
         {
           "id": 25187,
           "name": "PRODUCTOS BELTRAN, S.L.",
-          "sales_2025": 127243.54,
+          "sales_2025": 136496.76,
           "budget_2026": 151000.0,
           "sales_2026": 72038.81,
           "profit_2026": 4299.62,
@@ -34665,7 +34671,7 @@ const DASHBOARD_DATA = {
             "OCT": 12245.13,
             "NOV": 7127.46,
             "DIC": 8091.24,
-            "ENE": 0.0
+            "ENE": 9253.220000000001
           },
           "budget_2026_monthly": {
             "FEB": 10000.0,
@@ -34714,13 +34720,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 72038.81,
           "profit_2026_ytd": 4299.62,
           "deviation_pct": -52.29217880794702,
-          "growth_pct": -43.38509444172961,
+          "growth_pct": -47.22306229100237,
           "margin_pct": 5.9684772694052
         },
         {
           "id": 25201,
           "name": "DISTRIB.LOPEZ Y DOBLAS,S.L.",
-          "sales_2025": 65967.94,
+          "sales_2025": 76460.9,
           "budget_2026": 79000.0,
           "sales_2026": 15055.310000000001,
           "profit_2026": -539.01,
@@ -34736,7 +34742,7 @@ const DASHBOARD_DATA = {
             "OCT": 7996.18,
             "NOV": 12319.36,
             "DIC": 4778.96,
-            "ENE": 0.0
+            "ENE": 10492.960000000001
           },
           "budget_2026_monthly": {
             "FEB": 9000.0,
@@ -34785,13 +34791,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 15055.310000000001,
           "profit_2026_ytd": -539.01,
           "deviation_pct": -80.94264556962025,
-          "growth_pct": -77.17783820443688,
+          "growth_pct": -80.30979232522768,
           "margin_pct": -3.580198614309502
         },
         {
           "id": 25250,
           "name": "DISTRIBUCION COSTASUR BAHIA, S",
-          "sales_2025": 14594.0,
+          "sales_2025": 15340.16,
           "budget_2026": 18000.0,
           "sales_2026": 2730.94,
           "profit_2026": -305.88,
@@ -34807,7 +34813,7 @@ const DASHBOARD_DATA = {
             "OCT": 700.79,
             "NOV": 1200.88,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 746.16
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -34856,7 +34862,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2730.94,
           "profit_2026_ytd": -305.88,
           "deviation_pct": -84.8281111111111,
-          "growth_pct": -81.28724133205426,
+          "growth_pct": -82.19744774500396,
           "margin_pct": -11.200539008546508
         },
         {
@@ -34933,7 +34939,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25303,
           "name": "MANZANARES LOZANO, ANTONIO",
-          "sales_2025": 45941.52,
+          "sales_2025": 47575.729999999996,
           "budget_2026": 52000.0,
           "sales_2026": 21646.41,
           "profit_2026": -2854.99,
@@ -34949,7 +34955,7 @@ const DASHBOARD_DATA = {
             "OCT": 2886.71,
             "NOV": 6417.450000000001,
             "DIC": 2135.97,
-            "ENE": 0.0
+            "ENE": 1634.21
           },
           "budget_2026_monthly": {
             "FEB": 4000.0,
@@ -34998,13 +35004,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 21646.41,
           "profit_2026_ytd": -2854.99,
           "deviation_pct": -58.37228846153846,
-          "growth_pct": -52.88268651102533,
+          "growth_pct": -54.50115006117615,
           "margin_pct": -13.189207817832147
         },
         {
           "id": 25305,
           "name": "MANTEQUERIAS MANCHEGAS, S.L.",
-          "sales_2025": 2354.83,
+          "sales_2025": 2862.04,
           "budget_2026": 0.0,
           "sales_2026": 893.86,
           "profit_2026": -16.64,
@@ -35020,7 +35026,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 1014.3,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 507.21000000000004
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -35069,13 +35075,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 893.86,
           "profit_2026_ytd": -16.64,
           "deviation_pct": 0.0,
-          "growth_pct": -62.04142124909229,
+          "growth_pct": -68.76843090942126,
           "margin_pct": -1.861589063164254
         },
         {
           "id": 25335,
           "name": "SUPERMERCADOS ALACASA XXI, S.L",
-          "sales_2025": 6721.34,
+          "sales_2025": 7106.32,
           "budget_2026": 9000.0,
           "sales_2026": 1444.81,
           "profit_2026": -13.559999999999999,
@@ -35091,7 +35097,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 517.94,
             "DIC": 468.82,
-            "ENE": 0.0
+            "ENE": 384.98
           },
           "budget_2026_monthly": {
             "FEB": 750.0,
@@ -35140,7 +35146,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1444.81,
           "profit_2026_ytd": -13.559999999999999,
           "deviation_pct": -83.94655555555556,
-          "growth_pct": -78.50413756780642,
+          "growth_pct": -79.66866113544,
           "margin_pct": -0.9385317100518407
         },
         {
@@ -35217,7 +35223,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25361,
           "name": "HERMANOS GAVIRA, S.L.",
-          "sales_2025": 65262.75,
+          "sales_2025": 70109.76,
           "budget_2026": 78000.0,
           "sales_2026": 57971.11,
           "profit_2026": -4924.4,
@@ -35233,7 +35239,7 @@ const DASHBOARD_DATA = {
             "OCT": 8207.2,
             "NOV": 4302.94,
             "DIC": 6427.5199999999995,
-            "ENE": 0.0
+            "ENE": 4847.01
           },
           "budget_2026_monthly": {
             "FEB": 4000.0,
@@ -35282,7 +35288,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 57971.11,
           "profit_2026_ytd": -4924.4,
           "deviation_pct": -25.6780641025641,
-          "growth_pct": -11.17274402319853,
+          "growth_pct": -17.313780563504988,
           "margin_pct": -8.49457600518603
         },
         {
@@ -35430,7 +35436,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25380,
           "name": "DISTRIBUCIONES CHL LICORES, S.",
-          "sales_2025": 6654.72,
+          "sales_2025": 7803.6,
           "budget_2026": 12000.0,
           "sales_2026": 6003.1,
           "profit_2026": -1153.6100000000001,
@@ -35446,7 +35452,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 1725.6,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 1148.88
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -35495,13 +35501,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 6003.1,
           "profit_2026_ytd": -1153.6100000000001,
           "deviation_pct": -49.97416666666666,
-          "growth_pct": -9.79184698980573,
+          "growth_pct": -23.072684402070838,
           "margin_pct": -19.21690459929037
         },
         {
           "id": 25381,
           "name": "BEALSUR XXI, S.L.",
-          "sales_2025": 8298.99,
+          "sales_2025": 9691.119999999999,
           "budget_2026": 12000.0,
           "sales_2026": 13741.66,
           "profit_2026": -2085.22,
@@ -35517,7 +35523,7 @@ const DASHBOARD_DATA = {
             "OCT": 2143.66,
             "NOV": 0.0,
             "DIC": 2761.73,
-            "ENE": 0.0
+            "ENE": 1392.13
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -35566,13 +35572,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 13741.66,
           "profit_2026_ytd": -2085.22,
           "deviation_pct": 14.51383333333333,
-          "growth_pct": 65.58231784831648,
+          "growth_pct": 41.79640743278384,
           "margin_pct": -15.17444035145681
         },
         {
           "id": 25415,
           "name": "ARUNDA DE DIST. COMARCAL, S.L.",
-          "sales_2025": 5623.2,
+          "sales_2025": 8597.7,
           "budget_2026": 0.0,
           "sales_2026": 19813.42,
           "profit_2026": -3996.84,
@@ -35588,7 +35594,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 0.0,
             "DIC": 5623.2,
-            "ENE": 0.0
+            "ENE": 2974.5
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -35637,7 +35643,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 19813.42,
           "profit_2026_ytd": -3996.84,
           "deviation_pct": 0.0,
-          "growth_pct": 252.35133020344284,
+          "growth_pct": 130.4502366912081,
           "margin_pct": -20.17238820960743
         }
       ]
@@ -35657,7 +35663,7 @@ const DASHBOARD_DATA = {
         "OCT": 108985.56999999999,
         "NOV": 91159.09,
         "DIC": 84825.76000000001,
-        "ENE": 0.0
+        "ENE": 92220.76999999997
       },
       "budget_2026_monthly": {
         "FEB": 94400.0,
@@ -35701,7 +35707,7 @@ const DASHBOARD_DATA = {
         "DIC": 0.0,
         "ENE": 0.0
       },
-      "total_sales_2025": 1127486.1199999999,
+      "total_sales_2025": 1219706.89,
       "total_budget_2026": 1351100.0,
       "sales_2025_ytd": 374753.77,
       "budget_2026_ytd": 406600.0,
@@ -35719,7 +35725,7 @@ const DASHBOARD_DATA = {
         {
           "id": 19994,
           "name": "GALAN REYES, S.L.",
-          "sales_2025": 5989.89,
+          "sales_2025": 7025.36,
           "budget_2026": 6000.0,
           "sales_2026": 3193.07,
           "profit_2026": -470.2,
@@ -35735,7 +35741,7 @@ const DASHBOARD_DATA = {
             "OCT": 849.97,
             "NOV": 301.02,
             "DIC": 811.3,
-            "ENE": 0.0
+            "ENE": 1035.47
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -35784,13 +35790,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 3193.07,
           "profit_2026_ytd": -470.2,
           "deviation_pct": -46.78216666666666,
-          "growth_pct": -46.69234326506831,
+          "growth_pct": -54.54937540567316,
           "margin_pct": -14.725640214589719
         },
         {
           "id": 23154,
           "name": "PRIETO GABINO, LUIS",
-          "sales_2025": 501.0,
+          "sales_2025": 2298.12,
           "budget_2026": 0.0,
           "sales_2026": 677.16,
           "profit_2026": -325.51,
@@ -35806,7 +35812,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 0.0,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 1797.12
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -35855,13 +35861,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 677.16,
           "profit_2026_ytd": -325.51,
           "deviation_pct": 0.0,
-          "growth_pct": 35.16167664670658,
+          "growth_pct": -70.53417576105687,
           "margin_pct": -48.06988008742395
         },
         {
           "id": 23277,
           "name": "PURIFICACION MARTINEZ, MARIA",
-          "sales_2025": 14752.71,
+          "sales_2025": 16636.2,
           "budget_2026": 18000.0,
           "sales_2026": 5801.09,
           "profit_2026": -376.15999999999997,
@@ -35877,7 +35883,7 @@ const DASHBOARD_DATA = {
             "OCT": 1427.7299999999998,
             "NOV": 1301.25,
             "DIC": 1256.78,
-            "ENE": 0.0
+            "ENE": 1883.4900000000002
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -35926,13 +35932,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 5801.09,
           "profit_2026_ytd": -376.15999999999997,
           "deviation_pct": -67.77172222222222,
-          "growth_pct": -60.67780089217506,
+          "growth_pct": -65.12971712290067,
           "margin_pct": -6.484298640427919
         },
         {
           "id": 23363,
           "name": "B. NUÑEZ CANO, S.L.",
-          "sales_2025": 12021.68,
+          "sales_2025": 14312.56,
           "budget_2026": 18000.0,
           "sales_2026": 10280.24,
           "profit_2026": -2262.44,
@@ -35948,7 +35954,7 @@ const DASHBOARD_DATA = {
             "OCT": 2253.54,
             "NOV": -137.2,
             "DIC": 1709.04,
-            "ENE": 0.0
+            "ENE": 2290.88
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -35997,13 +36003,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 10280.24,
           "profit_2026_ytd": -2262.44,
           "deviation_pct": -42.88755555555556,
-          "growth_pct": -14.485828935722797,
+          "growth_pct": -28.17329674076475,
           "margin_pct": -22.00765740877645
         },
         {
           "id": 23420,
           "name": "LOPEZ CAMPILLEJO, FRANCISCO",
-          "sales_2025": 19007.87,
+          "sales_2025": 20285.579999999998,
           "budget_2026": 24000.0,
           "sales_2026": 9491.119999999999,
           "profit_2026": -2415.54,
@@ -36019,7 +36025,7 @@ const DASHBOARD_DATA = {
             "OCT": 1335.94,
             "NOV": 911.09,
             "DIC": 2958.45,
-            "ENE": 0.0
+            "ENE": 1277.71
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -36068,7 +36074,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 9491.119999999999,
           "profit_2026_ytd": -2415.54,
           "deviation_pct": -60.45366666666667,
-          "growth_pct": -50.06741944257826,
+          "growth_pct": -53.21247901218501,
           "margin_pct": -25.45052638676995
         },
         {
@@ -36145,7 +36151,7 @@ const DASHBOARD_DATA = {
         {
           "id": 23737,
           "name": "AUTOSERVICIO ANA MARI, C.B.",
-          "sales_2025": 26322.1,
+          "sales_2025": 28298.95,
           "budget_2026": 30000.0,
           "sales_2026": 8617.62,
           "profit_2026": -162.35,
@@ -36161,7 +36167,7 @@ const DASHBOARD_DATA = {
             "OCT": 2976.2799999999997,
             "NOV": 2026.15,
             "DIC": 2413.08,
-            "ENE": 0.0
+            "ENE": 1976.85
           },
           "budget_2026_monthly": {
             "FEB": 2500.0,
@@ -36210,13 +36216,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 8617.62,
           "profit_2026_ytd": -162.35,
           "deviation_pct": -71.27459999999999,
-          "growth_pct": -67.26089483741798,
+          "growth_pct": -69.54791608875948,
           "margin_pct": -1.8839308300899784
         },
         {
           "id": 23746,
           "name": "DISTRIB. SIERRA BOYERA, S.L.U",
-          "sales_2025": 58888.78,
+          "sales_2025": 58440.880000000005,
           "budget_2026": 64800.0,
           "sales_2026": 23110.4,
           "profit_2026": -1485.7300000000002,
@@ -36232,7 +36238,7 @@ const DASHBOARD_DATA = {
             "OCT": 9219.08,
             "NOV": 7992.07,
             "DIC": 4866.110000000001,
-            "ENE": 0.0
+            "ENE": -447.9
           },
           "budget_2026_monthly": {
             "FEB": 4400.0,
@@ -36281,7 +36287,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 23110.4,
           "profit_2026_ytd": -1485.7300000000002,
           "deviation_pct": -64.3358024691358,
-          "growth_pct": -60.7558519636508,
+          "growth_pct": -60.45507870518034,
           "margin_pct": -6.428837233453338
         },
         {
@@ -36429,7 +36435,7 @@ const DASHBOARD_DATA = {
         {
           "id": 24153,
           "name": "MERCADEHESA, S.L.",
-          "sales_2025": 19401.14,
+          "sales_2025": 21264.53,
           "budget_2026": 24000.0,
           "sales_2026": 3302.23,
           "profit_2026": -607.68,
@@ -36445,7 +36451,7 @@ const DASHBOARD_DATA = {
             "OCT": 2336.43,
             "NOV": 1163.26,
             "DIC": 931.4300000000001,
-            "ENE": 0.0
+            "ENE": 1863.3899999999999
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -36494,13 +36500,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 3302.23,
           "profit_2026_ytd": -607.68,
           "deviation_pct": -86.24070833333334,
-          "growth_pct": -82.97919606785993,
+          "growth_pct": -84.47071249634955,
           "margin_pct": -18.402110089242722
         },
         {
           "id": 24197,
           "name": "HERMANAS MUÑOZ SUERO, C.B.",
-          "sales_2025": 6435.22,
+          "sales_2025": 7390.12,
           "budget_2026": 9000.0,
           "sales_2026": 2462.02,
           "profit_2026": -178.64000000000001,
@@ -36516,7 +36522,7 @@ const DASHBOARD_DATA = {
             "OCT": 861.8199999999999,
             "NOV": 819.9000000000001,
             "DIC": -29.52,
-            "ENE": 0.0
+            "ENE": 954.9
           },
           "budget_2026_monthly": {
             "FEB": 750.0,
@@ -36565,7 +36571,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2462.02,
           "profit_2026_ytd": -178.64000000000001,
           "deviation_pct": -72.64422222222223,
-          "growth_pct": -61.74147892379748,
+          "growth_pct": -66.68497940493523,
           "margin_pct": -7.2558305781431525
         },
         {
@@ -36713,7 +36719,7 @@ const DASHBOARD_DATA = {
         {
           "id": 24567,
           "name": "SUPERMERCADO MARCHENA, ESPJ",
-          "sales_2025": 8847.7,
+          "sales_2025": 9142.1,
           "budget_2026": 12000.0,
           "sales_2026": 2622.15,
           "profit_2026": -131.33,
@@ -36729,7 +36735,7 @@ const DASHBOARD_DATA = {
             "OCT": 481.41,
             "NOV": 809.12,
             "DIC": 983.5,
-            "ENE": 0.0
+            "ENE": 294.4
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -36778,13 +36784,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2622.15,
           "profit_2026_ytd": -131.33,
           "deviation_pct": -78.14875,
-          "growth_pct": -70.3634842953536,
+          "growth_pct": -71.31785913520964,
           "margin_pct": -5.008485403199665
         },
         {
           "id": 24579,
           "name": "HORMIGO CUELLAR, ANTONIA MARIA",
-          "sales_2025": 65601.73,
+          "sales_2025": 70821.4,
           "budget_2026": 72000.0,
           "sales_2026": 20724.05,
           "profit_2026": 135.68,
@@ -36800,7 +36806,7 @@ const DASHBOARD_DATA = {
             "OCT": 7921.19,
             "NOV": 5699.63,
             "DIC": 6566.33,
-            "ENE": 0.0
+            "ENE": 5219.67
           },
           "budget_2026_monthly": {
             "FEB": 6000.0,
@@ -36849,13 +36855,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 20724.05,
           "profit_2026_ytd": 135.68,
           "deviation_pct": -71.21659722222222,
-          "growth_pct": -68.40929347442514,
+          "growth_pct": -70.73758779126082,
           "margin_pct": 0.6546982853255034
         },
         {
           "id": 24580,
           "name": "CORTES MARTINEZ, REMEDIOS MARI",
-          "sales_2025": 7373.55,
+          "sales_2025": 8253.01,
           "budget_2026": 9000.0,
           "sales_2026": 1695.89,
           "profit_2026": 14.25,
@@ -36871,7 +36877,7 @@ const DASHBOARD_DATA = {
             "OCT": 513.44,
             "NOV": 852.62,
             "DIC": -0.79,
-            "ENE": 0.0
+            "ENE": 879.46
           },
           "budget_2026_monthly": {
             "FEB": 750.0,
@@ -36920,7 +36926,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1695.89,
           "profit_2026_ytd": 14.25,
           "deviation_pct": -81.15677777777778,
-          "growth_pct": -77.00035939269415,
+          "growth_pct": -79.451254754326,
           "margin_pct": 0.8402667625848373
         },
         {
@@ -36997,7 +37003,7 @@ const DASHBOARD_DATA = {
         {
           "id": 24737,
           "name": "VENEGAS VENEGAS, ANA MARIA",
-          "sales_2025": 7745.860000000001,
+          "sales_2025": 8169.01,
           "budget_2026": 9000.0,
           "sales_2026": 2835.49,
           "profit_2026": -312.34,
@@ -37013,7 +37019,7 @@ const DASHBOARD_DATA = {
             "OCT": 602.19,
             "NOV": 541.97,
             "DIC": 1160.31,
-            "ENE": 0.0
+            "ENE": 423.1500000000001
           },
           "budget_2026_monthly": {
             "FEB": 750.0,
@@ -37062,13 +37068,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2835.49,
           "profit_2026_ytd": -312.34,
           "deviation_pct": -68.49455555555556,
-          "growth_pct": -63.39347728980385,
+          "growth_pct": -65.28967402414736,
           "margin_pct": -11.015380057767793
         },
         {
           "id": 24772,
           "name": "ARJONA ATIENZA, JOSE M.",
-          "sales_2025": 772.44,
+          "sales_2025": 807.78,
           "budget_2026": 0.0,
           "sales_2026": 162.42000000000002,
           "profit_2026": -21.72,
@@ -37084,7 +37090,7 @@ const DASHBOARD_DATA = {
             "OCT": 106.41,
             "NOV": 0.0,
             "DIC": 47.34,
-            "ENE": 0.0
+            "ENE": 35.34
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -37133,13 +37139,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 162.42000000000002,
           "profit_2026_ytd": -21.72,
           "deviation_pct": 0.0,
-          "growth_pct": -78.9731241261457,
+          "growth_pct": -79.89304018420856,
           "margin_pct": -13.372737347617287
         },
         {
           "id": 24819,
           "name": "VENTA Y DIST. SAYAGO LOPEZ, S.",
-          "sales_2025": 19468.88,
+          "sales_2025": 21618.079999999998,
           "budget_2026": 24000.0,
           "sales_2026": 5035.8,
           "profit_2026": -1935.55,
@@ -37155,7 +37161,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 7405.049999999999,
             "DIC": 438.24,
-            "ENE": 0.0
+            "ENE": 2149.2
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -37204,7 +37210,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 5035.8,
           "profit_2026_ytd": -1935.55,
           "deviation_pct": -79.01750000000001,
-          "growth_pct": -74.13410530035627,
+          "growth_pct": -76.70560937881625,
           "margin_pct": -38.43579967433178
         },
         {
@@ -37281,7 +37287,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25042,
           "name": "BEBIDAS BRAVO Y HERRAIZ, S.L.",
-          "sales_2025": 61739.280000000006,
+          "sales_2025": 66273.49,
           "budget_2026": 65000.0,
           "sales_2026": 22077.29,
           "profit_2026": -3167.1000000000004,
@@ -37297,7 +37303,7 @@ const DASHBOARD_DATA = {
             "OCT": 5653.9800000000005,
             "NOV": 2434.51,
             "DIC": 5392.59,
-            "ENE": 0.0
+            "ENE": 4534.21
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -37346,13 +37352,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 22077.29,
           "profit_2026_ytd": -3167.1000000000004,
           "deviation_pct": -66.03493846153846,
-          "growth_pct": -64.24109578213417,
+          "growth_pct": -66.68760012487648,
           "margin_pct": -14.345510703532907
         },
         {
           "id": 25046,
           "name": "DEL REY GUIJO, CARLOS JAVIER",
-          "sales_2025": 19660.870000000003,
+          "sales_2025": 20076.83,
           "budget_2026": 24000.0,
           "sales_2026": 4545.9,
           "profit_2026": -242.17,
@@ -37368,7 +37374,7 @@ const DASHBOARD_DATA = {
             "OCT": 2405.4900000000002,
             "NOV": 1077.23,
             "DIC": 2932.28,
-            "ENE": 0.0
+            "ENE": 415.96000000000004
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -37417,13 +37423,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 4545.9,
           "profit_2026_ytd": -242.17,
           "deviation_pct": -81.05874999999999,
-          "growth_pct": -76.87843925523133,
+          "growth_pct": -77.35748123583255,
           "margin_pct": -5.3272179326426015
         },
         {
           "id": 25097,
           "name": "RISCO GORDILLO, BEATRIZ",
-          "sales_2025": 12412.55,
+          "sales_2025": 13613.05,
           "budget_2026": 12000.0,
           "sales_2026": 4418.57,
           "profit_2026": -238.46,
@@ -37439,7 +37445,7 @@ const DASHBOARD_DATA = {
             "OCT": 979.62,
             "NOV": 1155.31,
             "DIC": 1218.76,
-            "ENE": 0.0
+            "ENE": 1200.5
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -37488,13 +37494,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 4418.57,
           "profit_2026_ytd": -238.46,
           "deviation_pct": -63.178583333333336,
-          "growth_pct": -64.40239918469614,
+          "growth_pct": -67.54166039205028,
           "margin_pct": -5.396768637817213
         },
         {
           "id": 25101,
           "name": "MORENO LOZANO, MARIA DEL CARM",
-          "sales_2025": 27604.21,
+          "sales_2025": 29887.98,
           "budget_2026": 36000.0,
           "sales_2026": 9399.7,
           "profit_2026": 223.87,
@@ -37510,7 +37516,7 @@ const DASHBOARD_DATA = {
             "OCT": 2602.17,
             "NOV": 2050.3300000000004,
             "DIC": 1982.39,
-            "ENE": 0.0
+            "ENE": 2283.77
           },
           "budget_2026_monthly": {
             "FEB": 3000.0,
@@ -37559,13 +37565,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 9399.7,
           "profit_2026_ytd": 223.87,
           "deviation_pct": -73.88972222222222,
-          "growth_pct": -65.94831005850195,
+          "growth_pct": -68.55023323757578,
           "margin_pct": 2.3816717554815576
         },
         {
           "id": 25134,
           "name": "SANCHEZ LAVADO, MARIA ANGELES",
-          "sales_2025": 9850.67,
+          "sales_2025": 10522.19,
           "budget_2026": 12000.0,
           "sales_2026": 2816.61,
           "profit_2026": -161.9,
@@ -37581,7 +37587,7 @@ const DASHBOARD_DATA = {
             "OCT": 689.96,
             "NOV": 760.4,
             "DIC": 1133.44,
-            "ENE": 0.0
+            "ENE": 671.52
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -37630,13 +37636,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2816.61,
           "profit_2026_ytd": -161.9,
           "deviation_pct": -76.52825,
-          "growth_pct": -71.4069195293315,
+          "growth_pct": -73.23171316997697,
           "margin_pct": -5.748044635217513
         },
         {
           "id": 25145,
           "name": "MURILLO, CORVILLO SARA Mª",
-          "sales_2025": 15310.88,
+          "sales_2025": 16982.47,
           "budget_2026": 18000.0,
           "sales_2026": 4119.04,
           "profit_2026": 8.08,
@@ -37652,7 +37658,7 @@ const DASHBOARD_DATA = {
             "OCT": 1221.59,
             "NOV": 1397.85,
             "DIC": 1235.92,
-            "ENE": 0.0
+            "ENE": 1671.5900000000001
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -37701,13 +37707,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 4119.04,
           "profit_2026_ytd": 8.08,
           "deviation_pct": -77.11644444444444,
-          "growth_pct": -73.09730074300106,
+          "growth_pct": -75.74534210865674,
           "margin_pct": 0.1961622125543816
         },
         {
           "id": 25147,
           "name": "ALMACENES MATA DONAIRE,S.L",
-          "sales_2025": 9267.43,
+          "sales_2025": 9243.34,
           "budget_2026": 12000.0,
           "sales_2026": 0.0,
           "profit_2026": 0.0,
@@ -37723,7 +37729,7 @@ const DASHBOARD_DATA = {
             "OCT": 1617.96,
             "NOV": 656.8900000000001,
             "DIC": 407.89,
-            "ENE": 0.0
+            "ENE": -24.09
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -37849,7 +37855,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25195,
           "name": "MORALES MORENO,ALVARO",
-          "sales_2025": 51493.36,
+          "sales_2025": 54929.62,
           "budget_2026": 54000.0,
           "sales_2026": 19721.18,
           "profit_2026": 46.04,
@@ -37865,7 +37871,7 @@ const DASHBOARD_DATA = {
             "OCT": 5210.45,
             "NOV": 4633.34,
             "DIC": 4664.14,
-            "ENE": 0.0
+            "ENE": 3436.2599999999998
           },
           "budget_2026_monthly": {
             "FEB": 4500.0,
@@ -37914,13 +37920,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 19721.18,
           "profit_2026_ytd": 46.04,
           "deviation_pct": -63.4792962962963,
-          "growth_pct": -61.70150869937405,
+          "growth_pct": -64.0973667758852,
           "margin_pct": 0.2334545904453993
         },
         {
           "id": 25211,
           "name": "BONILLA SAENZ, FRANCISCO ANTON",
-          "sales_2025": 2317.17,
+          "sales_2025": 2725.46,
           "budget_2026": 6000.0,
           "sales_2026": 1697.3400000000001,
           "profit_2026": -22.39,
@@ -37936,7 +37942,7 @@ const DASHBOARD_DATA = {
             "OCT": -10.9,
             "NOV": 286.81,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 408.29
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -37985,13 +37991,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1697.3400000000001,
           "profit_2026_ytd": -22.39,
           "deviation_pct": -71.711,
-          "growth_pct": -26.749440049715812,
+          "growth_pct": -37.72280642533737,
           "margin_pct": -1.3191228628324319
         },
         {
           "id": 25227,
           "name": "CALDERON CERRATO, SANTIAGO",
-          "sales_2025": 18304.34,
+          "sales_2025": 22273.86,
           "budget_2026": 24000.0,
           "sales_2026": 8809.78,
           "profit_2026": -1307.1599999999999,
@@ -38007,7 +38013,7 @@ const DASHBOARD_DATA = {
             "OCT": 818.04,
             "NOV": 3023.49,
             "DIC": -50.4,
-            "ENE": 0.0
+            "ENE": 3969.5199999999995
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -38056,13 +38062,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 8809.78,
           "profit_2026_ytd": -1307.1599999999999,
           "deviation_pct": -63.29258333333333,
-          "growth_pct": -51.87053999215486,
+          "growth_pct": -60.44789722122703,
           "margin_pct": -14.837600938956474
         },
         {
           "id": 25229,
           "name": "RUIZ CALERO CABANILLAS , CARLO",
-          "sales_2025": 2390.46,
+          "sales_2025": 2751.37,
           "budget_2026": 6000.0,
           "sales_2026": 1069.98,
           "profit_2026": -4.719999999999999,
@@ -38078,7 +38084,7 @@ const DASHBOARD_DATA = {
             "OCT": 255.3,
             "NOV": 359.81,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 360.91
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -38127,13 +38133,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1069.98,
           "profit_2026_ytd": -4.719999999999999,
           "deviation_pct": -82.16700000000002,
-          "growth_pct": -55.23957731984639,
+          "growth_pct": -61.11101015130643,
           "margin_pct": -0.4411297407428175
         },
         {
           "id": 25295,
           "name": "CARMONA DIAZ, ANTONIO",
-          "sales_2025": 40157.38,
+          "sales_2025": 43666.24,
           "budget_2026": 48200.0,
           "sales_2026": 15261.11,
           "profit_2026": 84.41999999999999,
@@ -38149,7 +38155,7 @@ const DASHBOARD_DATA = {
             "OCT": 3097.64,
             "NOV": 2882.51,
             "DIC": 4029.6700000000005,
-            "ENE": 0.0
+            "ENE": 3508.8599999999997
           },
           "budget_2026_monthly": {
             "FEB": 3350.0,
@@ -38198,13 +38204,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 15261.11,
           "profit_2026_ytd": 84.41999999999999,
           "deviation_pct": -68.33794605809128,
-          "growth_pct": -61.99674879187835,
+          "growth_pct": -65.05055163897784,
           "margin_pct": 0.5531707719818545
         },
         {
           "id": 25392,
           "name": "GOMEZ ALONSO, VANESA",
-          "sales_2025": 5471.790000000001,
+          "sales_2025": 6516.870000000001,
           "budget_2026": 12000.0,
           "sales_2026": 5421.33,
           "profit_2026": -183.31,
@@ -38220,7 +38226,7 @@ const DASHBOARD_DATA = {
             "OCT": 1193.63,
             "NOV": 986.4000000000001,
             "DIC": 1943.2600000000002,
-            "ENE": 0.0
+            "ENE": 1045.08
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -38269,13 +38275,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 5421.33,
           "profit_2026_ytd": -183.31,
           "deviation_pct": -54.822250000000004,
-          "growth_pct": -0.9221845136600808,
+          "growth_pct": -16.810830966399525,
           "margin_pct": -3.3812735989139195
         },
         {
           "id": 25401,
           "name": "ARENAS, C.B.",
-          "sales_2025": 206.28,
+          "sales_2025": 599.4,
           "budget_2026": 0.0,
           "sales_2026": 302.55,
           "profit_2026": 8.8,
@@ -38291,7 +38297,7 @@ const DASHBOARD_DATA = {
             "OCT": 147.05,
             "NOV": 0.0,
             "DIC": 59.23,
-            "ENE": 0.0
+            "ENE": 393.12
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -38340,7 +38346,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 302.55,
           "profit_2026_ytd": 8.8,
           "deviation_pct": 0.0,
-          "growth_pct": 46.669575334496805,
+          "growth_pct": -49.52452452452452,
           "margin_pct": 2.908610147083127
         },
         {
@@ -38417,7 +38423,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25414,
           "name": "PEREZ PEREZ, ANTONIO",
-          "sales_2025": 967.0799999999999,
+          "sales_2025": 2050.1899999999996,
           "budget_2026": 0.0,
           "sales_2026": 5354.26,
           "profit_2026": -100.12,
@@ -38433,7 +38439,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 0.0,
             "DIC": 967.0799999999999,
-            "ENE": 0.0
+            "ENE": 1083.11
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -38482,13 +38488,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 5354.26,
           "profit_2026_ytd": -100.12,
           "deviation_pct": 0.0,
-          "growth_pct": 453.65223145965183,
+          "growth_pct": 161.1592096342291,
           "margin_pct": -1.8699129291442702
         },
         {
           "id": 25416,
           "name": "BLANCO AYALA, JOSE JUSTO",
-          "sales_2025": 0.0,
+          "sales_2025": 494.62,
           "budget_2026": 0.0,
           "sales_2026": 2118.47,
           "profit_2026": -205.18,
@@ -38504,7 +38510,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 0.0,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 494.62
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -38553,7 +38559,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2118.47,
           "profit_2026_ytd": -205.18,
           "deviation_pct": 0.0,
-          "growth_pct": 0.0,
+          "growth_pct": 328.30253527960855,
           "margin_pct": -9.685291743569653
         },
         {
@@ -38701,7 +38707,7 @@ const DASHBOARD_DATA = {
         {
           "id": 30926,
           "name": "PRODUCTOS CASTAÑO, S.L.",
-          "sales_2025": 27343.18,
+          "sales_2025": 33085.3,
           "budget_2026": 28000.0,
           "sales_2026": 6198.54,
           "profit_2026": -3.2099999999999813,
@@ -38717,7 +38723,7 @@ const DASHBOARD_DATA = {
             "OCT": 1940.95,
             "NOV": 1714.09,
             "DIC": 5676.13,
-            "ENE": 0.0
+            "ENE": 5742.12
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -38766,13 +38772,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 6198.54,
           "profit_2026_ytd": -3.2099999999999813,
           "deviation_pct": -77.86235714285714,
-          "growth_pct": -77.33058115405743,
+          "growth_pct": -81.26497266157477,
           "margin_pct": -0.051786388407592455
         },
         {
           "id": 31025,
           "name": "CONVENTO PURISIMA CONCEP. 7",
-          "sales_2025": 6747.44,
+          "sales_2025": 7186.4800000000005,
           "budget_2026": 6000.0,
           "sales_2026": 1315.6100000000001,
           "profit_2026": -7.609999999999999,
@@ -38788,7 +38794,7 @@ const DASHBOARD_DATA = {
             "OCT": 485.38,
             "NOV": 531.64,
             "DIC": 458.4,
-            "ENE": 0.0
+            "ENE": 439.04
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -38837,7 +38843,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1315.6100000000001,
           "profit_2026_ytd": -7.609999999999999,
           "deviation_pct": -78.07316666666667,
-          "growth_pct": -80.5020867173328,
+          "growth_pct": -81.69326290478789,
           "margin_pct": -0.5784388990658325
         },
         {
@@ -38914,7 +38920,7 @@ const DASHBOARD_DATA = {
         {
           "id": 31335,
           "name": "ANTONIO VALERO E HIJOS,S.L.",
-          "sales_2025": 7815.07,
+          "sales_2025": 8802.63,
           "budget_2026": 9000.0,
           "sales_2026": 2739.36,
           "profit_2026": -323.55,
@@ -38930,7 +38936,7 @@ const DASHBOARD_DATA = {
             "OCT": 644.06,
             "NOV": 999.57,
             "DIC": 1003.62,
-            "ENE": 0.0
+            "ENE": 987.56
           },
           "budget_2026_monthly": {
             "FEB": 750.0,
@@ -38979,13 +38985,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2739.36,
           "profit_2026_ytd": -323.55,
           "deviation_pct": -69.56266666666666,
-          "growth_pct": -64.94772279710865,
+          "growth_pct": -68.88020966461158,
           "margin_pct": -11.811152970036796
         },
         {
           "id": 32077,
           "name": "MUÑOZ GARCIA JOSE ANTONIO",
-          "sales_2025": 15566.94,
+          "sales_2025": 16597.96,
           "budget_2026": 18300.0,
           "sales_2026": 5440.69,
           "profit_2026": -141.88,
@@ -39001,7 +39007,7 @@ const DASHBOARD_DATA = {
             "OCT": 1147.5900000000001,
             "NOV": 1385.3500000000004,
             "DIC": 1516.03,
-            "ENE": 0.0
+            "ENE": 1031.02
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -39050,13 +39056,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 5440.69,
           "profit_2026_ytd": -141.88,
           "deviation_pct": -70.26945355191258,
-          "growth_pct": -65.04971433049784,
+          "growth_pct": -67.22073074040425,
           "margin_pct": -2.607757471938302
         },
         {
           "id": 32298,
           "name": "CENDRERO DIEZ MADRO, MARGARITA",
-          "sales_2025": 5058.26,
+          "sales_2025": 5302.25,
           "budget_2026": 6000.0,
           "sales_2026": 1822.1399999999999,
           "profit_2026": 43.82,
@@ -39072,7 +39078,7 @@ const DASHBOARD_DATA = {
             "OCT": 911.66,
             "NOV": 623.41,
             "DIC": 313.76,
-            "ENE": 0.0
+            "ENE": 243.99
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -39121,13 +39127,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1822.1399999999999,
           "profit_2026_ytd": 43.82,
           "deviation_pct": -69.63100000000001,
-          "growth_pct": -63.97694068711376,
+          "growth_pct": -65.63458908953747,
           "margin_pct": 2.4048646097445863
         },
         {
           "id": 32708,
           "name": "CASH ZAFRA S.L.U",
-          "sales_2025": 174772.19,
+          "sales_2025": 187192.17,
           "budget_2026": 196000.0,
           "sales_2026": 50925.15,
           "profit_2026": -4946.57,
@@ -39143,7 +39149,7 @@ const DASHBOARD_DATA = {
             "OCT": 12442.399999999998,
             "NOV": 7977.84,
             "DIC": 9980.630000000001,
-            "ENE": 0.0
+            "ENE": 12419.98
           },
           "budget_2026_monthly": {
             "FEB": 12000.0,
@@ -39192,7 +39198,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 50925.15,
           "profit_2026_ytd": -4946.57,
           "deviation_pct": -74.0177806122449,
-          "growth_pct": -70.86198324802133,
+          "growth_pct": -72.79525634004884,
           "margin_pct": -9.713412724361145
         },
         {
@@ -39269,7 +39275,7 @@ const DASHBOARD_DATA = {
         {
           "id": 33876,
           "name": "ORTIZ, C.B.",
-          "sales_2025": 79523.33,
+          "sales_2025": 80733.17,
           "budget_2026": 98000.0,
           "sales_2026": 31181.260000000002,
           "profit_2026": -6281.639999999999,
@@ -39285,7 +39291,7 @@ const DASHBOARD_DATA = {
             "OCT": -5788.96,
             "NOV": 7069.5,
             "DIC": 2628.95,
-            "ENE": 0.0
+            "ENE": 1209.84
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -39334,13 +39340,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 31181.260000000002,
           "profit_2026_ytd": -6281.639999999999,
           "deviation_pct": -68.18238775510204,
-          "growth_pct": -60.78979590014654,
+          "growth_pct": -61.37738676680229,
           "margin_pct": -20.145561789356808
         },
         {
           "id": 33966,
           "name": "ALMACENES SANTEñO DISTRIB. S.L",
-          "sales_2025": 120183.79999999999,
+          "sales_2025": 135784.97999999998,
           "budget_2026": 138000.0,
           "sales_2026": 46661.77,
           "profit_2026": -6314.11,
@@ -39356,7 +39362,7 @@ const DASHBOARD_DATA = {
             "OCT": 24934.76,
             "NOV": 8796.3,
             "DIC": 5412.82,
-            "ENE": 0.0
+            "ENE": 15601.18
           },
           "budget_2026_monthly": {
             "FEB": 10000.0,
@@ -39405,13 +39411,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 46661.77,
           "profit_2026_ytd": -6314.11,
           "deviation_pct": -66.1871231884058,
-          "growth_pct": -61.17465914707307,
+          "growth_pct": -65.63554378400322,
           "margin_pct": -13.531655571573904
         },
         {
           "id": 34015,
           "name": "PROSUVA S.L.",
-          "sales_2025": 23960.1,
+          "sales_2025": 24898.26,
           "budget_2026": 30000.0,
           "sales_2026": 22507.95,
           "profit_2026": -3032.0299999999997,
@@ -39427,7 +39433,7 @@ const DASHBOARD_DATA = {
             "OCT": 4589.93,
             "NOV": 1213.23,
             "DIC": 2171.48,
-            "ENE": 0.0
+            "ENE": 938.16
           },
           "budget_2026_monthly": {
             "FEB": 4000.0,
@@ -39476,7 +39482,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 22507.95,
           "profit_2026_ytd": -3032.0299999999997,
           "deviation_pct": -24.973499999999998,
-          "growth_pct": -6.06070091527163,
+          "growth_pct": -9.600309419212417,
           "margin_pct": -13.470929160585479
         },
         {
@@ -39553,7 +39559,7 @@ const DASHBOARD_DATA = {
         {
           "id": 34023,
           "name": "SUAREZ SANCHEZ ANA MARIA",
-          "sales_2025": 11305.7,
+          "sales_2025": 12909.02,
           "budget_2026": 13800.0,
           "sales_2026": 4891.88,
           "profit_2026": 114.71,
@@ -39569,7 +39575,7 @@ const DASHBOARD_DATA = {
             "OCT": 1336.69,
             "NOV": 542.96,
             "DIC": 710.07,
-            "ENE": 0.0
+            "ENE": 1603.32
           },
           "budget_2026_monthly": {
             "FEB": 1150.0,
@@ -39618,7 +39624,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 4891.88,
           "profit_2026_ytd": 114.71,
           "deviation_pct": -64.55159420289854,
-          "growth_pct": -56.73085257878769,
+          "growth_pct": -62.10494677365129,
           "margin_pct": 2.3449062528107802
         },
         {
@@ -39695,7 +39701,7 @@ const DASHBOARD_DATA = {
         {
           "id": 34133,
           "name": "GARCIA VALERO, S.L.",
-          "sales_2025": 27091.309999999998,
+          "sales_2025": 32009.51,
           "budget_2026": 33000.0,
           "sales_2026": 29448.489999999998,
           "profit_2026": -2865.8500000000004,
@@ -39711,7 +39717,7 @@ const DASHBOARD_DATA = {
             "OCT": 4138.219999999999,
             "NOV": 3812.55,
             "DIC": 2692.8900000000003,
-            "ENE": 0.0
+            "ENE": 4918.199999999999
           },
           "budget_2026_monthly": {
             "FEB": 3000.0,
@@ -39760,7 +39766,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 29448.489999999998,
           "profit_2026_ytd": -2865.8500000000004,
           "deviation_pct": -10.762151515151523,
-          "growth_pct": 8.70087123878469,
+          "growth_pct": -8.000809759349645,
           "margin_pct": -9.731738367569951
         }
       ]
@@ -39927,7 +39933,7 @@ const DASHBOARD_DATA = {
         "OCT": 166540.88000000003,
         "NOV": 144894.6499999999,
         "DIC": 191390.65000000002,
-        "ENE": 0.0
+        "ENE": 204872.95000000007
       },
       "budget_2026_monthly": {
         "FEB": 167650.0,
@@ -39971,7 +39977,7 @@ const DASHBOARD_DATA = {
         "DIC": 0.0,
         "ENE": 0.0
       },
-      "total_sales_2025": 2041803.53,
+      "total_sales_2025": 2246676.48,
       "total_budget_2026": 2277790.0,
       "sales_2025_ytd": 773625.6800000002,
       "budget_2026_ytd": 764860.0,
@@ -39989,7 +39995,7 @@ const DASHBOARD_DATA = {
         {
           "id": 529,
           "name": "GARCIA R.RGO.J.000094067CSLNE",
-          "sales_2025": 22198.27,
+          "sales_2025": 23228.65,
           "budget_2026": 32000.0,
           "sales_2026": 6253.27,
           "profit_2026": -1294.0300000000002,
@@ -40005,7 +40011,7 @@ const DASHBOARD_DATA = {
             "OCT": 1496.18,
             "NOV": 135.9,
             "DIC": 1210.4,
-            "ENE": 0.0
+            "ENE": 1030.3799999999999
           },
           "budget_2026_monthly": {
             "FEB": 5000.0,
@@ -40054,7 +40060,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 6253.27,
           "profit_2026_ytd": -1294.0300000000002,
           "deviation_pct": -80.45853125,
-          "growth_pct": -71.82992188129977,
+          "growth_pct": -73.07949450355487,
           "margin_pct": -20.693653080708174
         },
         {
@@ -40131,7 +40137,7 @@ const DASHBOARD_DATA = {
         {
           "id": 1626,
           "name": "JARA MARQUEZ, ANTONIO JOSE",
-          "sales_2025": 6769.41,
+          "sales_2025": 7141.27,
           "budget_2026": 6000.0,
           "sales_2026": 2699.0099999999998,
           "profit_2026": -81.78,
@@ -40147,7 +40153,7 @@ const DASHBOARD_DATA = {
             "OCT": 440.62,
             "NOV": 435.62,
             "DIC": 759.22,
-            "ENE": 0.0
+            "ENE": 371.86
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -40196,7 +40202,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2699.0099999999998,
           "profit_2026_ytd": -81.78,
           "deviation_pct": -55.0165,
-          "growth_pct": -60.129317030583174,
+          "growth_pct": -62.20546205366833,
           "margin_pct": -3.0299998888481334
         },
         {
@@ -40273,7 +40279,7 @@ const DASHBOARD_DATA = {
         {
           "id": 2790,
           "name": "GARCIA GOMEZ, ISABEL MARIA",
-          "sales_2025": 43019.71,
+          "sales_2025": 46001.09,
           "budget_2026": 49260.0,
           "sales_2026": 13480.07,
           "profit_2026": 64.25,
@@ -40289,7 +40295,7 @@ const DASHBOARD_DATA = {
             "OCT": 3652.0699999999997,
             "NOV": 3242.96,
             "DIC": 3932.5099999999993,
-            "ENE": 0.0
+            "ENE": 2981.38
           },
           "budget_2026_monthly": {
             "FEB": 4550.0,
@@ -40338,13 +40344,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 13480.07,
           "profit_2026_ytd": 64.25,
           "deviation_pct": -72.63485586682907,
-          "growth_pct": -68.66536292318102,
+          "growth_pct": -70.69619437278551,
           "margin_pct": 0.47662957239836296
         },
         {
           "id": 2840,
           "name": "ARTES.DEL JAMON MIGUEL LEON SL",
-          "sales_2025": 41447.17,
+          "sales_2025": 44448.32,
           "budget_2026": 50000.0,
           "sales_2026": 19505.55,
           "profit_2026": -1687.45,
@@ -40360,7 +40366,7 @@ const DASHBOARD_DATA = {
             "OCT": 1175.1100000000001,
             "NOV": 2573.33,
             "DIC": 3000.02,
-            "ENE": 0.0
+            "ENE": 3001.15
           },
           "budget_2026_monthly": {
             "FEB": 4000.0,
@@ -40409,13 +40415,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 19505.55,
           "profit_2026_ytd": -1687.45,
           "deviation_pct": -60.9889,
-          "growth_pct": -52.93876517986632,
+          "growth_pct": -56.11633915522567,
           "margin_pct": -8.651127499609085
         },
         {
           "id": 3175,
           "name": "VIZCAINO ROMERO MARIA REPOSO",
-          "sales_2025": 6728.39,
+          "sales_2025": 7251.83,
           "budget_2026": 6000.0,
           "sales_2026": 2875.69,
           "profit_2026": 89.76,
@@ -40431,7 +40437,7 @@ const DASHBOARD_DATA = {
             "OCT": 433.84000000000003,
             "NOV": 600.3299999999999,
             "DIC": 892.7299999999999,
-            "ENE": 0.0
+            "ENE": 523.44
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -40480,13 +40486,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2875.69,
           "profit_2026_ytd": 89.76,
           "deviation_pct": -52.07183333333333,
-          "growth_pct": -57.26035500320285,
+          "growth_pct": -60.345319733088054,
           "margin_pct": 3.121337835441233
         },
         {
           "id": 3184,
           "name": "ASOC.PROTECT.DE DISCAPACITADOS",
-          "sales_2025": 41827.35,
+          "sales_2025": 43778.22,
           "budget_2026": 44000.0,
           "sales_2026": 11708.76,
           "profit_2026": 132.13,
@@ -40502,7 +40508,7 @@ const DASHBOARD_DATA = {
             "OCT": 2708.67,
             "NOV": 3194.0699999999997,
             "DIC": 5183.77,
-            "ENE": 0.0
+            "ENE": 1950.87
           },
           "budget_2026_monthly": {
             "FEB": 4000.0,
@@ -40551,13 +40557,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 11708.76,
           "profit_2026_ytd": 132.13,
           "deviation_pct": -73.38918181818181,
-          "growth_pct": -72.00692848100584,
+          "growth_pct": -73.25437169441791,
           "margin_pct": 1.1284713325749267
         },
         {
           "id": 3512,
           "name": "HERMANOS SUAREZ TORO, S.L.",
-          "sales_2025": 91660.56,
+          "sales_2025": 104277.96,
           "budget_2026": 102000.0,
           "sales_2026": 26340.5,
           "profit_2026": -3854.27,
@@ -40573,7 +40579,7 @@ const DASHBOARD_DATA = {
             "OCT": 3852.12,
             "NOV": 6337.5,
             "DIC": 2291.94,
-            "ENE": 0.0
+            "ENE": 12617.400000000001
           },
           "budget_2026_monthly": {
             "FEB": 3000.0,
@@ -40622,13 +40628,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 26340.5,
           "profit_2026_ytd": -3854.27,
           "deviation_pct": -74.17598039215686,
-          "growth_pct": -71.26299468386404,
+          "growth_pct": -74.74010807269342,
           "margin_pct": -14.63248609555627
         },
         {
           "id": 3783,
           "name": "DISNUCEN S.L.",
-          "sales_2025": 110144.2,
+          "sales_2025": 113753.4,
           "budget_2026": 114000.0,
           "sales_2026": 33752.63,
           "profit_2026": -4768.04,
@@ -40644,7 +40650,7 @@ const DASHBOARD_DATA = {
             "OCT": 8198.63,
             "NOV": 5069.73,
             "DIC": 13443.9,
-            "ENE": 0.0
+            "ENE": 3609.2000000000003
           },
           "budget_2026_monthly": {
             "FEB": 7500.0,
@@ -40693,13 +40699,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 33752.63,
           "profit_2026_ytd": -4768.04,
           "deviation_pct": -70.3924298245614,
-          "growth_pct": -69.35596245648887,
+          "growth_pct": -70.32824513377182,
           "margin_pct": -14.126425111169116
         },
         {
           "id": 4322,
           "name": "DE LOS SANTOS ROMAN GLORIA",
-          "sales_2025": 13522.48,
+          "sales_2025": 14964.869999999999,
           "budget_2026": 18000.0,
           "sales_2026": 4556.35,
           "profit_2026": 62.559999999999995,
@@ -40715,7 +40721,7 @@ const DASHBOARD_DATA = {
             "OCT": 1666.7900000000002,
             "NOV": 1204.4499999999998,
             "DIC": 767.53,
-            "ENE": 0.0
+            "ENE": 1442.39
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -40764,13 +40770,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 4556.35,
           "profit_2026_ytd": 62.559999999999995,
           "deviation_pct": -74.68694444444445,
-          "growth_pct": -66.30536706284646,
+          "growth_pct": -69.55302652144655,
           "margin_pct": 1.3730288498469168
         },
         {
           "id": 4465,
           "name": "LIGERO PEREZ, CARMEN",
-          "sales_2025": 13598.43,
+          "sales_2025": 14650.3,
           "budget_2026": 18000.0,
           "sales_2026": 5666.6900000000005,
           "profit_2026": 133.19,
@@ -40786,7 +40792,7 @@ const DASHBOARD_DATA = {
             "OCT": 889.66,
             "NOV": 1229.26,
             "DIC": 1144.2600000000002,
-            "ENE": 0.0
+            "ENE": 1051.87
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -40835,13 +40841,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 5666.6900000000005,
           "profit_2026_ytd": 133.19,
           "deviation_pct": -68.51838888888888,
-          "growth_pct": -58.32835114053607,
+          "growth_pct": -61.32031425977624,
           "margin_pct": 2.3504020865796433
         },
         {
           "id": 6022,
           "name": "LAS MARISMAS 2009, S.L.",
-          "sales_2025": 172020.32,
+          "sales_2025": 226182.63,
           "budget_2026": 217000.0,
           "sales_2026": 101030.56999999999,
           "profit_2026": -14643.84,
@@ -40857,7 +40863,7 @@ const DASHBOARD_DATA = {
             "OCT": 12472.970000000001,
             "NOV": 11610.56,
             "DIC": 12839.65,
-            "ENE": 0.0
+            "ENE": 54162.31
           },
           "budget_2026_monthly": {
             "FEB": 12000.0,
@@ -40906,13 +40912,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 101030.56999999999,
           "profit_2026_ytd": -14643.84,
           "deviation_pct": -53.442133640553,
-          "growth_pct": -41.268235055021414,
+          "growth_pct": -55.33230381130505,
           "margin_pct": -14.494464398250948
         },
         {
           "id": 6382,
           "name": "LOPEZ PERIAÑE, MANUEL 3",
-          "sales_2025": 51657.17,
+          "sales_2025": 55495.09,
           "budget_2026": 60000.0,
           "sales_2026": 15806.36,
           "profit_2026": -730.4100000000001,
@@ -40928,7 +40934,7 @@ const DASHBOARD_DATA = {
             "OCT": 7592.619999999999,
             "NOV": 3513.2800000000007,
             "DIC": 4285.8099999999995,
-            "ENE": 0.0
+            "ENE": 3837.9199999999996
           },
           "budget_2026_monthly": {
             "FEB": 5000.0,
@@ -40977,7 +40983,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 15806.36,
           "profit_2026_ytd": -730.4100000000001,
           "deviation_pct": -73.65606666666666,
-          "growth_pct": -69.40142094504984,
+          "growth_pct": -71.51755227354347,
           "margin_pct": -4.620988007359063
         },
         {
@@ -41054,7 +41060,7 @@ const DASHBOARD_DATA = {
         {
           "id": 7483,
           "name": "PANAD.LA MODERNA DE PALOS,SLU",
-          "sales_2025": 4380.03,
+          "sales_2025": 5218.78,
           "budget_2026": 6000.0,
           "sales_2026": 311.2,
           "profit_2026": 24.99,
@@ -41070,7 +41076,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 808.9399999999999,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 838.75
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -41119,13 +41125,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 311.2,
           "profit_2026_ytd": 24.99,
           "deviation_pct": -94.81333333333333,
-          "growth_pct": -92.8950258331564,
+          "growth_pct": -94.03692050632525,
           "margin_pct": 8.030205655526993
         },
         {
           "id": 7486,
           "name": "LAGARES MILLAN MARIA DEL VALLE",
-          "sales_2025": 9935.52,
+          "sales_2025": 10823.2,
           "budget_2026": 12000.0,
           "sales_2026": 3673.18,
           "profit_2026": 75.63,
@@ -41141,7 +41147,7 @@ const DASHBOARD_DATA = {
             "OCT": 975.21,
             "NOV": 795.88,
             "DIC": 1169.85,
-            "ENE": 0.0
+            "ENE": 887.68
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -41190,13 +41196,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 3673.18,
           "profit_2026_ytd": 75.63,
           "deviation_pct": -69.39016666666666,
-          "growth_pct": -63.02981625521361,
+          "growth_pct": -66.06197797324266,
           "margin_pct": 2.058978868446414
         },
         {
           "id": 7493,
           "name": "SAN ROMAN-PALOS, S.L.",
-          "sales_2025": 4473.75,
+          "sales_2025": 5001.83,
           "budget_2026": 6000.0,
           "sales_2026": 2140.27,
           "profit_2026": 55.949999999999996,
@@ -41212,7 +41218,7 @@ const DASHBOARD_DATA = {
             "OCT": 924.6099999999999,
             "NOV": 267.26,
             "DIC": 257.87,
-            "ENE": 0.0
+            "ENE": 528.08
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -41261,13 +41267,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2140.27,
           "profit_2026_ytd": 55.949999999999996,
           "deviation_pct": -64.32883333333334,
-          "growth_pct": -52.15937412685108,
+          "growth_pct": -57.21026104445773,
           "margin_pct": 2.6141561578679324
         },
         {
           "id": 7695,
           "name": "SAN ROMAN-PALOS, S.L.",
-          "sales_2025": 2258.23,
+          "sales_2025": 2790.34,
           "budget_2026": 5500.0,
           "sales_2026": 399.92,
           "profit_2026": 6.96,
@@ -41283,7 +41289,7 @@ const DASHBOARD_DATA = {
             "OCT": 92.72,
             "NOV": 0.0,
             "DIC": 350.08,
-            "ENE": 0.0
+            "ENE": 532.11
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -41332,13 +41338,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 399.92,
           "profit_2026_ytd": 6.96,
           "deviation_pct": -92.72872727272727,
-          "growth_pct": -82.29055499218414,
+          "growth_pct": -85.66769640975652,
           "margin_pct": 1.7403480696139229
         },
         {
           "id": 8199,
           "name": "S.COOP.AND.CAMPO DE TEJADA",
-          "sales_2025": 42487.54,
+          "sales_2025": 44916.94,
           "budget_2026": 47000.0,
           "sales_2026": 11984.55,
           "profit_2026": -910.0799999999999,
@@ -41354,7 +41360,7 @@ const DASHBOARD_DATA = {
             "OCT": 4949.07,
             "NOV": 3128.58,
             "DIC": 4275.94,
-            "ENE": 0.0
+            "ENE": 2429.4
           },
           "budget_2026_monthly": {
             "FEB": 4000.0,
@@ -41403,7 +41409,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 11984.55,
           "profit_2026_ytd": -910.0799999999999,
           "deviation_pct": -74.5009574468085,
-          "growth_pct": -71.79278913300229,
+          "growth_pct": -73.31841839626652,
           "margin_pct": -7.593776987871885
         },
         {
@@ -41480,7 +41486,7 @@ const DASHBOARD_DATA = {
         {
           "id": 9532,
           "name": "MARTINEZ RIOS, SERAFIN",
-          "sales_2025": 10143.21,
+          "sales_2025": 11312.17,
           "budget_2026": 12000.0,
           "sales_2026": 4830.04,
           "profit_2026": -388.95,
@@ -41496,7 +41502,7 @@ const DASHBOARD_DATA = {
             "OCT": 1445.29,
             "NOV": 950.71,
             "DIC": 1444.4999999999998,
-            "ENE": 0.0
+            "ENE": 1168.96
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -41545,7 +41551,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 4830.04,
           "profit_2026_ytd": -388.95,
           "deviation_pct": -59.74966666666667,
-          "growth_pct": -52.38154390966962,
+          "growth_pct": -57.302268265063205,
           "margin_pct": -8.052728341794271
         },
         {
@@ -41622,7 +41628,7 @@ const DASHBOARD_DATA = {
         {
           "id": 9610,
           "name": "BEBICAR, S.L.",
-          "sales_2025": 56598.54,
+          "sales_2025": 57715.8,
           "budget_2026": 65000.0,
           "sales_2026": 24044.69,
           "profit_2026": -5090.77,
@@ -41638,7 +41644,7 @@ const DASHBOARD_DATA = {
             "OCT": 2626.38,
             "NOV": 2447.64,
             "DIC": 2487.48,
-            "ENE": 0.0
+            "ENE": 1117.26
           },
           "budget_2026_monthly": {
             "FEB": 6000.0,
@@ -41687,13 +41693,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 24044.69,
           "profit_2026_ytd": -5090.77,
           "deviation_pct": -63.00816923076923,
-          "growth_pct": -57.51711969955409,
+          "growth_pct": -58.339501488327286,
           "margin_pct": -21.172117419688092
         },
         {
           "id": 18118,
           "name": "HNOS. AGUADO LOS ANGELES S.A.",
-          "sales_2025": 9779.14,
+          "sales_2025": 10614.2,
           "budget_2026": 12000.0,
           "sales_2026": 4202.79,
           "profit_2026": -18.549999999999997,
@@ -41709,7 +41715,7 @@ const DASHBOARD_DATA = {
             "OCT": 1009.69,
             "NOV": 942.51,
             "DIC": 903.28,
-            "ENE": 0.0
+            "ENE": 835.0600000000001
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -41758,13 +41764,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 4202.79,
           "profit_2026_ytd": -18.549999999999997,
           "deviation_pct": -64.97675000000001,
-          "growth_pct": -57.022907944870404,
+          "growth_pct": -60.40408132501744,
           "margin_pct": -0.4413734685768263
         },
         {
           "id": 18163,
           "name": "MARTINEZ VAZQUEZ M. ANGELES",
-          "sales_2025": 7283.469999999999,
+          "sales_2025": 7953.75,
           "budget_2026": 8000.0,
           "sales_2026": 2601.36,
           "profit_2026": -94.01000000000002,
@@ -41780,7 +41786,7 @@ const DASHBOARD_DATA = {
             "OCT": 958.0799999999999,
             "NOV": 747.9,
             "DIC": 488.18,
-            "ENE": 0.0
+            "ENE": 670.28
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -41829,7 +41835,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2601.36,
           "profit_2026_ytd": -94.01000000000002,
           "deviation_pct": -67.48299999999999,
-          "growth_pct": -64.2840569124332,
+          "growth_pct": -67.29391796322489,
           "margin_pct": -3.6138788941169238
         },
         {
@@ -41977,7 +41983,7 @@ const DASHBOARD_DATA = {
         {
           "id": 19101,
           "name": "PARRALES SANCHEZ, JOSE MANUEL",
-          "sales_2025": 4881.16,
+          "sales_2025": 5275.97,
           "budget_2026": 6000.0,
           "sales_2026": 1408.4099999999999,
           "profit_2026": 25.54,
@@ -41993,7 +41999,7 @@ const DASHBOARD_DATA = {
             "OCT": 393.41,
             "NOV": 446.47,
             "DIC": 288.03,
-            "ENE": 0.0
+            "ENE": 394.81
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -42042,7 +42048,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1408.4099999999999,
           "profit_2026_ytd": 25.54,
           "deviation_pct": -76.5265,
-          "growth_pct": -71.14599808242303,
+          "growth_pct": -73.30519316827049,
           "margin_pct": 1.8133924070405636
         },
         {
@@ -42190,7 +42196,7 @@ const DASHBOARD_DATA = {
         {
           "id": 19361,
           "name": "LUJAN CAMACHO,FRANCISCO MANUEL",
-          "sales_2025": 4872.43,
+          "sales_2025": 5391.0199999999995,
           "budget_2026": 6000.0,
           "sales_2026": 2811.72,
           "profit_2026": -273.66999999999996,
@@ -42206,7 +42212,7 @@ const DASHBOARD_DATA = {
             "OCT": 469.62,
             "NOV": 353.65,
             "DIC": 234.76,
-            "ENE": 0.0
+            "ENE": 518.59
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -42255,13 +42261,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2811.72,
           "profit_2026_ytd": -273.66999999999996,
           "deviation_pct": -53.138000000000005,
-          "growth_pct": -42.293270503629614,
+          "growth_pct": -47.84437824382028,
           "margin_pct": -9.733188226423684
         },
         {
           "id": 19362,
           "name": "VILLARAN DOMINGUEZ MARIA DEL C",
-          "sales_2025": 25820.329999999998,
+          "sales_2025": 29978.79,
           "budget_2026": 35000.0,
           "sales_2026": 9899.85,
           "profit_2026": -322.49,
@@ -42277,7 +42283,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 4944.0599999999995,
             "DIC": 493.71999999999997,
-            "ENE": 0.0
+            "ENE": 4158.46
           },
           "budget_2026_monthly": {
             "FEB": 4000.0,
@@ -42326,13 +42332,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 9899.85,
           "profit_2026_ytd": -322.49,
           "deviation_pct": -71.7147142857143,
-          "growth_pct": -61.65870072148574,
+          "growth_pct": -66.97715284706288,
           "margin_pct": -3.2575241039005642
         },
         {
           "id": 19407,
           "name": "VAZ PARRILLA, GEMA CORONADA",
-          "sales_2025": 3111.68,
+          "sales_2025": 3317.2799999999997,
           "budget_2026": 6000.0,
           "sales_2026": 556.6800000000001,
           "profit_2026": 26.119999999999997,
@@ -42348,7 +42354,7 @@ const DASHBOARD_DATA = {
             "OCT": 254.52,
             "NOV": 163.96,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 205.6
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -42397,13 +42403,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 556.6800000000001,
           "profit_2026_ytd": 26.119999999999997,
           "deviation_pct": -90.722,
-          "growth_pct": -82.10998560263266,
+          "growth_pct": -83.21878165243814,
           "margin_pct": 4.692103183157289
         },
         {
           "id": 20049,
           "name": "DIST. JOSE MARIA SUAREZ MACHO",
-          "sales_2025": 75460.53,
+          "sales_2025": 82477.0,
           "budget_2026": 81000.0,
           "sales_2026": 32578.08,
           "profit_2026": -5579.72,
@@ -42419,7 +42425,7 @@ const DASHBOARD_DATA = {
             "OCT": 7440.4400000000005,
             "NOV": 5077.5,
             "DIC": 11089.36,
-            "ENE": 0.0
+            "ENE": 7016.47
           },
           "budget_2026_monthly": {
             "FEB": 5000.0,
@@ -42468,7 +42474,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 32578.08,
           "profit_2026_ytd": -5579.72,
           "deviation_pct": -59.78014814814815,
-          "growth_pct": -56.827655464386474,
+          "growth_pct": -60.5004061738424,
           "margin_pct": -17.127221739279907
         },
         {
@@ -42545,7 +42551,7 @@ const DASHBOARD_DATA = {
         {
           "id": 22481,
           "name": "COMERCIAL CONTIOSO, C.B.",
-          "sales_2025": 14238.140000000001,
+          "sales_2025": 14760.76,
           "budget_2026": 17000.0,
           "sales_2026": 12369.3,
           "profit_2026": -2469.77,
@@ -42561,7 +42567,7 @@ const DASHBOARD_DATA = {
             "OCT": 2203.8,
             "NOV": 594.72,
             "DIC": 2909.1000000000004,
-            "ENE": 0.0
+            "ENE": 522.62
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -42610,13 +42616,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 12369.3,
           "profit_2026_ytd": -2469.77,
           "deviation_pct": -27.239411764705885,
-          "growth_pct": -13.125590842624119,
+          "growth_pct": -16.201469301038706,
           "margin_pct": -19.966934264671405
         },
         {
           "id": 22638,
           "name": "MIDAGUAN, S.L.",
-          "sales_2025": 34262.03,
+          "sales_2025": 35839.73,
           "budget_2026": 36000.0,
           "sales_2026": 19201.98,
           "profit_2026": -636.97,
@@ -42632,7 +42638,7 @@ const DASHBOARD_DATA = {
             "OCT": 3110.67,
             "NOV": 2458.8199999999997,
             "DIC": 2466.33,
-            "ENE": 0.0
+            "ENE": 1577.7
           },
           "budget_2026_monthly": {
             "FEB": 3000.0,
@@ -42681,13 +42687,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 19201.98,
           "profit_2026_ytd": -636.97,
           "deviation_pct": -46.661166666666674,
-          "growth_pct": -43.95550993329934,
+          "growth_pct": -46.42264325093968,
           "margin_pct": -3.317209996052491
         },
         {
           "id": 22719,
           "name": "PEREZ GOMEZ, PEDRO MANUEL",
-          "sales_2025": 12108.67,
+          "sales_2025": 16154.32,
           "budget_2026": 12000.0,
           "sales_2026": 8974.75,
           "profit_2026": -2001.96,
@@ -42703,7 +42709,7 @@ const DASHBOARD_DATA = {
             "OCT": 3202.5,
             "NOV": 0.0,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 4045.65
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -42752,7 +42758,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 8974.75,
           "profit_2026_ytd": -2001.96,
           "deviation_pct": -25.210416666666667,
-          "growth_pct": -25.881620359626616,
+          "growth_pct": -44.443653462355584,
           "margin_pct": -22.306582356054484
         },
         {
@@ -42900,7 +42906,7 @@ const DASHBOARD_DATA = {
         {
           "id": 23547,
           "name": "GRUPO SIN LIMITE ATLANTICO,SLU",
-          "sales_2025": 22373.579999999998,
+          "sales_2025": 24603.059999999998,
           "budget_2026": 31000.0,
           "sales_2026": 25707.010000000002,
           "profit_2026": -434.04999999999995,
@@ -42916,7 +42922,7 @@ const DASHBOARD_DATA = {
             "OCT": 1032.6,
             "NOV": 1255.44,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 2229.48
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -42965,13 +42971,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 25707.010000000002,
           "profit_2026_ytd": -434.04999999999995,
           "deviation_pct": -17.07416129032257,
-          "growth_pct": 14.898956715912268,
+          "growth_pct": 4.487043481583203,
           "margin_pct": -1.688449959758058
         },
         {
           "id": 23597,
           "name": "GONZALEZ MARQUEZ, JOSE MANUEL",
-          "sales_2025": 21419.140000000003,
+          "sales_2025": 23882.38,
           "budget_2026": 24000.0,
           "sales_2026": 5709.849999999999,
           "profit_2026": -308.03999999999996,
@@ -42987,7 +42993,7 @@ const DASHBOARD_DATA = {
             "OCT": 1014.0,
             "NOV": 0.0,
             "DIC": 1745.52,
-            "ENE": 0.0
+            "ENE": 2463.24
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -43036,13 +43042,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 5709.849999999999,
           "profit_2026_ytd": -308.03999999999996,
           "deviation_pct": -76.20895833333334,
-          "growth_pct": -73.3423003911455,
+          "growth_pct": -76.09178817186563,
           "margin_pct": -5.394887781640499
         },
         {
           "id": 23878,
           "name": "PANADERIA HORNO DE PALOS, S.L.",
-          "sales_2025": 4285.39,
+          "sales_2025": 5131.11,
           "budget_2026": 6000.0,
           "sales_2026": 838.03,
           "profit_2026": 40.37,
@@ -43058,7 +43064,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 808.68,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 845.72
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -43107,7 +43113,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 838.03,
           "profit_2026_ytd": 40.37,
           "deviation_pct": -86.03283333333334,
-          "growth_pct": -80.44448696618045,
+          "growth_pct": -83.66766645033921,
           "margin_pct": 4.817249979117692
         },
         {
@@ -43255,7 +43261,7 @@ const DASHBOARD_DATA = {
         {
           "id": 24086,
           "name": "IGNACIO NEVADO, JUAN JOSE",
-          "sales_2025": 7625.22,
+          "sales_2025": 8278.92,
           "budget_2026": 12000.0,
           "sales_2026": 0.0,
           "profit_2026": 0.0,
@@ -43271,7 +43277,7 @@ const DASHBOARD_DATA = {
             "OCT": 530.55,
             "NOV": 759.29,
             "DIC": 882.51,
-            "ENE": 0.0
+            "ENE": 653.7
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -43326,7 +43332,7 @@ const DASHBOARD_DATA = {
         {
           "id": 24160,
           "name": "BAÑES JIMENZ, JOSEFA ROCIO",
-          "sales_2025": 91480.01000000001,
+          "sales_2025": 106168.59000000001,
           "budget_2026": 81000.0,
           "sales_2026": 89916.2,
           "profit_2026": -16863.28,
@@ -43342,7 +43348,7 @@ const DASHBOARD_DATA = {
             "OCT": 6573.12,
             "NOV": 9414.880000000001,
             "DIC": 22319.640000000003,
-            "ENE": 0.0
+            "ENE": 14688.579999999998
           },
           "budget_2026_monthly": {
             "FEB": 6000.0,
@@ -43391,13 +43397,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 89916.2,
           "profit_2026_ytd": -16863.28,
           "deviation_pct": 11.007654320987651,
-          "growth_pct": -1.709455431847911,
+          "growth_pct": -15.308096302305618,
           "margin_pct": -18.754440245473006
         },
         {
           "id": 24199,
           "name": "DIAZ INFANTE, MARIA DOLORES",
-          "sales_2025": 8593.4,
+          "sales_2025": 9565.07,
           "budget_2026": 12000.0,
           "sales_2026": 2849.68,
           "profit_2026": -54.81,
@@ -43413,7 +43419,7 @@ const DASHBOARD_DATA = {
             "OCT": 932.9100000000001,
             "NOV": 1340.25,
             "DIC": 776.46,
-            "ENE": 0.0
+            "ENE": 971.6700000000001
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -43462,13 +43468,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2849.68,
           "profit_2026_ytd": -54.81,
           "deviation_pct": -76.25266666666667,
-          "growth_pct": -66.83873670491307,
+          "growth_pct": -70.2074318326996,
           "margin_pct": -1.9233738525027373
         },
         {
           "id": 24216,
           "name": "PEPETE, C.B.",
-          "sales_2025": 19554.23,
+          "sales_2025": 20591.829999999998,
           "budget_2026": 25500.0,
           "sales_2026": 5975.62,
           "profit_2026": 90.56,
@@ -43484,7 +43490,7 @@ const DASHBOARD_DATA = {
             "OCT": 1868.29,
             "NOV": 2091.44,
             "DIC": 1382.55,
-            "ENE": 0.0
+            "ENE": 1037.6
           },
           "budget_2026_monthly": {
             "FEB": 2150.0,
@@ -43533,13 +43539,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 5975.62,
           "profit_2026_ytd": 90.56,
           "deviation_pct": -76.56619607843137,
-          "growth_pct": -69.44078084383789,
+          "growth_pct": -70.98062678256377,
           "margin_pct": 1.5154912795659699
         },
         {
           "id": 24265,
           "name": "ALIMENTACION BELMORGAN, S.L.L.",
-          "sales_2025": 10301.970000000001,
+          "sales_2025": 11553.78,
           "budget_2026": 12000.0,
           "sales_2026": 2109.42,
           "profit_2026": -294.23,
@@ -43555,7 +43561,7 @@ const DASHBOARD_DATA = {
             "OCT": 1887.44,
             "NOV": 0.0,
             "DIC": 1128.67,
-            "ENE": 0.0
+            "ENE": 1251.81
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -43604,13 +43610,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2109.42,
           "profit_2026_ytd": -294.23,
           "deviation_pct": -82.42150000000001,
-          "growth_pct": -79.52411043712999,
+          "growth_pct": -81.74259852619662,
           "margin_pct": -13.94838391595794
         },
         {
           "id": 24375,
           "name": "E.S. ALMONTE, S.L.",
-          "sales_2025": 2213.7400000000002,
+          "sales_2025": 3467.1600000000003,
           "budget_2026": 0.0,
           "sales_2026": 2307.81,
           "profit_2026": -95.24000000000001,
@@ -43626,7 +43632,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 0.0,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 1253.42
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -43675,7 +43681,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2307.81,
           "profit_2026_ytd": -95.24000000000001,
           "deviation_pct": 0.0,
-          "growth_pct": 4.2493698446971955,
+          "growth_pct": -33.438029972657745,
           "margin_pct": -4.12685619700062
         },
         {
@@ -43823,7 +43829,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25129,
           "name": "BERNAL PEREZ,ISABEL",
-          "sales_2025": 5838.77,
+          "sales_2025": 6110.25,
           "budget_2026": 6000.0,
           "sales_2026": 1111.63,
           "profit_2026": -10.129999999999999,
@@ -43839,7 +43845,7 @@ const DASHBOARD_DATA = {
             "OCT": 472.6,
             "NOV": 364.16,
             "DIC": 602.61,
-            "ENE": 0.0
+            "ENE": 271.48
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -43888,13 +43894,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1111.63,
           "profit_2026_ytd": -10.129999999999999,
           "deviation_pct": -81.47283333333333,
-          "growth_pct": -80.96122984806732,
+          "growth_pct": -81.8071273679473,
           "margin_pct": -0.9112744348389301
         },
         {
           "id": 25177,
           "name": "DISTRIBUCIONES FERNANDO DIAZ C",
-          "sales_2025": 38283.85,
+          "sales_2025": 38784.61,
           "budget_2026": 24000.0,
           "sales_2026": 6632.4,
           "profit_2026": -1913.7600000000002,
@@ -43910,7 +43916,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 0.0,
             "DIC": 16610.05,
-            "ENE": 0.0
+            "ENE": 500.76
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -43959,7 +43965,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 6632.4,
           "profit_2026_ytd": -1913.7600000000002,
           "deviation_pct": -72.365,
-          "growth_pct": -82.67572357534574,
+          "growth_pct": -82.8994026238758,
           "margin_pct": -28.85471322598155
         },
         {
@@ -44036,7 +44042,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25182,
           "name": "MARQUEZ ROMERO, MARIA DEL ROCI",
-          "sales_2025": 9212.89,
+          "sales_2025": 10365.05,
           "budget_2026": 12000.0,
           "sales_2026": 5108.92,
           "profit_2026": -24.83,
@@ -44052,7 +44058,7 @@ const DASHBOARD_DATA = {
             "OCT": 1435.68,
             "NOV": 1381.1399999999999,
             "DIC": 836.8199999999999,
-            "ENE": 0.0
+            "ENE": 1152.16
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -44101,7 +44107,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 5108.92,
           "profit_2026_ytd": -24.83,
           "deviation_pct": -57.425666666666665,
-          "growth_pct": -44.54595680617048,
+          "growth_pct": -50.71012682042054,
           "margin_pct": -0.4860126993572027
         },
         {
@@ -44178,7 +44184,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25215,
           "name": "AUTOSERVICIO DIAZ GONZALEZ, S.",
-          "sales_2025": 43554.94,
+          "sales_2025": 44613.28,
           "budget_2026": 58800.0,
           "sales_2026": 241.17999999999998,
           "profit_2026": 1.15,
@@ -44194,7 +44200,7 @@ const DASHBOARD_DATA = {
             "OCT": 4367.1,
             "NOV": 3930.7699999999995,
             "DIC": 717.6000000000001,
-            "ENE": 0.0
+            "ENE": 1058.34
           },
           "budget_2026_monthly": {
             "FEB": 4900.0,
@@ -44243,7 +44249,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 241.17999999999998,
           "profit_2026_ytd": 1.15,
           "deviation_pct": -99.58982993197279,
-          "growth_pct": -99.44626258238446,
+          "growth_pct": -99.45939863645982,
           "margin_pct": 0.4768222904055063
         },
         {
@@ -44320,7 +44326,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25225,
           "name": "MARTIN MARTINEZ, MARIA DEL CAR",
-          "sales_2025": 138399.57,
+          "sales_2025": 157000.39,
           "budget_2026": 166000.0,
           "sales_2026": 66043.21,
           "profit_2026": -964.51,
@@ -44336,7 +44342,7 @@ const DASHBOARD_DATA = {
             "OCT": 14811.229999999998,
             "NOV": 12035.940000000002,
             "DIC": 10952.53,
-            "ENE": 0.0
+            "ENE": 18600.82
           },
           "budget_2026_monthly": {
             "FEB": 13000.0,
@@ -44385,13 +44391,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 66043.21,
           "profit_2026_ytd": -964.51,
           "deviation_pct": -60.214933734939756,
-          "growth_pct": -52.2807693694424,
+          "growth_pct": -57.93436564074778,
           "margin_pct": -1.4604226535930036
         },
         {
           "id": 25238,
           "name": "ALIMENTACION RIVERA ALCOR, S.L",
-          "sales_2025": 16930.3,
+          "sales_2025": 19561.44,
           "budget_2026": 18000.0,
           "sales_2026": 8580.95,
           "profit_2026": -812.14,
@@ -44407,7 +44413,7 @@ const DASHBOARD_DATA = {
             "OCT": 1274.09,
             "NOV": 2073.63,
             "DIC": 2685.95,
-            "ENE": 0.0
+            "ENE": 2631.1400000000003
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -44456,13 +44462,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 8580.95,
           "profit_2026_ytd": -812.14,
           "deviation_pct": -52.32805555555555,
-          "growth_pct": -49.31601920816524,
+          "growth_pct": -56.13334192165811,
           "margin_pct": -9.464453236529755
         },
         {
           "id": 25240,
           "name": "FERNANDEZ HIDALGO, CARMELO JES",
-          "sales_2025": 8404.45,
+          "sales_2025": 9580.93,
           "budget_2026": 12000.0,
           "sales_2026": 5201.81,
           "profit_2026": 252.73999999999998,
@@ -44478,7 +44484,7 @@ const DASHBOARD_DATA = {
             "OCT": 1505.46,
             "NOV": 958.31,
             "DIC": 903.1,
-            "ENE": 0.0
+            "ENE": 1176.48
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -44527,13 +44533,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 5201.81,
           "profit_2026_ytd": 252.73999999999998,
           "deviation_pct": -56.651583333333335,
-          "growth_pct": -38.10647930560596,
+          "growth_pct": -45.70662764470672,
           "margin_pct": 4.858693416330084
         },
         {
           "id": 25257,
           "name": "GOMEZ BORREGO, YOLANDA MIRIAM",
-          "sales_2025": 6934.26,
+          "sales_2025": 7268.96,
           "budget_2026": 9000.0,
           "sales_2026": 2590.5699999999997,
           "profit_2026": -122.64999999999999,
@@ -44549,7 +44555,7 @@ const DASHBOARD_DATA = {
             "OCT": 220.88,
             "NOV": 0.0,
             "DIC": 912.97,
-            "ENE": 0.0
+            "ENE": 334.7
           },
           "budget_2026_monthly": {
             "FEB": 750.0,
@@ -44598,13 +44604,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2590.5699999999997,
           "profit_2026_ytd": -122.64999999999999,
           "deviation_pct": -71.21588888888888,
-          "growth_pct": -62.64100278905032,
+          "growth_pct": -64.36120160243006,
           "margin_pct": -4.734479284481793
         },
         {
           "id": 25265,
           "name": "RIVERO LIMON, SALVA",
-          "sales_2025": 32542.07,
+          "sales_2025": 34739.29,
           "budget_2026": 39600.0,
           "sales_2026": 9618.01,
           "profit_2026": -238.80999999999997,
@@ -44620,7 +44626,7 @@ const DASHBOARD_DATA = {
             "OCT": 3977.7599999999998,
             "NOV": 1861.0100000000002,
             "DIC": 3101.85,
-            "ENE": 0.0
+            "ENE": 2197.2200000000003
           },
           "budget_2026_monthly": {
             "FEB": 3300.0,
@@ -44669,13 +44675,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 9618.01,
           "profit_2026_ytd": -238.80999999999997,
           "deviation_pct": -75.71209595959596,
-          "growth_pct": -70.4443816880733,
+          "growth_pct": -72.31374043626107,
           "margin_pct": -2.4829460564087578
         },
         {
           "id": 25292,
           "name": "MARTIN JAIME,JESUS",
-          "sales_2025": 21306.96,
+          "sales_2025": 23665.26,
           "budget_2026": 30000.0,
           "sales_2026": 10175.43,
           "profit_2026": 153.13,
@@ -44691,7 +44697,7 @@ const DASHBOARD_DATA = {
             "OCT": 1875.7800000000002,
             "NOV": 2091.0,
             "DIC": 1955.3999999999999,
-            "ENE": 0.0
+            "ENE": 2358.3
           },
           "budget_2026_monthly": {
             "FEB": 2500.0,
@@ -44740,7 +44746,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 10175.43,
           "profit_2026_ytd": 153.13,
           "deviation_pct": -66.0819,
-          "growth_pct": -52.2436330663783,
+          "growth_pct": -57.002669736144874,
           "margin_pct": 1.504899547242721
         },
         {
@@ -44888,7 +44894,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25307,
           "name": "CAMACHO OLIVARES, FRANCISCO",
-          "sales_2025": 25416.18,
+          "sales_2025": 28064.72,
           "budget_2026": 30000.0,
           "sales_2026": 9946.28,
           "profit_2026": 248.22,
@@ -44904,7 +44910,7 @@ const DASHBOARD_DATA = {
             "OCT": 4016.2200000000003,
             "NOV": 2405.64,
             "DIC": 2039.9299999999998,
-            "ENE": 0.0
+            "ENE": 2648.54
           },
           "budget_2026_monthly": {
             "FEB": 2500.0,
@@ -44953,13 +44959,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 9946.28,
           "profit_2026_ytd": 248.22,
           "deviation_pct": -66.84573333333333,
-          "growth_pct": -60.86634576871898,
+          "growth_pct": -64.55948963681092,
           "margin_pct": 2.495606397567734
         },
         {
           "id": 25323,
           "name": "DIST. REYES MENDEZ DEL SUR, S.",
-          "sales_2025": 47701.69,
+          "sales_2025": 48129.63,
           "budget_2026": 48000.0,
           "sales_2026": 17037.73,
           "profit_2026": -3180.56,
@@ -44975,7 +44981,7 @@ const DASHBOARD_DATA = {
             "OCT": 5553.63,
             "NOV": 2223.22,
             "DIC": 4181.9,
-            "ENE": 0.0
+            "ENE": 427.94
           },
           "budget_2026_monthly": {
             "FEB": 4000.0,
@@ -45024,13 +45030,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 17037.73,
           "profit_2026_ytd": -3180.56,
           "deviation_pct": -64.50472916666666,
-          "growth_pct": -64.28275392339349,
+          "growth_pct": -64.60033039938183,
           "margin_pct": -18.667745057586895
         },
         {
           "id": 25327,
           "name": "ALFONSO CHAVEZ, ANTONIO",
-          "sales_2025": 77240.15,
+          "sales_2025": 83881.05,
           "budget_2026": 80300.0,
           "sales_2026": 36774.67,
           "profit_2026": -773.15,
@@ -45046,7 +45052,7 @@ const DASHBOARD_DATA = {
             "OCT": 7467.510000000001,
             "NOV": 6430.7,
             "DIC": 7727.660000000001,
-            "ENE": 0.0
+            "ENE": 6640.900000000001
           },
           "budget_2026_monthly": {
             "FEB": 6500.0,
@@ -45095,7 +45101,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 36774.67,
           "profit_2026_ytd": -773.15,
           "deviation_pct": -54.203399750934,
-          "growth_pct": -52.389178425987005,
+          "growth_pct": -56.158548325277295,
           "margin_pct": -2.1023981996303434
         },
         {
@@ -45172,7 +45178,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25334,
           "name": "GOMEZ GOMEZ, FRANCISCO JESUS",
-          "sales_2025": 13125.07,
+          "sales_2025": 14325.140000000001,
           "budget_2026": 18000.0,
           "sales_2026": 4314.16,
           "profit_2026": -236.03,
@@ -45188,7 +45194,7 @@ const DASHBOARD_DATA = {
             "OCT": 1262.15,
             "NOV": 1307.5900000000001,
             "DIC": 1285.84,
-            "ENE": 0.0
+            "ENE": 1200.0700000000002
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -45237,7 +45243,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 4314.16,
           "profit_2026_ytd": -236.03,
           "deviation_pct": -76.03244444444445,
-          "growth_pct": -67.13038482842377,
+          "growth_pct": -69.88399415293672,
           "margin_pct": -5.471053461160458
         },
         {
@@ -45385,7 +45391,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25358,
           "name": "AVAQUIA GRUPO ALIMENTICIO, S.L",
-          "sales_2025": 51047.34,
+          "sales_2025": 56573.35,
           "budget_2026": 60000.0,
           "sales_2026": -5185.370000000001,
           "profit_2026": -196.2,
@@ -45401,7 +45407,7 @@ const DASHBOARD_DATA = {
             "OCT": 4204.18,
             "NOV": 5160.73,
             "DIC": 5839.219999999999,
-            "ENE": 0.0
+            "ENE": 5526.009999999999
           },
           "budget_2026_monthly": {
             "FEB": 5000.0,
@@ -45450,13 +45456,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": -5185.370000000001,
           "profit_2026_ytd": -196.2,
           "deviation_pct": -108.64228333333334,
-          "growth_pct": -110.15796317692559,
+          "growth_pct": -109.16574676945947,
           "margin_pct": 0.0
         },
         {
           "id": 25359,
           "name": "AVAQUIA GRUPO ALIMENTICIO, S.L",
-          "sales_2025": 223363.57,
+          "sales_2025": 241437.19,
           "budget_2026": 211000.0,
           "sales_2026": 69547.92000000001,
           "profit_2026": -576.99,
@@ -45472,7 +45478,7 @@ const DASHBOARD_DATA = {
             "OCT": 20138.380000000005,
             "NOV": 18776.409999999996,
             "DIC": 21356.79,
-            "ENE": 0.0
+            "ENE": 18073.62
           },
           "budget_2026_monthly": {
             "FEB": 13000.0,
@@ -45521,13 +45527,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 69547.92000000001,
           "profit_2026_ytd": -576.99,
           "deviation_pct": -67.03890047393364,
-          "growth_pct": -68.86335582834747,
+          "growth_pct": -71.19419754678225,
           "margin_pct": -0.8296294123533816
         },
         {
           "id": 25404,
           "name": "HNOS. ORTA GLEZ. DE LA REDONDA",
-          "sales_2025": 1430.28,
+          "sales_2025": 2081.88,
           "budget_2026": 12000.0,
           "sales_2026": 3473.83,
           "profit_2026": -746.2700000000001,
@@ -45543,7 +45549,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 1430.28,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 651.6
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -45592,7 +45598,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 3473.83,
           "profit_2026_ytd": -746.2700000000001,
           "deviation_pct": -71.05141666666667,
-          "growth_pct": 142.87761836843137,
+          "growth_pct": 66.86024170461312,
           "margin_pct": -21.482628683614344
         },
         {
@@ -45754,7 +45760,7 @@ const DASHBOARD_DATA = {
         "OCT": 81466.06,
         "NOV": 131126.4,
         "DIC": 3919.6,
-        "ENE": 0.0
+        "ENE": 12494.68
       },
       "budget_2026_monthly": {
         "FEB": 46000.0,
@@ -45798,7 +45804,7 @@ const DASHBOARD_DATA = {
         "DIC": 0.0,
         "ENE": 0.0
       },
-      "total_sales_2025": 538503.7,
+      "total_sales_2025": 550998.38,
       "total_budget_2026": 552000.0,
       "sales_2025_ytd": 63877.91,
       "budget_2026_ytd": 184000.0,
@@ -46171,7 +46177,7 @@ const DASHBOARD_DATA = {
         {
           "id": 23414,
           "name": "GESTORA ANDALUZA DE PALETS,SLU",
-          "sales_2025": 49747.0,
+          "sales_2025": 56254.0,
           "budget_2026": 60000.0,
           "sales_2026": 16807.0,
           "profit_2026": 16807.0,
@@ -46187,7 +46193,7 @@ const DASHBOARD_DATA = {
             "OCT": 3976.0,
             "NOV": 6814.0,
             "DIC": 3142.0,
-            "ENE": 0.0
+            "ENE": 6507.0
           },
           "budget_2026_monthly": {
             "FEB": 5000.0,
@@ -46236,7 +46242,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 16807.0,
           "profit_2026_ytd": 16807.0,
           "deviation_pct": -71.98833333333333,
-          "growth_pct": -66.21504814360665,
+          "growth_pct": -70.12301347459736,
           "margin_pct": 100.0
         },
         {
@@ -46313,7 +46319,7 @@ const DASHBOARD_DATA = {
         {
           "id": 24261,
           "name": "DISTRIBUIDORES AUTOMATICOS VEN",
-          "sales_2025": 4134.24,
+          "sales_2025": 4507.92,
           "budget_2026": 0.0,
           "sales_2026": 2449.44,
           "profit_2026": 141.54999999999998,
@@ -46329,7 +46335,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 0.0,
             "DIC": 777.6,
-            "ENE": 0.0
+            "ENE": 373.68
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -46378,7 +46384,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2449.44,
           "profit_2026_ytd": 141.54999999999998,
           "deviation_pct": 0.0,
-          "growth_pct": -40.75235109717868,
+          "growth_pct": -45.66363200766651,
           "margin_pct": 5.778871905415114
         },
         {
@@ -46952,7 +46958,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25324,
           "name": "CRISMAR TRADERS, S.L.",
-          "sales_2025": 24544.0,
+          "sales_2025": 29218.0,
           "budget_2026": 0.0,
           "sales_2026": 0.0,
           "profit_2026": 0.0,
@@ -46968,7 +46974,7 @@ const DASHBOARD_DATA = {
             "OCT": 22800.0,
             "NOV": 0.0,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 4674.0
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -47084,6 +47090,77 @@ const DASHBOARD_DATA = {
             "ENE": 0.0
           },
           "sales_2025_ytd": 1111.26,
+          "budget_2026_ytd": 0.0,
+          "sales_2026_ytd": 0.0,
+          "profit_2026_ytd": 0.0,
+          "deviation_pct": 0.0,
+          "growth_pct": -100.0,
+          "margin_pct": 0.0
+        },
+        {
+          "id": 25430,
+          "name": "EXPLOGADES, S.L.",
+          "sales_2025": 940.0,
+          "budget_2026": 0.0,
+          "sales_2026": 0.0,
+          "profit_2026": 0.0,
+          "sales_2025_monthly": {
+            "FEB": 0.0,
+            "MAR": 0.0,
+            "ABR": 0.0,
+            "MAY": 0.0,
+            "JUN": 0.0,
+            "JUL": 0.0,
+            "AGO": 0.0,
+            "SEP": 0.0,
+            "OCT": 0.0,
+            "NOV": 0.0,
+            "DIC": 0.0,
+            "ENE": 940.0
+          },
+          "budget_2026_monthly": {
+            "FEB": 0.0,
+            "MAR": 0.0,
+            "ABR": 0.0,
+            "MAY": 0.0,
+            "JUN": 0.0,
+            "JUL": 0.0,
+            "AGO": 0.0,
+            "SEP": 0.0,
+            "OCT": 0.0,
+            "NOV": 0.0,
+            "DIC": 0.0,
+            "ENE": 0.0
+          },
+          "sales_2026_monthly": {
+            "FEB": 0.0,
+            "MAR": 0.0,
+            "ABR": 0.0,
+            "MAY": 0.0,
+            "JUN": 0.0,
+            "JUL": 0.0,
+            "AGO": 0.0,
+            "SEP": 0.0,
+            "OCT": 0.0,
+            "NOV": 0.0,
+            "DIC": 0.0,
+            "ENE": 0.0
+          },
+          "profit_2026_monthly": {
+            "FEB": 0.0,
+            "MAR": 0.0,
+            "ABR": 0.0,
+            "MAY": 0.0,
+            "JUN": 0.0,
+            "JUL": 0.0,
+            "AGO": 0.0,
+            "SEP": 0.0,
+            "OCT": 0.0,
+            "NOV": 0.0,
+            "DIC": 0.0,
+            "ENE": 0.0
+          },
+          "sales_2025_ytd": 0.0,
           "budget_2026_ytd": 0.0,
           "sales_2026_ytd": 0.0,
           "profit_2026_ytd": 0.0,
@@ -47255,7 +47332,7 @@ const DASHBOARD_DATA = {
         "OCT": 172605.54999999996,
         "NOV": 156152.46999999994,
         "DIC": 167960.6299999998,
-        "ENE": 0.0
+        "ENE": 143196.93999999992
       },
       "budget_2026_monthly": {
         "FEB": 153950.0,
@@ -47299,7 +47376,7 @@ const DASHBOARD_DATA = {
         "DIC": 0.0,
         "ENE": 0.0
       },
-      "total_sales_2025": 1751876.1999999997,
+      "total_sales_2025": 1895073.1399999997,
       "total_budget_2026": 2076655.0,
       "sales_2025_ytd": 580201.7600000001,
       "budget_2026_ytd": 662400.0,
@@ -47388,7 +47465,7 @@ const DASHBOARD_DATA = {
         {
           "id": 1809,
           "name": "SUPERMERCADOS CASA PEDRO S.L.",
-          "sales_2025": 27556.98,
+          "sales_2025": 28630.26,
           "budget_2026": 33500.0,
           "sales_2026": 7082.45,
           "profit_2026": -431.0,
@@ -47404,7 +47481,7 @@ const DASHBOARD_DATA = {
             "OCT": 2350.99,
             "NOV": 3771.46,
             "DIC": 1460.24,
-            "ENE": 0.0
+            "ENE": 1073.28
           },
           "budget_2026_monthly": {
             "FEB": 2500.0,
@@ -47453,13 +47530,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 7082.45,
           "profit_2026_ytd": -431.0,
           "deviation_pct": -78.85835820895522,
-          "growth_pct": -74.29888906549266,
+          "growth_pct": -75.26236226985014,
           "margin_pct": -6.085464775607311
         },
         {
           "id": 1902,
           "name": "CANTARERO CUESTA, FRANCISCO",
-          "sales_2025": 39170.520000000004,
+          "sales_2025": 41758.950000000004,
           "budget_2026": 46780.0,
           "sales_2026": 12522.609999999999,
           "profit_2026": -1.4799999999999986,
@@ -47475,7 +47552,7 @@ const DASHBOARD_DATA = {
             "OCT": 3962.25,
             "NOV": 3642.3199999999997,
             "DIC": 2876.51,
-            "ENE": 0.0
+            "ENE": 2588.4300000000003
           },
           "budget_2026_monthly": {
             "FEB": 3100.0,
@@ -47524,13 +47601,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 12522.609999999999,
           "profit_2026_ytd": -1.4799999999999986,
           "deviation_pct": -73.23084651560495,
-          "growth_pct": -68.03052397568375,
+          "growth_pct": -70.012153083351,
           "margin_pct": -0.011818622475666006
         },
         {
           "id": 2198,
           "name": "HERMANOS MORILLO, S.L.",
-          "sales_2025": 23182.19,
+          "sales_2025": 26640.05,
           "budget_2026": 32000.0,
           "sales_2026": 4338.98,
           "profit_2026": -411.23,
@@ -47546,7 +47623,7 @@ const DASHBOARD_DATA = {
             "OCT": 3021.24,
             "NOV": 1668.0,
             "DIC": 2473.08,
-            "ENE": 0.0
+            "ENE": 3457.8600000000006
           },
           "budget_2026_monthly": {
             "FEB": 3000.0,
@@ -47595,13 +47672,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 4338.98,
           "profit_2026_ytd": -411.23,
           "deviation_pct": -86.4406875,
-          "growth_pct": -81.28313157643863,
+          "growth_pct": -83.71256810704185,
           "margin_pct": -9.477573070168566
         },
         {
           "id": 3174,
           "name": "ZALEAS SUPERMERCADOS S.L.",
-          "sales_2025": 26237.72,
+          "sales_2025": 29550.79,
           "budget_2026": 34000.0,
           "sales_2026": 7930.200000000001,
           "profit_2026": -607.71,
@@ -47617,7 +47694,7 @@ const DASHBOARD_DATA = {
             "OCT": 3003.51,
             "NOV": 2360.03,
             "DIC": 2996.1400000000003,
-            "ENE": 0.0
+            "ENE": 3313.0699999999997
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -47666,7 +47743,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 7930.200000000001,
           "profit_2026_ytd": -607.71,
           "deviation_pct": -76.67588235294117,
-          "growth_pct": -69.77557501185316,
+          "growth_pct": -73.1641692151039,
           "margin_pct": -7.663236740561398
         },
         {
@@ -47743,7 +47820,7 @@ const DASHBOARD_DATA = {
         {
           "id": 3637,
           "name": "VALLE PEREZ, ISABEL",
-          "sales_2025": 3964.02,
+          "sales_2025": 4389.4,
           "budget_2026": 7425.0,
           "sales_2026": 2244.4900000000002,
           "profit_2026": -20.79,
@@ -47759,7 +47836,7 @@ const DASHBOARD_DATA = {
             "OCT": 110.35,
             "NOV": 278.07,
             "DIC": 545.52,
-            "ENE": 0.0
+            "ENE": 425.38
           },
           "budget_2026_monthly": {
             "FEB": 600.0,
@@ -47808,13 +47885,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2244.4900000000002,
           "profit_2026_ytd": -20.79,
           "deviation_pct": -69.77117845117846,
-          "growth_pct": -43.378439059338746,
+          "growth_pct": -48.86567640224175,
           "margin_pct": -0.9262683282171005
         },
         {
           "id": 3647,
           "name": "SUPERMERCADO MARTAVI, S.L. 8",
-          "sales_2025": 34602.12,
+          "sales_2025": 37616.91,
           "budget_2026": 38850.0,
           "sales_2026": 12962.52,
           "profit_2026": -119.25000000000001,
@@ -47830,7 +47907,7 @@ const DASHBOARD_DATA = {
             "OCT": 4086.1899999999996,
             "NOV": 1783.49,
             "DIC": 3927.9799999999996,
-            "ENE": 0.0
+            "ENE": 3014.79
           },
           "budget_2026_monthly": {
             "FEB": 2750.0,
@@ -47879,13 +47956,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 12962.52,
           "profit_2026_ytd": -119.25000000000001,
           "deviation_pct": -66.63444015444016,
-          "growth_pct": -62.53836470135356,
+          "growth_pct": -65.540710281626,
           "margin_pct": -0.9199600077762657
         },
         {
           "id": 3740,
           "name": "LUIS ALVAREZ S. L. 7",
-          "sales_2025": 38733.46,
+          "sales_2025": 42157.659999999996,
           "budget_2026": 40000.0,
           "sales_2026": 9791.64,
           "profit_2026": -2062.02,
@@ -47901,7 +47978,7 @@ const DASHBOARD_DATA = {
             "OCT": 3532.3799999999997,
             "NOV": 2789.04,
             "DIC": 4585.98,
-            "ENE": 0.0
+            "ENE": 3424.2
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -47950,7 +48027,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 9791.64,
           "profit_2026_ytd": -2062.02,
           "deviation_pct": -75.5209,
-          "growth_pct": -74.7204613272349,
+          "growth_pct": -76.77375831580785,
           "margin_pct": -21.05898501170386
         },
         {
@@ -48027,7 +48104,7 @@ const DASHBOARD_DATA = {
         {
           "id": 4053,
           "name": "HERMANOS MORILLO, S.L.",
-          "sales_2025": 27907.15,
+          "sales_2025": 30012.43,
           "budget_2026": 23000.0,
           "sales_2026": 14245.19,
           "profit_2026": -727.18,
@@ -48043,7 +48120,7 @@ const DASHBOARD_DATA = {
             "OCT": 3550.05,
             "NOV": 859.68,
             "DIC": 7125.120000000001,
-            "ENE": 0.0
+            "ENE": 2105.28
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -48092,7 +48169,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 14245.19,
           "profit_2026_ytd": -727.18,
           "deviation_pct": -38.06439130434782,
-          "growth_pct": -48.955052737380925,
+          "growth_pct": -52.53569937522553,
           "margin_pct": -5.104740617710258
         },
         {
@@ -48169,7 +48246,7 @@ const DASHBOARD_DATA = {
         {
           "id": 4589,
           "name": "COOP. OBRERO S.LEONARDO 7",
-          "sales_2025": 4372.66,
+          "sales_2025": 4740.24,
           "budget_2026": 6000.0,
           "sales_2026": 1679.8,
           "profit_2026": 28.55,
@@ -48185,7 +48262,7 @@ const DASHBOARD_DATA = {
             "OCT": 314.44,
             "NOV": 324.87,
             "DIC": 388.82000000000005,
-            "ENE": 0.0
+            "ENE": 367.58
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -48234,13 +48311,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1679.8,
           "profit_2026_ytd": 28.55,
           "deviation_pct": -72.00333333333333,
-          "growth_pct": -61.584024369605686,
+          "growth_pct": -64.56297571430983,
           "margin_pct": 1.6996070960828673
         },
         {
           "id": 6177,
           "name": "DISTRIBUC. BEBIDAS MAHIA S.L.",
-          "sales_2025": 51401.85,
+          "sales_2025": 55720.950000000004,
           "budget_2026": 56000.0,
           "sales_2026": 16907.65,
           "profit_2026": -1103.19,
@@ -48256,7 +48333,7 @@ const DASHBOARD_DATA = {
             "OCT": 5363.19,
             "NOV": 6338.330000000002,
             "DIC": 6655.49,
-            "ENE": 0.0
+            "ENE": 4319.1
           },
           "budget_2026_monthly": {
             "FEB": 3000.0,
@@ -48305,13 +48382,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 16907.65,
           "profit_2026_ytd": -1103.19,
           "deviation_pct": -69.80776785714285,
-          "growth_pct": -67.10692319439863,
+          "growth_pct": -69.65656543903145,
           "margin_pct": -6.5247979464916765
         },
         {
           "id": 7429,
           "name": "OLIVA FERNANDEZ, MANUEL",
-          "sales_2025": 73865.31,
+          "sales_2025": 83499.06,
           "budget_2026": 82000.0,
           "sales_2026": 23803.010000000002,
           "profit_2026": -3493.37,
@@ -48327,7 +48404,7 @@ const DASHBOARD_DATA = {
             "OCT": 5593.34,
             "NOV": 9865.47,
             "DIC": 3790.11,
-            "ENE": 0.0
+            "ENE": 9633.75
           },
           "budget_2026_monthly": {
             "FEB": 4000.0,
@@ -48376,13 +48453,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 23803.010000000002,
           "profit_2026_ytd": -3493.37,
           "deviation_pct": -70.97193902439024,
-          "growth_pct": -67.77511662781893,
+          "growth_pct": -71.4930802813828,
           "margin_pct": -14.676169106344112
         },
         {
           "id": 19048,
           "name": "ALIMENTACION PEYMA, S.L.",
-          "sales_2025": 57983.22,
+          "sales_2025": 63169.7,
           "budget_2026": 60000.0,
           "sales_2026": 36672.65,
           "profit_2026": -7066.879999999999,
@@ -48398,7 +48475,7 @@ const DASHBOARD_DATA = {
             "OCT": 5371.360000000001,
             "NOV": 6600.160000000001,
             "DIC": 8038.01,
-            "ENE": 0.0
+            "ENE": 5186.48
           },
           "budget_2026_monthly": {
             "FEB": 9000.0,
@@ -48447,13 +48524,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 36672.65,
           "profit_2026_ytd": -7066.879999999999,
           "deviation_pct": -38.87891666666666,
-          "growth_pct": -36.75299509064864,
+          "growth_pct": -41.94582212674747,
           "margin_pct": -19.270164550421086
         },
         {
           "id": 19468,
           "name": "HERMANOS AROCA MORILLO, S.L.",
-          "sales_2025": 22332.88,
+          "sales_2025": 23594.56,
           "budget_2026": 36000.0,
           "sales_2026": 10185.84,
           "profit_2026": -2175.1800000000003,
@@ -48469,7 +48546,7 @@ const DASHBOARD_DATA = {
             "OCT": 3348.9199999999996,
             "NOV": 2221.92,
             "DIC": 1233.48,
-            "ENE": 0.0
+            "ENE": 1261.68
           },
           "budget_2026_monthly": {
             "FEB": 3000.0,
@@ -48518,13 +48595,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 10185.84,
           "profit_2026_ytd": -2175.1800000000003,
           "deviation_pct": -71.706,
-          "growth_pct": -54.390835396061775,
+          "growth_pct": -56.829709899231005,
           "margin_pct": -21.354939798779483
         },
         {
           "id": 19922,
           "name": "VENTAS Y PLAT.DEL ALJARAFE,SL",
-          "sales_2025": 39415.56,
+          "sales_2025": 41430.75,
           "budget_2026": 46000.0,
           "sales_2026": 6178.08,
           "profit_2026": 49.83,
@@ -48540,7 +48617,7 @@ const DASHBOARD_DATA = {
             "OCT": 2559.54,
             "NOV": 4622.22,
             "DIC": 341.04,
-            "ENE": 0.0
+            "ENE": 2015.19
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -48589,7 +48666,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 6178.08,
           "profit_2026_ytd": 49.83,
           "deviation_pct": -86.56939130434782,
-          "growth_pct": -84.32578403046918,
+          "growth_pct": -85.0881772596441,
           "margin_pct": 0.8065612617512238
         },
         {
@@ -48808,7 +48885,7 @@ const DASHBOARD_DATA = {
         {
           "id": 22507,
           "name": "MORENO ZAMORA, LEONARDO",
-          "sales_2025": 35888.229999999996,
+          "sales_2025": 36770.95,
           "budget_2026": 49000.0,
           "sales_2026": 11767.67,
           "profit_2026": -585.72,
@@ -48824,7 +48901,7 @@ const DASHBOARD_DATA = {
             "OCT": 2596.62,
             "NOV": 3151.54,
             "DIC": 1965.88,
-            "ENE": 0.0
+            "ENE": 882.72
           },
           "budget_2026_monthly": {
             "FEB": 6000.0,
@@ -48873,13 +48950,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 11767.67,
           "profit_2026_ytd": -585.72,
           "deviation_pct": -75.98434693877552,
-          "growth_pct": -67.21022463353584,
+          "growth_pct": -67.99737292618222,
           "margin_pct": -4.97736595264823
         },
         {
           "id": 22594,
           "name": "COSAS Y QUESOS, S.L.U.",
-          "sales_2025": 19260.45,
+          "sales_2025": 21071.19,
           "budget_2026": 23000.0,
           "sales_2026": 4041.53,
           "profit_2026": -331.53000000000003,
@@ -48895,7 +48972,7 @@ const DASHBOARD_DATA = {
             "OCT": 658.76,
             "NOV": 2680.23,
             "DIC": 1475.94,
-            "ENE": 0.0
+            "ENE": 1810.74
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -48944,7 +49021,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 4041.53,
           "profit_2026_ytd": -331.53000000000003,
           "deviation_pct": -82.42813043478262,
-          "growth_pct": -79.01643004187336,
+          "growth_pct": -80.81964046643783,
           "margin_pct": -8.203081506261244
         },
         {
@@ -49163,7 +49240,7 @@ const DASHBOARD_DATA = {
         {
           "id": 23098,
           "name": "BEBIDAS LA FUENTE, S.L.",
-          "sales_2025": 9544.38,
+          "sales_2025": 11514.66,
           "budget_2026": 12000.0,
           "sales_2026": 4738.799999999999,
           "profit_2026": -578.29,
@@ -49179,7 +49256,7 @@ const DASHBOARD_DATA = {
             "OCT": 1593.3600000000001,
             "NOV": -115.2,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 1970.28
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -49228,13 +49305,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 4738.799999999999,
           "profit_2026_ytd": -578.29,
           "deviation_pct": -60.510000000000005,
-          "growth_pct": -50.34983938191899,
+          "growth_pct": -58.845506510830546,
           "margin_pct": -12.203300413606822
         },
         {
           "id": 23255,
           "name": "VILLANUEVA Y ALMENSILLA, S.L.",
-          "sales_2025": 136251.46,
+          "sales_2025": 156260.2,
           "budget_2026": 143000.0,
           "sales_2026": 49630.84,
           "profit_2026": -4913.32,
@@ -49250,7 +49327,7 @@ const DASHBOARD_DATA = {
             "OCT": 3617.2200000000003,
             "NOV": 9467.7,
             "DIC": 11110.8,
-            "ENE": 0.0
+            "ENE": 20008.739999999998
           },
           "budget_2026_monthly": {
             "FEB": 5000.0,
@@ -49299,13 +49376,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 49630.84,
           "profit_2026_ytd": -4913.32,
           "deviation_pct": -65.29311888111889,
-          "growth_pct": -63.57408573823723,
+          "growth_pct": -68.2383358014389,
           "margin_pct": -9.899731699080652
         },
         {
           "id": 23473,
           "name": "CANO MONTALBAN, MANUEL ANGEL",
-          "sales_2025": 7170.27,
+          "sales_2025": 7696.59,
           "budget_2026": 12000.0,
           "sales_2026": 2012.88,
           "profit_2026": -72.96000000000001,
@@ -49321,7 +49398,7 @@ const DASHBOARD_DATA = {
             "OCT": 474.24,
             "NOV": 1097.46,
             "DIC": 400.23,
-            "ENE": 0.0
+            "ENE": 526.32
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -49370,13 +49447,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2012.88,
           "profit_2026_ytd": -72.96000000000001,
           "deviation_pct": -83.22599999999998,
-          "growth_pct": -71.927416959194,
+          "growth_pct": -73.84711930868086,
           "margin_pct": -3.6246572075831645
         },
         {
           "id": 23474,
           "name": "MUÑOZ ROLDAN E HIJOS, S.L.",
-          "sales_2025": 1924.56,
+          "sales_2025": 2768.04,
           "budget_2026": 0.0,
           "sales_2026": 499.42999999999995,
           "profit_2026": -20.740000000000002,
@@ -49392,7 +49469,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 0.0,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 843.48
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -49441,13 +49518,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 499.42999999999995,
           "profit_2026_ytd": -20.740000000000002,
           "deviation_pct": 0.0,
-          "growth_pct": -74.04965290767761,
+          "growth_pct": -81.95726940362134,
           "margin_pct": -4.152734116893259
         },
         {
           "id": 23552,
           "name": "CARN. Y ELABORADOS SERRANO S.L",
-          "sales_2025": 10090.42,
+          "sales_2025": 10515.24,
           "budget_2026": 12000.0,
           "sales_2026": 794.67,
           "profit_2026": -89.64,
@@ -49463,7 +49540,7 @@ const DASHBOARD_DATA = {
             "OCT": 309.28,
             "NOV": 538.69,
             "DIC": 321.92,
-            "ENE": 0.0
+            "ENE": 424.82
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -49512,13 +49589,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 794.67,
           "profit_2026_ytd": -89.64,
           "deviation_pct": -93.37775,
-          "growth_pct": -92.12451017896183,
+          "growth_pct": -92.44268319125383,
           "margin_pct": -11.280154026199556
         },
         {
           "id": 23576,
           "name": "PRONUN 2015, S.L.",
-          "sales_2025": 51863.28,
+          "sales_2025": 56616.1,
           "budget_2026": 58000.0,
           "sales_2026": 27687.010000000002,
           "profit_2026": -1203.1599999999999,
@@ -49534,7 +49611,7 @@ const DASHBOARD_DATA = {
             "OCT": 6704.92,
             "NOV": 4273.19,
             "DIC": 5869.48,
-            "ENE": 0.0
+            "ENE": 4752.82
           },
           "budget_2026_monthly": {
             "FEB": 3500.0,
@@ -49583,7 +49660,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 27687.010000000002,
           "profit_2026_ytd": -1203.1599999999999,
           "deviation_pct": -52.26377586206896,
-          "growth_pct": -46.61538953957404,
+          "growth_pct": -51.09693179148687,
           "margin_pct": -4.345575777232716
         },
         {
@@ -49660,7 +49737,7 @@ const DASHBOARD_DATA = {
         {
           "id": 23802,
           "name": "ECO MARTIN, S.L.",
-          "sales_2025": 23159.879999999997,
+          "sales_2025": 24441.6,
           "budget_2026": 30000.0,
           "sales_2026": 8237.61,
           "profit_2026": -807.02,
@@ -49676,7 +49753,7 @@ const DASHBOARD_DATA = {
             "OCT": 2203.99,
             "NOV": 1082.49,
             "DIC": 1124.09,
-            "ENE": 0.0
+            "ENE": 1281.72
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -49725,7 +49802,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 8237.61,
           "profit_2026_ytd": -807.02,
           "deviation_pct": -72.54129999999999,
-          "growth_pct": -64.43155145881583,
+          "growth_pct": -66.29676453260015,
           "margin_pct": -9.79677357874432
         },
         {
@@ -49802,7 +49879,7 @@ const DASHBOARD_DATA = {
         {
           "id": 23841,
           "name": "CASH LA DEHESA DE HERRERA, S.L",
-          "sales_2025": 12620.53,
+          "sales_2025": 14866.21,
           "budget_2026": 18000.0,
           "sales_2026": 4555.56,
           "profit_2026": -798.47,
@@ -49818,7 +49895,7 @@ const DASHBOARD_DATA = {
             "OCT": -153.24,
             "NOV": 0.0,
             "DIC": 745.6800000000001,
-            "ENE": 0.0
+            "ENE": 2245.68
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -49867,13 +49944,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 4555.56,
           "profit_2026_ytd": -798.47,
           "deviation_pct": -74.69133333333332,
-          "growth_pct": -63.90357615726122,
+          "growth_pct": -69.356278432768,
           "margin_pct": -17.5273731440262
         },
         {
           "id": 23847,
           "name": "INPEISA SUPER ISABEL, S.L.",
-          "sales_2025": 7313.57,
+          "sales_2025": 8536.369999999999,
           "budget_2026": 18000.0,
           "sales_2026": 1736.82,
           "profit_2026": -506.81,
@@ -49889,7 +49966,7 @@ const DASHBOARD_DATA = {
             "OCT": 300.36,
             "NOV": 0.0,
             "DIC": 305.28,
-            "ENE": 0.0
+            "ENE": 1222.8
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -49938,13 +50015,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1736.82,
           "profit_2026_ytd": -506.81,
           "deviation_pct": -90.351,
-          "growth_pct": -76.252090292429,
+          "growth_pct": -79.65388098219735,
           "margin_pct": -29.180341083128937
         },
         {
           "id": 24060,
           "name": "BEBIDAS HIDALJIM, S.L.",
-          "sales_2025": 102522.31,
+          "sales_2025": 107266.93,
           "budget_2026": 109000.0,
           "sales_2026": 25196.74,
           "profit_2026": -1861.8500000000001,
@@ -49960,7 +50037,7 @@ const DASHBOARD_DATA = {
             "OCT": 11422.559999999998,
             "NOV": 4973.969999999999,
             "DIC": 9782.18,
-            "ENE": 0.0
+            "ENE": 4744.62
           },
           "budget_2026_monthly": {
             "FEB": 10000.0,
@@ -50009,13 +50086,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 25196.74,
           "profit_2026_ytd": -1861.8500000000001,
           "deviation_pct": -76.88372477064219,
-          "growth_pct": -75.42316399230566,
+          "growth_pct": -76.51024411717572,
           "margin_pct": -7.389249561649643
         },
         {
           "id": 24082,
           "name": "CASH DISTRIBUIDORA LINANTON, S",
-          "sales_2025": 706.56,
+          "sales_2025": 785.04,
           "budget_2026": 0.0,
           "sales_2026": 222.36,
           "profit_2026": 19.21,
@@ -50031,7 +50108,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 0.0,
             "DIC": 156.96,
-            "ENE": 0.0
+            "ENE": 78.48
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -50080,13 +50157,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 222.36,
           "profit_2026_ytd": 19.21,
           "deviation_pct": 0.0,
-          "growth_pct": -68.52921195652173,
+          "growth_pct": -71.67532864567411,
           "margin_pct": 8.63914373088685
         },
         {
           "id": 24171,
           "name": "SANTOS PEREZ, JOSE",
-          "sales_2025": 143970.86,
+          "sales_2025": 153714.66,
           "budget_2026": 156000.0,
           "sales_2026": 47875.020000000004,
           "profit_2026": -6704.59,
@@ -50102,7 +50179,7 @@ const DASHBOARD_DATA = {
             "OCT": 13906.14,
             "NOV": 11032.7,
             "DIC": 22680.56,
-            "ENE": 0.0
+            "ENE": 9743.800000000001
           },
           "budget_2026_monthly": {
             "FEB": 10000.0,
@@ -50151,13 +50228,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 47875.020000000004,
           "profit_2026_ytd": -6704.59,
           "deviation_pct": -69.31088461538462,
-          "growth_pct": -66.74672916449897,
+          "growth_pct": -68.85461672946484,
           "margin_pct": -14.004359684862793
         },
         {
           "id": 24305,
           "name": "CASH MOYANO, S.L.",
-          "sales_2025": 13275.7,
+          "sales_2025": 14162.47,
           "budget_2026": 18000.0,
           "sales_2026": 6462.8,
           "profit_2026": -727.47,
@@ -50173,7 +50250,7 @@ const DASHBOARD_DATA = {
             "OCT": 1632.4299999999998,
             "NOV": 416.02,
             "DIC": 560.1700000000001,
-            "ENE": 0.0
+            "ENE": 886.77
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -50222,7 +50299,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 6462.8,
           "profit_2026_ytd": -727.47,
           "deviation_pct": -64.09555555555556,
-          "growth_pct": -51.31857453844242,
+          "growth_pct": -54.36671710513773,
           "margin_pct": -11.256266633657239
         },
         {
@@ -50441,7 +50518,7 @@ const DASHBOARD_DATA = {
         {
           "id": 24444,
           "name": "RABASCO SANCHEZ, MANUEL",
-          "sales_2025": 12392.8,
+          "sales_2025": 13508.26,
           "budget_2026": 18000.0,
           "sales_2026": 10252.4,
           "profit_2026": -1420.78,
@@ -50457,7 +50534,7 @@ const DASHBOARD_DATA = {
             "OCT": 1223.8400000000001,
             "NOV": 858.71,
             "DIC": 832.93,
-            "ENE": 0.0
+            "ENE": 1115.46
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -50506,13 +50583,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 10252.4,
           "profit_2026_ytd": -1420.78,
           "deviation_pct": -43.04222222222223,
-          "growth_pct": -17.271318830288553,
+          "growth_pct": -24.102734178939407,
           "margin_pct": -13.858023487183488
         },
         {
           "id": 24565,
           "name": "ALIMENTACION NIAN NIAN 2018, S",
-          "sales_2025": 20757.73,
+          "sales_2025": 22661.190000000002,
           "budget_2026": 24000.0,
           "sales_2026": 5550.610000000001,
           "profit_2026": -483.6,
@@ -50528,7 +50605,7 @@ const DASHBOARD_DATA = {
             "OCT": 2283.02,
             "NOV": 1280.2200000000003,
             "DIC": 1583.8,
-            "ENE": 0.0
+            "ENE": 1903.46
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -50577,13 +50654,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 5550.610000000001,
           "profit_2026_ytd": -483.6,
           "deviation_pct": -76.87245833333333,
-          "growth_pct": -73.26003373201212,
+          "growth_pct": -75.50609654656265,
           "margin_pct": -8.71255591727756
         },
         {
           "id": 24656,
           "name": "SUCESORES DE JUAN GARCIA MONTE",
-          "sales_2025": 31058.88,
+          "sales_2025": 32761.739999999998,
           "budget_2026": 36000.0,
           "sales_2026": 13588.25,
           "profit_2026": -2349.3,
@@ -50599,7 +50676,7 @@ const DASHBOARD_DATA = {
             "OCT": -989.6600000000001,
             "NOV": 1551.58,
             "DIC": 3402.94,
-            "ENE": 0.0
+            "ENE": 1702.86
           },
           "budget_2026_monthly": {
             "FEB": 3000.0,
@@ -50648,7 +50725,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 13588.25,
           "profit_2026_ytd": -2349.3,
           "deviation_pct": -62.25486111111111,
-          "growth_pct": -56.25003219691116,
+          "growth_pct": -58.52402833304946,
           "margin_pct": -17.28920206796313
         },
         {
@@ -50796,7 +50873,7 @@ const DASHBOARD_DATA = {
         {
           "id": 24684,
           "name": "JOAQUIN MOLINA BRAVO, S.L.",
-          "sales_2025": 40909.87,
+          "sales_2025": 43233.43,
           "budget_2026": 40000.0,
           "sales_2026": 17470.809999999998,
           "profit_2026": -3636.71,
@@ -50812,7 +50889,7 @@ const DASHBOARD_DATA = {
             "OCT": 4441.5,
             "NOV": 4942.26,
             "DIC": 8874.48,
-            "ENE": 0.0
+            "ENE": 2323.56
           },
           "budget_2026_monthly": {
             "FEB": 3000.0,
@@ -50861,7 +50938,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 17470.809999999998,
           "profit_2026_ytd": -3636.71,
           "deviation_pct": -56.32297500000001,
-          "growth_pct": -57.29438886019438,
+          "growth_pct": -59.58958148821411,
           "margin_pct": -20.81592095615487
         },
         {
@@ -50938,7 +51015,7 @@ const DASHBOARD_DATA = {
         {
           "id": 24717,
           "name": "PEINADO CALVO, S.L.",
-          "sales_2025": 19706.11,
+          "sales_2025": 20852.74,
           "budget_2026": 24000.0,
           "sales_2026": 2547.5600000000004,
           "profit_2026": -264.59000000000003,
@@ -50954,7 +51031,7 @@ const DASHBOARD_DATA = {
             "OCT": 3581.42,
             "NOV": 3454.59,
             "DIC": 1258.8600000000001,
-            "ENE": 0.0
+            "ENE": 1146.63
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -51003,13 +51080,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2547.5600000000004,
           "profit_2026_ytd": -264.59000000000003,
           "deviation_pct": -89.38516666666666,
-          "growth_pct": -87.072232926742,
+          "growth_pct": -87.78309229386642,
           "margin_pct": -10.386016423558228
         },
         {
           "id": 24719,
           "name": "ECO CASHTIBLANCO, S.L.",
-          "sales_2025": 7344.38,
+          "sales_2025": 8552.46,
           "budget_2026": 12000.0,
           "sales_2026": 5670.95,
           "profit_2026": -891.9200000000001,
@@ -51025,7 +51102,7 @@ const DASHBOARD_DATA = {
             "OCT": 732.33,
             "NOV": 728.16,
             "DIC": 342.72,
-            "ENE": 0.0
+            "ENE": 1208.08
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -51074,7 +51151,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 5670.95,
           "profit_2026_ytd": -891.9200000000001,
           "deviation_pct": -52.74208333333333,
-          "growth_pct": -22.785177237561243,
+          "growth_pct": -33.69217745537541,
           "margin_pct": -15.727876281751737
         },
         {
@@ -51151,7 +51228,7 @@ const DASHBOARD_DATA = {
         {
           "id": 24761,
           "name": "MONTAÑEZ LEAL, JUANA",
-          "sales_2025": 10478.38,
+          "sales_2025": 11369.96,
           "budget_2026": 14000.0,
           "sales_2026": 3764.52,
           "profit_2026": -547.91,
@@ -51167,7 +51244,7 @@ const DASHBOARD_DATA = {
             "OCT": 1107.62,
             "NOV": 637.16,
             "DIC": 582.5,
-            "ENE": 0.0
+            "ENE": 891.58
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -51216,13 +51293,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 3764.52,
           "profit_2026_ytd": -547.91,
           "deviation_pct": -73.11057142857142,
-          "growth_pct": -64.073454102638,
+          "growth_pct": -66.89064869181597,
           "margin_pct": -14.554578007289109
         },
         {
           "id": 24781,
           "name": "HNOS. SIANES E HIJOS, S.L.",
-          "sales_2025": 28848.13,
+          "sales_2025": 29545.21,
           "budget_2026": 36000.0,
           "sales_2026": 9545.96,
           "profit_2026": -1101.46,
@@ -51238,7 +51315,7 @@ const DASHBOARD_DATA = {
             "OCT": 3879.6,
             "NOV": 3316.2,
             "DIC": 3402.96,
-            "ENE": 0.0
+            "ENE": 697.08
           },
           "budget_2026_monthly": {
             "FEB": 3000.0,
@@ -51287,13 +51364,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 9545.96,
           "profit_2026_ytd": -1101.46,
           "deviation_pct": -73.48344444444444,
-          "growth_pct": -66.90960557928712,
+          "growth_pct": -67.69032949841954,
           "margin_pct": -11.538493771186975
         },
         {
           "id": 24796,
           "name": "BARRADA ORTIZ, DIEGO",
-          "sales_2025": 9486.279999999999,
+          "sales_2025": 10110.199999999999,
           "budget_2026": 12000.0,
           "sales_2026": 3478.9500000000003,
           "profit_2026": -203.42999999999998,
@@ -51309,7 +51386,7 @@ const DASHBOARD_DATA = {
             "OCT": 568.64,
             "NOV": 540.06,
             "DIC": 696.01,
-            "ENE": 0.0
+            "ENE": 623.92
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -51358,13 +51435,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 3478.9500000000003,
           "profit_2026_ytd": -203.42999999999998,
           "deviation_pct": -71.00874999999999,
-          "growth_pct": -63.32650944311151,
+          "growth_pct": -65.58970148958477,
           "margin_pct": -5.847453973181562
         },
         {
           "id": 24800,
           "name": "ARCOS NEGUILLO, BEATRIZ",
-          "sales_2025": 5457.14,
+          "sales_2025": 6017.22,
           "budget_2026": 6000.0,
           "sales_2026": 2849.8100000000004,
           "profit_2026": -31.65,
@@ -51380,7 +51457,7 @@ const DASHBOARD_DATA = {
             "OCT": 734.31,
             "NOV": 226.23,
             "DIC": 509.96000000000004,
-            "ENE": 0.0
+            "ENE": 560.0799999999999
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -51429,13 +51506,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2849.8100000000004,
           "profit_2026_ytd": -31.65,
           "deviation_pct": -52.50316666666666,
-          "growth_pct": -47.7783234441484,
+          "growth_pct": -52.639092471274104,
           "margin_pct": -1.1106003558131943
         },
         {
           "id": 24813,
           "name": "ASTORGA AGUILERA PABLO Y OTROS",
-          "sales_2025": 38685.44,
+          "sales_2025": 41299.84,
           "budget_2026": 48000.0,
           "sales_2026": 14835.95,
           "profit_2026": -2638.0,
@@ -51451,7 +51528,7 @@ const DASHBOARD_DATA = {
             "OCT": 3399.88,
             "NOV": 4032.68,
             "DIC": 2862.3199999999997,
-            "ENE": 0.0
+            "ENE": 2614.4
           },
           "budget_2026_monthly": {
             "FEB": 4000.0,
@@ -51500,7 +51577,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 14835.95,
           "profit_2026_ytd": -2638.0,
           "deviation_pct": -69.09177083333334,
-          "growth_pct": -61.64978348443238,
+          "growth_pct": -64.0774637383583,
           "margin_pct": -17.781132991146507
         },
         {
@@ -51577,7 +51654,7 @@ const DASHBOARD_DATA = {
         {
           "id": 24838,
           "name": "ROMERO MORENO, COVADONGA",
-          "sales_2025": 23669.67,
+          "sales_2025": 25771.4,
           "budget_2026": 30000.0,
           "sales_2026": 8276.17,
           "profit_2026": 101.08000000000001,
@@ -51593,7 +51670,7 @@ const DASHBOARD_DATA = {
             "OCT": 2345.87,
             "NOV": 2068.4199999999996,
             "DIC": 1712.8600000000004,
-            "ENE": 0.0
+            "ENE": 2101.73
           },
           "budget_2026_monthly": {
             "FEB": 2500.0,
@@ -51642,13 +51719,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 8276.17,
           "profit_2026_ytd": 101.08000000000001,
           "deviation_pct": -72.41276666666667,
-          "growth_pct": -65.03470475084782,
+          "growth_pct": -67.88622271199858,
           "margin_pct": 1.2213378893860327
         },
         {
           "id": 24870,
           "name": "DECEPAL GROUP, S.L.",
-          "sales_2025": 28248.08,
+          "sales_2025": 30265.350000000002,
           "budget_2026": 36000.0,
           "sales_2026": 8981.35,
           "profit_2026": -18.61,
@@ -51664,7 +51741,7 @@ const DASHBOARD_DATA = {
             "OCT": 2071.8599999999997,
             "NOV": 2049.06,
             "DIC": 2424.1700000000005,
-            "ENE": 0.0
+            "ENE": 2017.2699999999998
           },
           "budget_2026_monthly": {
             "FEB": 3000.0,
@@ -51713,13 +51790,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 8981.35,
           "profit_2026_ytd": -18.61,
           "deviation_pct": -75.05180555555556,
-          "growth_pct": -68.2054497155205,
+          "growth_pct": -70.32464518004913,
           "margin_pct": -0.20720715705322695
         },
         {
           "id": 24939,
           "name": "DISTRIBUCIONES FRANCISCO RAMIR",
-          "sales_2025": 49224.81,
+          "sales_2025": 53078.58,
           "budget_2026": 67000.0,
           "sales_2026": 19101.37,
           "profit_2026": -1452.3500000000001,
@@ -51735,7 +51812,7 @@ const DASHBOARD_DATA = {
             "OCT": 6452.6,
             "NOV": 7002.77,
             "DIC": 3017.45,
-            "ENE": 0.0
+            "ENE": 3853.7699999999995
           },
           "budget_2026_monthly": {
             "FEB": 6000.0,
@@ -51784,13 +51861,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 19101.37,
           "profit_2026_ytd": -1452.3500000000001,
           "deviation_pct": -71.49049253731344,
-          "growth_pct": -61.195645041595895,
+          "growth_pct": -64.01303501337075,
           "margin_pct": -7.6033813281455735
         },
         {
           "id": 24969,
           "name": "J. ROBERTO SOLIS, S.L.",
-          "sales_2025": 6204.0,
+          "sales_2025": 7444.800000000001,
           "budget_2026": 12000.0,
           "sales_2026": 1276.0,
           "profit_2026": -99.08,
@@ -51806,7 +51883,7 @@ const DASHBOARD_DATA = {
             "OCT": 1240.8000000000002,
             "NOV": 413.6,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 1240.8000000000002
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -51855,13 +51932,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1276.0,
           "profit_2026_ytd": -99.08,
           "deviation_pct": -89.36666666666667,
-          "growth_pct": -79.43262411347519,
+          "growth_pct": -82.86052009456264,
           "margin_pct": -7.764890282131661
         },
         {
           "id": 24988,
           "name": "PRADA RUIZ, NOEL",
-          "sales_2025": 6275.16,
+          "sales_2025": 6966.360000000001,
           "budget_2026": 9000.0,
           "sales_2026": 2174.4,
           "profit_2026": 113.04,
@@ -51877,7 +51954,7 @@ const DASHBOARD_DATA = {
             "OCT": 1107.0,
             "NOV": 691.2,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 691.2
           },
           "budget_2026_monthly": {
             "FEB": 750.0,
@@ -51926,13 +52003,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2174.4,
           "profit_2026_ytd": 113.04,
           "deviation_pct": -75.84,
-          "growth_pct": -65.34909070047617,
+          "growth_pct": -68.7871427833187,
           "margin_pct": 5.198675496688742
         },
         {
           "id": 25050,
           "name": "SANCHEZ NEVAUN S.L",
-          "sales_2025": 42186.01,
+          "sales_2025": 48469.65,
           "budget_2026": 76100.0,
           "sales_2026": 26080.77,
           "profit_2026": -751.1800000000001,
@@ -51948,7 +52025,7 @@ const DASHBOARD_DATA = {
             "OCT": 6216.4,
             "NOV": 5862.43,
             "DIC": 8237.42,
-            "ENE": 0.0
+            "ENE": 6283.639999999999
           },
           "budget_2026_monthly": {
             "FEB": 5500.0,
@@ -51997,13 +52074,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 26080.77,
           "profit_2026_ytd": -751.1800000000001,
           "deviation_pct": -65.72829172141918,
-          "growth_pct": -38.176732049321565,
+          "growth_pct": -46.191544605748135,
           "margin_pct": -2.8802063742749926
         },
         {
           "id": 25087,
           "name": "CONDE BAÑOS, JUAN",
-          "sales_2025": 4128.05,
+          "sales_2025": 4489.45,
           "budget_2026": 6000.0,
           "sales_2026": 3647.37,
           "profit_2026": -405.11,
@@ -52019,7 +52096,7 @@ const DASHBOARD_DATA = {
             "OCT": 773.1700000000001,
             "NOV": 940.67,
             "DIC": 1812.76,
-            "ENE": 0.0
+            "ENE": 361.4
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -52068,7 +52145,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 3647.37,
           "profit_2026_ytd": -405.11,
           "deviation_pct": -39.2105,
-          "growth_pct": -11.644238805247035,
+          "growth_pct": -18.756863312877968,
           "margin_pct": -11.106907168727057
         },
         {
@@ -52145,7 +52222,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25135,
           "name": "BEGINES BENITEZ, MANUEL",
-          "sales_2025": 6934.28,
+          "sales_2025": 11282.09,
           "budget_2026": 0.0,
           "sales_2026": 8354.58,
           "profit_2026": -340.01,
@@ -52161,7 +52238,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 2783.04,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 4347.81
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -52210,7 +52287,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 8354.58,
           "profit_2026_ytd": -340.01,
           "deviation_pct": 0.0,
-          "growth_pct": 20.482299532179262,
+          "growth_pct": -25.948295041078385,
           "margin_pct": -4.069743781255311
         },
         {
@@ -52287,7 +52364,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25165,
           "name": "MORA FRANCO, JOSE MANUEL",
-          "sales_2025": 13108.869999999999,
+          "sales_2025": 14374.51,
           "budget_2026": 28000.0,
           "sales_2026": 4264.76,
           "profit_2026": -325.26,
@@ -52303,7 +52380,7 @@ const DASHBOARD_DATA = {
             "OCT": 1266.6,
             "NOV": 1518.84,
             "DIC": 1010.8799999999999,
-            "ENE": 0.0
+            "ENE": 1265.6399999999999
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -52352,7 +52429,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 4264.76,
           "profit_2026_ytd": -325.26,
           "deviation_pct": -84.76871428571428,
-          "growth_pct": -67.46660848723039,
+          "growth_pct": -70.33109302508397,
           "margin_pct": -7.626689426837617
         },
         {
@@ -52429,7 +52506,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25200,
           "name": "ALIMENTACION JIU JIU,S.L",
-          "sales_2025": 40114.6,
+          "sales_2025": 42580.27,
           "budget_2026": 48000.0,
           "sales_2026": 13971.28,
           "profit_2026": -1802.44,
@@ -52445,7 +52522,7 @@ const DASHBOARD_DATA = {
             "OCT": 5262.24,
             "NOV": 2929.21,
             "DIC": 4417.61,
-            "ENE": 0.0
+            "ENE": 2465.67
           },
           "budget_2026_monthly": {
             "FEB": 4000.0,
@@ -52494,7 +52571,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 13971.28,
           "profit_2026_ytd": -1802.44,
           "deviation_pct": -70.89316666666667,
-          "growth_pct": -65.17158341352027,
+          "growth_pct": -67.18837151572782,
           "margin_pct": -12.90103698444237
         },
         {
@@ -52642,7 +52719,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25206,
           "name": "VILLA MATEOS, ANTONIA JOSE",
-          "sales_2025": 12971.039999999999,
+          "sales_2025": 13746.3,
           "budget_2026": 24000.0,
           "sales_2026": 2511.46,
           "profit_2026": 55.160000000000004,
@@ -52658,7 +52735,7 @@ const DASHBOARD_DATA = {
             "OCT": 910.89,
             "NOV": 711.8299999999999,
             "DIC": 643.02,
-            "ENE": 0.0
+            "ENE": 775.26
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -52707,7 +52784,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2511.46,
           "profit_2026_ytd": 55.160000000000004,
           "deviation_pct": -89.53558333333334,
-          "growth_pct": -80.6379442203555,
+          "growth_pct": -81.7299200512138,
           "margin_pct": 2.196332014047606
         },
         {
@@ -52784,7 +52861,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25253,
           "name": "LA TABERNA, C.B.",
-          "sales_2025": 1174.34,
+          "sales_2025": 1263.92,
           "budget_2026": 0.0,
           "sales_2026": 439.70000000000005,
           "profit_2026": 27.44,
@@ -52800,7 +52877,7 @@ const DASHBOARD_DATA = {
             "OCT": 138.26,
             "NOV": 91.58,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 89.58
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -52849,13 +52926,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 439.70000000000005,
           "profit_2026_ytd": 27.44,
           "deviation_pct": 0.0,
-          "growth_pct": -62.55769198017609,
+          "growth_pct": -65.21140578517628,
           "margin_pct": 6.240618603593359
         },
         {
           "id": 25262,
           "name": "DECEPAL GROUP, S.L. (BASES)",
-          "sales_2025": 9521.93,
+          "sales_2025": 10424.65,
           "budget_2026": 12000.0,
           "sales_2026": 2604.7999999999997,
           "profit_2026": -204.45,
@@ -52871,7 +52948,7 @@ const DASHBOARD_DATA = {
             "OCT": 549.28,
             "NOV": 710.22,
             "DIC": 1139.52,
-            "ENE": 0.0
+            "ENE": 902.72
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -52920,7 +52997,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2604.7999999999997,
           "profit_2026_ytd": -204.45,
           "deviation_pct": -78.29333333333334,
-          "growth_pct": -72.64420133313311,
+          "growth_pct": -75.01306998316491,
           "margin_pct": -7.8489711302211305
         },
         {
@@ -52997,7 +53074,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25280,
           "name": "CASH HERMANOS MARTOS CARO, S.L",
-          "sales_2025": 9342.3,
+          "sales_2025": 11894.039999999999,
           "budget_2026": 12000.0,
           "sales_2026": 1149.0,
           "profit_2026": -175.98999999999998,
@@ -53013,7 +53090,7 @@ const DASHBOARD_DATA = {
             "OCT": 897.0,
             "NOV": 740.76,
             "DIC": 2579.02,
-            "ENE": 0.0
+            "ENE": 2551.74
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -53062,7 +53139,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1149.0,
           "profit_2026_ytd": -175.98999999999998,
           "deviation_pct": -90.425,
-          "growth_pct": -87.7011014418291,
+          "growth_pct": -90.33969954700001,
           "margin_pct": -15.316797214969538
         },
         {
@@ -53920,7 +53997,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25376,
           "name": "DISTRIBUCIONES CARRASCO 2015,",
-          "sales_2025": 9688.539999999999,
+          "sales_2025": 11284.0,
           "budget_2026": 24000.0,
           "sales_2026": 4334.1,
           "profit_2026": -235.71,
@@ -53936,7 +54013,7 @@ const DASHBOARD_DATA = {
             "OCT": 1832.04,
             "NOV": 526.5,
             "DIC": 1204.58,
-            "ENE": 0.0
+            "ENE": 1595.46
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -53985,13 +54062,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 4334.1,
           "profit_2026_ytd": -235.71,
           "deviation_pct": -81.94125000000001,
-          "growth_pct": -55.26570566875917,
+          "growth_pct": -61.5907479617157,
           "margin_pct": -5.438499342424032
         },
         {
           "id": 25388,
           "name": "MERCAFAMILY S.L.U.",
-          "sales_2025": 5699.52,
+          "sales_2025": 7600.32,
           "budget_2026": 0.0,
           "sales_2026": 0.0,
           "profit_2026": 0.0,
@@ -54007,7 +54084,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 3888.0,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 1900.8
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -54204,7 +54281,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25398,
           "name": "ALMA DE VACUNO, S.L.",
-          "sales_2025": 1781.6000000000001,
+          "sales_2025": 2309.2400000000002,
           "budget_2026": 0.0,
           "sales_2026": 1242.01,
           "profit_2026": -55.089999999999996,
@@ -54220,7 +54297,7 @@ const DASHBOARD_DATA = {
             "OCT": 530.94,
             "NOV": 505.70000000000005,
             "DIC": 744.96,
-            "ENE": 0.0
+            "ENE": 527.64
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -54269,7 +54346,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1242.01,
           "profit_2026_ytd": -55.089999999999996,
           "deviation_pct": 0.0,
-          "growth_pct": -30.286820835204313,
+          "growth_pct": -46.21563804541754,
           "margin_pct": -4.43555204869526
         },
         {
@@ -54488,7 +54565,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25432,
           "name": "BEBIDAS DAFA, S.L.",
-          "sales_2025": 0.0,
+          "sales_2025": 1827.84,
           "budget_2026": 0.0,
           "sales_2026": 22982.28,
           "profit_2026": -1487.76,
@@ -54504,7 +54581,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 0.0,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 1827.84
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -54553,7 +54630,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 22982.28,
           "profit_2026_ytd": -1487.76,
           "deviation_pct": 0.0,
-          "growth_pct": 0.0,
+          "growth_pct": 1157.3463760504203,
           "margin_pct": -6.47350915574956
         },
         {
@@ -54928,7 +55005,7 @@ const DASHBOARD_DATA = {
         "OCT": 117179.03999999996,
         "NOV": 127947.61,
         "DIC": 164800.9400000001,
-        "ENE": 0.0
+        "ENE": 121048.48999999999
       },
       "budget_2026_monthly": {
         "FEB": 126550.0,
@@ -54972,7 +55049,7 @@ const DASHBOARD_DATA = {
         "DIC": 0.0,
         "ENE": 0.0
       },
-      "total_sales_2025": 1437824.35,
+      "total_sales_2025": 1558872.84,
       "total_budget_2026": 1665420.0,
       "sales_2025_ytd": 455716.39999999997,
       "budget_2026_ytd": 524700.0,
@@ -54990,7 +55067,7 @@ const DASHBOARD_DATA = {
         {
           "id": 291,
           "name": "G.L. BEBIDAS S.L.",
-          "sales_2025": 45241.61,
+          "sales_2025": 47558.81,
           "budget_2026": 47000.0,
           "sales_2026": 39786.79,
           "profit_2026": -5096.969999999999,
@@ -55006,7 +55083,7 @@ const DASHBOARD_DATA = {
             "OCT": 3551.9300000000003,
             "NOV": 5745.37,
             "DIC": 5058.98,
-            "ENE": 0.0
+            "ENE": 2317.2
           },
           "budget_2026_monthly": {
             "FEB": 4000.0,
@@ -55055,13 +55132,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 39786.79,
           "profit_2026_ytd": -5096.969999999999,
           "deviation_pct": -15.347255319148934,
-          "growth_pct": -12.057086385740913,
+          "growth_pct": -16.34191435824403,
           "margin_pct": -12.810709283156543
         },
         {
           "id": 1271,
           "name": "OLEA ORIOLA,EDUARDO",
-          "sales_2025": 5891.82,
+          "sales_2025": 6260.16,
           "budget_2026": 6000.0,
           "sales_2026": 1324.1100000000001,
           "profit_2026": -5.029999999999999,
@@ -55077,7 +55154,7 @@ const DASHBOARD_DATA = {
             "OCT": 593.55,
             "NOV": 731.42,
             "DIC": 583.44,
-            "ENE": 0.0
+            "ENE": 368.34
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -55126,13 +55203,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1324.1100000000001,
           "profit_2026_ytd": -5.029999999999999,
           "deviation_pct": -77.93149999999999,
-          "growth_pct": -77.52629917410918,
+          "growth_pct": -78.84862367735009,
           "margin_pct": -0.37987780471410976
         },
         {
           "id": 1421,
           "name": "AYLLON DEL CASTILLO,ANDRES",
-          "sales_2025": 28035.13,
+          "sales_2025": 29494.72,
           "budget_2026": 32000.0,
           "sales_2026": 10253.39,
           "profit_2026": -576.91,
@@ -55148,7 +55225,7 @@ const DASHBOARD_DATA = {
             "OCT": 2029.57,
             "NOV": 2313.7200000000003,
             "DIC": 3036.4700000000003,
-            "ENE": 0.0
+            "ENE": 1459.59
           },
           "budget_2026_monthly": {
             "FEB": 2500.0,
@@ -55197,7 +55274,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 10253.39,
           "profit_2026_ytd": -576.91,
           "deviation_pct": -67.95815625,
-          "growth_pct": -63.42663650926534,
+          "growth_pct": -65.23652368966378,
           "margin_pct": -5.62652937223689
         },
         {
@@ -55416,7 +55493,7 @@ const DASHBOARD_DATA = {
         {
           "id": 2444,
           "name": "ILDEFONSO C.CASADO Y OTRO,C.B.",
-          "sales_2025": 13062.79,
+          "sales_2025": 13757.84,
           "budget_2026": 16000.0,
           "sales_2026": 8361.48,
           "profit_2026": -272.74,
@@ -55432,7 +55509,7 @@ const DASHBOARD_DATA = {
             "OCT": 710.12,
             "NOV": 1140.9,
             "DIC": 1375.6299999999999,
-            "ENE": 0.0
+            "ENE": 695.05
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -55481,7 +55558,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 8361.48,
           "profit_2026_ytd": -272.74,
           "deviation_pct": -47.740750000000006,
-          "growth_pct": -35.99009093769403,
+          "growth_pct": -39.223889796654134,
           "margin_pct": -3.261862732434928
         },
         {
@@ -55629,7 +55706,7 @@ const DASHBOARD_DATA = {
         {
           "id": 3732,
           "name": "CRUZ PRAENA ANTONIA",
-          "sales_2025": 22522.79,
+          "sales_2025": 24408.87,
           "budget_2026": 27900.0,
           "sales_2026": 7385.820000000001,
           "profit_2026": 95.83999999999999,
@@ -55645,7 +55722,7 @@ const DASHBOARD_DATA = {
             "OCT": 2184.19,
             "NOV": 1519.72,
             "DIC": 2301.66,
-            "ENE": 0.0
+            "ENE": 1886.0800000000002
           },
           "budget_2026_monthly": {
             "FEB": 2100.0,
@@ -55694,13 +55771,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 7385.820000000001,
           "profit_2026_ytd": 95.83999999999999,
           "deviation_pct": -73.52752688172043,
-          "growth_pct": -67.20734864552749,
+          "growth_pct": -69.74124570289408,
           "margin_pct": 1.2976216588002414
         },
         {
           "id": 3734,
           "name": "AVANT RECREATIVOS, S.L.",
-          "sales_2025": 8049.8099999999995,
+          "sales_2025": 8385.84,
           "budget_2026": 9000.0,
           "sales_2026": 2030.56,
           "profit_2026": -179.15,
@@ -55716,7 +55793,7 @@ const DASHBOARD_DATA = {
             "OCT": 378.12,
             "NOV": 445.5,
             "DIC": 782.64,
-            "ENE": 0.0
+            "ENE": 336.03
           },
           "budget_2026_monthly": {
             "FEB": 750.0,
@@ -55765,13 +55842,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2030.56,
           "profit_2026_ytd": -179.15,
           "deviation_pct": -77.43822222222224,
-          "growth_pct": -74.77505680258292,
+          "growth_pct": -75.78584852560985,
           "margin_pct": -8.822689307383186
         },
         {
           "id": 4072,
           "name": "ALEJANDRO MARIN Y OTROS C.B.",
-          "sales_2025": 36049.1,
+          "sales_2025": 40412.06,
           "budget_2026": 45500.0,
           "sales_2026": 8920.74,
           "profit_2026": -1547.8899999999999,
@@ -55787,7 +55864,7 @@ const DASHBOARD_DATA = {
             "OCT": 2941.5600000000004,
             "NOV": 6764.43,
             "DIC": 3197.8799999999997,
-            "ENE": 0.0
+            "ENE": 4362.96
           },
           "budget_2026_monthly": {
             "FEB": 5000.0,
@@ -55836,7 +55913,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 8920.74,
           "profit_2026_ytd": -1547.8899999999999,
           "deviation_pct": -80.39397802197803,
-          "growth_pct": -75.25391757353165,
+          "growth_pct": -77.92554994721873,
           "margin_pct": -17.351587424361657
         },
         {
@@ -56055,7 +56132,7 @@ const DASHBOARD_DATA = {
         {
           "id": 6441,
           "name": "AVANT RECREATIVOS S.L",
-          "sales_2025": 6432.48,
+          "sales_2025": 7077.66,
           "budget_2026": 6000.0,
           "sales_2026": 2422.41,
           "profit_2026": -209.66,
@@ -56071,7 +56148,7 @@ const DASHBOARD_DATA = {
             "OCT": -45.3,
             "NOV": 448.14,
             "DIC": 851.4399999999999,
-            "ENE": 0.0
+            "ENE": 645.18
           },
           "budget_2026_monthly": {
             "FEB": 500.0,
@@ -56120,13 +56197,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2422.41,
           "profit_2026_ytd": -209.66,
           "deviation_pct": -59.62650000000001,
-          "growth_pct": -62.34096336094321,
+          "growth_pct": -65.77385746136434,
           "margin_pct": -8.655017111058822
         },
         {
           "id": 6762,
           "name": "LOPEZ RUZAFA, CAYETANO",
-          "sales_2025": 28247.71,
+          "sales_2025": 31556.22,
           "budget_2026": 28500.0,
           "sales_2026": 17380.67,
           "profit_2026": -4160.53,
@@ -56142,7 +56219,7 @@ const DASHBOARD_DATA = {
             "OCT": 899.56,
             "NOV": 718.44,
             "DIC": 7895.02,
-            "ENE": 0.0
+            "ENE": 3308.51
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -56191,7 +56268,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 17380.67,
           "profit_2026_ytd": -4160.53,
           "deviation_pct": -39.01519298245615,
-          "growth_pct": -38.470516725072585,
+          "growth_pct": -44.92157172183488,
           "margin_pct": -23.93768479581052
         },
         {
@@ -56268,7 +56345,7 @@ const DASHBOARD_DATA = {
         {
           "id": 9581,
           "name": "GARCIA CABALLERO ISABEL",
-          "sales_2025": 11355.89,
+          "sales_2025": 12174.869999999999,
           "budget_2026": 18000.0,
           "sales_2026": 2405.26,
           "profit_2026": 34.39,
@@ -56284,7 +56361,7 @@ const DASHBOARD_DATA = {
             "OCT": 496.82,
             "NOV": 997.49,
             "DIC": 2221.85,
-            "ENE": 0.0
+            "ENE": 818.9799999999999
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -56333,13 +56410,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 2405.26,
           "profit_2026_ytd": 34.39,
           "deviation_pct": -86.63744444444444,
-          "growth_pct": -78.81927352237473,
+          "growth_pct": -80.24406010084707,
           "margin_pct": 1.4297830587961384
         },
         {
           "id": 10105,
           "name": "RODRIGUEZ ZAMORA, MANOLI",
-          "sales_2025": 43289.09,
+          "sales_2025": 47729.96,
           "budget_2026": 51420.0,
           "sales_2026": 16109.23,
           "profit_2026": 144.85,
@@ -56355,7 +56432,7 @@ const DASHBOARD_DATA = {
             "OCT": 4545.26,
             "NOV": 3624.66,
             "DIC": 4609.450000000001,
-            "ENE": 0.0
+            "ENE": 4440.87
           },
           "budget_2026_monthly": {
             "FEB": 3500.0,
@@ -56404,13 +56481,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 16109.23,
           "profit_2026_ytd": 144.85,
           "deviation_pct": -68.67127576818359,
-          "growth_pct": -62.786859229427094,
+          "growth_pct": -66.24922794823209,
           "margin_pct": 0.8991739518276168
         },
         {
           "id": 10127,
           "name": "GALDABA TORRES, JOSEFA",
-          "sales_2025": 30958.64,
+          "sales_2025": 33566.08,
           "budget_2026": 39200.0,
           "sales_2026": 11486.85,
           "profit_2026": 425.68999999999994,
@@ -56426,7 +56503,7 @@ const DASHBOARD_DATA = {
             "OCT": 2951.3100000000004,
             "NOV": 2281.82,
             "DIC": 3312.8599999999997,
-            "ENE": 0.0
+            "ENE": 2607.4399999999996
           },
           "budget_2026_monthly": {
             "FEB": 3300.0,
@@ -56475,13 +56552,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 11486.85,
           "profit_2026_ytd": 425.68999999999994,
           "deviation_pct": -70.69681122448979,
-          "growth_pct": -62.896141432569394,
+          "growth_pct": -65.7783989074685,
           "margin_pct": 3.705889778311721
         },
         {
           "id": 10163,
           "name": "SANCHEZ SOLA, MARIA INMACULADA",
-          "sales_2025": 20141.87,
+          "sales_2025": 21778.02,
           "budget_2026": 24000.0,
           "sales_2026": 7094.42,
           "profit_2026": -312.96,
@@ -56497,7 +56574,7 @@ const DASHBOARD_DATA = {
             "OCT": 2535.92,
             "NOV": 2102.69,
             "DIC": 1586.6999999999998,
-            "ENE": 0.0
+            "ENE": 1636.15
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -56546,13 +56623,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 7094.42,
           "profit_2026_ytd": -312.96,
           "deviation_pct": -70.43991666666668,
-          "growth_pct": -64.77774903720459,
+          "growth_pct": -67.42394395817435,
           "margin_pct": -4.4113542756137925
         },
         {
           "id": 18169,
           "name": "HIDALGO HIDALGO CRISTOBAL",
-          "sales_2025": 12443.32,
+          "sales_2025": 13588.44,
           "budget_2026": 19000.0,
           "sales_2026": 8893.449999999999,
           "profit_2026": -1755.74,
@@ -56568,7 +56645,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 1581.46,
             "DIC": 509.52,
-            "ENE": 0.0
+            "ENE": 1145.12
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -56617,7 +56694,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 8893.449999999999,
           "profit_2026_ytd": -1755.74,
           "deviation_pct": -53.192368421052635,
-          "growth_pct": -28.528318808806656,
+          "growth_pct": -34.55135394497088,
           "margin_pct": -19.74194491451574
         },
         {
@@ -56694,7 +56771,7 @@ const DASHBOARD_DATA = {
         {
           "id": 18370,
           "name": "GALVEZ CARMONA NICETO",
-          "sales_2025": 3131.62,
+          "sales_2025": 3868.48,
           "budget_2026": 0.0,
           "sales_2026": 3083.7,
           "profit_2026": -24.87,
@@ -56710,7 +56787,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 0.0,
             "DIC": 653.28,
-            "ENE": 0.0
+            "ENE": 736.86
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -56759,13 +56836,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 3083.7,
           "profit_2026_ytd": -24.87,
           "deviation_pct": 0.0,
-          "growth_pct": -1.5301984276508667,
+          "growth_pct": -20.286520804036734,
           "margin_pct": -0.8064986866426695
         },
         {
           "id": 18560,
           "name": "SUPERMERCADO GUARROMAN S.L.L.",
-          "sales_2025": 36096.85,
+          "sales_2025": 39717.38,
           "budget_2026": 40300.0,
           "sales_2026": 15774.9,
           "profit_2026": -864.0699999999999,
@@ -56781,7 +56858,7 @@ const DASHBOARD_DATA = {
             "OCT": 3866.3500000000004,
             "NOV": 1989.84,
             "DIC": 4266.55,
-            "ENE": 0.0
+            "ENE": 3620.5299999999997
           },
           "budget_2026_monthly": {
             "FEB": 4000.0,
@@ -56830,13 +56907,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 15774.9,
           "profit_2026_ytd": -864.0699999999999,
           "deviation_pct": -60.856327543424314,
-          "growth_pct": -56.29840276921669,
+          "growth_pct": -60.282123342476254,
           "margin_pct": -5.477499064970301
         },
         {
           "id": 18562,
           "name": "DESAR. Y FOMENT. GUARROMAN S.L",
-          "sales_2025": 51274.77,
+          "sales_2025": 53441.05,
           "budget_2026": 51000.0,
           "sales_2026": 11894.59,
           "profit_2026": 146.76,
@@ -56852,7 +56929,7 @@ const DASHBOARD_DATA = {
             "OCT": 3433.7200000000003,
             "NOV": 1599.9099999999999,
             "DIC": 4891.91,
-            "ENE": 0.0
+            "ENE": 2166.2799999999997
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -56901,13 +56978,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 11894.59,
           "profit_2026_ytd": 146.76,
           "deviation_pct": -76.67727450980392,
-          "growth_pct": -76.80225576828525,
+          "growth_pct": -77.74259674912825,
           "margin_pct": 1.2338382407464232
         },
         {
           "id": 18563,
           "name": "DESAR. Y FOMENT. GUARROMAN S.L",
-          "sales_2025": 1378.89,
+          "sales_2025": 1449.49,
           "budget_2026": 0.0,
           "sales_2026": 260.05,
           "profit_2026": 12.08,
@@ -56923,7 +57000,7 @@ const DASHBOARD_DATA = {
             "OCT": 142.5,
             "NOV": 0.0,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 70.6
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -56972,13 +57049,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 260.05,
           "profit_2026_ytd": 12.08,
           "deviation_pct": 0.0,
-          "growth_pct": -81.14062760626301,
+          "growth_pct": -82.05920703143865,
           "margin_pct": 4.645260526821765
         },
         {
           "id": 18705,
           "name": "DESAR. Y FOMENT. GUARROMAN S.L",
-          "sales_2025": 12458.960000000001,
+          "sales_2025": 13282.02,
           "budget_2026": 14500.0,
           "sales_2026": 3029.5699999999997,
           "profit_2026": -150.98,
@@ -56994,7 +57071,7 @@ const DASHBOARD_DATA = {
             "OCT": 1053.87,
             "NOV": 373.71,
             "DIC": 1124.69,
-            "ENE": 0.0
+            "ENE": 823.06
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -57043,13 +57120,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 3029.5699999999997,
           "profit_2026_ytd": -150.98,
           "deviation_pct": -79.10641379310344,
-          "growth_pct": -75.68360440999892,
+          "growth_pct": -77.1904424176443,
           "margin_pct": -4.983545519661206
         },
         {
           "id": 19213,
           "name": "ALCANTARA CANO, S.L.",
-          "sales_2025": 36890.21,
+          "sales_2025": 44026.07,
           "budget_2026": 48000.0,
           "sales_2026": 24230.52,
           "profit_2026": -4019.39,
@@ -57065,7 +57142,7 @@ const DASHBOARD_DATA = {
             "OCT": 3986.16,
             "NOV": 3429.3599999999997,
             "DIC": 8151.29,
-            "ENE": 0.0
+            "ENE": 7135.86
           },
           "budget_2026_monthly": {
             "FEB": 4000.0,
@@ -57114,7 +57191,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 24230.52,
           "profit_2026_ytd": -4019.39,
           "deviation_pct": -49.51975,
-          "growth_pct": -34.31720773614463,
+          "growth_pct": -44.963245640594316,
           "margin_pct": -16.588129350917768
         },
         {
@@ -57191,7 +57268,7 @@ const DASHBOARD_DATA = {
         {
           "id": 20081,
           "name": "AUTOSERVICIO RAMOS REGALON, SL",
-          "sales_2025": 36606.43,
+          "sales_2025": 40496.99,
           "budget_2026": 72900.0,
           "sales_2026": 14014.54,
           "profit_2026": -325.79,
@@ -57207,7 +57284,7 @@ const DASHBOARD_DATA = {
             "OCT": 5654.76,
             "NOV": 4321.910000000001,
             "DIC": 8520.58,
-            "ENE": 0.0
+            "ENE": 3890.56
           },
           "budget_2026_monthly": {
             "FEB": 5300.0,
@@ -57256,7 +57333,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 14014.54,
           "profit_2026_ytd": -325.79,
           "deviation_pct": -80.77566529492455,
-          "growth_pct": -61.715633018570784,
+          "growth_pct": -65.39362555093601,
           "margin_pct": -2.324657106119787
         },
         {
@@ -57404,7 +57481,7 @@ const DASHBOARD_DATA = {
         {
           "id": 22199,
           "name": "BEBIDAS GARVIN, S.L.U.",
-          "sales_2025": 107400.17,
+          "sales_2025": 111591.13,
           "budget_2026": 107000.0,
           "sales_2026": 61303.78,
           "profit_2026": -10168.59,
@@ -57420,7 +57497,7 @@ const DASHBOARD_DATA = {
             "OCT": 8106.450000000001,
             "NOV": 6629.44,
             "DIC": 21044.36,
-            "ENE": 0.0
+            "ENE": 4190.96
           },
           "budget_2026_monthly": {
             "FEB": 6000.0,
@@ -57469,13 +57546,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 61303.78,
           "profit_2026_ytd": -10168.59,
           "deviation_pct": -42.706747663551404,
-          "growth_pct": -42.92022070356127,
+          "growth_pct": -45.063931156535475,
           "margin_pct": -16.58721533973925
         },
         {
           "id": 22327,
           "name": "EDUARDO GONZALEZ GARCIA, S.L.",
-          "sales_2025": 40490.5,
+          "sales_2025": 45739.6,
           "budget_2026": 48000.0,
           "sales_2026": 11572.529999999999,
           "profit_2026": -1630.96,
@@ -57491,7 +57568,7 @@ const DASHBOARD_DATA = {
             "OCT": 3081.08,
             "NOV": 978.04,
             "DIC": 4464.320000000001,
-            "ENE": 0.0
+            "ENE": 5249.1
           },
           "budget_2026_monthly": {
             "FEB": 4000.0,
@@ -57540,13 +57617,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 11572.529999999999,
           "profit_2026_ytd": -1630.96,
           "deviation_pct": -75.8905625,
-          "growth_pct": -71.41914770131265,
+          "growth_pct": -74.69910099782246,
           "margin_pct": -14.093374568914491
         },
         {
           "id": 22749,
           "name": "VAZ-ROMERO DELFA, EVARISTO",
-          "sales_2025": 21793.19,
+          "sales_2025": 23125.829999999998,
           "budget_2026": 24000.0,
           "sales_2026": 8110.61,
           "profit_2026": -614.58,
@@ -57562,7 +57639,7 @@ const DASHBOARD_DATA = {
             "OCT": 3375.24,
             "NOV": 1955.5899999999997,
             "DIC": 2367.2799999999997,
-            "ENE": 0.0
+            "ENE": 1332.6399999999999
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -57611,7 +57688,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 8110.61,
           "profit_2026_ytd": -614.58,
           "deviation_pct": -66.20579166666667,
-          "growth_pct": -62.783741159509,
+          "growth_pct": -64.92835067973776,
           "margin_pct": -7.577481841686384
         },
         {
@@ -57759,7 +57836,7 @@ const DASHBOARD_DATA = {
         {
           "id": 23061,
           "name": "ALMACENES MAYORALA, S.L.",
-          "sales_2025": 32107.910000000003,
+          "sales_2025": 42047.39,
           "budget_2026": 36000.0,
           "sales_2026": 9360.02,
           "profit_2026": -1355.29,
@@ -57775,7 +57852,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 1549.32,
             "DIC": 11628.740000000002,
-            "ENE": 0.0
+            "ENE": 9939.48
           },
           "budget_2026_monthly": {
             "FEB": 3000.0,
@@ -57824,13 +57901,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 9360.02,
           "profit_2026_ytd": -1355.29,
           "deviation_pct": -73.99994444444444,
-          "growth_pct": -70.84824269159843,
+          "growth_pct": -77.73935552242362,
           "margin_pct": -14.47956307785667
         },
         {
           "id": 23071,
           "name": "UNIONES CAR. BIERZO ANDALUCIA",
-          "sales_2025": 57916.37,
+          "sales_2025": 63896.83,
           "budget_2026": 69600.0,
           "sales_2026": 25603.9,
           "profit_2026": -2251.26,
@@ -57846,7 +57923,7 @@ const DASHBOARD_DATA = {
             "OCT": 7885.06,
             "NOV": 6464.62,
             "DIC": 6063.63,
-            "ENE": 0.0
+            "ENE": 5980.46
           },
           "budget_2026_monthly": {
             "FEB": 5300.0,
@@ -57895,7 +57972,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 25603.9,
           "profit_2026_ytd": -2251.26,
           "deviation_pct": -63.21278735632184,
-          "growth_pct": -55.79160088935132,
+          "growth_pct": -59.92931104719905,
           "margin_pct": -8.79264487050801
         },
         {
@@ -58043,7 +58120,7 @@ const DASHBOARD_DATA = {
         {
           "id": 23794,
           "name": "PEDRO GIL PEREZ, C.B.",
-          "sales_2025": 24252.64,
+          "sales_2025": 25375.86,
           "budget_2026": 24000.0,
           "sales_2026": 7714.200000000001,
           "profit_2026": -536.86,
@@ -58059,7 +58136,7 @@ const DASHBOARD_DATA = {
             "OCT": 1682.53,
             "NOV": 1707.35,
             "DIC": 3845.92,
-            "ENE": 0.0
+            "ENE": 1123.22
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -58108,13 +58185,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 7714.200000000001,
           "profit_2026_ytd": -536.86,
           "deviation_pct": -67.85749999999999,
-          "growth_pct": -68.19232875266363,
+          "growth_pct": -69.60024211987297,
           "margin_pct": -6.959373622669881
         },
         {
           "id": 24113,
           "name": "COBEDIS COMESTIBLES Y BEBIDAS,",
-          "sales_2025": 66316.45,
+          "sales_2025": 76147.01000000001,
           "budget_2026": 86000.0,
           "sales_2026": 32146.81,
           "profit_2026": -3448.36,
@@ -58130,7 +58207,7 @@ const DASHBOARD_DATA = {
             "OCT": 5658.51,
             "NOV": 9558.310000000001,
             "DIC": 1077.64,
-            "ENE": 0.0
+            "ENE": 9830.56
           },
           "budget_2026_monthly": {
             "FEB": 3000.0,
@@ -58179,7 +58256,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 32146.81,
           "profit_2026_ytd": -3448.36,
           "deviation_pct": -62.619988372093026,
-          "growth_pct": -51.52513441235169,
+          "growth_pct": -57.78322747012654,
           "margin_pct": -10.726911939318395
         },
         {
@@ -58256,7 +58333,7 @@ const DASHBOARD_DATA = {
         {
           "id": 24212,
           "name": "SANCHEZ ESLAVA, AZAHARA",
-          "sales_2025": 5867.780000000001,
+          "sales_2025": 6932.46,
           "budget_2026": 12000.0,
           "sales_2026": 3007.1099999999997,
           "profit_2026": -312.36,
@@ -58272,7 +58349,7 @@ const DASHBOARD_DATA = {
             "OCT": 1209.56,
             "NOV": 0.0,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 1064.68
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -58321,7 +58398,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 3007.1099999999997,
           "profit_2026_ytd": -312.36,
           "deviation_pct": -74.94075,
-          "growth_pct": -48.752168622545504,
+          "growth_pct": -56.62275728962014,
           "margin_pct": -10.387381904885423
         },
         {
@@ -58398,7 +58475,7 @@ const DASHBOARD_DATA = {
         {
           "id": 24658,
           "name": "DISBEVIL, S.L.",
-          "sales_2025": 6886.3099999999995,
+          "sales_2025": 8371.31,
           "budget_2026": 0.0,
           "sales_2026": 6012.96,
           "profit_2026": -1634.12,
@@ -58414,7 +58491,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 2301.12,
             "DIC": 2312.87,
-            "ENE": 0.0
+            "ENE": 1485.0
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -58463,13 +58540,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 6012.96,
           "profit_2026_ytd": -1634.12,
           "deviation_pct": 0.0,
-          "growth_pct": -12.682409011502523,
+          "growth_pct": -28.171815402846146,
           "margin_pct": -27.1766318086267
         },
         {
           "id": 24704,
           "name": "MAGDALENO MAYORGA, MARCO ANTON",
-          "sales_2025": 45927.54,
+          "sales_2025": 50449.8,
           "budget_2026": 55000.0,
           "sales_2026": 17589.800000000003,
           "profit_2026": -709.82,
@@ -58485,7 +58562,7 @@ const DASHBOARD_DATA = {
             "OCT": 4182.22,
             "NOV": 4763.53,
             "DIC": 3687.59,
-            "ENE": 0.0
+            "ENE": 4522.259999999999
           },
           "budget_2026_monthly": {
             "FEB": 4500.0,
@@ -58534,7 +58611,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 17589.800000000003,
           "profit_2026_ytd": -709.82,
           "deviation_pct": -68.01854545454546,
-          "growth_pct": -61.700975057666916,
+          "growth_pct": -65.13405404976828,
           "margin_pct": -4.035406883534776
         },
         {
@@ -58611,7 +58688,7 @@ const DASHBOARD_DATA = {
         {
           "id": 24793,
           "name": "ROBLES MUÑOZ, JOAQUIN",
-          "sales_2025": 19388.21,
+          "sales_2025": 22050.44,
           "budget_2026": 24000.0,
           "sales_2026": 11868.96,
           "profit_2026": -319.86,
@@ -58627,7 +58704,7 @@ const DASHBOARD_DATA = {
             "OCT": 1776.6,
             "NOV": 3525.88,
             "DIC": 4287.45,
-            "ENE": 0.0
+            "ENE": 2662.23
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -58676,13 +58753,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 11868.96,
           "profit_2026_ytd": -319.86,
           "deviation_pct": -50.546,
-          "growth_pct": -38.78259003796637,
+          "growth_pct": -46.17359109387387,
           "margin_pct": -2.694928620536256
         },
         {
           "id": 24882,
           "name": "DIST.DE ALIM. SANCHEZ Y LOPEZ,",
-          "sales_2025": 15786.82,
+          "sales_2025": 19094.38,
           "budget_2026": 29000.0,
           "sales_2026": 12004.96,
           "profit_2026": -2446.71,
@@ -58698,7 +58775,7 @@ const DASHBOARD_DATA = {
             "OCT": 3159.33,
             "NOV": 4294.92,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 3307.56
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -58747,13 +58824,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 12004.96,
           "profit_2026_ytd": -2446.71,
           "deviation_pct": -58.60358620689655,
-          "growth_pct": -23.955806172490725,
+          "growth_pct": -37.12830686306653,
           "margin_pct": -20.380825925284217
         },
         {
           "id": 24932,
           "name": "DISTRIBUCIONES SIMALEZ, S.L.",
-          "sales_2025": 67240.56,
+          "sales_2025": 73714.73000000001,
           "budget_2026": 77000.0,
           "sales_2026": 41031.18000000001,
           "profit_2026": -5512.469999999999,
@@ -58769,7 +58846,7 @@ const DASHBOARD_DATA = {
             "OCT": 4404.8099999999995,
             "NOV": 5512.2300000000005,
             "DIC": 8422.140000000001,
-            "ENE": 0.0
+            "ENE": 6474.17
           },
           "budget_2026_monthly": {
             "FEB": 5000.0,
@@ -58818,13 +58895,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 41031.18000000001,
           "profit_2026_ytd": -5512.469999999999,
           "deviation_pct": -46.71275324675324,
-          "growth_pct": -38.978527246055044,
+          "growth_pct": -44.33788199454844,
           "margin_pct": -13.434831754777704
         },
         {
           "id": 24946,
           "name": "RSA FOOD SERVICE, S.L.",
-          "sales_2025": 63523.45,
+          "sales_2025": 66799.64,
           "budget_2026": 66000.0,
           "sales_2026": 21309.600000000002,
           "profit_2026": -2713.52,
@@ -58840,7 +58917,7 @@ const DASHBOARD_DATA = {
             "OCT": 3871.12,
             "NOV": 5841.22,
             "DIC": 7906.089999999999,
-            "ENE": 0.0
+            "ENE": 3276.19
           },
           "budget_2026_monthly": {
             "FEB": 6000.0,
@@ -58889,13 +58966,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 21309.600000000002,
           "profit_2026_ytd": -2713.52,
           "deviation_pct": -67.71272727272726,
-          "growth_pct": -66.45396306403383,
+          "growth_pct": -68.09922927728353,
           "margin_pct": -12.733791342868942
         },
         {
           "id": 24975,
           "name": "MAÑAS VAZ ROMERO, SERGIO",
-          "sales_2025": 21727.22,
+          "sales_2025": 23382.29,
           "budget_2026": 24000.0,
           "sales_2026": 6028.84,
           "profit_2026": -259.11,
@@ -58911,7 +58988,7 @@ const DASHBOARD_DATA = {
             "OCT": 2260.1499999999996,
             "NOV": 1646.94,
             "DIC": 2635.78,
-            "ENE": 0.0
+            "ENE": 1655.0700000000002
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -58960,7 +59037,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 6028.84,
           "profit_2026_ytd": -259.11,
           "deviation_pct": -74.87983333333334,
-          "growth_pct": -72.25213349890139,
+          "growth_pct": -74.2162123555905,
           "margin_pct": -4.297841707525826
         },
         {
@@ -59037,7 +59114,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25080,
           "name": "GRUPO BARAÑON DISTRIBUCIONES,",
-          "sales_2025": 28273.86,
+          "sales_2025": 29785.73,
           "budget_2026": 36000.0,
           "sales_2026": 11651.16,
           "profit_2026": -2284.52,
@@ -59053,7 +59130,7 @@ const DASHBOARD_DATA = {
             "OCT": 5122.34,
             "NOV": 2476.69,
             "DIC": 3910.66,
-            "ENE": 0.0
+            "ENE": 1511.87
           },
           "budget_2026_monthly": {
             "FEB": 3000.0,
@@ -59102,7 +59179,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 11651.16,
           "profit_2026_ytd": -2284.52,
           "deviation_pct": -67.63566666666667,
-          "growth_pct": -58.79176030439424,
+          "growth_pct": -60.883416320499784,
           "margin_pct": -19.607661383072585
         },
         {
@@ -59179,7 +59256,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25244,
           "name": "DOMINGUEZ PARRA, JOSE ANTONIO",
-          "sales_2025": 31247.1,
+          "sales_2025": 34915.5,
           "budget_2026": 42000.0,
           "sales_2026": 13378.8,
           "profit_2026": -3954.05,
@@ -59195,7 +59272,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 4125.0,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 3668.4
           },
           "budget_2026_monthly": {
             "FEB": 3500.0,
@@ -59244,7 +59321,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 13378.8,
           "profit_2026_ytd": -3954.05,
           "deviation_pct": -68.14571428571429,
-          "growth_pct": -57.18386666282631,
+          "growth_pct": -61.68234738153542,
           "margin_pct": -29.554593835022576
         },
         {
@@ -59321,7 +59398,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25269,
           "name": "MORAD SOUITA ASMAA",
-          "sales_2025": 12644.11,
+          "sales_2025": 12939.25,
           "budget_2026": 18000.0,
           "sales_2026": 3497.54,
           "profit_2026": 118.31,
@@ -59337,7 +59414,7 @@ const DASHBOARD_DATA = {
             "OCT": 800.8599999999999,
             "NOV": 1159.49,
             "DIC": 1122.93,
-            "ENE": 0.0
+            "ENE": 295.14
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -59386,13 +59463,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 3497.54,
           "profit_2026_ytd": 118.31,
           "deviation_pct": -80.56922222222221,
-          "growth_pct": -72.33858294494432,
+          "growth_pct": -72.96953069150067,
           "margin_pct": 3.382663243308154
         },
         {
           "id": 25272,
           "name": "HOSTELER. LORENZO RODRIGUEZ, S",
-          "sales_2025": 1230.0,
+          "sales_2025": 1610.16,
           "budget_2026": 0.0,
           "sales_2026": 8954.82,
           "profit_2026": -2190.41,
@@ -59408,7 +59485,7 @@ const DASHBOARD_DATA = {
             "OCT": 849.84,
             "NOV": 0.0,
             "DIC": 380.16,
-            "ENE": 0.0
+            "ENE": 380.16
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -59457,13 +59534,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 8954.82,
           "profit_2026_ytd": -2190.41,
           "deviation_pct": 0.0,
-          "growth_pct": 628.0341463414634,
+          "growth_pct": 456.1447309584141,
           "margin_pct": -24.46068151006944
         },
         {
           "id": 25284,
           "name": "VAZ ROMERO DELFA, MARIA LUISA",
-          "sales_2025": 14623.67,
+          "sales_2025": 16112.769999999999,
           "budget_2026": 18000.0,
           "sales_2026": 7170.41,
           "profit_2026": -1029.26,
@@ -59479,7 +59556,7 @@ const DASHBOARD_DATA = {
             "OCT": 1496.1299999999999,
             "NOV": 985.91,
             "DIC": 1764.1799999999998,
-            "ENE": 0.0
+            "ENE": 1489.1
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -59528,7 +59605,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 7170.41,
           "profit_2026_ytd": -1029.26,
           "deviation_pct": -60.16438888888889,
-          "growth_pct": -50.96709649492911,
+          "growth_pct": -55.49858900735255,
           "margin_pct": -14.35426983952103
         },
         {
@@ -59676,7 +59753,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25310,
           "name": "GOMEZ BAUTISTA, JESUS",
-          "sales_2025": 45417.53,
+          "sales_2025": 48945.270000000004,
           "budget_2026": 51600.0,
           "sales_2026": 15793.83,
           "profit_2026": -687.86,
@@ -59692,7 +59769,7 @@ const DASHBOARD_DATA = {
             "OCT": 4313.609999999999,
             "NOV": 3678.0600000000004,
             "DIC": 4986.66,
-            "ENE": 0.0
+            "ENE": 3527.7400000000002
           },
           "budget_2026_monthly": {
             "FEB": 4300.0,
@@ -59741,13 +59818,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 15793.83,
           "profit_2026_ytd": -687.86,
           "deviation_pct": -69.39180232558138,
-          "growth_pct": -65.22525553459204,
+          "growth_pct": -67.73165210856943,
           "margin_pct": -4.355245054556114
         },
         {
           "id": 25325,
           "name": "CABRERA SANCHEZ POZO, S.C.",
-          "sales_2025": 15454.029999999999,
+          "sales_2025": 15390.869999999999,
           "budget_2026": 30000.0,
           "sales_2026": 0.0,
           "profit_2026": 0.0,
@@ -59763,7 +59840,7 @@ const DASHBOARD_DATA = {
             "OCT": 1400.51,
             "NOV": -10.08,
             "DIC": 1306.73,
-            "ENE": 0.0
+            "ENE": -63.16
           },
           "budget_2026_monthly": {
             "FEB": 2500.0,
@@ -59818,7 +59895,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25328,
           "name": "HERMANOS MARLO 1985, S.L.",
-          "sales_2025": 11518.77,
+          "sales_2025": 12283.95,
           "budget_2026": 12000.0,
           "sales_2026": 1806.0,
           "profit_2026": -879.07,
@@ -59834,7 +59911,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 2452.5,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 765.18
           },
           "budget_2026_monthly": {
             "FEB": 1000.0,
@@ -59883,13 +59960,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 1806.0,
           "profit_2026_ytd": -879.07,
           "deviation_pct": -84.95,
-          "growth_pct": -84.32124263267693,
+          "growth_pct": -85.29788870843662,
           "margin_pct": -48.6749723145072
         },
         {
           "id": 25331,
           "name": "DISTRIBUCIONES TRIFRAMAR, S. C",
-          "sales_2025": 13909.63,
+          "sales_2025": 16871.71,
           "budget_2026": 24000.0,
           "sales_2026": 14546.02,
           "profit_2026": -2521.96,
@@ -59905,7 +59982,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 1519.1399999999999,
             "DIC": 580.88,
-            "ENE": 0.0
+            "ENE": 2962.08
           },
           "budget_2026_monthly": {
             "FEB": 2000.0,
@@ -59954,7 +60031,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 14546.02,
           "profit_2026_ytd": -2521.96,
           "deviation_pct": -39.39158333333333,
-          "growth_pct": 4.575175615742484,
+          "growth_pct": -13.784554144185734,
           "margin_pct": -17.337800992986395
         },
         {
@@ -60315,7 +60392,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25394,
           "name": "HPC ROMAVER, S.L.",
-          "sales_2025": 6641.85,
+          "sales_2025": 6589.0,
           "budget_2026": 18000.0,
           "sales_2026": 0.0,
           "profit_2026": 0.0,
@@ -60331,7 +60408,7 @@ const DASHBOARD_DATA = {
             "OCT": 1861.92,
             "NOV": 0.0,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": -52.85
           },
           "budget_2026_monthly": {
             "FEB": 1500.0,
@@ -61110,7 +61187,7 @@ const DASHBOARD_DATA = {
         "OCT": 119513.23999999999,
         "NOV": 124312.31999999998,
         "DIC": 247872.96,
-        "ENE": 0.0
+        "ENE": 198990.12
       },
       "budget_2026_monthly": {
         "FEB": 40000.0,
@@ -61154,7 +61231,7 @@ const DASHBOARD_DATA = {
         "DIC": 0.0,
         "ENE": 0.0
       },
-      "total_sales_2025": 852402.1,
+      "total_sales_2025": 1051392.22,
       "total_budget_2026": 611000.0,
       "sales_2025_ytd": 134733.0,
       "budget_2026_ytd": 188000.0,
@@ -61172,7 +61249,7 @@ const DASHBOARD_DATA = {
         {
           "id": 23395,
           "name": "EUROSALIM, S.L.",
-          "sales_2025": 209024.76,
+          "sales_2025": 212540.16,
           "budget_2026": 221000.0,
           "sales_2026": 17914.32,
           "profit_2026": -1261.8000000000002,
@@ -61188,7 +61265,7 @@ const DASHBOARD_DATA = {
             "OCT": 26576.640000000007,
             "NOV": 18277.92,
             "DIC": 14066.64,
-            "ENE": 0.0
+            "ENE": 3515.4
           },
           "budget_2026_monthly": {
             "FEB": 10000.0,
@@ -61237,13 +61314,13 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 17914.32,
           "profit_2026_ytd": -1261.8000000000002,
           "deviation_pct": -91.89397285067872,
-          "growth_pct": -91.4295703532921,
+          "growth_pct": -91.57132468517949,
           "margin_pct": -7.043527189421648
         },
         {
           "id": 24944,
           "name": "DISTRIBUCIONES INCRISKA, S.L.",
-          "sales_2025": 601010.64,
+          "sales_2025": 796485.36,
           "budget_2026": 390000.0,
           "sales_2026": 243389.59000000003,
           "profit_2026": -18593.43,
@@ -61259,7 +61336,7 @@ const DASHBOARD_DATA = {
             "OCT": 77760.0,
             "NOV": 106034.4,
             "DIC": 233806.32,
-            "ENE": 0.0
+            "ENE": 195474.71999999997
           },
           "budget_2026_monthly": {
             "FEB": 30000.0,
@@ -61308,7 +61385,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 243389.59000000003,
           "profit_2026_ytd": -18593.43,
           "deviation_pct": -37.59241282051281,
-          "growth_pct": -59.503281006805466,
+          "growth_pct": -69.44205101271416,
           "margin_pct": -7.639369457009233
         },
         {
@@ -61617,7 +61694,7 @@ const DASHBOARD_DATA = {
         "OCT": 3461.4800000000005,
         "NOV": 3627.3299999999995,
         "DIC": 9068.26,
-        "ENE": 0.0
+        "ENE": 5751.219999999999
       },
       "budget_2026_monthly": {
         "FEB": 4750.0,
@@ -61661,7 +61738,7 @@ const DASHBOARD_DATA = {
         "DIC": 0.0,
         "ENE": 0.0
       },
-      "total_sales_2025": 58105.22,
+      "total_sales_2025": 63856.44,
       "total_budget_2026": 65000.0,
       "sales_2025_ytd": 21252.11,
       "budget_2026_ytd": 21000.0,
@@ -61679,7 +61756,7 @@ const DASHBOARD_DATA = {
         {
           "id": 24408,
           "name": "CASH VENTA PLUS, S.L.",
-          "sales_2025": 58105.22,
+          "sales_2025": 63856.44,
           "budget_2026": 65000.0,
           "sales_2026": 4044.9700000000003,
           "profit_2026": -387.86,
@@ -61695,7 +61772,7 @@ const DASHBOARD_DATA = {
             "OCT": 3461.4800000000005,
             "NOV": 3627.3299999999995,
             "DIC": 9068.26,
-            "ENE": 0.0
+            "ENE": 5751.219999999999
           },
           "budget_2026_monthly": {
             "FEB": 4750.0,
@@ -61744,7 +61821,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 4044.9700000000003,
           "profit_2026_ytd": -387.86,
           "deviation_pct": -93.77696923076923,
-          "growth_pct": -93.03854283659885,
+          "growth_pct": -93.66552535656545,
           "margin_pct": -9.588699050920031
         },
         {
@@ -61835,7 +61912,7 @@ const DASHBOARD_DATA = {
         "OCT": 0.0,
         "NOV": 0.0,
         "DIC": 22569.699999999997,
-        "ENE": 0.0
+        "ENE": 21238.85
       },
       "budget_2026_monthly": {
         "FEB": 0.0,
@@ -61879,7 +61956,7 @@ const DASHBOARD_DATA = {
         "DIC": 0.0,
         "ENE": 0.0
       },
-      "total_sales_2025": 22569.699999999997,
+      "total_sales_2025": 43808.549999999996,
       "total_budget_2026": 0.0,
       "sales_2025_ytd": 0.0,
       "budget_2026_ytd": 0.0,
@@ -61968,7 +62045,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25267,
           "name": "CARNES Y ELABORADOS GARCIA, S.",
-          "sales_2025": 22569.699999999997,
+          "sales_2025": 43808.549999999996,
           "budget_2026": 0.0,
           "sales_2026": 104209.31,
           "profit_2026": 2636.47,
@@ -61984,7 +62061,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 0.0,
             "DIC": 22569.699999999997,
-            "ENE": 0.0
+            "ENE": 21238.85
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -62033,7 +62110,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 104209.31,
           "profit_2026_ytd": 2636.47,
           "deviation_pct": 0.0,
-          "growth_pct": 361.72217619197426,
+          "growth_pct": 137.87436470734596,
           "margin_pct": 2.5299754887543155
         },
         {
@@ -62195,7 +62272,7 @@ const DASHBOARD_DATA = {
         "OCT": 21115.39,
         "NOV": 21038.260000000002,
         "DIC": 26614.9,
-        "ENE": 0.0
+        "ENE": 20570.300000000003
       },
       "budget_2026_monthly": {
         "FEB": 22000.0,
@@ -62239,7 +62316,7 @@ const DASHBOARD_DATA = {
         "DIC": 0.0,
         "ENE": 0.0
       },
-      "total_sales_2025": 262912.08,
+      "total_sales_2025": 283482.38,
       "total_budget_2026": 285200.0,
       "sales_2025_ytd": 92295.31999999999,
       "budget_2026_ytd": 96000.0,
@@ -62257,7 +62334,7 @@ const DASHBOARD_DATA = {
         {
           "id": 19540,
           "name": "DON MARKET AGUILAS, S.L.",
-          "sales_2025": 262912.08,
+          "sales_2025": 283482.38,
           "budget_2026": 285200.0,
           "sales_2026": 84722.17000000001,
           "profit_2026": 1969.73,
@@ -62273,7 +62350,7 @@ const DASHBOARD_DATA = {
             "OCT": 21115.39,
             "NOV": 21038.260000000002,
             "DIC": 26614.9,
-            "ENE": 0.0
+            "ENE": 20570.300000000003
           },
           "budget_2026_monthly": {
             "FEB": 22000.0,
@@ -62322,7 +62399,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 84722.17000000001,
           "profit_2026_ytd": 1969.73,
           "deviation_pct": -70.29376928471248,
-          "growth_pct": -67.77547459972169,
+          "growth_pct": -70.11377920560706,
           "margin_pct": 2.324928646185526
         }
       ]
@@ -62342,7 +62419,7 @@ const DASHBOARD_DATA = {
         "OCT": 24947.55,
         "NOV": 26044.82,
         "DIC": 29271.249999999996,
-        "ENE": 0.0
+        "ENE": 22018.05
       },
       "budget_2026_monthly": {
         "FEB": 22300.0,
@@ -62386,7 +62463,7 @@ const DASHBOARD_DATA = {
         "DIC": 0.0,
         "ENE": 0.0
       },
-      "total_sales_2025": 254161.97999999998,
+      "total_sales_2025": 276180.02999999997,
       "total_budget_2026": 273400.0,
       "sales_2025_ytd": 90266.33,
       "budget_2026_ytd": 91900.0,
@@ -62404,7 +62481,7 @@ const DASHBOARD_DATA = {
         {
           "id": 20008,
           "name": "SUPERMARKET ALTAMIRA, S.L.",
-          "sales_2025": 254161.97999999998,
+          "sales_2025": 276180.02999999997,
           "budget_2026": 273400.0,
           "sales_2026": 98704.88,
           "profit_2026": 929.6500000000001,
@@ -62420,7 +62497,7 @@ const DASHBOARD_DATA = {
             "OCT": 24947.55,
             "NOV": 26044.82,
             "DIC": 29271.249999999996,
-            "ENE": 0.0
+            "ENE": 22018.05
           },
           "budget_2026_monthly": {
             "FEB": 22300.0,
@@ -62469,7 +62546,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 98704.88,
           "profit_2026_ytd": 929.6500000000001,
           "deviation_pct": -63.89726408193124,
-          "growth_pct": -61.16457701502011,
+          "growth_pct": -64.26067445933727,
           "margin_pct": 0.9418480626287171
         }
       ]
@@ -62636,7 +62713,7 @@ const DASHBOARD_DATA = {
         "OCT": 10855.23,
         "NOV": 12910.2,
         "DIC": 9913.56,
-        "ENE": 0.0
+        "ENE": 10766.23
       },
       "budget_2026_monthly": {
         "FEB": 11000.0,
@@ -62680,7 +62757,7 @@ const DASHBOARD_DATA = {
         "DIC": 0.0,
         "ENE": 0.0
       },
-      "total_sales_2025": 120136.01,
+      "total_sales_2025": 130902.24,
       "total_budget_2026": 135000.0,
       "sales_2025_ytd": 38038.450000000004,
       "budget_2026_ytd": 44600.0,
@@ -62698,7 +62775,7 @@ const DASHBOARD_DATA = {
         {
           "id": 22340,
           "name": "SUPERMERCADO NOGAL 2014, S.L.",
-          "sales_2025": 120136.01,
+          "sales_2025": 130902.24,
           "budget_2026": 135000.0,
           "sales_2026": 40101.31,
           "profit_2026": -778.47,
@@ -62714,7 +62791,7 @@ const DASHBOARD_DATA = {
             "OCT": 10855.23,
             "NOV": 12910.2,
             "DIC": 9913.56,
-            "ENE": 0.0
+            "ENE": 10766.23
           },
           "budget_2026_monthly": {
             "FEB": 11000.0,
@@ -62763,7 +62840,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 40101.31,
           "profit_2026_ytd": -778.47,
           "deviation_pct": -70.29532592592592,
-          "growth_pct": -66.62007502995979,
+          "growth_pct": -69.36545165308095,
           "margin_pct": -1.9412582780961523
         }
       ]
@@ -62783,7 +62860,7 @@ const DASHBOARD_DATA = {
         "OCT": 75255.31,
         "NOV": 65133.09,
         "DIC": 81627.99,
-        "ENE": 0.0
+        "ENE": 55100.899999999994
       },
       "budget_2026_monthly": {
         "FEB": 61000.0,
@@ -62827,7 +62904,7 @@ const DASHBOARD_DATA = {
         "DIC": 0.0,
         "ENE": 0.0
       },
-      "total_sales_2025": 739108.14,
+      "total_sales_2025": 794209.0399999999,
       "total_budget_2026": 796000.0,
       "sales_2025_ytd": 267036.49,
       "budget_2026_ytd": 270000.0,
@@ -62845,7 +62922,7 @@ const DASHBOARD_DATA = {
         {
           "id": 22536,
           "name": "ROJAS PATERNA, RAFAEL",
-          "sales_2025": 739108.14,
+          "sales_2025": 794209.0399999999,
           "budget_2026": 796000.0,
           "sales_2026": 167072.62,
           "profit_2026": -622.49,
@@ -62861,7 +62938,7 @@ const DASHBOARD_DATA = {
             "OCT": 75255.31,
             "NOV": 65133.09,
             "DIC": 81627.99,
-            "ENE": 0.0
+            "ENE": 55100.899999999994
           },
           "budget_2026_monthly": {
             "FEB": 61000.0,
@@ -62910,7 +62987,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 167072.62,
           "profit_2026_ytd": -622.49,
           "deviation_pct": -79.01097738693468,
-          "growth_pct": -77.39537545886046,
+          "growth_pct": -78.9636466489981,
           "margin_pct": -0.37258648365004393
         }
       ]
@@ -62930,7 +63007,7 @@ const DASHBOARD_DATA = {
         "OCT": 17316.47,
         "NOV": 13816.05,
         "DIC": 15355.010000000002,
-        "ENE": 0.0
+        "ENE": 18248.530000000002
       },
       "budget_2026_monthly": {
         "FEB": 18500.0,
@@ -62974,7 +63051,7 @@ const DASHBOARD_DATA = {
         "DIC": 0.0,
         "ENE": 0.0
       },
-      "total_sales_2025": 173666.04,
+      "total_sales_2025": 191914.57,
       "total_budget_2026": 198000.0,
       "sales_2025_ytd": 69202.06,
       "budget_2026_ytd": 70000.0,
@@ -62992,7 +63069,7 @@ const DASHBOARD_DATA = {
         {
           "id": 23749,
           "name": "ROJAS PATERNA, RAFAEL",
-          "sales_2025": 173666.04,
+          "sales_2025": 191914.57,
           "budget_2026": 198000.0,
           "sales_2026": 36657.200000000004,
           "profit_2026": -230.60000000000002,
@@ -63008,7 +63085,7 @@ const DASHBOARD_DATA = {
             "OCT": 17316.47,
             "NOV": 13816.05,
             "DIC": 15355.010000000002,
-            "ENE": 0.0
+            "ENE": 18248.530000000002
           },
           "budget_2026_monthly": {
             "FEB": 18500.0,
@@ -63057,7 +63134,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 36657.200000000004,
           "profit_2026_ytd": -230.60000000000002,
           "deviation_pct": -81.48626262626262,
-          "growth_pct": -78.89213112707584,
+          "growth_pct": -80.89920947638316,
           "margin_pct": -0.6290715057342077
         },
         {
@@ -63148,7 +63225,7 @@ const DASHBOARD_DATA = {
         "OCT": 14878.269999999999,
         "NOV": 12748.869999999999,
         "DIC": 19335.77,
-        "ENE": 0.0
+        "ENE": 12675.54
       },
       "budget_2026_monthly": {
         "FEB": 21000.0,
@@ -63192,7 +63269,7 @@ const DASHBOARD_DATA = {
         "DIC": 0.0,
         "ENE": 0.0
       },
-      "total_sales_2025": 203602.38,
+      "total_sales_2025": 216277.91999999998,
       "total_budget_2026": 245000.0,
       "sales_2025_ytd": 76803.95,
       "budget_2026_ytd": 80000.0,
@@ -63210,7 +63287,7 @@ const DASHBOARD_DATA = {
         {
           "id": 24588,
           "name": "ALIMENTACION SUPER MAJA, S.L.",
-          "sales_2025": 203602.38,
+          "sales_2025": 216277.91999999998,
           "budget_2026": 245000.0,
           "sales_2026": 41825.44,
           "profit_2026": -256.11,
@@ -63226,7 +63303,7 @@ const DASHBOARD_DATA = {
             "OCT": 14878.269999999999,
             "NOV": 12748.869999999999,
             "DIC": 19335.77,
-            "ENE": 0.0
+            "ENE": 12675.54
           },
           "budget_2026_monthly": {
             "FEB": 21000.0,
@@ -63275,7 +63352,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 41825.44,
           "profit_2026_ytd": -256.11,
           "deviation_pct": -82.92839183673469,
-          "growth_pct": -79.45729318095397,
+          "growth_pct": -80.66125289164978,
           "margin_pct": -0.612330677214633
         }
       ]
@@ -63295,7 +63372,7 @@ const DASHBOARD_DATA = {
         "OCT": 30270.7,
         "NOV": 26002.719999999998,
         "DIC": 34113.100000000006,
-        "ENE": 0.0
+        "ENE": 25058.529999999995
       },
       "budget_2026_monthly": {
         "FEB": 32000.0,
@@ -63339,7 +63416,7 @@ const DASHBOARD_DATA = {
         "DIC": 0.0,
         "ENE": 0.0
       },
-      "total_sales_2025": 339838.63,
+      "total_sales_2025": 364897.16,
       "total_budget_2026": 395000.0,
       "sales_2025_ytd": 117120.41,
       "budget_2026_ytd": 119000.0,
@@ -63357,7 +63434,7 @@ const DASHBOARD_DATA = {
         {
           "id": 24593,
           "name": "ALIMENTACION SUPER MAJA, S.L.",
-          "sales_2025": 339838.63,
+          "sales_2025": 364897.16,
           "budget_2026": 395000.0,
           "sales_2026": 78902.13,
           "profit_2026": 382.04999999999995,
@@ -63373,7 +63450,7 @@ const DASHBOARD_DATA = {
             "OCT": 30270.7,
             "NOV": 26002.719999999998,
             "DIC": 34113.100000000006,
-            "ENE": 0.0
+            "ENE": 25058.529999999995
           },
           "budget_2026_monthly": {
             "FEB": 32000.0,
@@ -63422,7 +63499,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 78902.13,
           "profit_2026_ytd": 382.04999999999995,
           "deviation_pct": -80.02477721518987,
-          "growth_pct": -76.78247172783152,
+          "growth_pct": -78.37688569568478,
           "margin_pct": 0.48420746055904945
         }
       ]
@@ -63883,7 +63960,7 @@ const DASHBOARD_DATA = {
         "OCT": 7179.419999999999,
         "NOV": 8430.2,
         "DIC": 11118.709999999997,
-        "ENE": 0.0
+        "ENE": 7030.41
       },
       "budget_2026_monthly": {
         "FEB": 12500.0,
@@ -63927,7 +64004,7 @@ const DASHBOARD_DATA = {
         "DIC": 0.0,
         "ENE": 0.0
       },
-      "total_sales_2025": 107128.43000000001,
+      "total_sales_2025": 114158.84,
       "total_budget_2026": 135000.0,
       "sales_2025_ytd": 37059.5,
       "budget_2026_ytd": 42000.0,
@@ -63945,7 +64022,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25143,
           "name": "ALIMENTACION SUPER MAJA, S.L.",
-          "sales_2025": 107128.43000000001,
+          "sales_2025": 114158.84,
           "budget_2026": 135000.0,
           "sales_2026": 21975.22,
           "profit_2026": 562.86,
@@ -63961,7 +64038,7 @@ const DASHBOARD_DATA = {
             "OCT": 7179.419999999999,
             "NOV": 8430.2,
             "DIC": 11118.709999999997,
-            "ENE": 0.0
+            "ENE": 7030.41
           },
           "budget_2026_monthly": {
             "FEB": 12500.0,
@@ -64010,7 +64087,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 21975.22,
           "profit_2026_ytd": 562.86,
           "deviation_pct": -83.72205925925927,
-          "growth_pct": -79.48703252721991,
+          "growth_pct": -80.75031245937677,
           "margin_pct": 2.5613395451786145
         }
       ]
@@ -64177,7 +64254,7 @@ const DASHBOARD_DATA = {
         "OCT": 14109.77,
         "NOV": 11068.63,
         "DIC": 25197.719999999998,
-        "ENE": 0.0
+        "ENE": 15147.130000000001
       },
       "budget_2026_monthly": {
         "FEB": 18000.0,
@@ -64221,7 +64298,7 @@ const DASHBOARD_DATA = {
         "DIC": 0.0,
         "ENE": 0.0
       },
-      "total_sales_2025": 222565.39,
+      "total_sales_2025": 237712.52000000002,
       "total_budget_2026": 242000.0,
       "sales_2025_ytd": 84715.20000000001,
       "budget_2026_ytd": 87000.0,
@@ -64239,7 +64316,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25235,
           "name": "ISIDRO MARTINEZ, LAURA",
-          "sales_2025": 222565.39,
+          "sales_2025": 237712.52000000002,
           "budget_2026": 242000.0,
           "sales_2026": 71792.23000000001,
           "profit_2026": -2352.6199999999994,
@@ -64255,7 +64332,7 @@ const DASHBOARD_DATA = {
             "OCT": 14109.77,
             "NOV": 11068.63,
             "DIC": 25197.719999999998,
-            "ENE": 0.0
+            "ENE": 15147.130000000001
           },
           "budget_2026_monthly": {
             "FEB": 18000.0,
@@ -64304,7 +64381,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 71792.23000000001,
           "profit_2026_ytd": -2352.6199999999994,
           "deviation_pct": -70.33378925619834,
-          "growth_pct": -67.7433090562733,
+          "growth_pct": -69.79871737508819,
           "margin_pct": -3.276984152741876
         }
       ]
@@ -64324,7 +64401,7 @@ const DASHBOARD_DATA = {
         "OCT": 5676.679999999999,
         "NOV": 2332.0899999999997,
         "DIC": 5116.95,
-        "ENE": 0.0
+        "ENE": 3784.17
       },
       "budget_2026_monthly": {
         "FEB": 7000.0,
@@ -64368,7 +64445,7 @@ const DASHBOARD_DATA = {
         "DIC": 0.0,
         "ENE": 0.0
       },
-      "total_sales_2025": 91163.93000000001,
+      "total_sales_2025": 94948.1,
       "total_budget_2026": 84000.0,
       "sales_2025_ytd": 52518.79,
       "budget_2026_ytd": 28000.0,
@@ -64386,7 +64463,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25277,
           "name": "CASH ORICOR, S.L.",
-          "sales_2025": 91163.93000000001,
+          "sales_2025": 94948.1,
           "budget_2026": 84000.0,
           "sales_2026": 4291.530000000001,
           "profit_2026": 86.38999999999999,
@@ -64402,7 +64479,7 @@ const DASHBOARD_DATA = {
             "OCT": 5676.679999999999,
             "NOV": 2332.0899999999997,
             "DIC": 5116.95,
-            "ENE": 0.0
+            "ENE": 3784.17
           },
           "budget_2026_monthly": {
             "FEB": 7000.0,
@@ -64451,7 +64528,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 4291.530000000001,
           "profit_2026_ytd": 86.38999999999999,
           "deviation_pct": -94.89103571428572,
-          "growth_pct": -95.2925131683112,
+          "growth_pct": -95.4801307240482,
           "margin_pct": 2.013034978201247
         }
       ]
@@ -64471,7 +64548,7 @@ const DASHBOARD_DATA = {
         "OCT": 27508.560000000005,
         "NOV": 22017.25,
         "DIC": 23308.960000000003,
-        "ENE": 0.0
+        "ENE": 21688.720000000005
       },
       "budget_2026_monthly": {
         "FEB": 16000.0,
@@ -64515,7 +64592,7 @@ const DASHBOARD_DATA = {
         "DIC": 0.0,
         "ENE": 0.0
       },
-      "total_sales_2025": 227385.39,
+      "total_sales_2025": 249074.11000000002,
       "total_budget_2026": 241000.0,
       "sales_2025_ytd": 70826.14,
       "budget_2026_ytd": 76000.0,
@@ -64533,7 +64610,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25337,
           "name": "SUPERMERCADOS HALSUPER, S.L.",
-          "sales_2025": 227385.39,
+          "sales_2025": 249074.11000000002,
           "budget_2026": 241000.0,
           "sales_2026": 92719.83,
           "profit_2026": 0.7700000000000244,
@@ -64549,7 +64626,7 @@ const DASHBOARD_DATA = {
             "OCT": 27508.560000000005,
             "NOV": 22017.25,
             "DIC": 23308.960000000003,
-            "ENE": 0.0
+            "ENE": 21688.720000000005
           },
           "budget_2026_monthly": {
             "FEB": 16000.0,
@@ -64598,7 +64675,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 92719.83,
           "profit_2026_ytd": 0.7700000000000244,
           "deviation_pct": -61.527041493775926,
-          "growth_pct": -59.223488369239554,
+          "growth_pct": -62.77420001621204,
           "margin_pct": 0.0008304588133951759
         }
       ]
@@ -64618,7 +64695,7 @@ const DASHBOARD_DATA = {
         "OCT": 19223.520000000004,
         "NOV": 19122.449999999997,
         "DIC": 17692.050000000003,
-        "ENE": 0.0
+        "ENE": 17869.49
       },
       "budget_2026_monthly": {
         "FEB": 16000.0,
@@ -64662,7 +64739,7 @@ const DASHBOARD_DATA = {
         "DIC": 0.0,
         "ENE": 0.0
       },
-      "total_sales_2025": 196635.09999999998,
+      "total_sales_2025": 214504.59,
       "total_budget_2026": 214000.0,
       "sales_2025_ytd": 73094.47,
       "budget_2026_ytd": 76000.0,
@@ -64680,7 +64757,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25338,
           "name": "SUPERMERCADOS LA CESTA, S.L.U.",
-          "sales_2025": 196635.09999999998,
+          "sales_2025": 214504.59,
           "budget_2026": 214000.0,
           "sales_2026": 62131.59999999999,
           "profit_2026": -880.6999999999998,
@@ -64696,7 +64773,7 @@ const DASHBOARD_DATA = {
             "OCT": 19223.520000000004,
             "NOV": 19122.449999999997,
             "DIC": 17692.050000000003,
-            "ENE": 0.0
+            "ENE": 17869.49
           },
           "budget_2026_monthly": {
             "FEB": 16000.0,
@@ -64745,7 +64822,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 62131.59999999999,
           "profit_2026_ytd": -880.6999999999998,
           "deviation_pct": -70.96654205607477,
-          "growth_pct": -68.40258936476754,
+          "growth_pct": -71.03483892815532,
           "margin_pct": -1.4174751656162081
         }
       ]
@@ -64765,7 +64842,7 @@ const DASHBOARD_DATA = {
         "OCT": 18147.09,
         "NOV": 14186.970000000001,
         "DIC": 13770.980000000001,
-        "ENE": 0.0
+        "ENE": 11716.1
       },
       "budget_2026_monthly": {
         "FEB": 18000.0,
@@ -64809,7 +64886,7 @@ const DASHBOARD_DATA = {
         "DIC": 0.0,
         "ENE": 0.0
       },
-      "total_sales_2025": 164570.38,
+      "total_sales_2025": 176286.48,
       "total_budget_2026": 186000.0,
       "sales_2025_ytd": 62544.130000000005,
       "budget_2026_ytd": 65000.0,
@@ -64827,7 +64904,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25339,
           "name": "SUPERMERCADOS LA CESTA, S.L.U.",
-          "sales_2025": 164570.38,
+          "sales_2025": 176286.48,
           "budget_2026": 186000.0,
           "sales_2026": 50582.3,
           "profit_2026": -534.03,
@@ -64843,7 +64920,7 @@ const DASHBOARD_DATA = {
             "OCT": 18147.09,
             "NOV": 14186.970000000001,
             "DIC": 13770.980000000001,
-            "ENE": 0.0
+            "ENE": 11716.1
           },
           "budget_2026_monthly": {
             "FEB": 18000.0,
@@ -64892,7 +64969,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 50582.3,
           "profit_2026_ytd": -534.03,
           "deviation_pct": -72.80521505376345,
-          "growth_pct": -69.2640315954791,
+          "growth_pct": -71.30676158489295,
           "margin_pct": -1.0557645658659254
         }
       ]
@@ -64912,7 +64989,7 @@ const DASHBOARD_DATA = {
         "OCT": 27184.129999999997,
         "NOV": 25414.97,
         "DIC": 29777.77,
-        "ENE": 0.0
+        "ENE": 21406.010000000002
       },
       "budget_2026_monthly": {
         "FEB": 18000.0,
@@ -64956,7 +65033,7 @@ const DASHBOARD_DATA = {
         "DIC": 0.0,
         "ENE": 0.0
       },
-      "total_sales_2025": 237449.00999999998,
+      "total_sales_2025": 258855.02,
       "total_budget_2026": 346000.0,
       "sales_2025_ytd": 0.0,
       "budget_2026_ytd": 72000.0,
@@ -64974,7 +65051,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25374,
           "name": "AVAQUIA GRUPO ALIMENTICIO, S.L",
-          "sales_2025": 237449.00999999998,
+          "sales_2025": 258855.02,
           "budget_2026": 346000.0,
           "sales_2026": 33011.8,
           "profit_2026": -2176.61,
@@ -64990,7 +65067,7 @@ const DASHBOARD_DATA = {
             "OCT": 27184.129999999997,
             "NOV": 25414.97,
             "DIC": 29777.77,
-            "ENE": 0.0
+            "ENE": 21406.010000000002
           },
           "budget_2026_monthly": {
             "FEB": 18000.0,
@@ -65039,7 +65116,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": 33011.8,
           "profit_2026_ytd": -2176.61,
           "deviation_pct": -90.45901734104046,
-          "growth_pct": -86.0973099024502,
+          "growth_pct": -87.24699254432075,
           "margin_pct": -6.593430227979086
         }
       ]
@@ -65059,7 +65136,7 @@ const DASHBOARD_DATA = {
         "OCT": 0.0,
         "NOV": 0.0,
         "DIC": 0.0,
-        "ENE": 0.0
+        "ENE": 13912.530000000002
       },
       "budget_2026_monthly": {
         "FEB": 0.0,
@@ -65103,7 +65180,7 @@ const DASHBOARD_DATA = {
         "DIC": 0.0,
         "ENE": 0.0
       },
-      "total_sales_2025": 0.0,
+      "total_sales_2025": 13912.530000000002,
       "total_budget_2026": 0.0,
       "sales_2025_ytd": 0.0,
       "budget_2026_ytd": 0.0,
@@ -65121,7 +65198,7 @@ const DASHBOARD_DATA = {
         {
           "id": 25410,
           "name": "AVAQUIA GRUPO ALIMENTICIO S.L.",
-          "sales_2025": 0.0,
+          "sales_2025": 13912.530000000002,
           "budget_2026": 0.0,
           "sales_2026": -802.1600000000024,
           "profit_2026": -446.73,
@@ -65137,7 +65214,7 @@ const DASHBOARD_DATA = {
             "OCT": 0.0,
             "NOV": 0.0,
             "DIC": 0.0,
-            "ENE": 0.0
+            "ENE": 13912.530000000002
           },
           "budget_2026_monthly": {
             "FEB": 0.0,
@@ -65186,7 +65263,7 @@ const DASHBOARD_DATA = {
           "sales_2026_ytd": -802.1600000000024,
           "profit_2026_ytd": -446.73,
           "deviation_pct": 0.0,
-          "growth_pct": 0.0,
+          "growth_pct": -105.7657377917604,
           "margin_pct": 0.0
         }
       ]
@@ -65488,7 +65565,7 @@ const DASHBOARD_DATA = {
   ],
   "source_files": {
     "budget": "PRESUPUESTOS.xlsx",
-    "sales_2025": "VENTAS_2025.xlsx",
-    "sales_2026": "VENTAS_2026.xlsx"
+    "sales_previous": "VENTAS_2025.xlsx",
+    "sales_current": "VENTAS_2026.xlsx"
   }
 };

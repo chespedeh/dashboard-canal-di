@@ -1,5 +1,6 @@
 ﻿import calendar
 import json
+import re
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
@@ -103,6 +104,12 @@ def month_num_to_key(month_num):
     return MONTH_NUM_TO_KEY.get(month_num)
 
 
+def matches_fiscal_year(doc_date, fiscal_year):
+    if doc_date.month == 1:
+        return doc_date.year == fiscal_year + 1
+    return doc_date.year == fiscal_year
+
+
 def build_period_label(ytd_months):
     if not ytd_months:
         return "Sin datos reales"
@@ -198,6 +205,44 @@ def find_budget_file(data_dir):
         "No se encontro archivo de presupuestos en la carpeta de datos "
         "(nombres esperados: PRESUPUESTOS.xlsx o PRESUPUESTOS VENTAS.xlsx)."
     )
+
+
+def find_sales_files(data_dir):
+    sales_files = {}
+    pattern = re.compile(r"^VENTAS_(\d{4})\.xlsx$", re.IGNORECASE)
+
+    for item in data_dir.iterdir():
+        if not item.is_file():
+            continue
+        match = pattern.match(item.name)
+        if match:
+            sales_files[int(match.group(1))] = item
+
+    if len(sales_files) < 2:
+        raise FileNotFoundError(
+            "Se necesitan al menos dos archivos VENTAS_YYYY.xlsx para comparar ejercicio anterior y actual."
+        )
+
+    sorted_years = sorted(sales_files)
+    previous_year = sorted_years[-2]
+    current_year = sorted_years[-1]
+
+    if current_year != previous_year + 1:
+        raise ValueError(
+            "Los dos archivos de ventas mas recientes deben ser consecutivos "
+            f"(detectados: {previous_year} y {current_year})."
+        )
+
+    return {
+        "previous_year": previous_year,
+        "current_year": current_year,
+        "previous_file": sales_files[previous_year],
+        "current_file": sales_files[current_year],
+    }
+
+
+def format_fiscal_period(fiscal_year):
+    return f"01/02/{fiscal_year} - 31/01/{fiscal_year + 1}"
 
 
 def init_agent(agents_data, agent_id, name):
@@ -427,7 +472,7 @@ def process_budget_file(sheet, agents_data):
             client["budget_2026_monthly"][month] += val
 
 
-def process_daily_sales_file(sheet, year, agents_data):
+def process_daily_sales_file(sheet, fiscal_year, agents_data, target_bucket):
     headers = [cell.value for cell in sheet[1]]
     usable_headers = headers[:-1] if len(headers) > 1 else headers
     headers_norm = build_normalized_headers(usable_headers)
@@ -449,7 +494,7 @@ def process_daily_sales_file(sheet, year, agents_data):
             continue
 
         doc_date = as_date(row[date_col] if date_col < len(row) else None)
-        if doc_date is None or doc_date.year != year:
+        if doc_date is None or not matches_fiscal_year(doc_date, fiscal_year):
             continue
 
         agent_id = as_int(row[agent_id_col] if agent_id_col < len(row) else None)
@@ -474,10 +519,10 @@ def process_daily_sales_file(sheet, year, agents_data):
         if as_str(client_name) and len(as_str(client_name)) >= len(client["name"]):
             client["name"] = as_str(client_name)
 
-        if year == 2025:
+        if target_bucket == "previous":
             agent["sales_2025_monthly"][month_key] += importe
             client["sales_2025_monthly"][month_key] += importe
-        elif year == 2026:
+        elif target_bucket == "current":
             agent["sales_2026_monthly"][month_key] += importe
             agent["profit_2026_monthly"][month_key] += beneficio
             add_daily_value(agent["sales_2026_daily"], doc_date, importe)
@@ -511,12 +556,17 @@ def generate():
     data_dir = resolve_data_dir(base_dir)
 
     budget_file = find_budget_file(data_dir)
-    sales_2025_file = find_file_case_insensitive(data_dir, "VENTAS_2025.xlsx")
-    sales_2026_file = find_file_case_insensitive(data_dir, "VENTAS_2026.xlsx")
+    sales_files = find_sales_files(data_dir)
+    previous_fiscal_year = sales_files["previous_year"]
+    current_fiscal_year = sales_files["current_year"]
+    sales_previous_file = sales_files["previous_file"]
+    sales_current_file = sales_files["current_file"]
 
     print("Starting data extraction...")
     print(f"Data directory: {data_dir}")
     print(f"Budget file: {budget_file}")
+    print(f"Previous sales file: {sales_previous_file.name} (FY {previous_fiscal_year})")
+    print(f"Current sales file: {sales_current_file.name} (FY {current_fiscal_year})")
 
     agents_data = {}
 
@@ -524,13 +574,13 @@ def generate():
     sheet_budget = wb_budget.active
     process_budget_file(sheet_budget, agents_data)
 
-    wb_2025 = openpyxl.load_workbook(str(sales_2025_file), data_only=True)
-    sheet_2025 = wb_2025.active
-    process_daily_sales_file(sheet_2025, 2025, agents_data)
+    wb_previous = openpyxl.load_workbook(str(sales_previous_file), data_only=True)
+    sheet_previous = wb_previous.active
+    process_daily_sales_file(sheet_previous, previous_fiscal_year, agents_data, "previous")
 
-    wb_2026 = openpyxl.load_workbook(str(sales_2026_file), data_only=True)
-    sheet_2026 = wb_2026.active
-    real_months_seen, as_of_date = process_daily_sales_file(sheet_2026, 2026, agents_data)
+    wb_current = openpyxl.load_workbook(str(sales_current_file), data_only=True)
+    sheet_current = wb_current.active
+    real_months_seen, as_of_date = process_daily_sales_file(sheet_current, current_fiscal_year, agents_data, "current")
 
     ytd_months = [m for m in MONTHS if m in real_months_seen]
     current_month_key = month_num_to_key(as_of_date.month) if as_of_date else None
@@ -588,7 +638,13 @@ def generate():
         "period_label": build_period_label(ytd_months),
         "ytd_months": ytd_months,
         "months": MONTHS,
-        "fiscal_period": "01/02/2026 - 31/01/2027",
+        "fiscal_period": format_fiscal_period(current_fiscal_year),
+        "year_labels": {
+            "previous": previous_fiscal_year,
+            "current": current_fiscal_year,
+            "budget": current_fiscal_year,
+            "next": current_fiscal_year + 1,
+        },
         "global_totals": global_totals,
         "forecast": {
             "current_month_key": current_month_key,
@@ -606,8 +662,8 @@ def generate():
         "agents": sorted(list(agents_data.values()), key=lambda agent: agent["id"]),
         "source_files": {
             "budget": budget_file.name,
-            "sales_2025": sales_2025_file.name,
-            "sales_2026": sales_2026_file.name,
+            "sales_previous": sales_previous_file.name,
+            "sales_current": sales_current_file.name,
         },
     }
 
