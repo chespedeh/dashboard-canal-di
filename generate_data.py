@@ -119,12 +119,85 @@ def resolve_data_dir(base_dir):
     raise FileNotFoundError("No se encontro la carpeta de datos (datos o Datos).")
 
 
+def easter_sunday(year):
+    # Computus (Gregorian calendar).
+    a = year % 19
+    b = year // 100
+    c = year % 100
+    d = b // 4
+    e = b % 4
+    f = (b + 8) // 25
+    g = (b - f + 1) // 3
+    h = (19 * a + b - d - g + 15) % 30
+    i = c // 4
+    k = c % 4
+    l = (32 + 2 * e + 2 * i - h - k) % 7
+    m = (a + 11 * h + 22 * l) // 451
+    month = (h + l - 7 * m + 114) // 31
+    day = ((h + l - 7 * m + 114) % 31) + 1
+    return date(year, month, day)
+
+
+def default_holidays_for_year(year):
+    # Festivos nacionales habituales en Espana (aprox) + Viernes Santo.
+    fixed = {
+        date(year, 1, 1),
+        date(year, 1, 6),
+        date(year, 5, 1),
+        date(year, 8, 15),
+        date(year, 10, 12),
+        date(year, 11, 1),
+        date(year, 12, 6),
+        date(year, 12, 8),
+        date(year, 12, 25),
+    }
+    easter = easter_sunday(year)
+    fixed.add(easter - timedelta(days=2))  # Viernes Santo.
+    return fixed
+
+
+def load_holidays(data_dir, year):
+    # Ajuste temporal: previsión solo con exclusión de sábados y domingos.
+    return set()
+
+
+def is_working_day(check_date, holidays):
+    return check_date.weekday() < 5 and check_date not in holidays
+
+
+def count_working_days(start_date, end_date, holidays):
+    if start_date > end_date:
+        return 0
+    count = 0
+    cursor = start_date
+    while cursor <= end_date:
+        if is_working_day(cursor, holidays):
+            count += 1
+        cursor += timedelta(days=1)
+    return count
+
+
 def find_file_case_insensitive(folder, target_name):
     target = target_name.lower()
     for item in folder.iterdir():
         if item.is_file() and item.name.lower() == target:
             return item
     raise FileNotFoundError(f"No se encontro {target_name} en {folder}")
+
+
+def find_budget_file(data_dir):
+    preferred_names = ("PRESUPUESTOS.xlsx", "PRESUPUESTOS VENTAS.xlsx")
+
+    for name in preferred_names:
+        try:
+            return find_file_case_insensitive(data_dir, name)
+        except FileNotFoundError:
+            pass
+
+    raise FileNotFoundError(
+        "No se encontro archivo de presupuestos en la carpeta de datos "
+        "(nombres esperados: PRESUPUESTOS.xlsx o PRESUPUESTOS VENTAS.xlsx)."
+    )
 
 
 def init_agent(agents_data, agent_id, name):
@@ -187,7 +260,8 @@ def add_daily_value(target_map, key_date, value):
     target_map[key] = target_map.get(key, 0.0) + value
 
 
-def compute_month_forecast(sales_daily, profit_daily, as_of_date, month_budget):
+def compute_month_forecast(sales_daily, profit_daily, as_of_date, month_budget, holidays=None):
+    holidays = holidays or set()
     if not as_of_date:
         return {
             "forecast_sales_month_end": 0.0,
@@ -205,8 +279,12 @@ def compute_month_forecast(sales_daily, profit_daily, as_of_date, month_budget):
     year = as_of_date.year
     month = as_of_date.month
     days_in_month = calendar.monthrange(year, month)[1]
-    days_elapsed = as_of_date.day
-    days_remaining = max(0, days_in_month - days_elapsed)
+    month_start = date(year, month, 1)
+    month_end = date(year, month, days_in_month)
+
+    # Prevision basada en dias laborables (sin sabados, domingos ni festivos).
+    days_elapsed = count_working_days(month_start, as_of_date, holidays)
+    days_remaining = count_working_days(as_of_date + timedelta(days=1), month_end, holidays)
 
     month_prefix = f"{year:04d}-{month:02d}-"
     current_month_sales = sum(value for day, value in sales_daily.items() if day.startswith(month_prefix))
@@ -215,15 +293,19 @@ def compute_month_forecast(sales_daily, profit_daily, as_of_date, month_budget):
     avg_daily_sales = current_month_sales / days_elapsed if days_elapsed > 0 else 0.0
     avg_daily_profit = current_month_profit / days_elapsed if days_elapsed > 0 else 0.0
 
-    recent_sales = 0.0
-    recent_profit = 0.0
-    for offset in range(7):
-        day_key = (as_of_date - timedelta(days=offset)).isoformat()
-        recent_sales += sales_daily.get(day_key, 0.0)
-        recent_profit += profit_daily.get(day_key, 0.0)
+    recent_working_days = []
+    cursor = as_of_date
+    while len(recent_working_days) < 7 and cursor.month == month:
+        if is_working_day(cursor, holidays):
+            recent_working_days.append(cursor)
+        cursor -= timedelta(days=1)
 
-    avg_recent_sales = recent_sales / 7.0
-    avg_recent_profit = recent_profit / 7.0
+    recent_sales = sum(sales_daily.get(d.isoformat(), 0.0) for d in recent_working_days)
+    recent_profit = sum(profit_daily.get(d.isoformat(), 0.0) for d in recent_working_days)
+    divisor_recent = len(recent_working_days)
+
+    avg_recent_sales = recent_sales / divisor_recent if divisor_recent > 0 else 0.0
+    avg_recent_profit = recent_profit / divisor_recent if divisor_recent > 0 else 0.0
 
     weighted_sales = 0.7 * avg_recent_sales + 0.3 * avg_daily_sales
     weighted_profit = 0.7 * avg_recent_profit + 0.3 * avg_daily_profit
@@ -251,7 +333,7 @@ def compute_month_forecast(sales_daily, profit_daily, as_of_date, month_budget):
     }
 
 
-def compute_derived_metrics(agents_data, ytd_months, as_of_date, current_month_key):
+def compute_derived_metrics(agents_data, ytd_months, as_of_date, current_month_key, holidays=None):
     for agent in agents_data.values():
         agent["sales_2025_ytd"] = sum(agent["sales_2025_monthly"][m] for m in ytd_months)
         agent["budget_2026_ytd"] = sum(agent["budget_2026_monthly"][m] for m in ytd_months)
@@ -273,6 +355,7 @@ def compute_derived_metrics(agents_data, ytd_months, as_of_date, current_month_k
             agent["profit_2026_daily"],
             as_of_date,
             agent["budget_2026_monthly"].get(current_month_key, 0.0),
+            holidays,
         )
         agent.update({
             "forecast_sales_month_end": forecast_metrics["forecast_sales_month_end"],
@@ -427,12 +510,13 @@ def generate():
     base_dir = Path(__file__).resolve().parent
     data_dir = resolve_data_dir(base_dir)
 
-    budget_file = find_file_case_insensitive(data_dir, "PRESUPUESTOS.xlsx")
+    budget_file = find_budget_file(data_dir)
     sales_2025_file = find_file_case_insensitive(data_dir, "VENTAS_2025.xlsx")
     sales_2026_file = find_file_case_insensitive(data_dir, "VENTAS_2026.xlsx")
 
     print("Starting data extraction...")
     print(f"Data directory: {data_dir}")
+    print(f"Budget file: {budget_file}")
 
     agents_data = {}
 
@@ -451,7 +535,10 @@ def generate():
     ytd_months = [m for m in MONTHS if m in real_months_seen]
     current_month_key = month_num_to_key(as_of_date.month) if as_of_date else None
 
-    compute_derived_metrics(agents_data, ytd_months, as_of_date, current_month_key)
+    holiday_year = as_of_date.year if as_of_date else datetime.now().year
+    holidays = load_holidays(data_dir, holiday_year)
+
+    compute_derived_metrics(agents_data, ytd_months, as_of_date, current_month_key, holidays)
 
     global_totals = {
         "sales_2025_monthly": {m: 0.0 for m in MONTHS},
@@ -486,6 +573,7 @@ def generate():
         global_profit_daily,
         as_of_date,
         global_totals["budget_2026_monthly"].get(current_month_key, 0.0) if current_month_key else 0.0,
+        holidays,
     )
 
     current_ts = datetime.now()

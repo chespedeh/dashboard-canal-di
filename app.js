@@ -295,46 +295,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // Render Lists
         renderTopLists();
 
-        // Render tabla de previsión por agente
-        renderPrevisionAgentsTable();
-
         // Render Global Monthly Summary Table
         renderGlobalMonthlyTable();
-    };
-
-    const renderPrevisionAgentsTable = () => {
-        const tbody = document.getElementById('prevision-agents-table-body');
-        if (!tbody) return;
-
-        tbody.innerHTML = '';
-        const currentMonth = state.data.forecast?.current_month_key;
-
-        const rows = [...state.data.agents]
-            .sort((a, b) => toNumber(b.forecast_sales_month_end) - toNumber(a.forecast_sales_month_end));
-
-        rows.forEach(agent => {
-            const currentMonthSales = currentMonth ? toNumber(agent.sales_2026_monthly?.[currentMonth]) : 0;
-            const monthBudget = currentMonth ? toNumber(agent.budget_2026_monthly?.[currentMonth]) : 0;
-            const forecastSales = toNumber(agent.forecast_sales_month_end);
-            const compliance = toNumber(agent.expected_compliance_pct_month_end);
-            const requiredDaily = toNumber(agent.required_daily_sales_to_budget);
-            const marginForecast = toNumber(agent.forecast_margin_pct_month_end);
-
-            const complianceClass = compliance >= 100 ? 'extra-success' : (compliance >= 90 ? 'extra-warn' : 'extra-danger');
-            const marginClass = marginForecast >= 0 ? 'extra-success' : 'extra-danger';
-
-            const tr = document.createElement('tr');
-            tr.innerHTML = `
-                <td class="bold text-left">${agent.name} <span class="text-muted">(ID ${agent.id})</span></td>
-                <td>${formatCurrency(currentMonthSales)}</td>
-                <td>${formatCurrency(monthBudget)}</td>
-                <td class="bold">${formatCurrency(forecastSales)}</td>
-                <td class="bold ${complianceClass}">${compliance.toFixed(1)}%</td>
-                <td>${formatCurrency(requiredDaily)}</td>
-                <td class="bold ${marginClass}">${marginForecast.toFixed(1)}%</td>
-            `;
-            tbody.appendChild(tr);
-        });
     };
 
     const renderGlobalMonthlyTable = () => {
