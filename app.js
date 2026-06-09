@@ -13,13 +13,15 @@ document.addEventListener('DOMContentLoaded', () => {
         sortColumn: 'id',
         sortDirection: 'asc',
         selectedAgentId: null,
+        selectedRankingAgentId: null,
         selectedClientMonthlyKey: null,
         clientSearchQuery: '',
         clientMonthlySearchQuery: '',
         charts: {
             monthlyTrend: null,
             agentShare: null,
-            agentMonthly: null
+            agentMonthly: null,
+            rankingAgentMonthly: null
         }
     };
 
@@ -30,41 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const toNumber = (val) => parseFloat(val || 0);
     const monthsKeys = state.data.months || ['FEB', 'MAR', 'ABR', 'MAY', 'JUN', 'JUL', 'AGO', 'SEP', 'OCT', 'NOV', 'DIC', 'ENE'];
-    const yearLabels = {
-        previous: String(state.data.year_labels?.previous || (new Date().getFullYear() - 1)),
-        current: String(state.data.year_labels?.current || new Date().getFullYear()),
-        budget: String(state.data.year_labels?.budget || state.data.year_labels?.current || new Date().getFullYear()),
-        next: String(state.data.year_labels?.next || (new Date().getFullYear() + 1))
-    };
-
-    const applyYearTemplate = (template = '') => String(template)
-        .replace(/\{previous\}/g, yearLabels.previous)
-        .replace(/\{current\}/g, yearLabels.current)
-        .replace(/\{budget\}/g, yearLabels.budget)
-        .replace(/\{next\}/g, yearLabels.next);
-
-    const setTemplateText = (el, text) => {
-        const directTextNode = [...el.childNodes].find(node => node.nodeType === Node.TEXT_NODE && node.textContent.trim().length > 0);
-
-        if (directTextNode) {
-            directTextNode.textContent = `${text} `;
-            return;
-        }
-
-        if (el.children.length === 0) {
-            el.textContent = text;
-            return;
-        }
-
-        el.insertBefore(document.createTextNode(`${text} `), el.firstChild);
-    };
-
-    const applyDynamicYearLabels = () => {
-        document.querySelectorAll('[data-year-template]').forEach(el => {
-            const template = el.getAttribute('data-year-template');
-            if (template) setTemplateText(el, applyYearTemplate(template));
-        });
-    };
 
     const buildMonthlyMap = (sourceMap = {}) => {
         const result = {};
@@ -150,6 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Keep a stable base order by agent ID (ascending)
         state.data.agents.sort((a, b) => a.id - b.id);
         state.selectedAgentId = state.data.agents[0].id;
+        state.selectedRankingAgentId = state.data.agents[0].id;
     }
 
     // Chart.js Global Configuration for Premium Look
@@ -519,9 +487,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (legendEl) {
             legendEl.innerHTML = `
-                <span class="leg-item"><span class="dot prev"></span>Ventas ${yearLabels.previous}</span>
-                <span class="leg-item"><span class="dot budget"></span>Ppto ${yearLabels.budget}</span>
-                <span class="leg-item"><span class="dot real"></span>Ventas ${yearLabels.current}</span>
+                <span class="leg-item"><span class="dot prev"></span>Ventas 2025</span>
+                <span class="leg-item"><span class="dot budget"></span>Ppto 2026</span>
+                <span class="leg-item"><span class="dot real"></span>Ventas 2026</span>
             `;
         }
         if (subtitleEl) {
@@ -534,14 +502,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 labels: monthsLabel,
                 datasets: [
                     {
-                        label: `Ventas ${yearLabels.current}`,
+                        label: 'Ventas 2026',
                         data: dataReal2026,
                         backgroundColor: 'hsl(142, 70%, 45%)',
                         borderRadius: 6,
                         order: 1
                     },
                     {
-                        label: `Presupuesto ${yearLabels.budget}`,
+                        label: 'Presupuesto 2026',
                         data: dataBudget,
                         type: 'line',
                         borderColor: 'hsl(217, 90%, 60%)',
@@ -553,7 +521,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         order: 0
                     },
                     {
-                        label: `Ventas Históricas ${yearLabels.previous}`,
+                        label: 'Ventas Históricas 2025',
                         data: data2025,
                         type: 'line',
                         borderColor: 'hsla(220, 16%, 66%, 0.4)',
@@ -693,7 +661,169 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // 5. Render Ranking Tab
+    const renderRankingAgentMonthlyChart = (agent) => {
+        const canvas = document.getElementById('rankingAgentMonthlyChart');
+        if (!canvas || !agent) return;
+
+        if (state.charts.rankingAgentMonthly) {
+            state.charts.rankingAgentMonthly.destroy();
+        }
+
+        const ctx = canvas.getContext('2d');
+        const monthLabels = monthsKeys.map(m => m.charAt(0) + m.slice(1).toLowerCase());
+        const sales2026 = monthsKeys.map(m => toNumber(agent.sales_2026_monthly?.[m]));
+        const budget2026 = monthsKeys.map(m => toNumber(agent.budget_2026_monthly?.[m]));
+        const sales2025 = monthsKeys.map(m => toNumber(agent.sales_2025_monthly?.[m]));
+
+        state.charts.rankingAgentMonthly = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: monthLabels,
+                datasets: [
+                    {
+                        label: 'Ventas 2026',
+                        data: sales2026,
+                        backgroundColor: 'hsl(142, 70%, 45%)',
+                        borderRadius: 5,
+                        order: 1
+                    },
+                    {
+                        label: 'Ppto 2026',
+                        data: budget2026,
+                        type: 'line',
+                        borderColor: 'hsl(217, 90%, 60%)',
+                        borderWidth: 3,
+                        pointBackgroundColor: 'hsl(217, 90%, 60%)',
+                        pointRadius: 3,
+                        pointHoverRadius: 6,
+                        fill: false,
+                        tension: 0.2,
+                        order: 0
+                    },
+                    {
+                        label: 'Ventas 2025',
+                        data: sales2025,
+                        type: 'line',
+                        borderColor: 'hsla(220, 16%, 66%, 0.6)',
+                        borderWidth: 2,
+                        borderDash: [5, 5],
+                        pointBackgroundColor: 'hsla(220, 16%, 66%, 0.6)',
+                        pointRadius: 2,
+                        fill: false,
+                        tension: 0.15,
+                        order: 2
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    x: {
+                        grid: { display: false }
+                    },
+                    y: {
+                        grid: { color: 'hsla(220, 20%, 20%, 0.3)' },
+                        ticks: {
+                            callback: (val) => formatShortNum(val)
+                        }
+                    }
+                }
+            }
+        });
+    };
+
+    const renderRankingSnapshotPanel = () => {
+        const selector = document.getElementById('ranking-agent-selector');
+        if (!selector) return;
+
+        const agents = state.data.agents || [];
+        const totals = state.data.global_totals || {};
+
+        if (agents.length === 0) return;
+
+        if (!state.selectedRankingAgentId || !agents.some(a => a.id === state.selectedRankingAgentId)) {
+            state.selectedRankingAgentId = agents[0].id;
+        }
+
+        if (!selector.dataset.bound) {
+            selector.addEventListener('change', (e) => {
+                state.selectedRankingAgentId = parseInt(e.target.value, 10);
+                renderRankingSnapshotPanel();
+            });
+            selector.dataset.bound = '1';
+        }
+
+        const sortedAgents = [...agents].sort((a, b) => a.id - b.id);
+        if (selector.options.length !== sortedAgents.length) {
+            selector.innerHTML = '';
+            sortedAgents.forEach(agent => {
+                const opt = document.createElement('option');
+                opt.value = agent.id;
+                opt.innerText = `[ID ${agent.id}] ${agent.name}`;
+                selector.appendChild(opt);
+            });
+        }
+
+        selector.value = state.selectedRankingAgentId;
+
+        const selectedAgent = agents.find(a => a.id === state.selectedRankingAgentId);
+        if (!selectedAgent) return;
+
+        const globalSales = toNumber(totals.sales_2026_ytd);
+
+        const agentSales = toNumber(selectedAgent.sales_2026_ytd);
+        const agentBudget = toNumber(selectedAgent.budget_2026_ytd);
+        const agentCompliance = agentBudget > 0 ? (agentSales / agentBudget) * 100 : 0;
+        const agentShare = globalSales > 0 ? (agentSales / globalSales) * 100 : 0;
+
+        const agentSalesEl = document.getElementById('ranking-agent-sales');
+        const agentShareEl = document.getElementById('ranking-agent-share');
+        const agentBudgetYtdEl = document.getElementById('ranking-agent-budget-ytd');
+        const agentBudgetPeriodEl = document.getElementById('ranking-agent-budget-period');
+        const agentComplianceEl = document.getElementById('ranking-agent-compliance');
+        const agentDeviationEl = document.getElementById('ranking-agent-deviation');
+        const agentDeviationWrapEl = document.getElementById('ranking-agent-deviation-wrap');
+        const agentPrevSalesEl = document.getElementById('ranking-agent-prev-sales');
+        const agentYoyEl = document.getElementById('ranking-agent-yoy');
+        const agentYoyWrapEl = document.getElementById('ranking-agent-yoy-wrap');
+        const agentProfitEl = document.getElementById('ranking-agent-profit');
+        const agentMarginEl = document.getElementById('ranking-agent-margin');
+        const agentGrowthEl = document.getElementById('ranking-agent-growth');
+        const agentGrowthWrapEl = document.getElementById('ranking-agent-growth-wrap');
+
+        if (agentSalesEl) agentSalesEl.innerText = formatCurrency(agentSales);
+        if (agentShareEl) agentShareEl.innerText = `${agentShare.toFixed(1)}%`;
+        if (agentBudgetYtdEl) agentBudgetYtdEl.innerText = formatCurrency(agentBudget);
+        if (agentBudgetPeriodEl) agentBudgetPeriodEl.innerText = getYtdPeriodLabel();
+        if (agentComplianceEl) agentComplianceEl.innerText = `${agentCompliance.toFixed(1)}%`;
+        if (agentDeviationEl) agentDeviationEl.innerText = formatPercent(selectedAgent.deviation_pct);
+        if (agentDeviationWrapEl) {
+            agentDeviationWrapEl.className = `kpi-trend ${selectedAgent.deviation_pct >= 0 ? 'trend-up' : 'trend-down'}`;
+        }
+        if (agentPrevSalesEl) agentPrevSalesEl.innerText = formatCurrency(selectedAgent.sales_2025_ytd);
+        if (agentYoyEl) agentYoyEl.innerText = formatPercent(selectedAgent.growth_pct);
+        if (agentYoyWrapEl) {
+            agentYoyWrapEl.className = `kpi-trend ${selectedAgent.growth_pct >= 0 ? 'trend-up' : 'trend-down'}`;
+        }
+        if (agentProfitEl) agentProfitEl.innerText = formatCurrency(selectedAgent.profit_2026_ytd);
+        if (agentMarginEl) agentMarginEl.innerText = `${selectedAgent.margin_pct.toFixed(1)}%`;
+        if (agentGrowthEl) agentGrowthEl.innerText = formatPercent(selectedAgent.growth_pct);
+        if (agentGrowthWrapEl) {
+            agentGrowthWrapEl.className = `kpi-trend ${selectedAgent.growth_pct >= 0 ? 'trend-up' : 'trend-down'}`;
+        }
+
+        renderRankingAgentMonthlyChart(selectedAgent);
+    };
+
     const renderRankingTab = () => {
+        renderRankingSnapshotPanel();
+
         // Renders Table Rows
         const tbody = document.getElementById('ranking-table-body');
         tbody.innerHTML = '';
@@ -948,7 +1078,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('det-ytd-budget').innerText = formatCurrency(agent.budget_2026_ytd);
         const ytdBudgetDesc = document.getElementById('det-ytd-budget-desc');
         if (ytdBudgetDesc) {
-            ytdBudgetDesc.innerText = `Meta para ${getYtdPeriodLabel()} ${yearLabels.current}`;
+            ytdBudgetDesc.innerText = `Meta para ${getYtdPeriodLabel()} ${new Date().getFullYear()}`;
         }
 
         const sales2026YtdEl = document.getElementById('det-sales-2026-ytd');
@@ -957,7 +1087,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         const sales2026YtdDesc = document.getElementById('det-sales-2026-ytd-desc');
         if (sales2026YtdDesc) {
-            sales2026YtdDesc.innerText = `Real ${getYtdPeriodLabel()} ${yearLabels.current}`;
+            sales2026YtdDesc.innerText = `Real ${getYtdPeriodLabel()} ${new Date().getFullYear()}`;
         }
 
         document.getElementById('det-prev-ytd-sales').innerText = formatCurrency(agent.sales_2025_ytd);
@@ -1196,14 +1326,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 labels: monthsLabel,
                 datasets: [
                     {
-                        label: `Ventas ${yearLabels.current}`,
+                        label: 'Ventas 2026',
                         data: dataReal2026,
                         backgroundColor: agent.deviation_pct >= 0 ? 'hsl(142, 70%, 45%)' : 'hsl(352, 80%, 55%)',
                         borderRadius: 4,
                         order: 1
                     },
                     {
-                        label: `Ppto ${yearLabels.budget}`,
+                        label: 'Ppto 2026',
                         data: dataBudget,
                         type: 'line',
                         borderColor: 'hsl(217, 90%, 60%)',
@@ -1214,7 +1344,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         order: 0
                     },
                     {
-                        label: `Histórico ${yearLabels.previous}`,
+                        label: 'Histórico 2025',
                         data: data2025,
                         type: 'line',
                         borderColor: 'hsla(220, 16%, 66%, 0.3)',
@@ -1251,7 +1381,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const init = () => {
         // Set last sync date
         document.getElementById('sync-date').innerText = state.data.last_updated;
-        applyDynamicYearLabels();
 
         const periodLabel = state.data.period_label || getYtdPeriodLabel();
         const periodLabelEl = document.getElementById('period-label');
