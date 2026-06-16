@@ -2,7 +2,7 @@
 // APPLICATION CONTROLLER - DASHBOARD COMERCIAL (ANTIGRAVITY SALES INTELLIGENCE)
 // ==========================================================================
 
-document.addEventListener('DOMContentLoaded', () => {
+const bootDashboard = () => {
     // 1. Initial State
     const state = {
         data: DASHBOARD_DATA,
@@ -259,14 +259,30 @@ document.addEventListener('DOMContentLoaded', () => {
         const currentMonthBudgetKeyEl = document.getElementById('kpi-current-month-budget-key');
         const budgetGapPctEl = document.getElementById('kpi-budget-gap-pct');
         const budgetGapWrapEl = document.getElementById('kpi-budget-gap-wrap');
+        const currentMonthSales2025El = document.getElementById('kpi-current-month-sales-2025');
+        const currentMonthGrowthEl = document.getElementById('kpi-current-month-growth');
+        const currentMonthGrowthTrendEl = document.getElementById('kpi-current-month-growth-trend');
+
+        const monthSales2025SameDate = Number.isFinite(toNumber(forecast.current_month_sales_2025_same_date))
+            ? toNumber(forecast.current_month_sales_2025_same_date)
+            : (currentMonthKey !== '-' ? toNumber(totals.sales_2025_monthly?.[currentMonthKey]) : 0);
+        const monthGrowthVs2025Pct = monthSales2025SameDate > 0
+            ? ((currentMonthSales - monthSales2025SameDate) / monthSales2025SameDate) * 100
+            : 0;
+
         if (currentMonthSalesEl) currentMonthSalesEl.innerText = formatCurrency(currentMonthSales);
         if (currentMonthKeyEl) currentMonthKeyEl.innerText = currentMonthKey;
         if (currentMonthProgressEl) currentMonthProgressEl.innerText = `${monthProgressPct.toFixed(1)}%`;
         if (currentMonthBudgetEl) currentMonthBudgetEl.innerText = formatCurrency(currentMonthBudget);
         if (currentMonthBudgetKeyEl) currentMonthBudgetKeyEl.innerText = currentMonthKey;
         if (budgetGapPctEl) budgetGapPctEl.innerText = `${budgetGapPct.toFixed(1)}%`;
+        if (currentMonthSales2025El) currentMonthSales2025El.innerText = formatCurrency(monthSales2025SameDate);
+        if (currentMonthGrowthEl) currentMonthGrowthEl.innerText = formatPercent(monthGrowthVs2025Pct);
         if (budgetGapWrapEl) {
             budgetGapWrapEl.className = budgetGapPct > 0 ? 'kpi-trend trend-down' : 'kpi-trend trend-up';
+        }
+        if (currentMonthGrowthTrendEl) {
+            currentMonthGrowthTrendEl.className = monthGrowthVs2025Pct >= 0 ? 'kpi-trend trend-up' : 'kpi-trend trend-down';
         }
 
         const forecastSalesEl = document.getElementById('kpi-prevision-eom');
@@ -1400,4 +1416,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Run
     init();
-});
+};
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', bootDashboard);
+} else {
+    bootDashboard();
+}

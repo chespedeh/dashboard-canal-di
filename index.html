@@ -227,7 +227,21 @@
                             </div>
                         </div>
 
-                        <div class="kpi-card gradient-coral">
+                        <div class="kpi-card gradient-blue" id="kpi-growth-card-monthly">
+                            <div class="kpi-header">
+                                <span class="kpi-label">Ventas Año Anterior (Misma Fecha 2025)</span>
+                                <div class="kpi-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                            </div>
+                            <div class="kpi-value" id="kpi-current-month-sales-2025">0.00 €</div>
+                            <div class="kpi-footer">
+                                <span class="kpi-trend" id="kpi-current-month-growth-trend">
+                                    <span id="kpi-current-month-growth">0.0%</span>
+                                    <span class="trend-lbl"> Crecimiento YoY</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="kpi-card gradient-gold">
                             <div class="kpi-header">
                                 <span class="kpi-label">Previsión Cierre Mes</span>
                                 <div class="kpi-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
@@ -236,19 +250,6 @@
                             <div class="kpi-footer">
                                 <span class="kpi-trend trend-neutral">
                                     Margen previsto: <strong id="kpi-prevision-margin">0.0%</strong>
-                                </span>
-                            </div>
-                        </div>
-
-                        <div class="kpi-card gradient-blue">
-                            <div class="kpi-header">
-                                <span class="kpi-label">Ritmo Diario Requerido</span>
-                                <div class="kpi-icon"><i class="fa-solid fa-gauge-high"></i></div>
-                            </div>
-                            <div class="kpi-value" id="kpi-required-daily">0.00 €</div>
-                            <div class="kpi-footer">
-                                <span class="kpi-trend trend-neutral" id="kpi-prevision-compliance-wrap">
-                                    Cumplimiento esperado: <strong id="kpi-prevision-compliance">0.0%</strong>
                                 </span>
                             </div>
                         </div>
@@ -597,9 +598,26 @@
         </main>
     </div>
 
-    <!-- Inject compiled data.js -->
-    <script src="data.js?v=20260528-7"></script>
-    <!-- Inject dashboard application controller app.js -->
-    <script src="app.js?v=20260528-7"></script>
+    <!-- Carga data.js con cache busting para evitar datos stale en navegadores -->
+    <script>
+        (function loadDashboardAssets() {
+            const cacheBuster = Date.now();
+
+            const loadScript = (src) => new Promise((resolve, reject) => {
+                const script = document.createElement('script');
+                script.src = src;
+                script.async = false;
+                script.onload = resolve;
+                script.onerror = reject;
+                document.body.appendChild(script);
+            });
+
+            loadScript('data.js?v=' + cacheBuster)
+                .then(() => loadScript('app.js?v=' + cacheBuster))
+                .catch((error) => {
+                    console.error('No se pudo cargar el dashboard:', error);
+                });
+        })();
+    </script>
 </body>
 </html>

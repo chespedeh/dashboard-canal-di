@@ -208,6 +208,7 @@ def init_agent(agents_data, agent_id, name):
             "sales_2025_monthly": {m: 0.0 for m in MONTHS},
             "budget_2026_monthly": {m: 0.0 for m in MONTHS},
             "sales_2026_monthly": {m: 0.0 for m in MONTHS},
+            "sales_2025_daily": {},
             "profit_2026_monthly": {m: 0.0 for m in MONTHS},
             "sales_2026_daily": {},
             "profit_2026_daily": {},
@@ -476,6 +477,7 @@ def process_daily_sales_file(sheet, year, agents_data):
 
         if year == 2025:
             agent["sales_2025_monthly"][month_key] += importe
+            add_daily_value(agent["sales_2025_daily"], doc_date, importe)
             client["sales_2025_monthly"][month_key] += importe
         elif year == 2026:
             agent["sales_2026_monthly"][month_key] += importe
@@ -504,6 +506,31 @@ def build_global_daily_maps(agents_data):
         for day, value in agent["profit_2026_daily"].items():
             profit_daily[day] = profit_daily.get(day, 0.0) + value
     return sales_daily, profit_daily
+
+
+def build_global_sales_2025_daily_map(agents_data):
+    sales_daily = {}
+    for agent in agents_data.values():
+        for day, value in agent["sales_2025_daily"].items():
+            sales_daily[day] = sales_daily.get(day, 0.0) + value
+    return sales_daily
+
+
+def compute_same_date_sales_previous_year(sales_2025_daily, as_of_date):
+    if not as_of_date:
+        return 0.0
+
+    prev_year = as_of_date.year - 1
+    month = as_of_date.month
+    max_day_prev_year = calendar.monthrange(prev_year, month)[1]
+    cutoff_day = min(as_of_date.day, max_day_prev_year)
+
+    prefix = f"{prev_year:04d}-{month:02d}-"
+    return sum(
+        value
+        for day, value in sales_2025_daily.items()
+        if day.startswith(prefix) and int(day[-2:]) <= cutoff_day
+    )
 
 
 def generate():
@@ -568,6 +595,7 @@ def generate():
         global_totals["profit_2026_ytd"] += agent["profit_2026_ytd"]
 
     global_sales_daily, global_profit_daily = build_global_daily_maps(agents_data)
+    global_sales_2025_daily = build_global_sales_2025_daily_map(agents_data)
     global_forecast = compute_month_forecast(
         global_sales_daily,
         global_profit_daily,
@@ -575,10 +603,12 @@ def generate():
         global_totals["budget_2026_monthly"].get(current_month_key, 0.0) if current_month_key else 0.0,
         holidays,
     )
+    current_month_sales_2025_same_date = compute_same_date_sales_previous_year(global_sales_2025_daily, as_of_date)
 
     current_ts = datetime.now()
 
     for agent in agents_data.values():
+        agent.pop("sales_2025_daily", None)
         agent.pop("sales_2026_daily", None)
         agent.pop("profit_2026_daily", None)
 
@@ -601,6 +631,7 @@ def generate():
             "days_in_month": global_forecast["days_in_month"],
             "days_remaining": global_forecast["days_remaining"],
             "current_month_sales": global_forecast["current_month_sales"],
+            "current_month_sales_2025_same_date": current_month_sales_2025_same_date,
             "current_month_profit": global_forecast["current_month_profit"],
         },
         "agents": sorted(list(agents_data.values()), key=lambda agent: agent["id"]),
