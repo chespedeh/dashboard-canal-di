@@ -1,0 +1,57 @@
+name: Actualizar dashboard
+
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - "Datos/VENTAS_2026.xlsx"
+      - "Datos/VENTAS_2025.xlsx"
+      - "Datos/PRESUPUESTOS.xlsx"
+      - "generate_data.py"
+      - "requirements.txt"
+      - "index.html"
+      - "app.js"
+      - "styles.css"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Generar data.js
+        run: python generate_data.py
+
+      - name: Configurar Pages
+        uses: actions/configure-pages@v5
+
+      - name: Subir artefacto Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
