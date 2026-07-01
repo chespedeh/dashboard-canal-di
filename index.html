@@ -41,6 +41,11 @@
                     <i class="fa-solid fa-user-tie menu-icon"></i>
                     <span>Ficha de Agente</span>
                 </button>
+                <button class="menu-item" data-tab="franquicias">
+                    <i class="fa-solid fa-store menu-icon"></i>
+                    <span>Franquicias</span>
+                </button>
+
             </nav>
             
             <div class="sidebar-footer">
@@ -71,7 +76,7 @@
                 <div class="header-actions">
                     <div class="period-badge">
                         <i class="fa-regular fa-calendar-days"></i>
-                        <span>Periodo Real: <strong id="period-label">Sin datos reales</strong> (YTD) | Datos hasta: <strong id="as-of-date">Sin fecha</strong></span>
+                        <span>Periodo Real: <strong id="period-label">Sin datos reales</strong> (acumulado) | Datos hasta: <strong id="as-of-date">Sin fecha</strong></span>
                     </div>
                 </div>
             </header>
@@ -82,20 +87,20 @@
                 <div class="kpi-grid">
                     <div class="kpi-card gradient-blue">
                         <div class="kpi-header">
-                            <span class="kpi-label">Ventas Reales 2026 (YTD)</span>
+                            <span class="kpi-label">Ventas Reales 2026 (acumulado)</span>
                             <div class="kpi-icon"><i class="fa-solid fa-wallet"></i></div>
                         </div>
                         <div class="kpi-value" id="kpi-sales-real">0.00 €</div>
                         <div class="kpi-footer">
                             <span class="kpi-trend trend-neutral">
-                                <i class="fa-solid fa-circle-info"></i> Acumulado <span id="kpi-sales-period">YTD</span>
+                                <i class="fa-solid fa-circle-info"></i> Acumulado <span id="kpi-sales-period">acumulado</span>
                             </span>
                         </div>
                     </div>
                     
                     <div class="kpi-card gradient-purple">
                         <div class="kpi-header">
-                            <span class="kpi-label">Presupuesto 2026 (YTD)</span>
+                            <span class="kpi-label">Presupuesto 2026 (acumulado)</span>
                             <div class="kpi-icon"><i class="fa-solid fa-bullseye"></i></div>
                         </div>
                         <div class="kpi-value" id="kpi-budget-ytd">0.00 €</div>
@@ -109,7 +114,7 @@
                     
                     <div class="kpi-card gradient-green" id="kpi-growth-card">
                         <div class="kpi-header">
-                            <span class="kpi-label">Ventas Año Anterior (YTD 2025)</span>
+                            <span class="kpi-label">Ventas Año Anterior (acumulado 2025)</span>
                             <div class="kpi-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
                         </div>
                         <div class="kpi-value" id="kpi-sales-prev">0.00 €</div>
@@ -123,7 +128,7 @@
                     
                     <div class="kpi-card gradient-gold">
                         <div class="kpi-header">
-                            <span class="kpi-label">Beneficio Real 2026 (YTD)</span>
+                            <span class="kpi-label">Beneficio Real 2026 (acumulado)</span>
                             <div class="kpi-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
                         </div>
                         <div class="kpi-value" id="kpi-profit-ytd">0.00 €</div>
@@ -179,7 +184,7 @@
                     <div class="list-card">
                         <div class="list-card-header">
                             <h3><i class="fa-solid fa-trophy text-gold"></i> Top 5 Agentes de Ventas</h3>
-                            <span class="subtitle">Por importe de venta real (YTD)</span>
+                            <span class="subtitle">Por importe de venta real (acumulado)</span>
                         </div>
                         <div class="list-body" id="top-agents-list">
                             <!-- JS populated -->
@@ -190,7 +195,7 @@
                     <div class="list-card">
                         <div class="list-card-header">
                             <h3><i class="fa-solid fa-triangle-exclamation text-coral"></i> Mayores Desviaciones de Presupuesto</h3>
-                            <span class="subtitle">Agentes que no alcanzan el presupuesto (YTD)</span>
+                            <span class="subtitle">Agentes que no alcanzan el presupuesto (acumulado)</span>
                         </div>
                         <div class="list-body" id="underperforming-agents-list">
                             <!-- JS populated -->
@@ -297,7 +302,7 @@
                     <div class="ranking-kpi-col">
                         <div class="kpi-card gradient-green">
                             <div class="kpi-header">
-                                <span class="kpi-label">Ventas Agente (YTD)</span>
+                                <span class="kpi-label">Ventas Agente (acumulado)</span>
                                 <div class="kpi-icon"><i class="fa-solid fa-user-check"></i></div>
                             </div>
                             <div class="kpi-value" id="ranking-agent-sales">0.00 €</div>
@@ -308,7 +313,7 @@
 
                         <div class="kpi-card gradient-purple">
                             <div class="kpi-header">
-                                <span class="kpi-label">Presupuesto Agente (YTD)</span>
+                                <span class="kpi-label">Presupuesto Agente (acumulado)</span>
                                 <div class="kpi-icon"><i class="fa-solid fa-bullseye"></i></div>
                             </div>
                             <div class="kpi-value" id="ranking-agent-budget-ytd">0.00 €</div>
@@ -319,7 +324,7 @@
 
                         <div class="kpi-card gradient-coral">
                             <div class="kpi-header">
-                                <span class="kpi-label">Cumplimiento (YTD)</span>
+                                <span class="kpi-label">Cumplimiento (acumulado)</span>
                                 <div class="kpi-icon"><i class="fa-solid fa-chart-line"></i></div>
                             </div>
                             <div class="kpi-value" id="ranking-agent-compliance">0.0%</div>
@@ -394,12 +399,12 @@
                                 <tr>
                                     <th data-sort="id">ID <i class="fa-solid fa-sort"></i></th>
                                     <th data-sort="name" class="text-left">Agente de Venta <i class="fa-solid fa-sort"></i></th>
-                                    <th data-sort="sales_2026_ytd">Ventas 2026 YTD <i class="fa-solid fa-sort"></i></th>
-                                    <th data-sort="budget_2026_ytd">Ppto 2026 YTD <i class="fa-solid fa-sort"></i></th>
+                                    <th data-sort="sales_2026_ytd">Ventas 2026 acumulado <i class="fa-solid fa-sort"></i></th>
+                                    <th data-sort="budget_2026_ytd">Ppto 2026 acumulado <i class="fa-solid fa-sort"></i></th>
                                     <th data-sort="deviation_pct">Desviación % <i class="fa-solid fa-sort"></i></th>
-                                    <th data-sort="sales_2025_ytd">Ventas 2025 YTD <i class="fa-solid fa-sort"></i></th>
+                                    <th data-sort="sales_2025_ytd">Ventas 2025 acumulado <i class="fa-solid fa-sort"></i></th>
                                     <th data-sort="growth_pct">Crec. YoY % <i class="fa-solid fa-sort"></i></th>
-                                    <th data-sort="profit_2026_ytd">Beneficio YTD <i class="fa-solid fa-sort"></i></th>
+                                    <th data-sort="profit_2026_ytd">Beneficio acumulado <i class="fa-solid fa-sort"></i></th>
                                     <th data-sort="margin_pct">Margen % <i class="fa-solid fa-sort"></i></th>
                                     <th class="actions-col">Acción</th>
                                 </tr>
@@ -434,7 +439,7 @@
                             
                             <div class="mini-kpi-row">
                                 <div class="mini-kpi">
-                                    <span class="lbl">Venta YTD</span>
+                                    <span class="lbl">Venta acumulada</span>
                                     <span class="val" id="det-sales-ytd">0 €</span>
                                 </div>
                                 <div class="mini-kpi">
@@ -442,7 +447,7 @@
                                     <span class="val" id="det-efficiency-pct">0%</span>
                                 </div>
                                 <div class="mini-kpi">
-                                    <span class="lbl">Margen YTD</span>
+                                    <span class="lbl">Margen acumulado</span>
                                     <span class="val" id="det-margin-pct">0%</span>
                                 </div>
                             </div>
@@ -464,22 +469,22 @@
                                 <span class="det-desc">Meta total del año fiscal</span>
                             </div>
                             <div class="detail-kpi-item">
-                                <span class="det-lbl">Presupuesto YTD Acumulado</span>
+                                <span class="det-lbl">Presupuesto acumulado</span>
                                 <span class="det-val" id="det-ytd-budget">0.00 €</span>
                                 <span class="det-desc" id="det-ytd-budget-desc">Meta del periodo real</span>
                             </div>
                             <div class="detail-kpi-item">
-                                <span class="det-lbl">Venta Acumulada 2026 (YTD)</span>
+                                <span class="det-lbl">Venta acumulada 2026</span>
                                 <span class="det-val" id="det-sales-2026-ytd">0.00 €</span>
                                 <span class="det-desc" id="det-sales-2026-ytd-desc">Venta real del periodo</span>
                             </div>
                             <div class="detail-kpi-item">
-                                <span class="det-lbl">Ventas Año Anterior YTD</span>
+                                <span class="det-lbl">Ventas Año Anterior acumulado</span>
                                 <span class="det-val" id="det-prev-ytd-sales">0.00 €</span>
                                 <span class="det-desc" id="det-prev-ytd-growth">Crecimiento YoY: 0.0%</span>
                             </div>
                             <div class="detail-kpi-item">
-                                <span class="det-lbl">Beneficio Neto YTD</span>
+                                <span class="det-lbl">Beneficio Neto acumulado</span>
                                 <span class="det-val" id="det-ytd-profit">0.00 €</span>
                                 <span class="det-desc" id="det-ytd-profit-desc">Rentabilidad</span>
                             </div>
@@ -593,6 +598,172 @@
                     </div>
                 </div>
 
+            </section>
+
+            <!-- TAB 4: FRANCHISES -->
+            <section id="tab-franquicias" class="tab-content">
+                <div class="kpi-grid" style="margin-bottom: 20px;">
+                    <div class="kpi-card gradient-blue">
+                        <div class="kpi-header">
+                            <span class="kpi-label">Ventas Franquicias 2026 (acumulado)</span>
+                            <div class="kpi-icon"><i class="fa-solid fa-store"></i></div>
+                        </div>
+                        <div class="kpi-value" id="fr-kpi-sales-2026">0.00 €</div>
+                        <div class="kpi-footer">
+                            <span class="kpi-trend trend-neutral">Clientes franquicia detectados: <strong id="fr-kpi-matched-clients">0</strong></span>
+                        </div>
+                    </div>
+
+                    <div class="kpi-card gradient-purple">
+                        <div class="kpi-header">
+                            <span class="kpi-label">Cuota Franquicias sobre Canal DI (acumulado)</span>
+                            <div class="kpi-icon"><i class="fa-solid fa-percent"></i></div>
+                        </div>
+                        <div class="kpi-value" id="fr-kpi-share-2026">0.0%</div>
+                        <div class="kpi-footer">
+                            <span class="kpi-trend trend-neutral">Canal DI acumulado 2026: <strong id="fr-kpi-channel-2026">0.00 €</strong></span>
+                        </div>
+                    </div>
+
+                    <div class="kpi-card gradient-green">
+                        <div class="kpi-header">
+                            <span class="kpi-label">Crecimiento Ventas Franquiciados (YoY)</span>
+                            <div class="kpi-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                        </div>
+                        <div class="kpi-value" id="fr-kpi-growth-yoy">0.0%</div>
+                        <div class="kpi-footer">
+                            <span class="kpi-trend" id="fr-kpi-growth-wrap">2026: <strong id="fr-kpi-sales-2026-ref">-</strong> | 2025: <strong id="fr-kpi-sales-2025">-</strong></span>
+                        </div>
+                    </div>
+
+                    <div class="kpi-card gradient-coral">
+                        <div class="kpi-header">
+                            <span class="kpi-label">Presupuesto Franquiciados acumulado 2026</span>
+                            <div class="kpi-icon"><i class="fa-solid fa-bullseye"></i></div>
+                        </div>
+                        <div class="kpi-value" id="fr-kpi-budget-ytd">0.00 €</div>
+                        <div class="kpi-footer">
+                            <span class="kpi-trend" id="fr-kpi-budget-compliance-wrap">Cumplimiento vs Ventas 2026: <strong id="fr-kpi-budget-compliance">0.0%</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bloque de 2 gráficos -->
+                <div class="charts-grid" style="margin-bottom: 20px;">
+
+                    <!-- Gráfico 1: Barras apiladas — Franquicias vs resto Canal DI -->
+                    <div class="chart-container large-chart">
+                        <div class="chart-header">
+                            <div>
+                                <h3>Ventas Franquicias vs Canal DI por Mes</h3>
+                                <span class="subtitle">Aportación mensual de franquicias sobre el total Canal DI</span>
+                            </div>
+                            <div class="table-actions" style="margin-left:auto; margin-right:12px; min-width:150px;">
+                                <select id="fr-year-filter" class="premium-select" aria-label="Filtrar año franquicias">
+                                    <option value="2026" selected>Año 2026</option>
+                                    <option value="2025">Año 2025</option>
+                                </select>
+                            </div>
+                            <div class="chart-legend-custom">
+                                <span class="leg-item"><span class="dot real"></span><span id="fr-legend-franchise-year">Franquicias 2026 (€)</span></span>
+                                <span class="leg-item"><span class="dot" style="background:hsla(142,70%,45%,0.4)"></span><span id="fr-legend-rest-year">Resto Canal DI 2026 (€)</span></span>
+                                <span class="leg-item"><span class="dot" style="background:hsl(188,82%,48%)"></span><span id="fr-legend-share-year">Cuota 2026 (%)</span></span>
+                            </div>
+                        </div>
+                        <div class="chart-wrapper">
+                            <canvas id="franchiseStackedChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Gráfico 2: Composición acumulada en circular -->
+                    <div class="chart-container small-chart">
+                        <div class="chart-header">
+                            <div>
+                                <h3>Composición acumulada Canal DI</h3>
+                                <span class="subtitle">Ventas acumuladas franquicias vs resto del canal</span>
+                            </div>
+                            <div class="chart-legend-custom">
+                                <span class="leg-item"><span class="dot real"></span><span id="fr-share-legend-franchise-year">Franquicias 2026</span></span>
+                                <span class="leg-item"><span class="dot" style="background:hsla(142,70%,45%,0.25)"></span><span id="fr-share-legend-rest-year">Resto Canal DI 2026</span></span>
+                            </div>
+                        </div>
+                        <div class="chart-wrapper">
+                            <canvas id="franchiseShareChart"></canvas>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="list-card" style="margin-bottom: 20px;">
+                    <div class="list-card-header">
+                        <h3><i class="fa-solid fa-table-list text-gold"></i> Detalle Mensual Franquicias vs Canal DI</h3>
+                        <span class="subtitle">Importes y cuota mensual por año</span>
+                    </div>
+                    <div class="table-wrapper">
+                        <table class="premium-table" id="franchise-monthly-table">
+                            <thead>
+                                <tr>
+                                    <th>Mes</th>
+                                    <th>Franquicias 2026</th>
+                                    <th>Canal DI 2026</th>
+                                    <th>Cuota 2026</th>
+                                    <th>Franquicias 2025</th>
+                                    <th>Canal DI 2025</th>
+                                    <th>Cuota 2025</th>
+                                    <th>Progresión acumulada (%)</th>
+                                </tr>
+                            </thead>
+                            <tbody id="franchise-monthly-table-body"></tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="list-card">
+                    <div class="list-card-header">
+                        <h3><i class="fa-solid fa-users text-gold"></i> Clientes Franquicia - Progresión acumulada</h3>
+                        <span class="subtitle">Comparativa por cliente entre 2026 y 2025</span>
+                    </div>
+                    <div class="table-actions">
+                        <div class="search-box">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" id="franchise-client-search" placeholder="Buscar cliente franquicia...">
+                        </div>
+                    </div>
+                    <div class="table-wrapper">
+                        <table class="premium-table" id="franchise-clients-table">
+                            <thead>
+                                <tr>
+                                    <th>Cliente ID</th>
+                                    <th class="text-left">Razón Social</th>
+                                    <th>Ventas 2026 acumulado</th>
+                                    <th>Ventas 2025 acumulado</th>
+                                    <th>Crecimiento YoY</th>
+                                </tr>
+                            </thead>
+                            <tbody id="franchise-clients-table-body"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 5: EXECUTIVE SUMMARY -->
+            <section id="tab-resumen-ejecutivo" class="tab-content">
+                <div class="selector-card" style="margin-bottom: 16px;">
+                    <label><i class="fa-solid fa-clipboard-check"></i> Resumen Ejecutivo:</label>
+                    <p class="text-muted" style="margin-top: 8px; font-size: 0.9rem;">
+                        Esta nueva pestaña queda preparada para añadir los indicadores y conclusiones que necesites.
+                    </p>
+                </div>
+
+                <div class="list-card">
+                    <div class="list-card-header">
+                        <h3><i class="fa-solid fa-lightbulb text-gold"></i> Espacio de trabajo</h3>
+                        <span class="subtitle">Configurado y listo para personalizar</span>
+                    </div>
+                    <div class="list-body" style="padding: 16px 20px; color: var(--text-muted);">
+                        Aquí podemos montar: KPIs clave, alertas, conclusiones automáticas y próximos pasos.
+                    </div>
+                </div>
             </section>
 
         </main>

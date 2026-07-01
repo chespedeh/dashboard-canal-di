@@ -1,17 +1,17 @@
 ﻿{
     "VENTAS_2025.xlsx":  {
-                             "path":  "E:\\PROYECTOS\\dashboard-canal-di\\dashboard-canal-di\\datos\\VENTAS_2025.xlsx",
-                             "lastWriteUtc":  "2026-06-23T05:32:05.3400634Z",
+                             "path":  "C:\\Users\\Chespe\\Desktop\\DATHBOARD VENTAS\\datos\\VENTAS_2025.xlsx",
+                             "lastWriteUtc":  "2026-05-27T07:34:50.2075899Z",
                              "length":  2032233
                          },
     "VENTAS_2026.xlsx":  {
-                             "path":  "E:\\PROYECTOS\\dashboard-canal-di\\dashboard-canal-di\\datos\\VENTAS_2026.xlsx",
-                             "lastWriteUtc":  "2026-06-25T05:25:56.0601922Z",
-                             "length":  799047
+                             "path":  "C:\\Users\\Chespe\\Desktop\\DATHBOARD VENTAS\\datos\\VENTAS_2026.xlsx",
+                             "lastWriteUtc":  "2026-07-01T05:54:56.3297911Z",
+                             "length":  828066
                          },
     "PRESUPUESTOS.xlsx":  {
-                              "path":  "E:\\PROYECTOS\\dashboard-canal-di\\dashboard-canal-di\\datos\\PRESUPUESTOS.xlsx",
-                              "lastWriteUtc":  "2026-06-23T05:32:05.3343071Z",
+                              "path":  "C:\\Users\\Chespe\\Desktop\\DATHBOARD VENTAS\\datos\\PRESUPUESTOS.xlsx",
+                              "lastWriteUtc":  "2026-05-29T09:11:08.1374137Z",
                               "length":  81375
                           }
 }
