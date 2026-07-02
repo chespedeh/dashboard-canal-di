@@ -19,6 +19,7 @@ Notas:
 ## Actualizacion en un clic (Windows)
 1. Ejecuta `update_dashboard.bat`.
 2. Se lanzara `update_dashboard.ps1` con apertura del dashboard.
+3. Al finalizar, el script preguntara si deseas publicar por FTP en `www.caroruiz.es/dashboard` los ficheros web necesarios (`index.html`, `app.js`, `styles.css` y `data.js`).
 
 ## Actualizacion por PowerShell
 ```powershell

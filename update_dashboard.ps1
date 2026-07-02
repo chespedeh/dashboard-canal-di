@@ -70,6 +70,85 @@ function Write-Log($logPath, $message) {
     Write-Host $message
 }
 
+function Publish-DashboardViaFtp {
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$LocalRoot,
+        [Parameter(Mandatory = $true)]
+        [string]$RemoteBase,
+        [Parameter(Mandatory = $true)]
+        [string]$Server,
+        [Parameter(Mandatory = $true)]
+        [string]$Username,
+        [Parameter(Mandatory = $true)]
+        [string]$Password,
+        [Parameter(Mandatory = $true)]
+        [string[]]$Files,
+        [string]$LogPath,
+        [switch]$UseSsl
+    )
+
+    function Invoke-FtpRequest {
+        param(
+            [string]$Uri,
+            [string]$Method,
+            [byte[]]$Payload
+        )
+
+        $originalCallback = [System.Net.ServicePointManager]::ServerCertificateValidationCallback
+        try {
+            if ($UseSsl) {
+                [System.Net.ServicePointManager]::ServerCertificateValidationCallback = { $true }
+            }
+
+            $request = [System.Net.FtpWebRequest]::Create($Uri)
+            $request.Method = $Method
+            $request.Credentials = New-Object System.Net.NetworkCredential($Username, $Password)
+            $request.UseBinary = $true
+            $request.UsePassive = $true
+            $request.KeepAlive = $false
+            $request.EnableSsl = [bool]$UseSsl
+            $request.Proxy = $null
+
+            if ($Method -eq [System.Net.WebRequestMethods+Ftp]::UploadFile) {
+                $request.ContentLength = $Payload.Length
+                $requestStream = $request.GetRequestStream()
+                try {
+                    $requestStream.Write($Payload, 0, $Payload.Length)
+                } finally {
+                    $requestStream.Close()
+                }
+            }
+
+            $response = $request.GetResponse()
+            try {
+                return $response.StatusDescription
+            } finally {
+                $response.Close()
+            }
+        } finally {
+            if ($UseSsl) {
+                [System.Net.ServicePointManager]::ServerCertificateValidationCallback = $originalCallback
+            }
+        }
+    }
+
+    $remoteBase = $RemoteBase.TrimEnd('/')
+    $currentPath = "ftp://$Server/$remoteBase"
+
+    foreach ($fileName in $Files) {
+        $localPath = Join-Path $LocalRoot $fileName
+        if (-not (Test-Path $localPath)) {
+            throw "No se encontro el fichero local necesario para FTP: $localPath"
+        }
+
+        $remoteFileUri = "$currentPath/$fileName"
+        $payload = [System.IO.File]::ReadAllBytes($localPath)
+        Write-Log $LogPath "Subiendo $fileName a $remoteFileUri"
+        Invoke-FtpRequest -Uri $remoteFileUri -Method ([System.Net.WebRequestMethods+Ftp]::UploadFile) -Payload $payload | Out-Null
+    }
+}
+
 $python = Resolve-Python
 if (-not $python) {
     Write-Host "Python no encontrado. Instalando Python 3.12..." -ForegroundColor Yellow
@@ -132,6 +211,36 @@ if ($canSkip) {
         $currentStateJson | Set-Content -Path $statePath -Encoding UTF8
         Write-Log $dailyLogPath "Data.js regenerado correctamente."
     }
+}
+
+$publishChoice = Read-Host "¿Desea actualizar via FTP la carpeta web www.caroruiz.es/dashboard? (S/N)"
+if ($publishChoice -match '^[sS]') {
+    Write-Log $dailyLogPath "Publicacion FTP solicitada por el usuario."
+    try {
+        Publish-DashboardViaFtp `
+            -LocalRoot $PSScriptRoot `
+            -RemoteBase 'www.caroruiz.es/dashboard' `
+            -Server 'ftp.caroruiz.es' `
+            -Username '2595037@aruba.it' `
+            -Password '$Monterde$2024.' `
+            -Files @('index.html', 'app.js', 'styles.css', 'data.js') `
+            -LogPath $dailyLogPath `
+            -UseSsl
+        Write-Log $dailyLogPath "Publicacion FTP completada correctamente usando FTPS."
+    } catch {
+        Write-Log $dailyLogPath ("FTPS fallo: {0}. Reintentando sin SSL..." -f $_.Exception.Message)
+        Publish-DashboardViaFtp `
+            -LocalRoot $PSScriptRoot `
+            -RemoteBase 'www.caroruiz.es/dashboard' `
+            -Server 'ftp.caroruiz.es' `
+            -Username '2595037@aruba.it' `
+            -Password '$Monterde$2024.' `
+            -Files @('index.html', 'app.js', 'styles.css', 'data.js') `
+            -LogPath $dailyLogPath
+        Write-Log $dailyLogPath "Publicacion FTP completada correctamente usando FTP sin SSL."
+    }
+} else {
+    Write-Log $dailyLogPath "Publicacion FTP omitida por el usuario."
 }
 
 if ($OpenDashboard) {
